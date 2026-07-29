@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>📝 博客管理</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+            background: #f0f4f8;
+            padding: 2rem;
+            min-height: 100vh;
+        }
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        h1 {
+            color: #1a202c;
+            margin-bottom: 1.5rem;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .card {
+            background: white;
+            border-radius: 16px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+            padding: 1.8rem;
+            margin-bottom: 2rem;
+        }
+        .card h2 {
+            color: #2d3748;
+            font-size: 1.2rem;
+            margin-bottom: 1.2rem;
+            border-bottom: 2px solid #e2e8f0;
+            padding-bottom: 0.6rem;
+        }
+        .form-group {
+            margin-bottom: 1rem;
+        }
+        .form-group label {
+            display: block;
+            font-weight: 600;
+            color: #4a5568;
+            margin-bottom: 0.3rem;
+            font-size: 0.9rem;
+        }
+        .form-group input,
+        .form-group textarea,
+        .form-group select {
+            width: 100%;
+            padding: 0.6rem 1rem;
+            border: 2px solid #e2e8f0;
+            border-radius: 8px;
+            font-size: 1rem;
+            transition: border-color 0.2s;
+            background: #f7fafc;
+        }
+        .form-group input:focus,
+        .form-group textarea:focus {
+            outline: none;
+            border-color: #4299e1;
+            background: white;
+        }
+        .form-group textarea {
+            min-height: 80px;
+            resize: vertical;
+        }
+        .btn {
+            padding: 0.6rem 1.8rem;
+            border: none;
+            border-radius: 8px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.2s;
+            font-size: 0.95rem;
+        }
+        .btn-primary {
+            background: #4299e1;
+            color: white;
+        }
+        .btn-primary:hover {
+            background: #3182ce;
+            transform: translateY(-1px);
+            box-shadow: 0 4px 12px rgba(66,153,225,0.4);
+        }
+        .btn-danger {
+            background: #fc8181;
+            color: white;
+        }
+        .btn-danger:hover {
+            background: #f56565;
+        }
+        .btn-sm {
+            padding: 0.3rem 0.9rem;
+            font-size: 0.85rem;
+        }
+        .post-item {
+            border: 1px solid #e2e8f0;
+            border-radius: 12px;
+            padding: 1.2rem 1.5rem;
+            margin-bottom: 0.8rem;
+            transition: all 0.2s;
+            background: #f7fafc;
+        }
+        .post-item:hover {
+            border-color: #4299e1;
+            box-shadow: 0 2px 8px rgba(66,153,225,0.15);
+        }
+        .post-item h3 {
+            color: #2d3748;
+            font-size: 1.1rem;
+        }
+        .post-item .meta {
+            color: #718096;
+            font-size: 0.85rem;
+            margin: 0.3rem 0 0.6rem;
+        }
+        .post-item .tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.4rem;
+        }
+        .post-item .tags span {
+            background: #bee3f8;
+            color: #2b6cb0;
+            padding: 0.1rem 0.7rem;
+            border-radius: 20px;
+            font-size: 0.8rem;
+        }
+        .post-item .actions {
+            margin-top: 0.8rem;
+            display: flex;
+            gap: 0.6rem;
+            flex-wrap: wrap;
+        }
+        .row {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1rem;
+        }
+        @media (max-width: 640px) {
+            .row { grid-template-columns: 1fr; }
+            body { padding: 1rem; }
+        }
+        .empty {
+            color: #a0aec0;
+            text-align: center;
+            padding: 2rem;
+        }
+        .toast {
+            position: fixed;
+            bottom: 2rem;
+            right: 2rem;
+            background: #1a202c;
+            color: white;
+            padding: 0.8rem 1.6rem;
+            border-radius: 12px;
+            box-shadow: 0 8px 24px rgba(0,0,0,0.3);
+            opacity: 0;
+            transition: opacity 0.3s;
+            font-weight: 500;
+        }
+        .toast.show {
+            opacity: 1;
+        }
+        .stats-badge {
+            display: inline-block;
+            background: #edf2f7;
+            padding: 0.2rem 1rem;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            color: #4a5568;
+            margin-right: 0.5rem;
+        }
+        .flex-between {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>📝 博客管理后台</h1>
+
+        <!-- 创建表单 -->
+        <div class="card">
+            <h2>✏️ 写新文章</h2>
+            <form id="createForm">
+                <div class="row">
+                    <div class="form-group">
+                        <label>标题</label>
+                        <input type="text" id="title" required placeholder="输入文章标题..." />
+                    </div>
+                    <div class="form-group">
+                        <label>分类</label>
+                        <input type="text" id="category" placeholder="如：技术、生活..." value="未分类" />
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label>内容</label>
+                    <textarea id="content" required placeholder="输入文章内容..."></textarea>
+                </div>
+                <div class="form-group">
+                    <label>标签（用英文逗号分隔）</label>
+                    <input type="text" id="tags" placeholder="如：python,fastapi,web" />
+                </div>
+                <button type="submit" class="btn btn-primary">📤 发布文章</button>
+            </form>
+        </div>
+
+        <!-- 过滤 & 统计 -->
+        <div class="card">
+            <div class="flex-between">
+                <h2 style="margin-bottom:0;border-bottom:0;padding-bottom:0;">📚 文章列表</h2>
+                <div style="display:flex;gap:0.8rem;flex-wrap:wrap;">
+                    <input type="text" id="filterCategory" placeholder="筛选分类..." style="padding:0.4rem 0.8rem;border:2px solid #e2e8f0;border-radius:8px;font-size:0.9rem;" />
+                    <button class="btn btn-primary btn-sm" onclick="loadPosts()">🔄 刷新</button>
+                </div>
+            </div>
+            <div id="stats" style="margin-top:0.8rem;font-size:0.9rem;color:#718096;"></div>
+            <div id="postList"></div>
+        </div>
+    </div>
+
+    <!-- Toast 通知 -->
+    <div id="toast" class="toast"></div>
+
+    <script>
+        const API_BASE = 'http://127.0.0.1:8000';
+
+        // ----- 工具函数 -----
+        function showToast(msg) {
+            const el = document.getElementById('toast');
+            el.textContent = msg;
+            el.classList.add('show');
+            clearTimeout(el._timer);
+            el._timer = setTimeout(() => el.classList.remove('show'), 3000);
+        }
+
+        async function fetchAPI(path, options = {}) {
+            const res = await fetch(`${API_BASE}${path}`, {
+                headers: { 'Content-Type': 'application/json' },
+                ...options,
+            });
+            if (!res.ok && res.status !== 204) {
+                const err = await res.json().catch(() => ({ detail: '请求失败' }));
+                throw new Error(err.detail || `HTTP ${res.status}`);
+            }
+            if (res.status === 204) return null;
+            return res.json();
+        }
+
+        // ----- 加载文章列表 -----
+        async function loadPosts() {
+            try {
+                const category = document.getElementById('filterCategory').value.trim();
+                const url = category ? `/posts/?category=${encodeURIComponent(category)}` : '/posts/';
+                const posts = await fetchAPI(url);
+                renderPosts(posts);
+                loadStats();
+            } catch (e) {
+                showToast('❌ 加载失败: ' + e.message);
+            }
+        }
+
+        function renderPosts(posts) {
+            const container = document.getElementById('postList');
+            if (!posts || posts.length === 0) {
+                container.innerHTML = '<div class="empty">📭 还没有文章，写一篇吧！</div>';
+                return;
+            }
+            container.innerHTML = posts.map(p => `
+                <div class="post-item">
+                    <div class="flex-between">
+                        <h3>${escapeHtml(p.title)}</h3>
+                        <span style="font-size:0.8rem;color:#a0aec0;">👁️ ${p.view_count}</span>
+                    </div>
+                    <div class="meta">
+                        📂 ${escapeHtml(p.category)} &nbsp;·&nbsp; ${new Date(p.created_at).toLocaleString()}
+                        ${p.updated_at ? ` &nbsp;·&nbsp; 已编辑 ${new Date(p.updated_at).toLocaleString()}` : ''}
+                    </div>
+                    <div style="color:#4a5568;margin-bottom:0.5rem;">${escapeHtml(p.content.substring(0, 120))}${p.content.length > 120 ? '...' : ''}</div>
+                    <div class="tags">
+                        ${p.tags.map(t => `<span>#${escapeHtml(t)}</span>`).join('')}
+                    </div>
+                    <div class="actions">
+                        <button class="btn btn-danger btn-sm" onclick="deletePost(${p.id})">🗑️ 删除</button>
+                        <button class="btn btn-primary btn-sm" onclick="editPost(${p.id})">✏️ 编辑</button>
+                    </div>
+                </div>
+            `).join('');
+        }
+
+        function escapeHtml(text) {
+            const div = document.createElement('div');
+            div.textContent = text;
+            return div.innerHTML;
+        }
+
+        // ----- 加载统计 -----
+        async function loadStats() {
+            try {
+                const stats = await fetchAPI('/posts/stats/categories');
+                const el = document.getElementById('stats');
+                if (stats && Object.keys(stats).length > 0) {
+                    el.innerHTML = Object.entries(stats)
+                        .map(([k, v]) => `<span class="stats-badge">📁 ${k}: ${v}篇</span>`)
+                        .join('');
+                } else {
+                    el.innerHTML = '暂无统计';
+                }
+            } catch (e) {
+                // ignore
+            }
+        }
+
+        // ----- 创建文章 -----
+        document.getElementById('createForm').addEventListener('submit', async (e) => {
+            e.preventDefault();
+            const tagsRaw = document.getElementById('tags').value.trim();
+            const tags = tagsRaw ? tagsRaw.split(',').map(s => s.trim()).filter(Boolean) : [];
+
+            const data = {
+                title: document.getElementById('title').value.trim(),
+                content: document.getElementById('content').value.trim(),
+                category: document.getElementById('category').value.trim() || '未分类',
+                tags: tags,
+            };
+
+            try {
+                await fetchAPI('/posts/', {
+                    method: 'POST',
+                    body: JSON.stringify(data),
+                });
+                showToast('✅ 文章发布成功！');
+                document.getElementById('createForm').reset();
+                document.getElementById('category').value = '未分类';
+                loadPosts();
+            } catch (e) {
+                showToast('❌ 发布失败: ' + e.message);
+            }
+        });
+
+        // ----- 删除文章 -----
+        async function deletePost(id) {
+            if (!confirm('确定要删除这篇文章吗？')) return;
+            try {
+                await fetchAPI(`/posts/${id}`, { method: 'DELETE' });
+                showToast('🗑️ 已删除');
+                loadPosts();
+            } catch (e) {
+                showToast('❌ 删除失败: ' + e.message);
+            }
+        }
+
+        // ----- 编辑文章（简化版：用浏览器自带 prompt）-----
+        async function editPost(id) {
+            try {
+                const post = await fetchAPI(`/posts/${id}`);
+                const newTitle = prompt('修改标题：', post.title);
+                if (newTitle === null) return;
+                const newContent = prompt('修改内容：', post.content);
+                if (newContent === null) return;
+                const newCategory = prompt('修改分类：', post.category);
+                if (newCategory === null) return;
+
+                await fetchAPI(`/posts/${id}`, {
+                    method: 'PUT',
+                    body: JSON.stringify({ title: newTitle, content: newContent, category: newCategory }),
+                });
+                showToast('✅ 更新成功');
+                loadPosts();
+            } catch (e) {
+                showToast('❌ 编辑失败: ' + e.message);
+            }
+        }
+
+        // ----- 启动 -----
+        loadPosts();
+
+        // 按回车触发筛选
+        document.getElementById('filterCategory').addEventListener('keyup', (e) => {
+            if (e.key === 'Enter') loadPosts();
+        });
+    </script>
+</body>
+</html>
