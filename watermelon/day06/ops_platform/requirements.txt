@@ -1,0 +1,12 @@
+fastapi==0.115.0
+uvicorn[standard]==0.30.6
+sqlalchemy==2.0.31
+pydantic==2.8.2
+pydantic-settings==2.3.4
+python-multipart==0.0.9
+python-jose[cryptography]==3.3.0
+passlib[bcrypt]==1.7.4
+paramiko==3.4.0
+# MySQL 驱动（连接外部 MySQL 数据库）
+PyMySQL==1.1.1
+cryptography==43.0.0

@@ -1,4 +1,209 @@
-*/.idea/*
+# ====================
+# IDE 配置
+# ====================
+.idea/
+.vscode/
 *.iml
-*.idea
-/.venv/
+*.iws
+*.ipr
+.settings/
+.project
+.classpath
+.vs/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# ====================
+# Python 缓存
+# ====================
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+*.so
+*.dylib
+
+# ====================
+# Python 虚拟环境
+# ====================
+btx-yunwei/
+venv/
+env/
+ENV/
+.venv/
+.env/
+virtualenv/
+.conda/
+
+# ====================
+# 敏感配置文件（含密钥/密码）
+# ====================
+.env
+.env.local
+.env.*.local
+.env.docker
+.env.docker.local
+*.secret.yml
+*.private.yml
+application-*.local.yml
+bootstrap-local.yml
+
+# ====================
+# SSH 相关（安全敏感）
+# ====================
+known_hosts
+known_hosts.old
+pending_host_keys.json
+.ssh/
+id_rsa
+id_rsa.pub
+*.pem
+*.key
+*.crt
+*.cer
+
+# ====================
+# 密钥和证书文件（非常重要！）
+# ====================
+*.pem
+*.key
+*.crt
+*.cer
+*.p12
+*.pfx
+*.jks
+*.keystore
+*.truststore
+*.p8
+*.pkcs12
+private_key.pem
+rsa_private_key.pem
+rsa_public_key.pem
+
+# ====================
+# 数据库文件
+# ====================
+*.db
+*.sqlite3
+*.sqlite
+db.sqlite3
+ops.db
+app.db
+data/*.db
+data/*.sqlite3
+
+# ====================
+# Python 包管理
+# ====================
+*.egg-info/
+*.egg
+dist/
+build/
+develop-eggs/
+downloads/
+eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+.installed.cfg
+pip-log.txt
+pip-delete-this-directory.txt
+
+# ====================
+# 日志文件
+# ====================
+*.log
+logs/
+*.log.*
+*.log.*.gz
+
+# ====================
+# 测试相关
+# ====================
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+.mypy_cache/
+.dmypy.json
+dmypy.json
+*.cover
+test_env.py
+*_test.py
+*.test
+
+# ====================
+# Jupyter Notebook
+# ====================
+.ipynb_checkpoints/
+*.ipynb
+
+# ====================
+# 配置文件（本地/开发专用）
+# ====================
+config.local.ini
+settings.local.py
+local_settings.py
+*.local.py
+
+# ====================
+# Docker 相关（本地编排文件不上传）
+# ====================
+docker-compose.yml
+docker-compose.override.yml
+*.pid
+.dockerignore
+
+# ====================
+# 前端依赖（不打包）
+# ====================
+frontend/node_modules/
+frontend/dist/
+frontend/build/
+frontend/.next/
+frontend/out/
+frontend/.cache/
+frontend/*.log
+frontend/npm-debug.log*
+frontend/yarn-debug.log*
+frontend/yarn-error.log*
+frontend/.env
+frontend/.env.local
+frontend/.env.*.local
+
+# ====================
+# 项目特定文件
+# ====================
+start_public.bat
+*.bat
+*.sh
+*.ps1
+*.tmp
+*.temp
+*.bak
+*.backup
+*.old
+*.orig
+
+# ====================
+# 操作系统文件
+# ====================
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ====================
+# 压缩文件（不提交源码压缩包）
+# ====================
+*.zip
+*.tar.gz
+*.tgz
+*.rar
+*.7z

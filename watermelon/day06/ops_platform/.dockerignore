@@ -1,0 +1,14 @@
+btx-yunwei/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.git/
+.gitignore
+*.db
+*.log
+.env
+API_USAGE.md
+start_public.bat
+.vscode/
+.idea/

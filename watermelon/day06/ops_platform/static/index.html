@@ -1,0 +1,3109 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>运维平台 - 台账管理</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/xterm@5.3.0/css/xterm.min.css">
+    <style>
+        :root {
+            --primary: #4f46e5; --primary-dark: #4338ca;
+            --success: #22c55e; --danger: #ef4444; --warning: #f59e0b; --info: #3b82f6;
+            --g50: #f8fafc; --g100: #f1f5f9; --g200: #e2e8f0; --g300: #cbd5e1;
+            --g400: #94a3b8; --g500: #64748b; --g600: #475569; --g700: #334155;
+            --g800: #1e293b; --g900: #0f172a;
+            --radius: 10px;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: -apple-system, BlinkMacSystemFont, 'PingFang SC', 'Microsoft YaHei', sans-serif; background: var(--g50); min-height: 100vh; }
+
+        /* ===== Layout ===== */
+        .layout { display: flex; min-height: 100vh; }
+        .sidebar {
+            width: 220px; background: var(--g900); color: #fff; display: flex; flex-direction: column;
+            position: fixed; top: 0; left: 0; bottom: 0; z-index: 100; transition: transform .3s;
+        }
+        .sidebar-brand { padding: 20px; border-bottom: 1px solid rgba(255,255,255,.06); font-size: 18px; font-weight: 700; display: flex; align-items: center; gap: 10px; }
+        .sidebar-brand span { font-size: 22px; }
+        .sidebar-nav { flex: 1; padding: 12px; overflow-y: auto; }
+        .nav-item {
+            display: flex; align-items: center; gap: 10px; padding: 10px 14px; border-radius: 8px;
+            color: var(--g400); cursor: pointer; font-size: 14px; transition: all .2s; margin-bottom: 2px;
+        }
+        .nav-item:hover { background: rgba(255,255,255,.06); color: #fff; }
+        .nav-item.active { background: rgba(79,70,229,.2); color: #fff; }
+        .nav-item .icon { width: 20px; text-align: center; }
+
+        .main { flex: 1; margin-left: 220px; }
+        .topbar {
+            height: 56px; background: #fff; border-bottom: 1px solid var(--g200);
+            display: flex; align-items: center; justify-content: space-between; padding: 0 28px;
+            position: sticky; top: 0; z-index: 50;
+        }
+        .topbar h2 { font-size: 16px; font-weight: 600; }
+        .topbar-right { display: flex; align-items: center; gap: 12px; }
+        .topbar-btn { background: none; border: 1px solid var(--g300); padding: 5px 14px; border-radius: 6px; cursor: pointer; font-size: 13px; }
+        .topbar-btn:hover { background: var(--g50); }
+        .user-info { font-size: 13px; color: var(--g600); }
+
+        /* ===== Login ===== */
+        .login-screen { min-height: 100vh; display: flex; align-items: center; justify-content: center; background: linear-gradient(135deg, #eef2ff 0%, #f8fafc 45%, #e0f2fe 100%); padding: 24px; }
+        .login-card { width: 380px; max-width: 100%; background: #fff; border: 1px solid var(--g200); border-radius: 16px; box-shadow: 0 24px 80px rgba(15,23,42,.12); padding: 30px; }
+        .login-title { font-size: 22px; font-weight: 700; color: var(--g900); margin-bottom: 6px; }
+        .login-subtitle { font-size: 13px; color: var(--g500); margin-bottom: 22px; line-height: 1.6; }
+        .login-card .btn { width: 100%; justify-content: center; padding: 9px 16px; }
+        .login-tip { margin-top: 14px; padding: 10px 12px; border-radius: 8px; background: var(--g50); color: var(--g500); font-size: 12px; line-height: 1.6; }
+        .app-shell { display: none; }
+        .app-shell.authed { display: block; }
+
+        .content { padding: 24px 28px; }
+
+        /* ===== Pages ===== */
+        .page { display: none; animation: fadeIn .3s ease; }
+        .page.active { display: block; }
+        @keyframes fadeIn { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: translateY(0); } }
+
+        /* ===== Stats ===== */
+        .stats-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 14px; margin-bottom: 20px; }
+        .stat-card { background: #fff; border-radius: var(--radius); padding: 16px 20px; border: 1px solid var(--g200); }
+        .stat-card .num { font-size: 24px; font-weight: 700; }
+        .stat-card .num.c-blue { color: var(--info); } .stat-card .num.c-green { color: var(--success); }
+        .stat-card .num.c-red { color: var(--danger); } .stat-card .num.c-yellow { color: var(--warning); }
+        .stat-card .lbl { font-size: 13px; color: var(--g400); margin-top: 2px; }
+
+        /* ===== Service Cards ===== */
+        .service-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 14px; }
+        .service-card { display: flex; flex-direction: column; gap: 6px; padding: 16px; border: 1px solid var(--g200); border-radius: var(--radius); background: #fff; transition: all .2s; text-decoration: none; color: inherit; position: relative; }
+        .service-card:hover { border-color: var(--primary); box-shadow: 0 4px 16px rgba(79,70,229,.1); transform: translateY(-2px); }
+        .service-card .svc-icon { font-size: 28px; line-height: 1; }
+        .service-card .svc-name { font-size: 15px; font-weight: 600; color: var(--g800); }
+        .service-card .svc-desc { font-size: 12px; color: var(--g500); line-height: 1.5; }
+        .service-card .svc-url { font-size: 11px; color: var(--g400); word-break: break-all; }
+        .service-card .svc-cat { display: inline-block; padding: 1px 8px; border-radius: 10px; font-size: 11px; background: var(--g100); color: var(--g600); align-self: flex-start; }
+        .service-card .svc-actions { position: absolute; top: 10px; right: 10px; display: flex; gap: 4px; }
+        .service-card .svc-actions .btn-ghost { padding: 2px 6px; font-size: 11px; }
+
+        /* ===== Panel ===== */
+        .panel { background: #fff; border-radius: var(--radius); border: 1px solid var(--g200); margin-bottom: 16px; }
+        .panel-head { display: flex; justify-content: space-between; align-items: center; padding: 14px 20px; border-bottom: 1px solid var(--g100); flex-wrap: wrap; gap: 8px; }
+        .panel-head h3 { font-size: 15px; font-weight: 600; }
+        .panel-body { padding: 0; }
+        .panel-body.padded { padding: 16px 20px; }
+
+        /* ===== Table ===== */
+        .tbl-wrap { overflow-x: auto; }
+        table { width: 100%; border-collapse: collapse; font-size: 14px; }
+        th { text-align: left; padding: 10px 14px; background: var(--g50); color: var(--g500); font-weight: 500; font-size: 12px; border-bottom: 1px solid var(--g200); white-space: nowrap; }
+        td { padding: 10px 14px; border-bottom: 1px solid var(--g100); }
+        tr:hover td { background: var(--g50); }
+
+        /* ===== Badges ===== */
+        .badge { display: inline-block; padding: 2px 10px; border-radius: 12px; font-size: 12px; font-weight: 500; }
+        .badge-online, .badge-success { background: #dcfce7; color: #16a34a; }
+        .badge-offline, .badge-failure { background: #fee2e2; color: #dc2626; }
+        .badge-unknown, .badge-pending { background: #f1f5f9; color: #64748b; }
+        .badge-prod { background: #fee2e2; color: #b91c1c; } .badge-test { background: #dbeafe; color: #1d4ed8; }
+        .badge-dev { background: #dcfce7; color: #15803d; } .badge-staging { background: #fef3c7; color: #b45309; }
+        .badge-uat { background: #f3e8ff; color: #7c3aed; }
+        .badge-admin { background: #fef3c7; color: #b45309; } .badge-operator { background: #dbeafe; color: #1d4ed8; }
+        .badge-viewer { background: #f1f5f9; color: #475569; } .badge-active { background: #dcfce7; color: #16a34a; }
+        .badge-disabled { background: #fee2e2; color: #dc2626; }
+
+        /* ===== Buttons ===== */
+        .btn { padding: 6px 16px; border: none; border-radius: 6px; font-size: 13px; cursor: pointer; font-family: inherit; display: inline-flex; align-items: center; gap: 4px; transition: all .2s; }
+        .btn-primary { background: var(--primary); color: #fff; } .btn-primary:hover { background: var(--primary-dark); }
+        .btn-success { background: var(--success); color: #fff; } .btn-success:hover { background: #16a34a; }
+        .btn-danger { background: var(--danger); color: #fff; } .btn-danger:hover { background: #dc2626; }
+        .btn-outline { background: #fff; border: 1px solid var(--g300); color: var(--g600); } .btn-outline:hover { background: var(--g50); }
+        .btn-sm { padding: 3px 10px; font-size: 12px; }
+        .btn-ghost { background: none; border: none; color: var(--primary); padding: 3px 8px; } .btn-ghost:hover { background: #eef2ff; }
+
+        /* ===== Toolbar ===== */
+        .toolbar { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 10px; margin-bottom: 16px; }
+        .toolbar-left, .toolbar-right { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }
+        .filter-select { padding: 6px 10px; border: 1px solid var(--g300); border-radius: 6px; font-size: 13px; background: #fff; outline: none; }
+        .search-input { padding: 6px 12px; border: 1px solid var(--g300); border-radius: 6px; font-size: 13px; width: 180px; outline: none; }
+        .search-input:focus { border-color: var(--primary); box-shadow: 0 0 0 3px rgba(79,70,229,.1); }
+
+        /* ===== Modal ===== */
+        .modal-mask { position: fixed; inset: 0; background: rgba(0,0,0,.45); z-index: 200; display: none; align-items: center; justify-content: center; }
+        .modal-mask.show { display: flex; }
+        .modal { background: #fff; border-radius: var(--radius); width: 640px; max-width: 95%; max-height: 90vh; overflow-y: auto; box-shadow: 0 20px 60px rgba(0,0,0,.15); animation: modalIn .25s ease; }
+        @keyframes modalIn { from { opacity: 0; transform: scale(.95) translateY(16px); } to { opacity: 1; transform: scale(1) translateY(0); } }
+        .modal-head { padding: 18px 24px; border-bottom: 1px solid var(--g200); display: flex; justify-content: space-between; align-items: center; }
+        .modal-head h3 { font-size: 16px; font-weight: 600; }
+        .modal-close { background: none; border: none; font-size: 24px; cursor: pointer; color: var(--g400); line-height: 1; }
+        .modal-close:hover { color: var(--g600); }
+        .modal-body { padding: 20px 24px; }
+        .modal-foot { padding: 14px 24px; border-top: 1px solid var(--g200); display: flex; justify-content: flex-end; gap: 8px; }
+
+        /* ===== Form ===== */
+        .form-group { margin-bottom: 14px; }
+        .form-group label { display: block; font-size: 13px; font-weight: 500; margin-bottom: 4px; color: var(--g700); }
+        .form-group input, .form-group select, .form-group textarea {
+            width: 100%; padding: 7px 12px; border: 1px solid var(--g300); border-radius: 6px; font-size: 14px; outline: none; transition: all .2s;
+        }
+        .form-group input:focus, .form-group select:focus, .form-group textarea:focus { border-color: var(--primary); box-shadow: 0 0 0 3px rgba(79,70,229,.1); }
+        .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+        .form-hint { font-size: 12px; color: var(--g400); margin-top: 2px; }
+        .form-group textarea { min-height: 60px; resize: vertical; font-family: monospace; }
+        .file-import-row { display: flex; align-items: center; gap: 8px; margin-top: 6px; flex-wrap: wrap; }
+        .file-import-name { font-size: 12px; color: var(--g500); }
+        .auth-toggle { display: flex; gap: 0; margin-bottom: 14px; border: 1px solid var(--g300); border-radius: 6px; overflow: hidden; }
+        .auth-toggle button { flex: 1; padding: 7px 0; border: none; background: #fff; cursor: pointer; font-size: 13px; font-family: inherit; transition: all .2s; }
+        .auth-toggle button.active { background: var(--primary); color: #fff; }
+        .check-cell { display: flex; justify-content: center; align-items: center; }
+        .check-cell input { width: 16px; height: 16px; cursor: pointer; }
+        .hint-card { background: #eef2ff; border: 1px solid #c7d2fe; color: #3730a3; border-radius: 8px; padding: 10px 12px; font-size: 13px; margin-bottom: 12px; }
+        .admin-only { display: none !important; }
+        .app-shell.is-admin .admin-only.nav-item { display: flex !important; }
+        .app-shell.is-admin .admin-only.btn { display: inline-flex !important; }
+
+        /* ===== Inspect ===== */
+        .inspect-summary { display: flex; gap: 16px; margin-bottom: 16px; flex-wrap: wrap; }
+        .inspect-stat { background: #fff; border: 1px solid var(--g200); border-radius: var(--radius); padding: 12px 20px; min-width: 100px; text-align: center; }
+        .inspect-stat .is-num { font-size: 24px; font-weight: 700; }
+        .inspect-stat .is-lbl { font-size: 12px; color: var(--g400); margin-top: 2px; }
+        .inspect-group { margin-bottom: 16px; }
+        .inspect-group-title { font-size: 14px; font-weight: 600; color: var(--g700); margin-bottom: 8px; display: flex; align-items: center; gap: 6px; }
+        .inspect-finding { display: flex; align-items: flex-start; gap: 10px; padding: 8px 12px; border: 1px solid var(--g200); border-radius: 6px; margin-bottom: 6px; font-size: 13px; line-height: 1.5; }
+        .inspect-finding:hover { background: #f8f9fa; }
+        .inspect-level { display: inline-block; padding: 2px 8px; border-radius: 4px; font-size: 11px; font-weight: 600; white-space: nowrap; flex-shrink: 0; }
+        .inspect-level-error { background: #fee2e2; color: #dc2626; }
+        .inspect-level-warning { background: #fef3c7; color: #d97706; }
+        .inspect-level-info { background: #dbeafe; color: #2563eb; }
+        .inspect-meta { color: var(--g400); font-size: 12px; margin-left: auto; white-space: nowrap; flex-shrink: 0; }
+        .inspect-msg { flex: 1; word-break: break-word; }
+
+        /* ===== Terminal ===== */
+        .terminal { background: #0f172a; color: #d4d4d4; border-radius: 8px; height: 460px; overflow: hidden; border: 1px solid #1e293b; outline: none; cursor: text; padding: 6px; }
+        .terminal:focus-within { border-color: var(--primary); box-shadow: 0 0 0 3px rgba(79,70,229,.16); }
+        .terminal .xterm { height: 100%; }
+        .terminal .xterm-viewport { border-radius: 6px; }
+        .terminal-session { height: 100%; display: none; }
+        .terminal-session.active { display: block; height: 100%; }
+        .terminal .cmd { color: #6a9955; } .terminal .err { color: #f44747; } .terminal .info { color: #569cd6; }
+        .cmd-input-wrap { display: flex; gap: 8px; margin-top: 8px; }
+        .cmd-input { flex: 1; padding: 8px 12px; border: 1px solid var(--g300); border-radius: 6px; font-family: 'Cascadia Code', monospace; font-size: 13px; outline: none; background: #1e1e1e; color: #d4d4d4; }
+        .cmd-input:focus { border-color: var(--primary); }
+        .ssh-toolbar { display: flex; justify-content: space-between; align-items: center; gap: 8px; margin-bottom: 10px; flex-wrap: wrap; }
+        .ssh-toolbar-left, .ssh-toolbar-right { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }
+        .ssh-status { font-size: 12px; color: var(--g500); }
+        .ssh-status.connected { color: var(--success); }
+        .ssh-status.disconnected { color: var(--danger); }
+        .terminal-tabs { display: flex; gap: 6px; margin-bottom: 10px; overflow-x: auto; padding-bottom: 4px; }
+        .terminal-tab { display: inline-flex; align-items: center; gap: 6px; padding: 5px 10px; border: 1px solid var(--g300); border-radius: 999px; background: #fff; color: var(--g600); font-size: 12px; cursor: pointer; white-space: nowrap; }
+        .terminal-tab.active { background: #eef2ff; border-color: var(--primary); color: var(--primary); }
+        .terminal-tab .dot { width: 7px; height: 7px; border-radius: 50%; background: var(--danger); }
+        .terminal-tab .dot.online { background: var(--success); }
+        .terminal-tab .close { border: none; background: none; color: var(--g400); cursor: pointer; font-size: 13px; padding: 0; }
+        .terminal-tab .close:hover { color: var(--danger); }
+        .file-transfer { margin-top: 12px; padding: 12px; border: 1px solid var(--g200); border-radius: 8px; background: var(--g50); display: grid; gap: 10px; }
+        .file-transfer-row { display: grid; grid-template-columns: 1.4fr 1.6fr auto auto; gap: 8px; align-items: center; }
+        .file-transfer input[type="text"] { padding: 7px 10px; border: 1px solid var(--g300); border-radius: 6px; font-size: 13px; outline: none; }
+        .file-transfer input[type="file"] { font-size: 12px; }
+
+        /* ===== Empty ===== */
+        .empty { text-align: center; padding: 40px 20px; color: var(--g400); }
+        .empty .icon { font-size: 36px; margin-bottom: 8px; }
+
+        /* ===== Toast ===== */
+        .toast-box { position: fixed; bottom: 20px; right: 20px; z-index: 999; display: flex; flex-direction: column; gap: 8px; }
+        .toast { padding: 10px 20px; border-radius: 8px; color: #fff; font-size: 14px; font-weight: 500; box-shadow: 0 4px 16px rgba(0,0,0,.15); animation: slideUp .3s ease; }
+        .toast.success { background: #16a34a; } .toast.error { background: #dc2626; } .toast.info { background: var(--primary); }
+        @keyframes slideUp { from { opacity: 0; transform: translateY(16px); } to { opacity: 1; transform: translateY(0); } }
+        .loading { text-align: center; padding: 20px; color: var(--g400); font-size: 14px; }
+
+        /* ===== File Browser ===== */
+        .fb-toolbar { display: flex; align-items: center; gap: 10px; margin-bottom: 10px; }
+        .fb-path { font-size: 13px; color: var(--g400); flex: 1; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+        .fb-list { border: 1px solid var(--g200); border-radius: 8px; max-height: 320px; overflow-y: auto; background: #fff; }
+        .fb-item { display: flex; align-items: center; gap: 8px; padding: 8px 12px; cursor: pointer; border-bottom: 1px solid var(--g100); font-size: 13px; }
+        .fb-item:hover { background: var(--g50); }
+        .fb-item.selected { background: rgba(79,70,229,.1); }
+        .fb-item .fb-icon { width: 18px; text-align: center; }
+
+        /* ===== 终端最小化浮动条 ===== */
+        .term-float-stack {
+            position: fixed; bottom: 0; right: 24px; z-index: 300;
+            display: flex; flex-direction: column; align-items: flex-end; gap: 6px;
+            max-width: 420px;
+        }
+        .term-float-bar {
+            background: var(--g900); color: #fff; border-radius: 10px 10px 0 0;
+            padding: 10px 18px; display: none; align-items: center; gap: 12px;
+            box-shadow: 0 -4px 20px rgba(0,0,0,.25); cursor: pointer; font-size: 13px;
+            max-width: 360px;
+        }
+        .term-float-bar.show { display: flex; }
+        .term-float-bar:hover { background: var(--g800); }
+        .term-float-bar .tfb-icon { font-size: 16px; }
+        .term-float-bar .tfb-title { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+        .term-float-bar .tfb-status { width: 8px; height: 8px; border-radius: 50%; flex-shrink: 0; }
+        .term-float-bar .tfb-status.online { background: var(--success); }
+        .term-float-bar .tfb-status.offline { background: var(--danger); }
+        .term-float-bar .tfb-close { background: none; border: none; color: var(--g400); font-size: 16px; cursor: pointer; padding: 0 2px; }
+        .term-float-bar .tfb-close:hover { color: #fff; }
+        .fb-item .fb-name { flex: 1; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+        .fb-item .fb-size { color: var(--g400); font-size: 12px; min-width: 60px; text-align: right; }
+
+        /* ===== Responsive ===== */
+        .menu-toggle { display: none; background: none; border: none; font-size: 20px; cursor: pointer; }
+        @media (max-width: 768px) {
+            .sidebar { transform: translateX(-100%); } .sidebar.open { transform: translateX(0); }
+            .main { margin-left: 0; } .menu-toggle { display: block; }
+            .content { padding: 16px; } .form-row { grid-template-columns: 1fr; }
+            .stats-grid { grid-template-columns: repeat(2, 1fr); }
+        }
+        .hk-badge { display:inline-block; min-width:18px; height:18px; line-height:18px; padding:0 5px; margin-left:6px; border-radius:9px; background:#ef4444; color:#fff; font-size:11px; text-align:center; font-weight:600; }
+        .hk-section-title { font-size:15px; font-weight:600; margin:0 0 10px; color:#e5e7eb; display:flex; align-items:center; gap:8px; }
+        .hk-section-title .count { font-size:12px; font-weight:500; color:#9ca3af; background:rgba(255,255,255,.08); padding:2px 8px; border-radius:10px; }
+        .hk-fp { font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace; font-size:12px; color:#a5b4fc; word-break:break-all; }
+        .hk-fp-old { font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace; font-size:12px; color:#9ca3af; word-break:break-all; }
+        .hk-card { background:rgba(239,68,68,.08); border:1px solid rgba(239,68,68,.25); border-radius:10px; padding:14px 16px; margin-bottom:12px; }
+    </style>
+</head>
+<body>
+<div class="login-screen" id="loginScreen">
+    <div class="login-card">
+        <div class="login-title">登录运维平台</div>
+        <div class="login-subtitle">请使用管理员创建的账号登录。登录后会根据你的角色和服务器权限开放远程连接能力。</div>
+        <div class="form-group"><label>用户名</label><input id="loginUsername" placeholder="请输入用户名" onkeydown="if(event.key==='Enter')login()"></div>
+        <div class="form-group"><label>密码</label><input id="loginPassword" type="password" placeholder="请输入密码" onkeydown="if(event.key==='Enter')login()"></div>
+        <button class="btn btn-primary" onclick="login()">登录</button>
+        <div class="login-tip">首次启动会自动创建管理员：用户名 admin，密码 admin123456。登录后请立即修改密码。</div>
+    </div>
+</div>
+
+<div class="app-shell" id="appShell">
+<div class="layout">
+
+    <!-- Sidebar -->
+    <aside class="sidebar" id="sidebar">
+        <div class="sidebar-brand"><span>&#9881;</span> 运维平台</div>
+        <nav class="sidebar-nav">
+            <div class="nav-item active" data-page="dashboard"><span class="icon">&#9632;</span> 仪表盘</div>
+            <div class="nav-item" data-page="assets"><span class="icon">&#9729;</span> 台账管理</div>
+            <div class="nav-item admin-only" data-page="users"><span class="icon">&#128101;</span> 用户管理</div>
+            <div class="nav-item admin-only" data-page="audit"><span class="icon">&#128269;</span> 审计日志</div>
+            <div class="nav-item admin-only" data-page="hostkeys"><span class="icon">&#128274;</span> 主机密钥<span class="hk-badge" id="hkPendingBadge" style="display:none;">0</span></div>
+            <div class="nav-item" data-page="inspect"><span class="icon">&#128737;</span> 集群巡检</div>
+        </nav>
+    </aside>
+
+    <!-- Main -->
+    <div class="main">
+        <div class="topbar">
+            <div style="display:flex;align-items:center;gap:12px;">
+                <button class="menu-toggle" onclick="document.getElementById('sidebar').classList.toggle('open')">&#9776;</button>
+                <h2 id="pageTitle">仪表盘</h2>
+            </div>
+            <div class="topbar-right">
+                <span class="user-info" id="currentUserInfo"></span>
+                <button class="topbar-btn" onclick="refreshAll()">&#8635; 刷新</button>
+                <button class="topbar-btn" onclick="logout()">退出</button>
+            </div>
+        </div>
+
+        <div class="content">
+
+            <!-- Dashboard -->
+            <div class="page active" id="page-dashboard">
+                <div class="stats-grid">
+                    <div class="stat-card"><div class="num c-blue" id="statTotal">-</div><div class="lbl">服务器总数</div></div>
+                    <div class="stat-card"><div class="num c-green" id="statOnline">-</div><div class="lbl">在线</div></div>
+                    <div class="stat-card"><div class="num c-red" id="statOffline">-</div><div class="lbl">离线</div></div>
+                    <div class="stat-card"><div class="num c-yellow" id="statUnknown">-</div><div class="lbl">未知</div></div>
+                    <div class="stat-card"><div class="num c-blue" id="statServices">-</div><div class="lbl">服务入口</div></div>
+                </div>
+                <div class="panel">
+                    <div class="panel-head">
+                        <h3>服务入口</h3>
+                        <button class="btn btn-primary btn-sm admin-only" onclick="openServiceModal()">+ 添加服务</button>
+                    </div>
+                    <div class="panel-body padded" id="serviceGrid"><div class="loading">加载中...</div></div>
+                </div>
+            </div>
+
+            <!-- Assets -->
+            <div class="page" id="page-assets">
+                <div class="toolbar">
+                    <div class="toolbar-left">
+                        <select class="filter-select" id="filterEnv" onchange="loadAssets()"><option value="">全部环境</option></select>
+                        <select class="filter-select" id="filterRole" onchange="loadAssets()"><option value="">全部角色</option></select>
+                        <select class="filter-select" id="filterStatus" onchange="loadAssets()"><option value="">全部状态</option></select>
+                        <input class="search-input" id="searchInput" placeholder="搜索主机名/IP..." oninput="loadAssets()">
+                    </div>
+                    <div class="toolbar-right">
+                        <button class="btn btn-primary admin-only" onclick="openAssetModal()">+ 添加服务器</button>
+                    </div>
+                </div>
+                <div class="panel">
+                    <div class="panel-body">
+                        <div class="tbl-wrap">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>主机名</th><th>IP</th><th>端口</th><th>环境</th><th>角色</th><th>状态</th><th>认证方式</th><th>跳板机</th><th>负责人</th><th>操作</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="assetTableBody"><tr><td colspan="10" class="loading">加载中...</td></tr></tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Users -->
+            <div class="page" id="page-users">
+                <div class="toolbar">
+                    <div class="toolbar-left">
+                        <select class="filter-select" id="filterUserStatus" onchange="loadUsers()">
+                            <option value="">全部状态</option>
+                            <option value="true">启用</option>
+                            <option value="false">停用</option>
+                        </select>
+                        <input class="search-input" id="userSearchInput" placeholder="搜索用户名/姓名/邮箱..." oninput="loadUsers()">
+                    </div>
+                    <div class="toolbar-right">
+                        <button class="btn btn-primary" onclick="openUserModal()">+ 添加用户</button>
+                    </div>
+                </div>
+                <div class="panel">
+                    <div class="panel-body">
+                        <div class="tbl-wrap">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>用户名</th><th>姓名</th><th>角色</th><th>团队</th><th>邮箱</th><th>状态</th><th>备注</th><th>操作</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="userTableBody"><tr><td colspan="8" class="loading">加载中...</td></tr></tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Audit Logs -->
+            <div class="page" id="page-audit">
+                <div class="toolbar">
+                    <div class="toolbar-left">
+                        <select class="filter-select" id="filterAuditAction" onchange="loadAuditLogs()">
+                            <option value="">全部操作</option>
+                            <option value="login">登录</option>
+                            <option value="create">创建</option>
+                            <option value="update">更新</option>
+                            <option value="delete">删除</option>
+                            <option value="test">测试连接</option>
+                            <option value="terminal">终端会话</option>
+                            <option value="execute">执行命令</option>
+                            <option value="upload">上传文件</option>
+                            <option value="download">下载文件</option>
+                            <option value="browse">浏览目录</option>
+                        </select>
+                        <select class="filter-select" id="filterAuditResourceType" onchange="loadAuditLogs()">
+                            <option value="">全部资源</option>
+                            <option value="asset">资产</option>
+                            <option value="user">用户</option>
+                            <option value="service">服务</option>
+                            <option value="permission">权限</option>
+                            <option value="monitor">监控</option>
+                        </select>
+                        <input class="search-input" id="auditSearchInput" placeholder="搜索资源名称/详情..." oninput="loadAuditLogs()">
+                    </div>
+                    <div class="toolbar-right">
+                        <button class="btn btn-outline" onclick="loadAuditLogs()">&#8635; 刷新</button>
+                    </div>
+                </div>
+                <div class="panel">
+                    <div class="panel-body">
+                        <div class="tbl-wrap">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>时间</th><th>用户</th><th>操作</th><th>资源类型</th><th>资源名称</th><th>详情</th><th>IP地址</th><th>状态</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="auditTableBody"><tr><td colspan="8" class="loading">加载中...</td></tr></tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <div style="display:flex;gap:8px;align-items:center;justify-content:center;margin-top:12px;" id="auditPagination"></div>
+            </div>
+
+            <!-- HostKeys (主机密钥管理) -->
+            <div class="page" id="page-hostkeys">
+                <div class="toolbar">
+                    <div class="toolbar-left">
+                        <h3 class="hk-section-title">&#128274; 主机密钥管理</h3>
+                    </div>
+                    <div class="toolbar-right">
+                        <button class="btn btn-outline" onclick="loadHostKeys()">&#8635; 刷新</button>
+                    </div>
+                </div>
+                <div class="panel">
+                    <div class="panel-body">
+                        <div class="hk-section-title">&#9888; 待确认的密钥变更 <span class="count" id="hkPendingCount">0</span></div>
+                        <div id="hkPendingList"><div class="empty"><div class="icon">&#128274;</div>加载中...</div></div>
+                    </div>
+                </div>
+                <div class="panel" style="margin-top:16px;">
+                    <div class="panel-body">
+                        <div class="hk-section-title">&#128272; 已知主机密钥 <span class="count" id="hkKnownCount">0</span></div>
+                        <div class="tbl-wrap">
+                            <table>
+                                <thead>
+                                    <tr><th>主机</th><th>密钥类型</th><th>指纹</th><th>操作</th></tr>
+                                </thead>
+                                <tbody id="hkKnownTableBody"><tr><td colspan="4" class="loading">加载中...</td></tr></tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Inspect (集群巡检) -->
+            <div class="page" id="page-inspect">
+                <div class="toolbar">
+                    <div class="toolbar-left">
+                        <select class="filter-select" id="inspectAssetSelect">
+                            <option value="">选择集群节点...</option>
+                        </select>
+                        <input class="search-input" id="inspectTaskName" placeholder="巡检任务名称（可选，用于标识）" style="width:240px;">
+                    </div>
+                    <div class="toolbar-right">
+                        <button class="btn btn-primary" id="inspectRunBtn" onclick="runInspect()">&#128269; 执行巡检</button>
+                    </div>
+                </div>
+                <div class="panel">
+                    <div class="panel-body padded">
+                        <div id="inspectContent">
+                            <div class="empty"><div class="icon">&#128737;</div>选择目标集群节点并点击「执行巡检」</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel" style="margin-top:16px;">
+                    <div class="panel-head">
+                        <h3>历史巡检记录</h3>
+                        <div style="display:flex;gap:8px;align-items:center;">
+                            <select class="filter-select" id="inspectHistoryFilter" onchange="loadInspectHistory()" style="font-size:12px;">
+                                <option value="0">全部节点</option>
+                            </select>
+                            <button class="btn btn-secondary" style="padding:4px 12px;font-size:12px;" onclick="loadInspectHistory()">&#8635; 刷新</button>
+                        </div>
+                    </div>
+                    <div class="panel-body">
+                        <div class="tbl-wrap">
+                            <table>
+                                <thead>
+                                    <tr><th>时间</th><th>任务名称</th><th>集群节点</th><th>巡检结果</th><th>严重</th><th>警告</th><th>忽略</th><th>巡检时段</th><th>操作人</th><th>操作</th><th>删除</th></tr>
+                                </thead>
+                                <tbody id="inspectHistoryBody"><tr><td colspan="11" class="loading">加载中...</td></tr></tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+</div>
+
+<!-- User Modal -->
+<div class="modal-mask" id="userModal">
+    <div class="modal">
+        <div class="modal-head"><h3 id="userModalTitle">添加用户</h3><button class="modal-close" onclick="closeUserModal()">&times;</button></div>
+        <div class="modal-body">
+            <input type="hidden" id="userId">
+            <div class="form-row">
+                <div class="form-group"><label>用户名 *</label><input id="uUsername" placeholder="如: zhangsan"></div>
+                <div class="form-group"><label>初始/新密码 <span id="passwordRequiredMark">*</span></label><input id="uPassword" type="password" placeholder="至少6位，编辑时留空表示不修改"></div>
+            </div>
+            <div class="form-row">
+                <div class="form-group"><label>姓名</label><input id="uDisplayName" placeholder="如: 张三"></div>
+                <div class="form-group"><label>邮箱</label><input id="uEmail" placeholder="name@example.com"></div>
+            </div>
+            <div class="form-row">
+                <div class="form-group"><label>角色</label>
+                    <select id="uRole">
+                        <option value="operator">运维人员</option>
+                        <option value="admin">管理员</option>
+                        <option value="developer">开发人员</option>
+                        <option value="tester">测试人员</option>
+                        <option value="other">其他</option>
+                    </select>
+                    <div class="form-hint">管理员默认拥有全部服务器连接和命令执行权限</div>
+                </div>
+                <div class="form-group"><label>状态</label>
+                    <select id="uIsActive">
+                        <option value="true">启用</option>
+                        <option value="false">停用</option>
+                    </select>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group"><label>团队</label><input id="uTeam" placeholder="所属团队"></div>
+            </div>
+            <div class="form-group"><label>备注</label><textarea id="uRemark" placeholder="用户说明"></textarea></div>
+        </div>
+        <div class="modal-foot">
+            <button class="btn btn-outline" onclick="closeUserModal()">取消</button>
+            <button class="btn btn-primary" onclick="saveUser()">保存</button>
+        </div>
+    </div>
+</div>
+
+<!-- Permission Modal -->
+<div class="modal-mask" id="permModal">
+    <div class="modal" style="width:1120px;">
+        <div class="modal-head"><h3 id="permModalTitle">分配远程权限</h3><button class="modal-close" onclick="closePermModal()">&times;</button></div>
+        <div class="modal-body">
+            <div class="hint-card">权限按服务器划分："允许连接/远程操作"可测试 SSH 连接、打开交互终端、执行命令和文件传输；"允许中危命令"放开 chmod/chown；"允许高危命令"放开 rm/mkfs/dd/reboot 等（<strong>请谨慎开启</strong>）；自定义拦截命令始终生效，支持换行、逗号或分号分隔，正则可用 re: 开头。</div>
+            <input type="hidden" id="permUserId">
+            <div class="tbl-wrap">
+                <table>
+                    <thead><tr><th>服务器</th><th>IP</th><th>环境</th><th>角色</th><th style="text-align:center;">允许连接/远程操作</th><th style="text-align:center;">允许中危命令</th><th style="text-align:center;">允许高危命令</th><th>自定义拦截命令</th></tr></thead>
+                    <tbody id="permTableBody"><tr><td colspan="8" class="loading">加载中...</td></tr></tbody>
+                </table>
+            </div>
+        </div>
+        <div class="modal-foot">
+            <button class="btn btn-outline" onclick="closePermModal()">取消</button>
+            <button class="btn btn-primary" onclick="savePermissions()">保存权限</button>
+        </div>
+    </div>
+</div>
+
+<!-- Asset Modal -->
+<div class="modal-mask" id="assetModal">
+    <div class="modal">
+        <div class="modal-head"><h3 id="assetModalTitle">添加服务器</h3><button class="modal-close" onclick="closeAssetModal()">&times;</button></div>
+        <div class="modal-body">
+            <input type="hidden" id="assetId">
+            <div class="form-row">
+                <div class="form-group"><label>主机名 *</label><input id="fHostname" placeholder="如: web-server-01"></div>
+                <div class="form-group"><label>IP地址 *</label><input id="fIp" placeholder="如: 192.168.1.100"></div>
+            </div>
+            <div class="form-row">
+                <div class="form-group"><label>端口</label><input id="fPort" type="number" value="22"></div>
+                <div class="form-group"><label>用户名 *</label><input id="fUsername" placeholder="如: root" value="root"></div>
+            </div>
+
+            <div class="auth-toggle" id="authToggle">
+                <button class="active" onclick="switchAuth('password')">密码认证</button>
+                <button onclick="switchAuth('key_content')">密钥内容</button>
+                <button onclick="switchAuth('key_file')">密钥文件路径</button>
+            </div>
+
+            <div class="form-group" id="authPassword"><label>密码</label><input id="fPassword" type="password" placeholder="SSH登录密码"></div>
+            <div class="form-group" id="authKeyContent" style="display:none">
+                <label>SSH私钥内容</label>
+                <textarea id="fSshKey" placeholder="粘贴PEM格式的私钥内容，如 -----BEGIN RSA PRIVATE KEY-----"></textarea>
+                <div class="file-import-row">
+                    <button class="btn btn-outline btn-sm" type="button" onclick="document.getElementById('targetKeyFileInput').click()">选择密钥文件导入</button>
+                    <span class="file-import-name" id="targetKeyFileName">未选择文件</span>
+                    <input id="targetKeyFileInput" type="file" style="display:none" onchange="importKeyFile(this,'fSshKey','targetKeyFileName','key_content')">
+                </div>
+                <div class="form-hint">推荐使用导入方式读取本机密钥内容。浏览器不会暴露完整本地路径。</div>
+                <label style="margin-top:10px;">SSH证书内容（可选，通常是 id_ed25519-cert.pub）</label>
+                <textarea id="fSshCert" placeholder="可选：粘贴 OpenSSH 用户证书内容，如 ssh-ed25519-cert-v01@openssh.com ..."></textarea>
+                <div class="file-import-row">
+                    <button class="btn btn-outline btn-sm" type="button" onclick="document.getElementById('targetCertFileInput').click()">选择证书文件导入</button>
+                    <span class="file-import-name" id="targetCertFileName">未选择证书</span>
+                    <input id="targetCertFileInput" type="file" style="display:none" onchange="importKeyFile(this,'fSshCert','targetCertFileName','key_content')">
+                </div>
+            </div>
+            <div class="form-group" id="authKeyFile" style="display:none">
+                <label>SSH密钥文件路径</label><input id="fSshKeyPath" placeholder="如: /home/user/.ssh/id_rsa 或 C:\Users\user\.ssh\id_rsa">
+                <label style="margin-top:10px;">SSH证书文件路径（可选）</label><input id="fSshCertPath" placeholder="如: /home/user/.ssh/id_ed25519-cert.pub">
+                <div class="form-hint">这是后端服务可访问的路径；如果密钥/证书在你的电脑上，建议用“密钥内容”里的文件导入。</div>
+            </div>
+
+            <div class="form-group">
+                <label style="display:flex;align-items:center;gap:8px;">
+                    <input id="fSudoEnabled" type="checkbox" style="width:16px;height:16px;">
+                    启用 sudo 提权（非 root 用户执行 k8s 命令时需要）
+                </label>
+                <div class="form-hint">勾选后，巡检等操作会通过 sudo 提权执行 kubectl 命令。</div>
+                <label style="margin-top:10px;">Sudo 密码（可选，留空则用无密码 sudo -i）</label>
+                <input id="fSudoPassword" type="password" placeholder="若 sudo 需要密码则填写；若已配置 NOPASSWD 则留空">
+            </div>
+
+            <div class="hint-card">
+                <label style="display:flex;align-items:center;gap:8px;margin:0;color:#3730a3;font-weight:600;">
+                    <input id="fJumpEnabled" type="checkbox" style="width:16px;height:16px;" onchange="toggleJumpFields()">
+                    启用跳板机连接
+                </label>
+                <div style="margin-top:6px;">用于访问内网 IP：平台先连接公网跳板机，再通过跳板机连接目标服务器。</div>
+            </div>
+            <div id="jumpFields" style="display:none;">
+                <div class="form-row">
+                    <div class="form-group"><label>跳板机公网地址</label><input id="fJumpHost" placeholder="如: 1.2.3.4 或 jump.example.com"></div>
+                    <div class="form-group"><label>跳板机端口</label><input id="fJumpPort" type="number" value="22"></div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group"><label>跳板机用户名</label><input id="fJumpUsername" placeholder="如: root"></div>
+                    <div class="form-group"><label>跳板机密码</label><input id="fJumpPassword" type="password" placeholder="跳板机SSH密码"></div>
+                </div>
+                <div class="form-group">
+                    <label>跳板机SSH私钥内容</label>
+                    <textarea id="fJumpSshKey" placeholder="可选：粘贴跳板机私钥内容"></textarea>
+                    <div class="file-import-row">
+                        <button class="btn btn-outline btn-sm" type="button" onclick="document.getElementById('jumpKeyFileInput').click()">选择跳板机密钥导入</button>
+                        <span class="file-import-name" id="jumpKeyFileName">未选择文件</span>
+                        <input id="jumpKeyFileInput" type="file" style="display:none" onchange="importKeyFile(this,'fJumpSshKey','jumpKeyFileName')">
+                    </div>
+                    <label style="margin-top:10px;">跳板机SSH证书内容（可选）</label>
+                    <textarea id="fJumpSshCert" placeholder="可选：粘贴跳板机 OpenSSH 用户证书内容"></textarea>
+                    <div class="file-import-row">
+                        <button class="btn btn-outline btn-sm" type="button" onclick="document.getElementById('jumpCertFileInput').click()">选择跳板机证书导入</button>
+                        <span class="file-import-name" id="jumpCertFileName">未选择证书</span>
+                        <input id="jumpCertFileInput" type="file" style="display:none" onchange="importKeyFile(this,'fJumpSshCert','jumpCertFileName')">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label>跳板机SSH密钥文件路径</label><input id="fJumpSshKeyPath" placeholder="可选：后端服务可访问的跳板机私钥文件路径">
+                    <label style="margin-top:10px;">跳板机SSH证书文件路径（可选）</label><input id="fJumpSshCertPath" placeholder="可选：后端服务可访问的跳板机证书路径">
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="form-group"><label>环境</label>
+                    <select id="fEnv">
+                        <option value="prod">生产环境</option><option value="test">测试环境</option>
+                        <option value="dev">开发环境</option><option value="staging">预发布环境</option><option value="uat">UAT环境</option>
+                    </select>
+                </div>
+                <div class="form-group"><label>角色</label>
+                    <select id="fRole">
+                        <option value="">请选择</option><option value="web">Web服务器</option><option value="app">应用服务器</option>
+                        <option value="db">数据库服务器</option><option value="cache">缓存服务器</option><option value="mq">消息队列</option>
+                        <option value="storage">存储服务器</option><option value="lb">负载均衡</option><option value="monitor">监控服务器</option>
+                        <option value="ci">CI/CD服务器</option><option value="other">其他</option>
+                    </select>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group"><label>操作系统</label><input id="fOs" placeholder="如: CentOS 7"></div>
+                <div class="form-group"><label>CPU</label><input id="fCpu" placeholder="如: 4核"></div>
+            </div>
+            <div class="form-row">
+                <div class="form-group"><label>内存</label><input id="fMemory" placeholder="如: 8GB"></div>
+                <div class="form-group"><label>磁盘</label><input id="fDisk" placeholder="如: 100GB SSD"></div>
+            </div>
+            <div class="form-row">
+                <div class="form-group"><label>负责人</label><input id="fOwner" placeholder="负责人姓名"></div>
+                <div class="form-group"><label>团队</label><input id="fTeam" placeholder="所属团队"></div>
+            </div>
+            <div class="form-group"><label>备注</label><textarea id="fRemark" placeholder="备注信息"></textarea></div>
+            <div class="form-group">
+                <label>预期主机密钥指纹（可选）</label>
+                <input id="fExpectedHostKey" placeholder="如: ssh-ed25519 SHA256:xxxx（留空则首次连接自动接受）" style="font-family:monospace;font-size:12px;">
+                <small style="color:var(--g400);display:block;margin-top:4px;">填写后连接时严格匹配，防止 MITM。在服务器执行 <code>ssh-keygen -lf /etc/ssh/ssh_host_ed25519_key.pub</code> 获取。</small>
+            </div>
+        </div>
+        <div class="modal-foot">
+            <button class="btn btn-outline" onclick="closeAssetModal()">取消</button>
+            <button class="btn btn-primary" onclick="saveAsset()">保存</button>
+        </div>
+    </div>
+</div>
+
+<!-- Service Modal -->
+<div class="modal-mask" id="serviceModal">
+    <div class="modal">
+        <div class="modal-head"><h3 id="serviceModalTitle">添加服务入口</h3><button class="modal-close" onclick="closeServiceModal()">&times;</button></div>
+        <div class="modal-body">
+            <input type="hidden" id="serviceId">
+            <div class="form-row">
+                <div class="form-group"><label>服务名称 *</label><input id="svcName" placeholder="如: Jenkins"></div>
+                <div class="form-group"><label>图标</label><input id="svcIcon" placeholder="emoji 或文字，如 🔧"></div>
+            </div>
+            <div class="form-group"><label>访问地址 *</label><input id="svcUrl" placeholder="如: http://192.168.8.8:10112/"></div>
+            <div class="form-row">
+                <div class="form-group"><label>分类</label>
+                    <select id="svcCategory">
+                        <option value="ci">持续集成</option>
+                        <option value="monitor">监控</option>
+                        <option value="log">日志</option>
+                        <option value="other">其他</option>
+                    </select>
+                </div>
+                <div class="form-group"><label>排序</label><input id="svcSortOrder" type="number" value="0"></div>
+            </div>
+            <div class="form-group"><label>描述</label><textarea id="svcDesc" placeholder="服务说明"></textarea></div>
+        </div>
+        <div class="modal-foot">
+            <button class="btn btn-outline" onclick="closeServiceModal()">取消</button>
+            <button class="btn btn-primary" onclick="saveService()">保存</button>
+        </div>
+    </div>
+</div>
+
+<!-- SSH Terminal Modal -->
+<div class="modal-mask" id="sshModal">
+    <div class="modal" style="width:980px;">
+        <div class="modal-head">
+            <h3 id="sshModalTitle">SSH终端</h3>
+            <div style="display:flex;gap:4px;">
+                <button class="modal-close" style="font-size:14px;" onclick="minimizeSshModal()" title="最小化（保持连接）">&#8211;</button>
+                <button class="modal-close" onclick="closeSshModal(true)" title="关闭并断开">&times;</button>
+            </div>
+        </div>
+        <div class="modal-body">
+            <div class="terminal-tabs" id="terminalTabs"></div>
+            <div class="ssh-toolbar">
+                <div class="ssh-toolbar-left">
+                    <button class="btn btn-success btn-sm" onclick="connectTerminal()">连接终端</button>
+                    <button class="btn btn-outline btn-sm" onclick="disconnectTerminal()">断开</button>
+                    <button class="btn btn-outline btn-sm" onclick="sendCtrlC()">Ctrl+C</button>
+                    <button class="btn btn-outline btn-sm" onclick="clearTerminal()">清屏</button>
+                </div>
+                <div class="ssh-toolbar-right">
+                    <span class="ssh-status disconnected" id="sshStatus">未连接</span>
+                </div>
+            </div>
+            <div class="terminal" id="sshOutput"></div>
+            <div class="form-hint" style="margin-top:8px;">连接后点击终端区域直接输入；Tab 补全、ANSI 彩色输出、中文显示、方向键和 Ctrl+C 由 xterm.js 处理。</div>
+            <div class="file-transfer">
+                <div class="form-hint">文件传输使用 SFTP。上传时填写远程目录，可选填写上传后的文件名；不填文件名则使用本地文件名。</div>
+                <div class="file-transfer-row">
+                    <input id="sshUploadFile" type="file">
+                    <input id="sshUploadDir" type="text" placeholder="上传目录">
+                    <input id="sshUploadName" type="text" placeholder="可选：新文件名，如 app.txt">
+                    <button class="btn btn-primary btn-sm" onclick="uploadRemoteFile()">上传</button>
+                </div>
+                <div class="file-transfer-row">
+                    <span></span>
+                    <input id="sshDownloadPath" type="text" placeholder="下载远程文件路径，如 /var/log/messages">
+                    <button class="btn btn-outline btn-sm" onclick="openFileBrowser()">选择文件</button>
+                    <button class="btn btn-primary btn-sm" onclick="downloadRemoteFile()">下载</button>
+                </div>
+            </div>
+        </div>
+        <div class="modal-foot">
+            <button class="btn btn-outline" onclick="testSsh()">测试连接</button>
+            <button class="btn btn-outline" onclick="minimizeSshModal()">最小化</button>
+            <button class="btn btn-danger" onclick="closeSshModal(true)">关闭并断开</button>
+        </div>
+    </div>
+</div>
+
+<!-- Remote File Browser Modal -->
+<div class="modal-mask" id="fileBrowserModal">
+    <div class="modal" style="width:560px;">
+        <div class="modal-head">
+            <h3>选择远程文件</h3>
+            <button class="modal-close" onclick="closeFileBrowser()">&times;</button>
+        </div>
+        <div class="modal-body">
+            <div class="fb-toolbar">
+                <button class="btn btn-ghost btn-sm" onclick="fbGoUp()">&#8592; 上级目录</button>
+                <span class="fb-path" id="fbCurrentPath">/</span>
+            </div>
+            <div class="fb-list" id="fbList"><div class="loading">加载中...</div></div>
+        </div>
+        <div class="modal-foot">
+            <button class="btn btn-outline" onclick="closeFileBrowser()">取消</button>
+            <button class="btn btn-primary" id="fbSelectBtn" onclick="fbSelectFile()" disabled>选择</button>
+        </div>
+    </div>
+</div>
+
+<div class="toast-box" id="toastBox"></div>
+
+<!-- 巡检报告查看弹窗 -->
+<div class="modal-mask" id="inspectReportModal">
+    <div class="modal" style="width:90%;max-width:1200px;height:85vh;display:flex;flex-direction:column;">
+        <div class="modal-head">
+            <h3 id="inspectReportTitle">巡检报告</h3>
+            <div style="display:flex;gap:8px;align-items:center;">
+                <button class="btn btn-primary" style="padding:4px 14px;font-size:13px;" id="reportDownloadBtn" onclick="downloadCurrentReport()">&#11015; 下载报告</button>
+                <button class="modal-close" onclick="closeInspectReport()">&times;</button>
+            </div>
+        </div>
+        <div id="inspectReportStats" style="padding:8px 20px;display:none;gap:12px;flex-wrap:wrap;border-bottom:1px solid var(--g200);background:var(--g50);"></div>
+        <div id="inspectReportFindings" style="max-height:200px;overflow-y:auto;padding:0 20px;display:none;border-bottom:1px solid var(--g200);"></div>
+        <div class="modal-body" style="flex:1;overflow:hidden;padding:0;">
+            <iframe id="inspectReportIframe" style="width:100%;height:100%;border:none;"></iframe>
+        </div>
+    </div>
+</div>
+
+<!-- 多终端最小化浮动条容器 -->
+<div class="term-float-stack" id="termFloatStack"></div>
+
+<script src="https://cdn.jsdelivr.net/npm/xterm@5.3.0/lib/xterm.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/xterm-addon-fit@0.8.0/lib/xterm-addon-fit.min.js"></script>
+<script>
+const API = '/api';
+let currentAuthMode = 'password';
+let currentSshAssetId = null;
+let currentUser = null;
+
+// ========== Toast ==========
+function toast(msg, type='info') {
+    const box = document.getElementById('toastBox');
+    const t = document.createElement('div');
+    t.className = 'toast ' + type;
+    t.textContent = msg;
+    box.appendChild(t);
+    setTimeout(() => t.remove(), 3500);
+}
+
+// ========== API ==========
+async function api(path, opts = {}) {
+    const token = localStorage.getItem('ops_token');
+    const headers = { 'Content-Type': 'application/json', ...(opts.headers || {}) };
+    if (token) headers.Authorization = 'Bearer ' + token;
+
+    // 默认 60 秒超时，防止后端 SSH 卡死导致前端无限等待
+    let signal = opts.signal;
+    if (!signal) {
+        const controller = new AbortController();
+        signal = controller.signal;
+        setTimeout(() => controller.abort(), opts.timeout || 60000);
+    }
+
+    try {
+        const res = await fetch(API + path, { ...opts, headers, signal });
+        if (res.status === 401) {
+            localStorage.removeItem('ops_token');
+            showLogin();
+        }
+        if (!res.ok) { const e = await res.json().catch(() => ({})); throw new Error(e.detail || 'HTTP ' + res.status); }
+        if (res.status === 204) return null;
+        return res.json();
+    } catch (err) {
+        if (err.name === 'AbortError') {
+            throw new Error('请求超时，请检查网络或后端服务状态');
+        }
+        throw err;
+    }
+}
+
+function escHtml(value) {
+    return String(value ?? '').replace(/[&<>"']/g, ch => ({
+        '&': '&amp;',
+        '<': '&lt;',
+        '>': '&gt;',
+        '"': '&quot;',
+        "'": '&#39;'
+    }[ch]));
+}
+
+// 纯 JS SHA-256 实现，不依赖浏览器 crypto.subtle，兼容 HTTP/HTTPS 环境
+function sha256Hex(text) {
+    function rr(n, x) { return (x >>> n) | (x << (32 - n)); }
+    function ch(x, y, z) { return (x & y) ^ (~x & z); }
+    function maj(x, y, z) { return (x & y) ^ (x & z) ^ (y & z); }
+    function s0(x) { return rr(2, x) ^ rr(13, x) ^ rr(22, x); }
+    function s1(x) { return rr(6, x) ^ rr(11, x) ^ rr(25, x); }
+    function g0(x) { return rr(7, x) ^ rr(18, x) ^ (x >>> 3); }
+    function g1(x) { return rr(17, x) ^ rr(19, x) ^ (x >>> 10); }
+    const K = [0x428a2f98, 0x71374491, 0xb5c0fbcf, 0xe9b5dba5, 0x3956c25b, 0x59f111f1, 0x923f82a4, 0xab1c5ed5,
+        0xd807aa98, 0x12835b01, 0x243185be, 0x550c7dc3, 0x72be5d74, 0x80deb1fe, 0x9bdc06a7, 0xc19bf174,
+        0xe49b69c1, 0xefbe4786, 0x0fc19dc6, 0x240ca1cc, 0x2de92c6f, 0x4a7484aa, 0x5cb0a9dc, 0x76f988da,
+        0x983e5152, 0xa831c66d, 0xb00327c8, 0xbf597fc7, 0xc6e00bf3, 0xd5a79147, 0x06ca6351, 0x14292967,
+        0x27b70a85, 0x2e1b2138, 0x4d2c6dfc, 0x53380d13, 0x650a7354, 0x766a0abb, 0x81c2c92e, 0x92722c85,
+        0xa2bfe8a1, 0xa81a664b, 0xc24b8b70, 0xc76c51a3, 0xd192e819, 0xd6990624, 0xf40e3585, 0x106aa070,
+        0x19a4c116, 0x1e376c08, 0x2748774c, 0x34b0bcb5, 0x391c0cb3, 0x4ed8aa4a, 0x5b9cca4f, 0x682e6ff3,
+        0x748f82ee, 0x78a5636f, 0x84c87814, 0x8cc70208, 0x90befffa, 0xa4506ceb, 0xbef9a3f7, 0xc67178f2];
+    let H = [0x6a09e667, 0xbb67ae85, 0x3c6ef372, 0xa54ff53a, 0x510e527f, 0x9b05688c, 0x1f83d9ab, 0x5be0cd19];
+    // UTF-8 编码
+    const bytes = [];
+    for (let i = 0; i < text.length; i++) {
+        const c = text.charCodeAt(i);
+        if (c < 0x80) bytes.push(c);
+        else if (c < 0x800) { bytes.push(0xc0 | (c >> 6), 0x80 | (c & 0x3f)); }
+        else if (c < 0xd800 || c >= 0xe000) { bytes.push(0xe0 | (c >> 12), 0x80 | ((c >> 6) & 0x3f), 0x80 | (c & 0x3f)); }
+        else {
+            const n = text.charCodeAt(++i);
+            const cp = 0x10000 + (((c & 0x3ff) << 10) | (n & 0x3ff));
+            bytes.push(0xf0 | (cp >> 18), 0x80 | ((cp >> 12) & 0x3f), 0x80 | ((cp >> 6) & 0x3f), 0x80 | (cp & 0x3f));
+        }
+    }
+    const bitLen = bytes.length * 8;
+    bytes.push(0x80);
+    while ((bytes.length * 8 + 64) % 512 !== 0) bytes.push(0);
+    const bitLenHigh = Math.floor(bitLen / 0x100000000);
+    const bitLenLow = bitLen >>> 0;
+    bytes.push(
+        (bitLenHigh >>> 24) & 0xff,
+        (bitLenHigh >>> 16) & 0xff,
+        (bitLenHigh >>> 8) & 0xff,
+        bitLenHigh & 0xff,
+        (bitLenLow >>> 24) & 0xff,
+        (bitLenLow >>> 16) & 0xff,
+        (bitLenLow >>> 8) & 0xff,
+        bitLenLow & 0xff
+    );
+    for (let i = 0; i < bytes.length; i += 64) {
+        const W = new Array(64);
+        for (let t = 0; t < 16; t++) W[t] = (bytes[i + t * 4] << 24) | (bytes[i + t * 4 + 1] << 16) | (bytes[i + t * 4 + 2] << 8) | bytes[i + t * 4 + 3];
+        for (let t = 16; t < 64; t++) W[t] = (g1(W[t - 2]) + W[t - 7] + g0(W[t - 15]) + W[t - 16]) >>> 0;
+        let [a, b, c, d, e, f, g, h] = H;
+        for (let t = 0; t < 64; t++) {
+            const T1 = (h + s1(e) + ch(e, f, g) + K[t] + W[t]) >>> 0;
+            const T2 = (s0(a) + maj(a, b, c)) >>> 0;
+            h = g; g = f; f = e; e = (d + T1) >>> 0; d = c; c = b; b = a; a = (T1 + T2) >>> 0;
+        }
+        H[0] = (H[0] + a) >>> 0; H[1] = (H[1] + b) >>> 0; H[2] = (H[2] + c) >>> 0; H[3] = (H[3] + d) >>> 0;
+        H[4] = (H[4] + e) >>> 0; H[5] = (H[5] + f) >>> 0; H[6] = (H[6] + g) >>> 0; H[7] = (H[7] + h) >>> 0;
+    }
+    return H.map(h => ('00000000' + h.toString(16)).slice(-8)).join('');
+}
+
+let transportPublicKey = null;
+
+function pemToArrayBuffer(pem) {
+    const b64 = pem.replace(/-----BEGIN PUBLIC KEY-----|-----END PUBLIC KEY-----|\s/g, '');
+    const binary = atob(b64);
+    const bytes = new Uint8Array(binary.length);
+    for (let i = 0; i < binary.length; i++) bytes[i] = binary.charCodeAt(i);
+    return bytes.buffer;
+}
+
+async function getTransportPublicKey() {
+    const subtle = (window.crypto || {}).subtle;
+    if (!subtle) throw new Error('当前环境不支持密码加密，请使用 HTTPS 或 localhost 访问');
+    if (transportPublicKey) return transportPublicKey;
+    const data = await api('/auth/public-key');
+    transportPublicKey = await subtle.importKey(
+        'spki',
+        pemToArrayBuffer(data.public_key),
+        { name: 'RSA-OAEP', hash: 'SHA-256' },
+        false,
+        ['encrypt']
+    );
+    return transportPublicKey;
+}
+
+// 检测是否支持 RSA 加密（非安全上下文如 HTTP+非 localhost 会禁用 crypto.subtle）
+function _transportCryptoAvailable() {
+    return !!(window.crypto && window.crypto.subtle);
+}
+
+async function encryptPasswordForTransport(password) {
+    const passwordDigest = sha256Hex(password);
+    if (!_transportCryptoAvailable()) {
+        // 局域网 HTTP 下浏览器禁用 crypto.subtle，直接传输 SHA-256 摘要
+        toast('当前使用 HTTP 访问，建议改用 HTTPS 以启用 RSA 传输加密', 'error');
+        return passwordDigest;
+    }
+    const publicKey = await getTransportPublicKey();
+    const subtle = window.crypto.subtle;
+    const encrypted = await subtle.encrypt(
+        { name: 'RSA-OAEP' },
+        publicKey,
+        new TextEncoder().encode(passwordDigest)
+    );
+    const bytes = new Uint8Array(encrypted);
+    let binary = '';
+    bytes.forEach(b => binary += String.fromCharCode(b));
+    return btoa(binary);
+}
+
+function formatAuditTime(value) {
+    if (!value) return '-';
+    // 后端 SQLite 的 func.now() 返回 UTC，但字符串里没有时区标识；这里补 Z 后再转成本地北京时间显示
+    const text = String(value);
+    const hasTimezone = /(?:Z|[+-]\d{2}:?\d{2})$/.test(text);
+    const date = new Date(hasTimezone ? text : text + 'Z');
+    if (Number.isNaN(date.getTime())) return text;
+    return date.toLocaleString('zh-CN', {
+        timeZone: 'Asia/Shanghai',
+        hour12: false,
+        year: 'numeric',
+        month: '2-digit',
+        day: '2-digit',
+        hour: '2-digit',
+        minute: '2-digit',
+        second: '2-digit'
+    });
+}
+
+// ========== Auth ==========
+async function login() {
+    const username = document.getElementById('loginUsername').value.trim();
+    const password = document.getElementById('loginPassword').value;
+    if (!username || !password) { toast('请输入用户名和密码', 'error'); return; }
+    try {
+        const encryptedPassword = await encryptPasswordForTransport(password);
+        const data = await api('/auth/login', { method: 'POST', body: JSON.stringify({ username, password: encryptedPassword }) });
+        localStorage.setItem('ops_token', data.token);
+        currentUser = data.user;
+        showApp();
+        await initAppData();
+        toast('登录成功', 'success');
+    } catch(e) { toast('登录失败: ' + e.message, 'error'); }
+}
+
+function logout() {
+    localStorage.removeItem('ops_token');
+    currentUser = null;
+    showLogin();
+}
+
+function showLogin() {
+    document.getElementById('loginScreen').style.display = 'flex';
+    document.getElementById('appShell').classList.remove('authed');
+}
+
+function showApp() {
+    document.getElementById('loginScreen').style.display = 'none';
+    document.getElementById('appShell').classList.add('authed');
+    applyRoleVisibility();
+}
+
+function applyRoleVisibility() {
+    const isAdmin = currentUser && currentUser.role === 'admin';
+    document.getElementById('appShell').classList.toggle('is-admin', !!isAdmin);
+    document.getElementById('currentUserInfo').textContent = currentUser ? `${currentUser.display_name || currentUser.username}（${currentUser.role}）` : '';
+    if (!isAdmin && document.getElementById('page-users').classList.contains('active')) {
+        switchPage('dashboard');
+    }
+}
+
+async function checkLogin() {
+    const token = localStorage.getItem('ops_token');
+    if (!token) { showLogin(); return; }
+    try {
+        currentUser = await api('/auth/me');
+        showApp();
+        await initAppData();
+    } catch(e) {
+        showLogin();
+    }
+}
+
+async function initAppData() {
+    loadFilters();
+    loadDashboard();
+    loadAssets();
+    if (currentUser && currentUser.role === 'admin') loadUsers();
+    loadPendingCount();
+}
+
+// ========== Nav ==========
+document.querySelectorAll('.nav-item').forEach(item => {
+    item.addEventListener('click', function() {
+        switchPage(this.dataset.page);
+    });
+});
+
+function switchPage(page) {
+    if (page === 'users' && (!currentUser || currentUser.role !== 'admin')) {
+        toast('只有管理员可以访问用户管理', 'error');
+        return;
+    }
+    if (page === 'audit' && (!currentUser || currentUser.role !== 'admin')) {
+        toast('只有管理员可以访问审计日志', 'error');
+        return;
+    }
+    if (page === 'hostkeys' && (!currentUser || currentUser.role !== 'admin')) {
+        toast('只有管理员可以访问主机密钥管理', 'error');
+        return;
+    }
+    // 切换页面时，如果终端弹窗正打开且有活跃连接，自动最小化（不断开连接）
+    const sshModal = document.getElementById('sshModal');
+    if (sshModal && sshModal.classList.contains('show') && isTerminalConnected(getActiveTerminal())) {
+        minimizeSshModal();
+    }
+    document.querySelectorAll('.nav-item').forEach(n => n.classList.toggle('active', n.dataset.page === page));
+    document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
+    document.getElementById('page-' + page).classList.add('active');
+    const titles = { dashboard: '仪表盘', assets: '台账管理', users: '用户管理', audit: '审计日志', hostkeys: '主机密钥管理', inspect: '集群巡检' };
+    document.getElementById('pageTitle').textContent = titles[page] || page;
+    if (page === 'dashboard') loadDashboard();
+    else if (page === 'assets') loadAssets();
+    else if (page === 'users') loadUsers();
+    else if (page === 'audit') loadAuditLogs();
+    else if (page === 'hostkeys') loadHostKeys();
+    else if (page === 'inspect') { loadInspectAssets(); initInspectHistoryFilter(); loadInspectHistory(); }
+}
+
+// ========== Dashboard ==========
+async function loadDashboard() {
+    try {
+        const data = await api('/dashboard/stats');
+        const a = data.assets || {};
+        document.getElementById('statTotal').textContent = a.total || 0;
+        document.getElementById('statOnline').textContent = a.online || 0;
+        document.getElementById('statOffline').textContent = a.offline || 0;
+        document.getElementById('statUnknown').textContent = a.unknown || 0;
+        const s = data.services || {};
+        document.getElementById('statServices').textContent = s.active || 0;
+    } catch(e) { console.error(e); }
+    loadServices();
+}
+
+// ========== Services ==========
+async function loadServices() {
+    const grid = document.getElementById('serviceGrid');
+    if (!grid) return;
+    try {
+        const services = await api('/services/?active_only=true');
+        if (!services || !services.length) {
+            grid.innerHTML = '<div class="empty"><div class="icon">&#128279;</div>暂无服务入口，管理员可点击右上角添加</div>';
+            return;
+        }
+        const catMap = { ci: '持续集成', monitor: '监控', log: '日志', other: '其他' };
+        const isAdmin = currentUser && currentUser.role === 'admin';
+        let h = '<div class="service-grid">';
+        services.forEach(s => {
+            const actions = isAdmin ? `
+                <div class="svc-actions">
+                    <button class="btn btn-ghost btn-sm" onclick="event.stopPropagation();editService(${s.id})">编辑</button>
+                    <button class="btn btn-ghost btn-sm" style="color:var(--danger)" onclick="event.stopPropagation();deleteService(${s.id})">删除</button>
+                </div>` : '';
+            h += `<a class="service-card" href="${esc(s.url)}" target="_blank" rel="noopener noreferrer">
+                ${actions}
+                <div class="svc-icon">${esc(s.icon) || '🔗'}</div>
+                <div class="svc-name">${esc(s.name)}</div>
+                ${s.description ? `<div class="svc-desc">${esc(s.description)}</div>` : ''}
+                <div class="svc-url">${esc(s.url)}</div>
+                <span class="svc-cat">${catMap[s.category] || s.category || '其他'}</span>
+            </a>`;
+        });
+        h += '</div>';
+        grid.innerHTML = h;
+    } catch(e) {
+        grid.innerHTML = `<div style="color:red;">加载失败: ${esc(e.message)}</div>`;
+    }
+}
+
+function openServiceModal(data) {
+    document.getElementById('serviceModalTitle').textContent = data ? '编辑服务入口' : '添加服务入口';
+    document.getElementById('serviceId').value = data ? data.id : '';
+    document.getElementById('svcName').value = data ? (data.name || '') : '';
+    document.getElementById('svcIcon').value = data ? (data.icon || '') : '';
+    document.getElementById('svcUrl').value = data ? (data.url || '') : '';
+    document.getElementById('svcCategory').value = data ? (data.category || 'other') : 'other';
+    document.getElementById('svcSortOrder').value = data ? (data.sort_order || 0) : 0;
+    document.getElementById('svcDesc').value = data ? (data.description || '') : '';
+    document.getElementById('serviceModal').classList.add('show');
+}
+function closeServiceModal() { document.getElementById('serviceModal').classList.remove('show'); }
+
+async function saveService() {
+    const id = document.getElementById('serviceId').value;
+    const payload = {
+        name: document.getElementById('svcName').value.trim(),
+        url: document.getElementById('svcUrl').value.trim(),
+        icon: document.getElementById('svcIcon').value.trim() || null,
+        category: document.getElementById('svcCategory').value,
+        sort_order: parseInt(document.getElementById('svcSortOrder').value) || 0,
+        description: document.getElementById('svcDesc').value.trim() || null,
+    };
+    if (!payload.name || !payload.url) { toast('请填写服务名称和访问地址', 'error'); return; }
+    try {
+        if (id) {
+            await api('/services/' + id, { method: 'PUT', body: JSON.stringify(payload) });
+            toast('更新成功', 'success');
+        } else {
+            await api('/services/', { method: 'POST', body: JSON.stringify(payload) });
+            toast('添加成功', 'success');
+        }
+        closeServiceModal();
+        loadServices();
+        loadDashboard();
+    } catch(e) { toast('操作失败: ' + e.message, 'error'); }
+}
+
+async function editService(id) {
+    try {
+        const data = await api('/services/');
+        const svc = data.find(s => s.id === id);
+        if (svc) openServiceModal(svc);
+    } catch(e) { toast('加载失败: ' + e.message, 'error'); }
+}
+
+async function deleteService(id) {
+    if (!confirm('确定删除该服务入口？')) return;
+    try {
+        await api('/services/' + id, { method: 'DELETE' });
+        toast('已删除', 'success');
+        loadServices();
+        loadDashboard();
+    } catch(e) { toast('删除失败: ' + e.message, 'error'); }
+}
+
+// ========== Assets ==========
+async function loadAssets() {
+    const env = document.getElementById('filterEnv').value;
+    const role = document.getElementById('filterRole').value;
+    const status = document.getElementById('filterStatus').value;
+    const search = document.getElementById('searchInput').value;
+    const tbody = document.getElementById('assetTableBody');
+
+    let url = '/assets/?limit=500';
+    if (env) url += '&env=' + env;
+    if (role) url += '&role=' + role;
+    if (status) url += '&status=' + status;
+    if (search) url += '&search=' + encodeURIComponent(search);
+
+    try {
+        const assets = await api(url);
+        if (!assets || !assets.length) {
+            tbody.innerHTML = '<tr><td colspan="10"><div class="empty"><div class="icon">&#128421;</div>暂无服务器</div></td></tr>';
+            return;
+        }
+        const envMap = { prod:'生产',test:'测试',dev:'开发',staging:'预发布',uat:'UAT' };
+        const roleMap = { web:'Web',app:'应用',db:'数据库',cache:'缓存',mq:'消息队列',storage:'存储',lb:'负载均衡',monitor:'监控',ci:'CI/CD',other:'其他' };
+        let h = '';
+        const adminActions = currentUser && currentUser.role === 'admin';
+        assets.forEach(a => {
+            let authLabel = a.ssh_key_path ? '密钥文件' : '密码';
+            if (a.ssh_cert_path) authLabel = a.ssh_key_path ? '密钥文件+证书' : '密钥证书';
+            h += `<tr>
+                <td><strong>${esc(a.hostname)}</strong></td>
+                <td>${esc(a.ip)}</td>
+                <td>${a.port}</td>
+                <td><span class="badge badge-${a.env||'prod'}">${envMap[a.env]||a.env||'生产'}</span></td>
+                <td>${roleMap[a.role]||a.role||'-'}</td>
+                <td><span class="badge badge-${a.status||'unknown'}">${a.status||'未知'}</span></td>
+                <td>${authLabel}</td>
+                <td>${a.jump_enabled ? `<span class="badge badge-test">${esc(a.jump_host || '已启用')}</span>` : '-'}</td>
+                <td>${esc(a.owner)||'-'}</td>
+                <td style="white-space:nowrap;">
+                    <button class="btn btn-ghost btn-sm" onclick="openSshModal(${a.id},'${esc(a.hostname)}')">&#9654; 连接</button>
+                    ${adminActions ? `<button class="btn btn-ghost btn-sm" onclick="editAsset(${a.id})">&#9998; 编辑</button>
+                    <button class="btn btn-ghost btn-sm" style="color:var(--danger)" onclick="deleteAsset(${a.id})">&#10005; 删除</button>` : ''}
+                </td>
+            </tr>`;
+        });
+        tbody.innerHTML = h;
+    } catch(e) {
+        tbody.innerHTML = `<tr><td colspan="10" style="color:red;">加载失败: ${esc(e.message)}</td></tr>`;
+    }
+}
+
+async function loadFilters() {
+    try {
+        const [envs, roles, statuses] = await Promise.all([
+            api('/assets/categories/environments'),
+            api('/assets/categories/roles'),
+            api('/assets/categories/statuses')
+        ]);
+        const envSel = document.getElementById('filterEnv');
+        envSel.innerHTML = '<option value="">全部环境</option>';
+        envs.forEach(e => { const o = document.createElement('option'); o.value = e.value; o.textContent = e.label; envSel.appendChild(o); });
+        const roleSel = document.getElementById('filterRole');
+        roleSel.innerHTML = '<option value="">全部角色</option>';
+        roles.forEach(r => { const o = document.createElement('option'); o.value = r.value; o.textContent = r.label; roleSel.appendChild(o); });
+        const statusSel = document.getElementById('filterStatus');
+        statusSel.innerHTML = '<option value="">全部状态</option>';
+        statuses.forEach(s => { const o = document.createElement('option'); o.value = s.value; o.textContent = s.label; statusSel.appendChild(o); });
+    } catch(e) { console.error(e); }
+}
+
+function esc(s) {
+    // 转义 5 个 HTML 特殊字符，避免 XSS（包括引号，防止属性上下文注入）
+    // 之前用 textContent→innerHTML 只转义 &<>，不转义引号，存在 XSS 漏洞
+    return escHtml(s);
+}
+
+// ========== Users ==========
+async function loadUsers() {
+    const status = document.getElementById('filterUserStatus').value;
+    const search = document.getElementById('userSearchInput').value;
+    const tbody = document.getElementById('userTableBody');
+    let url = '/users/?limit=500';
+    if (status) url += '&is_active=' + status;
+    if (search) url += '&search=' + encodeURIComponent(search);
+
+    try {
+        const users = await api(url);
+        if (!users || !users.length) {
+            tbody.innerHTML = '<tr><td colspan="8"><div class="empty"><div class="icon">&#128101;</div>暂无用户</div></td></tr>';
+            return;
+        }
+        const roleMap = { admin:'管理员', operator:'运维人员', developer:'开发人员', tester:'测试人员', other:'其他' };
+        let h = '';
+        users.forEach(u => {
+            h += `<tr>
+                <td><strong>${esc(u.username)}</strong></td>
+                <td>${esc(u.display_name)||'-'}</td>
+                <td><span class="badge badge-${u.role}">${roleMap[u.role]||u.role}</span></td>
+                <td>${esc(u.team)||'-'}</td>
+                <td>${esc(u.email)||'-'}</td>
+                <td><span class="badge ${u.is_active ? 'badge-active' : 'badge-disabled'}">${u.is_active ? '启用' : '停用'}</span></td>
+                <td>${esc(u.remark)||'-'}</td>
+                <td style="white-space:nowrap;">
+                    <button class="btn btn-ghost btn-sm" onclick="openPermModal(${u.id},'${esc(u.username)}')">权限</button>
+                    <button class="btn btn-ghost btn-sm" onclick="editUser(${u.id})">&#9998; 编辑</button>
+                    <button class="btn btn-ghost btn-sm" style="color:var(--danger)" onclick="deleteUser(${u.id})">&#10005; 删除</button>
+                </td>
+            </tr>`;
+        });
+        tbody.innerHTML = h;
+    } catch(e) {
+        tbody.innerHTML = `<tr><td colspan="8" style="color:red;">加载失败: ${esc(e.message)}</td></tr>`;
+    }
+}
+
+function openUserModal(data) {
+    document.getElementById('userModalTitle').textContent = data ? '编辑用户' : '添加用户';
+    document.getElementById('userId').value = data ? data.id : '';
+    document.getElementById('uUsername').value = data ? data.username : '';
+    document.getElementById('uUsername').disabled = !!data;
+    document.getElementById('uPassword').value = '';
+    document.getElementById('passwordRequiredMark').style.display = data ? 'none' : '';
+    document.getElementById('uDisplayName').value = data ? (data.display_name || '') : '';
+    document.getElementById('uEmail').value = data ? (data.email || '') : '';
+    // 编辑时兼容历史角色数据：不在新选项中的旧值（如 viewer）回退为 other
+    const validRoles = ['admin', 'operator', 'developer', 'tester', 'other'];
+    const userRole = data ? (data.role || 'operator') : 'operator';
+    document.getElementById('uRole').value = validRoles.includes(userRole) ? userRole : 'other';
+    document.getElementById('uTeam').value = data ? (data.team || '') : '';
+    document.getElementById('uIsActive').value = data ? String(data.is_active) : 'true';
+    document.getElementById('uRemark').value = data ? (data.remark || '') : '';
+    document.getElementById('userModal').classList.add('show');
+}
+function closeUserModal() { document.getElementById('userModal').classList.remove('show'); }
+
+async function saveUser() {
+    const id = document.getElementById('userId').value;
+    const password = document.getElementById('uPassword').value;
+    const payload = {
+        display_name: document.getElementById('uDisplayName').value.trim() || null,
+        email: document.getElementById('uEmail').value.trim() || null,
+        role: document.getElementById('uRole').value,
+        team: document.getElementById('uTeam').value.trim() || null,
+        is_active: document.getElementById('uIsActive').value === 'true',
+        remark: document.getElementById('uRemark').value.trim() || null
+    };
+    if (!id) payload.username = document.getElementById('uUsername').value.trim();
+    if (password) payload.password = await encryptPasswordForTransport(password);
+    if (!id && !payload.username) { toast('请填写用户名', 'error'); return; }
+    if (!id && !payload.password) { toast('请填写初始密码', 'error'); return; }
+
+    try {
+        if (id) {
+            await api('/users/' + id, { method: 'PUT', body: JSON.stringify(payload) });
+            toast('用户已更新', 'success');
+        } else {
+            await api('/users/', { method: 'POST', body: JSON.stringify(payload) });
+            toast('用户已创建', 'success');
+        }
+        closeUserModal();
+        loadUsers();
+    } catch(e) { toast('保存用户失败: ' + e.message, 'error'); }
+}
+
+async function editUser(id) {
+    try {
+        const data = await api('/users/' + id);
+        openUserModal(data);
+    } catch(e) { toast('加载用户失败: ' + e.message, 'error'); }
+}
+
+async function deleteUser(id) {
+    if (!confirm('确定删除该用户？该用户的远程权限也会被清理。')) return;
+    try {
+        await api('/users/' + id, { method: 'DELETE' });
+        toast('用户已删除', 'success');
+        loadUsers();
+    } catch(e) { toast('删除用户失败: ' + e.message, 'error'); }
+}
+
+async function openPermModal(userId, username) {
+    document.getElementById('permUserId').value = userId;
+    document.getElementById('permModalTitle').textContent = '分配远程权限 - ' + username;
+    document.getElementById('permTableBody').innerHTML = '<tr><td colspan="7" class="loading">加载中...</td></tr>';
+    document.getElementById('permModal').classList.add('show');
+    try {
+        const rows = await api('/users/' + userId + '/permission-details');
+        if (!rows.length) {
+            document.getElementById('permTableBody').innerHTML = '<tr><td colspan="7"><div class="empty">暂无服务器，请先在台账管理中添加服务器</div></td></tr>';
+            return;
+        }
+        const envMap = { prod:'生产',test:'测试',dev:'开发',staging:'预发布',uat:'UAT' };
+        const roleMap = { web:'Web',app:'应用',db:'数据库',cache:'缓存',mq:'消息队列',storage:'存储',lb:'负载均衡',monitor:'监控',ci:'CI/CD',other:'其他' };
+        let h = '';
+        rows.forEach(r => {
+            h += `<tr data-asset-id="${r.asset_id}">
+                <td><strong>${esc(r.hostname)}</strong></td>
+                <td>${esc(r.ip)}</td>
+                <td>${envMap[r.env]||r.env||'-'}</td>
+                <td>${roleMap[r.role]||r.role||'-'}</td>
+                <td><label class="check-cell"><input type="checkbox" class="perm-connect" ${(r.can_connect || r.can_execute) ? 'checked' : ''}></label></td>
+                <td><label class="check-cell"><input type="checkbox" class="perm-sensitive" ${r.allow_sensitive_commands ? 'checked' : ''}></label></td>
+                <td><label class="check-cell"><input type="checkbox" class="perm-highrisk" ${r.allow_high_risk_commands ? 'checked' : ''}></label></td>
+                <td><textarea class="perm-blocked" rows="2" placeholder="如: rm -rf /data&#10;re:^systemctl\\s+stop">${esc(r.blocked_commands || '')}</textarea></td>
+            </tr>`;
+        });
+        document.getElementById('permTableBody').innerHTML = h;
+    } catch(e) {
+        document.getElementById('permTableBody').innerHTML = `<tr><td colspan="8" style="color:red;">加载失败: ${esc(e.message)}</td></tr>`;
+    }
+}
+function closePermModal() { document.getElementById('permModal').classList.remove('show'); }
+
+async function savePermissions() {
+    const userId = document.getElementById('permUserId').value;
+    const rows = Array.from(document.querySelectorAll('#permTableBody tr[data-asset-id]'));
+    const permissions = rows.map(row => {
+        const canConnect = row.querySelector('.perm-connect').checked;
+        return {
+            asset_id: parseInt(row.dataset.assetId),
+            can_connect: canConnect,
+            can_execute: canConnect,
+            allow_sensitive_commands: row.querySelector('.perm-sensitive').checked,
+            allow_high_risk_commands: row.querySelector('.perm-highrisk').checked,
+            blocked_commands: row.querySelector('.perm-blocked').value.trim()
+        };
+    }).filter(p => p.can_connect || p.can_execute || p.allow_sensitive_commands || p.allow_high_risk_commands || p.blocked_commands);
+
+    try {
+        await api('/users/' + userId + '/permissions', { method: 'PUT', body: JSON.stringify({ permissions }) });
+        toast('权限已保存', 'success');
+        closePermModal();
+    } catch(e) { toast('保存权限失败: ' + e.message, 'error'); }
+}
+
+// ========== Auth Toggle ==========
+function switchAuth(mode) {
+    currentAuthMode = mode;
+    document.querySelectorAll('#authToggle button').forEach(b => b.classList.remove('active'));
+    const idx = mode === 'key_content' ? 1 : (mode === 'key_file' ? 2 : 0);
+    document.querySelectorAll('#authToggle button')[idx].classList.add('active');
+    document.getElementById('authPassword').style.display = mode === 'password' ? '' : 'none';
+    document.getElementById('authKeyContent').style.display = mode === 'key_content' ? '' : 'none';
+    document.getElementById('authKeyFile').style.display = mode === 'key_file' ? '' : 'none';
+}
+
+function toggleJumpFields() {
+    document.getElementById('jumpFields').style.display = document.getElementById('fJumpEnabled').checked ? '' : 'none';
+}
+
+function importKeyFile(input, textareaId, fileNameId, authMode) {
+    const file = input.files && input.files[0];
+    if (!file) return;
+    const reader = new FileReader();
+    reader.onload = function() {
+        document.getElementById(textareaId).value = reader.result || '';
+        document.getElementById(fileNameId).textContent = file.name;
+        if (authMode) switchAuth(authMode);
+        const label = textareaId.toLowerCase().includes('cert') ? '证书文件' : '密钥文件';
+        toast(label + '已导入: ' + file.name, 'success');
+    };
+    reader.onerror = function() {
+        toast('文件读取失败，请确认文件可访问', 'error');
+    };
+    reader.readAsText(file);
+}
+
+// ========== Asset Modal ==========
+function openAssetModal(data) {
+    document.getElementById('assetModalTitle').textContent = data ? '编辑服务器' : '添加服务器';
+    document.getElementById('assetId').value = data ? data.id : '';
+    document.getElementById('fHostname').value = data ? data.hostname : '';
+    document.getElementById('fIp').value = data ? data.ip : '';
+    document.getElementById('fPort').value = data ? data.port : 22;
+    document.getElementById('fUsername').value = data ? data.username : 'root';
+    document.getElementById('fPassword').value = '';
+    document.getElementById('fSudoPassword').value = '';
+    document.getElementById('fSudoEnabled').checked = !!(data && data.sudo_enabled);
+    document.getElementById('fSshKey').value = '';
+    document.getElementById('fSshCert').value = '';
+    document.getElementById('fSshKeyPath').value = data ? (data.ssh_key_path || '') : '';
+    document.getElementById('fSshCertPath').value = data ? (data.ssh_cert_path || '') : '';
+    document.getElementById('targetKeyFileInput').value = '';
+    document.getElementById('targetKeyFileName').textContent = '未选择文件';
+    document.getElementById('targetCertFileInput').value = '';
+    document.getElementById('targetCertFileName').textContent = data && data.ssh_cert_path ? '已配置证书路径' : '未选择证书';
+    document.getElementById('fJumpEnabled').checked = !!(data && data.jump_enabled);
+    document.getElementById('fJumpHost').value = data ? (data.jump_host || '') : '';
+    document.getElementById('fJumpPort').value = data ? (data.jump_port || 22) : 22;
+    document.getElementById('fJumpUsername').value = data ? (data.jump_username || '') : '';
+    document.getElementById('fJumpPassword').value = '';
+    document.getElementById('fJumpSshKey').value = '';
+    document.getElementById('fJumpSshCert').value = '';
+    document.getElementById('fJumpSshKeyPath').value = data ? (data.jump_ssh_key_path || '') : '';
+    document.getElementById('fJumpSshCertPath').value = data ? (data.jump_ssh_cert_path || '') : '';
+    document.getElementById('jumpKeyFileInput').value = '';
+    document.getElementById('jumpKeyFileName').textContent = '未选择文件';
+    document.getElementById('jumpCertFileInput').value = '';
+    document.getElementById('jumpCertFileName').textContent = data && data.jump_ssh_cert_path ? '已配置证书路径' : '未选择证书';
+    toggleJumpFields();
+    document.getElementById('fEnv').value = data ? (data.env || 'prod') : 'prod';
+    document.getElementById('fRole').value = data ? (data.role || '') : '';
+    document.getElementById('fOs').value = data ? (data.os || '') : '';
+    document.getElementById('fCpu').value = data ? (data.cpu || '') : '';
+    document.getElementById('fMemory').value = data ? (data.memory || '') : '';
+    document.getElementById('fDisk').value = data ? (data.disk || '') : '';
+    document.getElementById('fOwner').value = data ? (data.owner || '') : '';
+    document.getElementById('fTeam').value = data ? (data.team || '') : '';
+    document.getElementById('fRemark').value = data ? (data.remark || '') : '';
+    document.getElementById('fExpectedHostKey').value = data ? (data.expected_host_key || '') : '';
+
+    // 认证方式回显
+    if (data && data.ssh_key_path) { switchAuth('key_file'); document.querySelectorAll('#authToggle button')[2].classList.add('active'); document.querySelectorAll('#authToggle button')[0].classList.remove('active'); }
+    else { switchAuth('password'); }
+
+    document.getElementById('assetModal').classList.add('show');
+}
+function closeAssetModal() { document.getElementById('assetModal').classList.remove('show'); }
+
+async function saveAsset() {
+    const id = document.getElementById('assetId').value;
+    const payload = {
+        hostname: document.getElementById('fHostname').value.trim(),
+        ip: document.getElementById('fIp').value.trim(),
+        port: parseInt(document.getElementById('fPort').value) || 22,
+        username: document.getElementById('fUsername').value.trim(),
+        jump_enabled: document.getElementById('fJumpEnabled').checked,
+        jump_host: document.getElementById('fJumpHost').value.trim() || null,
+        jump_port: parseInt(document.getElementById('fJumpPort').value) || 22,
+        jump_username: document.getElementById('fJumpUsername').value.trim() || null,
+        jump_password: document.getElementById('fJumpPassword').value || null,
+        jump_ssh_key: document.getElementById('fJumpSshKey').value.trim() || null,
+        jump_ssh_key_path: document.getElementById('fJumpSshKeyPath').value.trim() || null,
+        jump_ssh_cert: document.getElementById('fJumpSshCert').value.trim() || null,
+        jump_ssh_cert_path: document.getElementById('fJumpSshCertPath').value.trim() || null,
+        env: document.getElementById('fEnv').value,
+        role: document.getElementById('fRole').value || null,
+        os: document.getElementById('fOs').value.trim() || null,
+        cpu: document.getElementById('fCpu').value.trim() || null,
+        memory: document.getElementById('fMemory').value.trim() || null,
+        disk: document.getElementById('fDisk').value.trim() || null,
+        owner: document.getElementById('fOwner').value.trim() || null,
+        team: document.getElementById('fTeam').value.trim() || null,
+        remark: document.getElementById('fRemark').value.trim() || null,
+        expected_host_key: document.getElementById('fExpectedHostKey').value.trim() || null,
+    };
+
+    // 认证信息
+    // 注意：编辑时密码字段不回显，为空则不发送（保留原密码），只有切换认证方式时才清空旧凭证
+    if (currentAuthMode === 'password') {
+        const pwd = document.getElementById('fPassword').value;
+        if (pwd) { payload.password = pwd; }  // 只在填了新密码时才更新
+        payload.ssh_key = null; payload.ssh_key_path = null; payload.ssh_cert = null; payload.ssh_cert_path = null;
+    } else if (currentAuthMode === 'key_content') {
+        payload.ssh_key = document.getElementById('fSshKey').value.trim() || null;
+        payload.ssh_cert = document.getElementById('fSshCert').value.trim() || null;
+        payload.password = null; payload.ssh_key_path = null; payload.ssh_cert_path = null;
+    } else {
+        payload.ssh_key_path = document.getElementById('fSshKeyPath').value.trim() || null;
+        payload.ssh_cert_path = document.getElementById('fSshCertPath').value.trim() || null;
+        payload.password = null; payload.ssh_key = null; payload.ssh_cert = null;
+    }
+
+    // sudo 提权配置
+    payload.sudo_enabled = document.getElementById('fSudoEnabled').checked;
+    const sudoPwd = document.getElementById('fSudoPassword').value;
+    if (sudoPwd) {
+        payload.sudo_password = sudoPwd;
+    }
+
+    if (!payload.hostname || !payload.ip || !payload.username) {
+        toast('请填写主机名、IP和用户名', 'error'); return;
+    }
+    if (payload.jump_enabled && (!payload.jump_host || !payload.jump_username)) {
+        toast('启用跳板机后，请填写跳板机公网地址和用户名', 'error'); return;
+    }
+    if (payload.jump_enabled && !payload.jump_password && !payload.jump_ssh_key && !payload.jump_ssh_key_path) {
+        toast('启用跳板机后，请至少填写跳板机密码、私钥内容或密钥文件路径之一', 'error'); return;
+    }
+    if ((payload.ssh_cert || payload.ssh_cert_path) && !payload.ssh_key && !payload.ssh_key_path) {
+        toast('目标服务器证书必须与私钥内容或私钥文件路径一起使用', 'error'); return;
+    }
+    if (payload.jump_enabled && (payload.jump_ssh_cert || payload.jump_ssh_cert_path) && !payload.jump_ssh_key && !payload.jump_ssh_key_path) {
+        toast('跳板机证书必须与跳板机私钥内容或私钥文件路径一起使用', 'error'); return;
+    }
+
+    try {
+        if (id) {
+            await api('/assets/' + id, { method: 'PUT', body: JSON.stringify(payload) });
+            toast('更新成功', 'success');
+        } else {
+            await api('/assets/', { method: 'POST', body: JSON.stringify(payload) });
+            toast('添加成功', 'success');
+        }
+        closeAssetModal();
+        loadAssets();
+        loadDashboard();
+    } catch(e) { toast('操作失败: ' + e.message, 'error'); }
+}
+
+async function editAsset(id) {
+    try {
+        const data = await api('/assets/' + id);
+        openAssetModal(data);
+    } catch(e) { toast('加载失败: ' + e.message, 'error'); }
+}
+
+async function deleteAsset(id) {
+    if (!confirm('确定删除该服务器？')) return;
+    try {
+        await api('/assets/' + id, { method: 'DELETE' });
+        toast('已删除', 'success');
+        loadAssets(); loadDashboard();
+    } catch(e) { toast('删除失败: ' + e.message, 'error'); }
+}
+
+// ========== SSH Modal ==========
+let terminalSessions = {};
+let activeTerminalId = null;
+let terminalSeq = 0;
+
+const SSH_TERM_THEME = {
+    background: '#0f172a',
+    foreground: '#d4d4d4',
+    cursor: '#ffffff',
+    selectionBackground: '#334155',
+    black: '#000000',
+    red: '#ef4444',
+    green: '#22c55e',
+    yellow: '#f59e0b',
+    blue: '#3b82f6',
+    magenta: '#a855f7',
+    cyan: '#06b6d4',
+    white: '#e5e7eb',
+    brightBlack: '#64748b',
+    brightRed: '#f87171',
+    brightGreen: '#4ade80',
+    brightYellow: '#fbbf24',
+    brightBlue: '#60a5fa',
+    brightMagenta: '#c084fc',
+    brightCyan: '#22d3ee',
+    brightWhite: '#ffffff'
+};
+
+function getActiveTerminal() {
+    return activeTerminalId ? terminalSessions[activeTerminalId] : null;
+}
+
+function isTerminalConnected(session) {
+    return session && session.socket && session.socket.readyState === WebSocket.OPEN;
+}
+
+function createTerminalSession(assetId, hostname) {
+    const terminalEl = document.getElementById('sshOutput');
+    if (!window.Terminal || !window.FitAddon) {
+        terminalEl.textContent = 'xterm.js 加载失败，请检查网络或改为本地部署 xterm.js 资源。';
+        return null;
+    }
+    const sessionId = `term_${Date.now()}_${++terminalSeq}`;
+    const container = document.createElement('div');
+    container.className = 'terminal-session';
+    container.dataset.sessionId = sessionId;
+    terminalEl.appendChild(container);
+
+    const term = new Terminal({
+        cursorBlink: true,
+        convertEol: true,
+        scrollback: 5000,
+        fontFamily: 'Cascadia Code, Fira Code, Consolas, "Microsoft YaHei", monospace',
+        fontSize: 13,
+        lineHeight: 1.2,
+        theme: SSH_TERM_THEME
+    });
+    const fitAddon = new FitAddon.FitAddon();
+    term.loadAddon(fitAddon);
+    term.open(container);
+
+    const session = {
+        id: sessionId,
+        assetId,
+        hostname,
+        title: `SSH终端 - ${hostname} #${terminalSeq}`,
+        socket: null,
+        term,
+        fitAddon,
+        container,
+        connected: false,
+        statusText: '未连接',
+        inputDisposable: null,
+    };
+    session.inputDisposable = term.onData(data => sendTerminalData(data, true, sessionId));
+    term.onResize(size => {
+        if (isTerminalConnected(session)) {
+            session.socket.send(`__resize__:${size.cols}:${size.rows}`);
+        }
+    });
+    terminalSessions[sessionId] = session;
+    appendTerminal('已就绪，点击“连接终端”建立交互式 SSH 会话。\r\n', 'info', sessionId);
+    return session;
+}
+
+function setActiveTerminal(sessionId) {
+    const session = terminalSessions[sessionId];
+    if (!session) return;
+    activeTerminalId = sessionId;
+    currentSshAssetId = session.assetId;
+    document.querySelectorAll('.terminal-session').forEach(el => {
+        el.classList.toggle('active', el.dataset.sessionId === sessionId);
+    });
+    document.getElementById('sshModalTitle').textContent = session.title;
+    setSshStatus(isTerminalConnected(session), session.statusText || (isTerminalConnected(session) ? '已连接' : '未连接'));
+    renderTerminalTabs();
+    renderTerminalFloatBars();
+}
+
+function openSshModal(id, hostname) {
+    const session = createTerminalSession(id, hostname);
+    if (!session) return;
+    setActiveTerminal(session.id);
+    document.getElementById('sshUploadFile').value = '';
+    document.getElementById('sshUploadDir').value = '';
+    document.getElementById('sshUploadName').value = '';
+    document.getElementById('sshDownloadPath').value = '';
+    document.getElementById('sshModal').classList.add('show');
+    renderTerminalFloatBars();
+    setTimeout(() => { fitTerminal(); focusTerminal(); }, 50);
+}
+
+function minimizeSshModal() {
+    document.getElementById('sshModal').classList.remove('show');
+    renderTerminalFloatBars();
+}
+
+function restoreSshModal(sessionId) {
+    const targetId = sessionId || activeTerminalId;
+    if (!targetId || !terminalSessions[targetId]) return;
+    setActiveTerminal(targetId);
+    document.getElementById('sshModal').classList.add('show');
+    renderTerminalFloatBars();
+    setTimeout(() => { fitTerminal(); focusTerminal(); }, 50);
+}
+
+function renderTerminalFloatBars() {
+    const stack = document.getElementById('termFloatStack');
+    const modalVisible = document.getElementById('sshModal').classList.contains('show');
+    stack.innerHTML = '';
+    Object.values(terminalSessions).forEach(session => {
+        if (modalVisible && session.id === activeTerminalId) return;
+        const connected = isTerminalConnected(session);
+        const bar = document.createElement('div');
+        bar.className = 'term-float-bar show';
+        bar.onclick = () => restoreSshModal(session.id);
+        bar.innerHTML = `
+            <span class="tfb-status ${connected ? 'online' : 'offline'}"></span>
+            <span class="tfb-icon">&#128187;</span>
+            <span class="tfb-title">${escHtml(session.title)}</span>
+            <button class="tfb-close" title="关闭并断开">&times;</button>
+        `;
+        bar.querySelector('.tfb-close').onclick = (event) => {
+            event.stopPropagation();
+            closeTerminalSession(session.id);
+        };
+        stack.appendChild(bar);
+    });
+}
+
+function renderTerminalTabs() {
+    const tabs = document.getElementById('terminalTabs');
+    if (!tabs) return;
+    tabs.innerHTML = '';
+    Object.values(terminalSessions).forEach(session => {
+        const connected = isTerminalConnected(session);
+        const tab = document.createElement('div');
+        tab.className = 'terminal-tab' + (session.id === activeTerminalId ? ' active' : '');
+        tab.onclick = () => setActiveTerminal(session.id);
+        tab.innerHTML = `
+            <span class="dot ${connected ? 'online' : ''}"></span>
+            <span>${escHtml(session.title.replace('SSH终端 - ', ''))}</span>
+            <button class="close" title="关闭">&times;</button>
+        `;
+        tab.querySelector('.close').onclick = (event) => {
+            event.stopPropagation();
+            closeTerminalSession(session.id);
+        };
+        tabs.appendChild(tab);
+    });
+}
+
+function closeTerminalSession(sessionId) {
+    const session = terminalSessions[sessionId];
+    if (!session) return;
+    try {
+        if (session.socket) session.socket.close();
+    } catch(e) {}
+    try {
+        if (session.inputDisposable) session.inputDisposable.dispose();
+        if (session.term) session.term.dispose();
+    } catch(e) {}
+    if (session.container && session.container.parentNode) {
+        session.container.parentNode.removeChild(session.container);
+    }
+    delete terminalSessions[sessionId];
+    if (activeTerminalId === sessionId) {
+        const next = Object.keys(terminalSessions)[0];
+        if (next) {
+            setActiveTerminal(next);
+        } else {
+            activeTerminalId = null;
+            currentSshAssetId = null;
+            document.getElementById('sshModal').classList.remove('show');
+            setSshStatus(false, '未连接');
+        }
+    }
+    renderTerminalFloatBars();
+    renderTerminalTabs();
+}
+
+function closeSshModal(forceClose) {
+    const session = getActiveTerminal();
+    if (!session) {
+        document.getElementById('sshModal').classList.remove('show');
+        return;
+    }
+    if (!forceClose && isTerminalConnected(session)) {
+        minimizeSshModal();
+        toast('终端已最小化，连接保持中', 'info');
+        return;
+    }
+    closeTerminalSession(session.id);
+}
+
+function setSshStatus(connected, text) {
+    const status = document.getElementById('sshStatus');
+    status.textContent = text;
+    status.classList.toggle('connected', connected);
+    status.classList.toggle('disconnected', !connected);
+}
+
+function appendTerminal(text, cls, sessionId) {
+    const session = sessionId ? terminalSessions[sessionId] : getActiveTerminal();
+    if (!session || !session.term) return;
+    const colorMap = {
+        info: '\x1b[36m',
+        err: '\x1b[31m',
+        cmd: '\x1b[32m'
+    };
+    const prefix = colorMap[cls] || '';
+    const suffix = cls ? '\x1b[0m' : '';
+    session.term.write(prefix + text + suffix);
+}
+
+function clearTerminal() {
+    const session = getActiveTerminal();
+    if (session && session.term) session.term.clear();
+}
+
+function focusTerminal() {
+    const session = getActiveTerminal();
+    if (session && session.term) session.term.focus();
+}
+
+function fitTerminal() {
+    const session = getActiveTerminal();
+    if (!session || !session.fitAddon) return;
+    setTimeout(() => {
+        try {
+            session.fitAddon.fit();
+            if (isTerminalConnected(session)) {
+                session.socket.send(`__resize__:${session.term.cols}:${session.term.rows}`);
+            }
+        } catch(e) {}
+    }, 0);
+}
+
+async function testSsh() {
+    const session = getActiveTerminal();
+    if (!session) return;
+    appendTerminal('\r\n[测试连接中...]\r\n', 'cmd', session.id);
+    try {
+        const res = await api('/assets/' + session.assetId + '/test-connection', { method: 'POST', body: JSON.stringify({ timeout: 10 }) });
+        if (res.success) {
+            appendTerminal(`[连接成功] ${res.hostname} (${res.ip}) - ${res.message}\r\n`, 'info', session.id);
+        } else {
+            appendTerminal(`[连接失败] ${res.message}\r\n`, 'err', session.id);
+            // 密钥变更时刷新待确认角标，让管理员及时看到
+            if (res.message && res.message.indexOf('主机密钥') !== -1) loadPendingCount();
+        }
+    } catch(e) { appendTerminal(`[错误] ${e.message}\r\n`, 'err', session.id); }
+}
+
+function connectTerminal() {
+    const session = getActiveTerminal();
+    if (!session) return;
+    if (isTerminalConnected(session)) {
+        toast('当前终端已经连接', 'info');
+        return;
+    }
+    const token = localStorage.getItem('ops_token');
+    if (!token) {
+        toast('请先登录', 'error');
+        return;
+    }
+    const wsProto = location.protocol === 'https:' ? 'wss' : 'ws';
+    // Token 通过 WebSocket 首条消息发送，避免出现在 URL / 访问日志 / 代理日志中
+    const url = `${wsProto}://${location.host}/api/assets/${session.assetId}/terminal`;
+    session.socket = new WebSocket(url);
+    session.statusText = '连接中...';
+    setSshStatus(false, session.statusText);
+    appendTerminal('\r\n[正在打开交互终端...]\r\n', 'info', session.id);
+
+    session.socket.onopen = function() {
+        // 首条消息作为认证，格式与后端约定：{"type":"auth","token":"<token>"}
+        try {
+            session.socket.send(JSON.stringify({ type: 'auth', token: token }));
+        } catch (e) {
+            appendTerminal('\r\n[发送认证信息失败]\r\n', 'err', session.id);
+            session.socket.close();
+            return;
+        }
+        session.connected = true;
+        session.statusText = '已连接';
+        setSshStatus(true, '已连接');
+        renderTerminalTabs();
+        renderTerminalFloatBars();
+        fitTerminal();
+        focusTerminal();
+    };
+    session.socket.onmessage = function(event) {
+        if (session.term) session.term.write(event.data);
+    };
+    session.socket.onerror = function() {
+        session.statusText = '连接异常';
+        appendTerminal('\r\n[WebSocket 连接异常]\r\n', 'err', session.id);
+        if (activeTerminalId === session.id) setSshStatus(false, '连接异常');
+        renderTerminalTabs();
+        renderTerminalFloatBars();
+    };
+    session.socket.onclose = function() {
+        session.connected = false;
+        session.statusText = '未连接';
+        appendTerminal('\r\n[终端连接已关闭]\r\n', 'info', session.id);
+        session.socket = null;
+        if (activeTerminalId === session.id) setSshStatus(false, '未连接');
+        renderTerminalTabs();
+        renderTerminalFloatBars();
+    };
+}
+
+function disconnectTerminal() {
+    const session = getActiveTerminal();
+    if (session && session.socket) {
+        session.socket.close();
+        session.socket = null;
+    }
+    if (session) session.statusText = '未连接';
+    setSshStatus(false, '未连接');
+    renderTerminalTabs();
+    renderTerminalFloatBars();
+}
+
+function sendCtrlC() {
+    sendTerminalData('\x03');
+    focusTerminal();
+}
+
+function sendTerminalData(data, silent=false, sessionId) {
+    const session = sessionId ? terminalSessions[sessionId] : getActiveTerminal();
+    if (!isTerminalConnected(session)) {
+        if (!silent) toast('请先点击“连接终端”', 'error');
+        return false;
+    }
+    session.socket.send(data);
+    return true;
+}
+
+async function uploadRemoteFile() {
+    if (!currentSshAssetId) return;
+    const fileInput = document.getElementById('sshUploadFile');
+    const remoteDir = document.getElementById('sshUploadDir').value.trim();
+    const remoteName = document.getElementById('sshUploadName').value.trim();
+    const file = fileInput.files && fileInput.files[0];
+    if (!file) { toast('请选择要上传的文件', 'error'); return; }
+    if (!remoteDir) { toast('请填写上传目录', 'error'); return; }
+
+    try {
+        const token = localStorage.getItem('ops_token');
+        const finalName = remoteName || file.name;
+        const previewPath = remoteDir.replace(/\/+$/, '') + '/' + finalName;
+        appendTerminal(`\r\n[上传中] ${file.name} -> ${previewPath}\r\n`, 'info');
+        let url = API + '/assets/' + currentSshAssetId + '/upload?remote_dir=' + encodeURIComponent(remoteDir);
+        if (remoteName) url += '&remote_name=' + encodeURIComponent(remoteName);
+        const res = await fetch(url, {
+            method: 'POST',
+            headers: {
+                ...(token ? { Authorization: 'Bearer ' + token } : {}),
+                'Content-Type': 'application/octet-stream',
+                'X-Filename': encodeURIComponent(file.name)
+            },
+            body: file
+        });
+        if (!res.ok) {
+            const err = await res.json().catch(() => ({}));
+            throw new Error(err.detail || '上传失败');
+        }
+        const data = await res.json();
+        appendTerminal(`[上传成功] ${data.remote_path}\r\n`, 'info');
+        toast('上传成功', 'success');
+    } catch(e) {
+        appendTerminal(`[上传失败] ${e.message}\r\n`, 'err');
+        toast('上传失败: ' + e.message, 'error');
+    }
+}
+
+let fbCurrentDir = '/';
+let fbSelectedFile = null;
+
+function openFileBrowser() {
+    if (!currentSshAssetId) { toast('请先选择服务器', 'error'); return; }
+    const inputPath = document.getElementById('sshDownloadPath').value.trim();
+    fbCurrentDir = getRemoteDirFromPath(inputPath) || '.';
+    fbSelectedFile = null;
+    document.getElementById('fbSelectBtn').disabled = true;
+    document.getElementById('fileBrowserModal').classList.add('show');
+    fbLoadDir(fbCurrentDir);
+}
+
+function closeFileBrowser() {
+    document.getElementById('fileBrowserModal').classList.remove('show');
+}
+
+async function fbLoadDir(path) {
+    const listEl = document.getElementById('fbList');
+    listEl.innerHTML = '<div class="loading">加载中...</div>';
+    try {
+        const data = await api('/assets/' + currentSshAssetId + '/list-dir?remote_path=' + encodeURIComponent(path));
+        fbCurrentDir = data.path || path;
+        document.getElementById('fbCurrentPath').textContent = fbCurrentDir;
+        fbSelectedFile = null;
+        document.getElementById('fbSelectBtn').disabled = true;
+        if (!data.entries || !data.entries.length) {
+            listEl.innerHTML = '<div class="loading">空目录</div>';
+            return;
+        }
+        let h = '';
+        data.entries.forEach(entry => {
+            const isDir = entry.type === 'directory';
+            const icon = isDir ? '📁' : '📄';
+            const size = isDir ? '' : formatFileSize(entry.size || 0);
+            const encodedName = encodeURIComponent(entry.name);
+            const action = isDir ? 'enter' : 'select';
+            h += `<div class="fb-item" data-name="${encodedName}" data-action="${action}" onclick="fbHandleItemClick(this)">
+                <span class="fb-icon">${icon}</span>
+                <span class="fb-name">${esc(entry.name)}</span>
+                <span class="fb-size">${size}</span>
+            </div>`;
+        });
+        listEl.innerHTML = h;
+    } catch(e) {
+        listEl.innerHTML = `<div style="color:red;padding:12px;">加载失败: ${esc(e.message)}</div>`;
+    }
+}
+
+function fbHandleItemClick(el) {
+    const name = decodeURIComponent(el.dataset.name || '');
+    if (!name) return;
+    if (el.dataset.action === 'enter') fbEnterDir(name);
+    else fbSelect(name, el);
+}
+
+function fbEnterDir(name) {
+    fbLoadDir(joinRemotePath(fbCurrentDir, name));
+}
+
+function fbGoUp() {
+    if (fbCurrentDir === '/' || !fbCurrentDir) return;
+    const parts = fbCurrentDir.split('/').filter(Boolean);
+    parts.pop();
+    const parent = '/' + parts.join('/');
+    fbLoadDir(parent);
+}
+
+function fbSelect(name, el) {
+    document.querySelectorAll('.fb-item').forEach(el => el.classList.remove('selected'));
+    if (el) el.classList.add('selected');
+    fbSelectedFile = name;
+    document.getElementById('fbSelectBtn').disabled = false;
+}
+
+function fbSelectFile() {
+    if (!fbSelectedFile) return;
+    const fullPath = joinRemotePath(fbCurrentDir, fbSelectedFile);
+    document.getElementById('sshDownloadPath').value = fullPath;
+    closeFileBrowser();
+}
+
+function joinRemotePath(dir, name) {
+    if (!dir || dir === '.') return name;
+    return dir.replace(/\/+$/, '') + '/' + name;
+}
+
+function getRemoteDirFromPath(path) {
+    if (!path) return '';
+    if (path.endsWith('/')) return path;
+    const index = path.lastIndexOf('/');
+    if (index <= 0) return '';
+    return path.slice(0, index);
+}
+
+function formatFileSize(bytes) {
+    if (bytes < 1024) return bytes + ' B';
+    if (bytes < 1024 * 1024) return (bytes / 1024).toFixed(1) + ' KB';
+    if (bytes < 1024 * 1024 * 1024) return (bytes / (1024 * 1024)).toFixed(1) + ' MB';
+    return (bytes / (1024 * 1024 * 1024)).toFixed(1) + ' GB';
+}
+
+async function downloadRemoteFile() {
+    if (!currentSshAssetId) return;
+    const remotePath = document.getElementById('sshDownloadPath').value.trim();
+    if (!remotePath) { toast('请填写远程文件路径', 'error'); return; }
+
+    try {
+        const token = localStorage.getItem('ops_token');
+        appendTerminal(`\n[下载中] ${remotePath}\n`, 'info');
+        const res = await fetch(API + '/assets/' + currentSshAssetId + '/download?remote_path=' + encodeURIComponent(remotePath), {
+            headers: token ? { Authorization: 'Bearer ' + token } : {}
+        });
+        if (!res.ok) {
+            const err = await res.json().catch(() => ({}));
+            throw new Error(err.detail || '下载失败');
+        }
+        const blob = await res.blob();
+        const filename = remotePath.split('/').filter(Boolean).pop() || 'download.bin';
+        const url = URL.createObjectURL(blob);
+        const a = document.createElement('a');
+        a.href = url;
+        a.download = filename;
+        document.body.appendChild(a);
+        a.click();
+        a.remove();
+        URL.revokeObjectURL(url);
+        appendTerminal(`[下载已开始] ${filename}\n`, 'info');
+        toast('下载已开始', 'success');
+    } catch(e) {
+        appendTerminal(`[下载失败] ${e.message}\n`, 'err');
+        toast('下载失败: ' + e.message, 'error');
+    }
+}
+
+// ========== Audit Logs ==========
+let auditLogPage = 0;
+let auditLogTotalPages = 1;
+const auditLogPageSize = 20;
+
+async function loadAuditLogs() {
+    const tbody = document.getElementById('auditTableBody');
+    const pagination = document.getElementById('auditPagination');
+    if (!tbody) return;
+    const params = new URLSearchParams();
+    params.set('skip', auditLogPage * auditLogPageSize);
+    params.set('limit', auditLogPageSize);
+    const action = document.getElementById('filterAuditAction')?.value;
+    if (action) params.set('action', action);
+    const resourceType = document.getElementById('filterAuditResourceType')?.value;
+    if (resourceType) params.set('resource_type', resourceType);
+    const search = document.getElementById('auditSearchInput')?.value.trim();
+    if (search) params.set('search', search);
+    try {
+        tbody.innerHTML = '<tr><td colspan="8" class="loading">加载中...</td></tr>';
+        const logs = await api('/audit/logs?' + params.toString());
+        let countData = { total: logs.length };
+        try {
+            const countParams = new URLSearchParams(Array.from(params.entries()).filter(([k]) => k !== 'skip' && k !== 'limit'));
+            countData = await api('/audit/logs/count?' + countParams.toString());
+        } catch (countError) {
+            console.warn('审计日志总数加载失败，已使用当前页数量兜底', countError);
+        }
+        const total = countData.total || 0;
+        if (!logs || !logs.length) {
+            tbody.innerHTML = '<tr><td colspan="8"><div class="empty"><div class="icon">&#128269;</div>暂无审计日志</div></td></tr>';
+            if (pagination) pagination.innerHTML = '';
+            return;
+        }
+        const actionLabels = { login: '登录', logout: '退出', create: '创建', update: '更新', delete: '删除', connect: '连接', execute: '执行命令', upload: '上传文件', download: '下载文件', test: '测试连接', terminal: '终端会话', browse: '浏览目录' };
+        const resourceLabels = { asset: '资产', user: '用户', service: '服务', permission: '权限', monitor: '监控' };
+        let h = '';
+        logs.forEach(log => {
+            const time = formatAuditTime(log.created_at);
+            const statusBadge = log.status === 'success' ? '<span class="badge badge-success">成功</span>' : '<span class="badge badge-failure">失败</span>';
+            h += `<tr>
+                <td style="white-space:nowrap;font-size:12px;">${time}</td>
+                <td>${escHtml(log.username)}</td>
+                <td>${actionLabels[log.action] || log.action}</td>
+                <td>${resourceLabels[log.resource_type] || log.resource_type}</td>
+                <td>${escHtml(log.resource_name || '-')}</td>
+                <td style="max-width:240px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;" title="${escHtml(log.detail || '')}">${escHtml(log.detail || '-')}</td>
+                <td style="font-size:12px;font-family:monospace;">${escHtml(log.ip_address || '-')}</td>
+                <td>${statusBadge}</td>
+            </tr>`;
+        });
+        tbody.innerHTML = h;
+        // Pagination
+        auditLogTotalPages = Math.max(1, Math.ceil(total / auditLogPageSize));
+        let pagHtml = '';
+        pagHtml += `<button class="btn btn-sm btn-outline" onclick="auditLogPage=0;loadAuditLogs()" ${auditLogPage === 0 ? 'disabled' : ''}>首页</button>`;
+        pagHtml += `<button class="btn btn-sm btn-outline" onclick="auditLogPage=Math.max(0,auditLogPage-1);loadAuditLogs()" ${auditLogPage === 0 ? 'disabled' : ''}>上一页</button>`;
+        pagHtml += `<span style="font-size:13px;color:var(--g500);">第 ${auditLogPage + 1} / ${auditLogTotalPages} 页（共 ${total} 条）</span>`;
+        pagHtml += `<button class="btn btn-sm btn-outline" onclick="auditLogPage=Math.min(auditLogTotalPages-1,auditLogPage+1);loadAuditLogs()" ${auditLogPage >= auditLogTotalPages - 1 ? 'disabled' : ''}>下一页</button>`;
+        pagHtml += `<button class="btn btn-sm btn-outline" onclick="auditLogPage=auditLogTotalPages-1;loadAuditLogs()" ${auditLogPage >= auditLogTotalPages - 1 ? 'disabled' : ''}>末页</button>`;
+        if (pagination) pagination.innerHTML = pagHtml;
+    } catch(e) {
+        console.error(e);
+        const msg = escHtml(e.message || '未知错误');
+        tbody.innerHTML = `<tr><td colspan="8"><div class="empty"><div class="icon">&#9888;</div>加载失败：${msg}<br><span style="font-size:12px;color:var(--g400);">如果提示 404，请重启后端服务；如果提示 403，请确认当前账号是管理员。</span></div></td></tr>`;
+        if (pagination) pagination.innerHTML = '';
+    }
+}
+
+// ========== Host Keys (主机密钥管理) ==========
+async function loadHostKeys() {
+    loadPendingCount();
+    loadPendingHostKeys();
+    loadKnownHostKeys();
+}
+
+async function loadPendingCount() {
+    try {
+        const data = await api('/host-keys/pending/count');
+        const badge = document.getElementById('hkPendingBadge');
+        if (!badge) return;
+        const n = data.count || 0;
+        badge.textContent = n > 99 ? '99+' : n;
+        badge.style.display = n > 0 ? 'inline-block' : 'none';
+    } catch (e) { /* 非管理员或未登录时静默 */ }
+}
+
+async function loadPendingHostKeys() {
+    const box = document.getElementById('hkPendingList');
+    const countEl = document.getElementById('hkPendingCount');
+    try {
+        const data = await api('/host-keys/pending');
+        const items = data.items || [];
+        if (countEl) countEl.textContent = items.length;
+        if (!items.length) {
+            box.innerHTML = '<div class="empty"><div class="icon">&#9989;</div>暂无待确认的密钥变更</div>';
+            return;
+        }
+        box.innerHTML = items.map(it => {
+            const known = (it.known_fingerprints || []).map(fp => `<div class="hk-fp-old">- ${escHtml(fp)}</div>`).join('');
+            // 提取指纹后8位作为二次校验提示
+            const fpClean = (it.fingerprint || '').replace('SHA256:', '').replace(/=/g, '');
+            const suffix = fpClean.length >= 8 ? fpClean.slice(-8) : fpClean;
+            return `<div class="hk-card">
+                <div style="display:flex;justify-content:space-between;align-items:flex-start;gap:12px;flex-wrap:wrap;">
+                    <div style="flex:1;min-width:240px;">
+                        <div style="font-weight:600;margin-bottom:6px;">${escHtml(it.hostname)}</div>
+                        <div style="margin-bottom:4px;">新密钥指纹：</div>
+                        <div class="hk-fp">${escHtml(it.fingerprint)}</div>
+                        ${known ? `<div style="margin:8px 0 4px;">已知密钥（均不匹配）：</div>${known}` : ''}
+                        <div style="margin-top:8px;font-size:12px;color:var(--g400);">时间：${escHtml(it.timestamp)}</div>
+                        <div style="margin-top:10px;padding:8px 10px;background:rgba(250,204,21,.1);border:1px solid rgba(250,204,21,.3);border-radius:6px;font-size:12px;color:#fbbf24;">
+                            &#9888; 确认前请通过带外渠道核实指纹：在服务器控制台执行<br>
+                            <code style="color:#fde68a;">ssh-keygen -lf /etc/ssh/ssh_host_ed25519_key.pub</code><br>
+                            核对一致后再确认，否则可能放行中间人攻击。
+                        </div>
+                    </div>
+                    <div style="display:flex;flex-direction:column;gap:8px;flex-shrink:0;min-width:200px;">
+                        <input type="text" id="hk-suffix-${escHtml(it.id)}" placeholder="输入新指纹后8位" style="padding:6px 8px;border-radius:6px;border:1px solid rgba(255,255,255,.2);background:rgba(0,0,0,.3);color:#fff;font-family:monospace;font-size:12px;" title="二次校验：请输入上方新密钥指纹的最后8位字符">
+                        <button class="btn btn-primary" onclick="confirmPendingHostKey('${escHtml(it.id)}')">确认追加</button>
+                        <button class="btn btn-outline" onclick="rejectPendingHostKey('${escHtml(it.id)}')">拒绝</button>
+                    </div>
+                </div>
+            </div>`;
+        }).join('');
+    } catch (e) {
+        if (countEl) countEl.textContent = '0';
+        box.innerHTML = `<div class="empty"><div class="icon">&#9888;</div>加载失败：${escHtml(e.message || '未知错误')}</div>`;
+    }
+}
+
+async function loadKnownHostKeys() {
+    const tbody = document.getElementById('hkKnownTableBody');
+    const countEl = document.getElementById('hkKnownCount');
+    try {
+        const data = await api('/host-keys/known');
+        const items = data.items || [];
+        if (countEl) countEl.textContent = items.length;
+        if (!items.length) {
+            tbody.innerHTML = '<tr><td colspan="4"><div class="empty"><div class="icon">&#128272;</div>暂无已知主机密钥</div></td></tr>';
+            return;
+        }
+        tbody.innerHTML = items.map(it => `<tr>
+            <td>${escHtml(it.hostname)}</td>
+            <td>${escHtml(it.key_type)}</td>
+            <td><span class="hk-fp">${escHtml(it.fingerprint)}</span></td>
+            <td><button class="btn btn-outline" style="color:#ef4444;border-color:rgba(239,68,68,.4);" onclick="deleteKnownHostKey(${it.line_idx}, '${escHtml(it.hostname)}')">删除</button></td>
+        </tr>`).join('');
+    } catch (e) {
+        if (countEl) countEl.textContent = '0';
+        tbody.innerHTML = `<tr><td colspan="4"><div class="empty"><div class="icon">&#9888;</div>加载失败：${escHtml(e.message || '未知错误')}</div></td></tr>`;
+    }
+}
+
+async function confirmPendingHostKey(id) {
+    const input = document.getElementById('hk-suffix-' + id);
+    const suffix = input ? input.value.trim() : '';
+    if (!suffix) {
+        toast('请输入新密钥指纹的最后 8 位字符以完成二次校验', 'error');
+        if (input) input.focus();
+        return;
+    }
+    if (!confirm('确认追加该新密钥到 known_hosts？\n请确保已通过带外渠道（VNC/IPMI/控制台）核实该指纹属于目标服务器。')) return;
+    try {
+        const data = await api('/host-keys/pending/' + encodeURIComponent(id) + '/confirm', {
+            method: 'POST', body: JSON.stringify({ fingerprint_suffix: suffix })
+        });
+        toast(data.message || '已确认', 'success');
+        loadHostKeys();
+    } catch (e) { toast('确认失败：' + (e.message || '未知错误'), 'error'); }
+}
+
+async function rejectPendingHostKey(id) {
+    if (!confirm('拒绝该密钥变更？拒绝后不会写入 known_hosts，下次连接仍会被拒绝。')) return;
+    try {
+        const data = await api('/host-keys/pending/' + encodeURIComponent(id) + '/reject', { method: 'POST' });
+        toast(data.message || '已拒绝', 'info');
+        loadHostKeys();
+    } catch (e) { toast('操作失败：' + (e.message || '未知错误'), 'error'); }
+}
+
+async function deleteKnownHostKey(lineIdx, hostname) {
+    if (!confirm('删除 ' + hostname + ' 的已知密钥记录？\n删除后下次连接将按首次连接处理（自动接受新密钥）。')) return;
+    try {
+        const data = await api('/host-keys/known/' + lineIdx, { method: 'DELETE' });
+        toast(data.message || '已删除', 'success');
+        loadKnownHostKeys();
+    } catch (e) { toast('删除失败：' + (e.message || '未知错误'), 'error'); }
+}
+
+// ========== Inspect (集群巡检) ==========
+// 全局巡检状态（切页面不丢失）
+// running: 正在轮询中，等待结果
+// completed: 最近一次完成的巡检结果（含 success/failed/timeout）
+// stopped: 用户主动切换页面但轮询结束
+let _inspectState = {
+    running: false,
+    pollTimer: null,
+    pollCount: 0,
+    maxPolls: 60,
+    kubeeyeTask: null,
+    taskName: null,
+    assetId: null,
+    existingResults: null,
+    createOutput: null,
+    lastResult: null,        // completed/error/timeout 时保存最终展示对象
+    lastMessage: null,       // 状态文本（running 中显示进度）
+    lastError: null,         // 失败时保存错误
+    lastStatus: null,        // 'triggered' | 'completed' | 'error' | 'timeout' | 'cancelled'
+    cancelling: false,       // 取消请求进行中，防止重复点击
+};
+
+function _stopInspectPolling() {
+    if (_inspectState.pollTimer) {
+        clearInterval(_inspectState.pollTimer);
+        _inspectState.pollTimer = null;
+    }
+    _inspectState.running = false;
+}
+
+function _renderInspectContent() {
+    // 根据 _inspectState 全局状态渲染巡检内容区域
+    const content = document.getElementById('inspectContent');
+    if (!content) return;
+    const btn = document.getElementById('inspectRunBtn');
+
+    if (_inspectState.running || _inspectState.cancelling) {
+        if (btn) { btn.disabled = true; btn.textContent = _inspectState.cancelling ? '取消中...' : '巡检中...'; }
+        const pc = _inspectState.pollCount;
+        const mp = _inspectState.maxPolls;
+        const task = _inspectState.kubeeyeTask || '';
+        const msg = _inspectState.lastMessage || '巡检任务正在执行中...';
+        const dbg = _inspectState.lastDebug || '';
+        let html = `<div class="loading">巡检任务 [${esc(task)}] 正在执行中... (${pc}/${mp})</div>`;
+        if (_inspectState.createOutput) {
+            html += `<div style="font-size:0.85em;color:#888;margin-top:4px;">${esc(_inspectState.createOutput)}</div>`;
+        }
+        if (msg) {
+            html = `<div class="loading">${esc(msg)} (${pc}/${mp})</div>`;
+        }
+        if (dbg) {
+            html += `<div style="font-size:0.8em;color:#888;margin-top:4px;">${esc(dbg)}</div>`;
+        }
+        // 取消巡检按钮
+        const cancelling = _inspectState.cancelling;
+        html += `<div style="margin-top:12px;">
+            <button class="btn btn-outline" style="color:#ef4444;border-color:rgba(239,68,68,.4);"
+                    onclick="cancelInspect()" ${cancelling ? 'disabled' : ''}>
+                ${cancelling ? '取消中...' : '&#10006; 取消巡检'}
+            </button>
+        </div>`;
+        content.innerHTML = html;
+        return;
+    }
+
+    if (btn) { btn.disabled = false; btn.innerHTML = '&#128269; 执行巡检'; }
+
+    if (_inspectState.lastStatus === 'completed' && _inspectState.lastResult) {
+        renderInspectResult(_inspectState.lastResult);
+        return;
+    }
+    if (_inspectState.lastStatus === 'error') {
+        content.innerHTML = `<div style="color:red;">巡检失败: ${esc(_inspectState.lastError || '未知错误')}</div>`;
+        return;
+    }
+    if (_inspectState.lastStatus === 'timeout') {
+        content.innerHTML = `<div style="color:orange;">巡检超时，任务 [${esc(_inspectState.kubeeyeTask || '')}] 仍在执行中。请稍后在历史记录中查看结果。</div>`;
+        return;
+    }
+    if (_inspectState.lastStatus === 'cancelled') {
+        content.innerHTML = `<div style="color:#888;">巡检已取消，任务 [${esc(_inspectState.kubeeyeTask || '')}] 已在远端删除。</div>`;
+        return;
+    }
+
+    // 无状态：初始空态
+    content.innerHTML = '<div class="empty"><div class="icon">&#128737;</div>选择目标集群节点并点击「执行巡检」</div>';
+}
+
+async function cancelInspect() {
+    if (!_inspectState.running && !_inspectState.cancelling) return;
+    if (_inspectState.cancelling) return;
+    if (!_inspectState.kubeeyeTask || !_inspectState.assetId) {
+        toast('无法取消：缺少巡检任务信息', 'error');
+        return;
+    }
+    if (!confirm('确认取消巡检任务？\n将在远端删除 KubeEye InspectTask，已采集的部分结果不会保存。')) return;
+
+    _inspectState.cancelling = true;
+    // 立即停止轮询，防止 pollTimer 在取消请求期间修改状态
+    _stopInspectPolling();
+    _renderInspectContent();
+
+    try {
+        const res = await api('/inspect/cancel', {
+            method: 'POST',
+            body: JSON.stringify({
+                asset_id: _inspectState.assetId,
+                kubeeye_task: _inspectState.kubeeyeTask,
+                task_name: _inspectState.taskName || '',
+            }),
+            timeout: 20000,  // 20 秒超时，匹配后端 command_timeout=15 + SSH 连接时间
+        });
+        _inspectState.cancelling = false;
+        _inspectState.lastStatus = 'cancelled';
+        _renderInspectContent();
+        if (res.success) {
+            toast(res.message || '巡检已取消', 'info');
+        } else {
+            toast(res.message || '远端任务删除失败，已停止轮询', 'warning');
+        }
+    } catch (e) {
+        _inspectState.cancelling = false;
+        _inspectState.lastStatus = 'cancelled';
+        _renderInspectContent();
+        // 区分超时和其他错误
+        if (e.message && e.message.indexOf('超时') !== -1) {
+            toast('取消请求超时，已停止轮询。远端任务可能仍在执行', 'warning');
+        } else {
+            toast('取消请求失败：' + (e.message || '未知错误') + '，已停止轮询', 'warning');
+        }
+    }
+}
+
+async function loadInspectAssets() {
+    const sel = document.getElementById('inspectAssetSelect');
+    if (!sel) return;
+    sel.innerHTML = '<option value="">选择集群节点...</option>';
+    // 只在初始态才显示加载中；有全局状态时保留现有渲染
+    if (!_inspectState.running && !_inspectState.lastStatus) {
+        const content = document.getElementById('inspectContent');
+        if (content) content.innerHTML = '<div class="loading">加载资产列表...</div>';
+    }
+    try {
+        const data = await api('/inspect/assets');
+        const k8s = data.k8s_assets || [];
+        const other = data.other_assets || [];
+        let h = '';
+        if (k8s.length) {
+            h += '<optgroup label="K8s 集群节点">';
+            k8s.forEach(a => {
+                h += `<option value="${a.id}">${esc(a.hostname)} (${a.ip}) [${esc(a.role || '')}]</option>`;
+            });
+            h += '</optgroup>';
+        }
+        if (other.length) {
+            h += '<optgroup label="其他服务器">';
+            other.forEach(a => {
+                h += `<option value="${a.id}">${esc(a.hostname)} (${a.ip})${a.role ? ' [' + esc(a.role) + ']' : ''}</option>`;
+            });
+            h += '</optgroup>';
+        }
+        if (!k8s.length && !other.length) {
+            // 只在初始态才覆盖提示；有全局状态不覆盖
+            if (!_inspectState.running && !_inspectState.lastStatus) {
+                const content = document.getElementById('inspectContent');
+                if (content) content.innerHTML = '<div class="empty"><div class="icon">&#128737;</div>暂无可用资产，请先在台账管理中添加服务器</div>';
+            }
+            return;
+        }
+        sel.innerHTML = h;
+        // 加载完资产下拉后，按全局巡检状态决定渲染什么（不覆盖已有巡检进度/结果）
+        _renderInspectContent();
+    } catch(e) {
+        if (!_inspectState.running && !_inspectState.lastStatus) {
+            const content = document.getElementById('inspectContent');
+            if (content) content.innerHTML = `<div style="color:red;">加载失败: ${esc(e.message)}</div>`;
+        }
+    }
+}
+
+async function runInspect() {
+    // 如果已有巡检在执行中，不允许同时触发
+    if (_inspectState.running) { toast('已有巡检正在执行中', 'warning'); return; }
+
+    const assetId = document.getElementById('inspectAssetSelect').value;
+    const taskName = document.getElementById('inspectTaskName').value.trim();
+    if (!assetId) { toast('请先选择集群节点', 'error'); return; }
+
+    // 重置全局状态并立即渲染
+    _stopInspectPolling();
+    _inspectState = {
+        ..._inspectState,
+        running: true,
+        pollCount: 0,
+        maxPolls: 60,
+        kubeeyeTask: null,
+        taskName: taskName,
+        assetId: parseInt(assetId),
+        existingResults: null,
+        createOutput: null,
+        lastResult: null,
+        lastMessage: null,
+        lastError: null,
+        lastStatus: null,
+        lastDebug: '',
+        cancelling: false,
+    };
+    _inspectAssetId = parseInt(assetId);
+    _renderInspectContent();
+
+    try {
+        // 第 1 步：触发巡检
+        const trigger = await api('/inspect/run', { method: 'POST', body: JSON.stringify({ asset_id: parseInt(assetId), task_name: taskName }) });
+
+        if (trigger.status === 'no_kubeeye' || trigger.status === 'no_plan' || trigger.status === 'create_failed') {
+            _stopInspectPolling();
+            _inspectState.running = false;
+            _inspectState.lastStatus = 'error';
+            _inspectState.lastError = trigger.message;
+            _renderInspectContent();
+            return;
+        }
+
+        if (trigger.status !== 'triggered') {
+            _stopInspectPolling();
+            _inspectState.running = false;
+            _inspectState.lastStatus = 'error';
+            _inspectState.lastError = '未知状态: ' + trigger.status + ' - ' + (trigger.message || '');
+            _renderInspectContent();
+            return;
+        }
+
+        // 第 2 步：轮询等待结果（使用 setInterval，切页面也继续在后台跑）
+        const kubeeyeTask = trigger.kubeeye_task;
+        const existingResults = (trigger.existing_results || []).join(',');
+        _inspectState.kubeeyeTask = kubeeyeTask;
+        _inspectState.existingResults = existingResults;
+        _inspectState.createOutput = trigger.create_output || '';
+        _renderInspectContent();
+
+        _inspectState.pollTimer = setInterval(async () => {
+            // 安全检查：interval 已被清理
+            if (!_inspectState.running || !_inspectState.pollTimer) return;
+
+            _inspectState.pollCount++;
+            try {
+                const poll = await api('/inspect/poll', {
+                    method: 'POST',
+                    body: JSON.stringify({
+                        asset_id: parseInt(assetId),
+                        kubeeye_task: kubeeyeTask,
+                        task_name: taskName,
+                        existing_results: existingResults
+                    })
+                });
+
+                if (poll.status === 'completed') {
+                    _stopInspectPolling();
+                    _inspectState.lastStatus = 'completed';
+                    _inspectState.lastResult = poll;
+                    _renderInspectContent();
+                    loadInspectHistory();
+                    return;
+                }
+                if (poll.status === 'error') {
+                    _stopInspectPolling();
+                    _inspectState.lastStatus = 'error';
+                    _inspectState.lastError = poll.message || '巡检失败';
+                    _renderInspectContent();
+                    return;
+                }
+                // running / processing → 继续轮询
+                const dbg = poll.debug || {};
+                const dbgInfo = `任务: ${dbg.task_found ? '✓已创建' : '✗未找到'} | 完成: ${poll.task_complete ? '✓' : '✗'} | 结果: ${dbg.total_results || 0}`;
+                _inspectState.lastMessage = poll.message;
+                _inspectState.lastDebug = dbgInfo;
+                _renderInspectContent();
+
+                if (_inspectState.pollCount >= _inspectState.maxPolls) {
+                    _stopInspectPolling();
+                    _inspectState.lastStatus = 'timeout';
+                    _renderInspectContent();
+                    loadInspectHistory();
+                }
+            } catch(e) {
+                _stopInspectPolling();
+                _inspectState.lastStatus = 'error';
+                _inspectState.lastError = e.message || '巡检请求异常';
+                _renderInspectContent();
+            }
+        }, 5000);
+    } catch(e) {
+        _stopInspectPolling();
+        _inspectState.lastStatus = 'error';
+        _inspectState.lastError = e.message;
+        _renderInspectContent();
+    }
+}
+
+// 当前巡检的资产ID（用于查看报告时传参）
+let _inspectAssetId = null;
+// 当前报告对应的资产ID和结果名（用于下载）
+let _currentReportAssetId = null;
+let _currentReportResultName = null;
+
+async function viewInspectReport(resultName) {
+    if (!_inspectAssetId) { toast('请先执行巡检', 'error'); return; }
+    toast('正在获取巡检报告...', 'info');
+    try {
+        const result = await api('/inspect/report', {
+            method: 'POST',
+            body: JSON.stringify({ asset_id: _inspectAssetId, result_name: resultName })
+        });
+        const iframe = document.getElementById('inspectReportIframe');
+        iframe.srcdoc = result.html;
+        document.getElementById('inspectReportTitle').textContent = '巡检报告: ' + resultName;
+        renderReportFindings(result);
+        document.getElementById('inspectReportModal').classList.add('show');
+        _currentReportAssetId = _inspectAssetId;
+        _currentReportResultName = resultName;
+    } catch(e) {
+        toast('获取报告失败: ' + e.message, 'error');
+    }
+}
+
+// 从历史记录查看报告
+async function viewHistoryReport(assetId, resultName) {
+    if (!resultName) { toast('该记录无关联的巡检结果', 'error'); return; }
+    toast('正在获取巡检报告...', 'info');
+    try {
+        const result = await api('/inspect/report', {
+            method: 'POST',
+            body: JSON.stringify({ asset_id: assetId, result_name: resultName })
+        });
+        const iframe = document.getElementById('inspectReportIframe');
+        iframe.srcdoc = result.html;
+        document.getElementById('inspectReportTitle').textContent = '巡检报告: ' + resultName;
+        renderReportFindings(result);
+        document.getElementById('inspectReportModal').classList.add('show');
+        _currentReportAssetId = assetId;
+        _currentReportResultName = resultName;
+    } catch(e) {
+        toast('获取报告失败: ' + e.message + '（InspectResult 可能已被清理）', 'error');
+    }
+}
+
+// 在报告弹窗中渲染告警统计和列表
+function renderReportFindings(result) {
+    const statsDiv = document.getElementById('inspectReportStats');
+    const findingsDiv = document.getElementById('inspectReportFindings');
+    const summary = result.summary || { total: 0, error: 0, warning: 0, info: 0 };
+    const findings = result.findings || [];
+
+    if (summary.total === 0 && findings.length === 0) {
+        statsDiv.style.display = 'none';
+        findingsDiv.style.display = 'none';
+        return;
+    }
+
+    // 统计卡片
+    statsDiv.style.display = 'flex';
+    statsDiv.innerHTML = `
+        <div style="text-align:center;min-width:80px;">
+            <div style="font-size:22px;font-weight:700;">${summary.total}</div>
+            <div style="font-size:11px;color:var(--g400);">问题总数</div>
+        </div>
+        <div style="text-align:center;min-width:80px;">
+            <div style="font-size:22px;font-weight:700;color:#dc2626;">${summary.error}</div>
+            <div style="font-size:11px;color:var(--g400);">严重</div>
+        </div>
+        <div style="text-align:center;min-width:80px;">
+            <div style="font-size:22px;font-weight:700;color:#d97706;">${summary.warning}</div>
+            <div style="font-size:11px;color:var(--g400);">警告</div>
+        </div>
+        <div style="text-align:center;min-width:80px;">
+            <div style="font-size:22px;font-weight:700;color:#2563eb;">${summary.info}</div>
+            <div style="font-size:11px;color:var(--g400);">忽略</div>
+        </div>
+    `;
+
+    // 告警列表
+    if (findings.length > 0) {
+        findingsDiv.style.display = 'block';
+        findingsDiv.innerHTML = findings.map(f => {
+            const levelClass = f.level === 'error' ? 'inspect-level-error' : (f.level === 'warning' ? 'inspect-level-warning' : 'inspect-level-info');
+            const levelText = f.level === 'error' ? '严重' : (f.level === 'warning' ? '警告' : '忽略');
+            return `<div style="display:flex;align-items:flex-start;gap:8px;padding:6px 0;border-bottom:1px solid var(--g100);font-size:12px;">
+                <span class="inspect-level ${levelClass}">${levelText}</span>
+                <div style="flex:1;">
+                    <div style="font-weight:500;">${esc(f.resource_name || '-')}</div>
+                    <div style="color:var(--g500);">${esc(f.message || f.reason || '-')}</div>
+                </div>
+                <div style="color:var(--g400);white-space:nowrap;font-size:11px;">${esc(f.resource_type || '')} ${esc(f.namespace || '')}</div>
+            </div>`;
+        }).join('');
+    } else {
+        findingsDiv.style.display = 'none';
+    }
+}
+
+// 下载报告为 HTML 文件
+async function downloadCurrentReport() {
+    if (!_currentReportAssetId || !_currentReportResultName) {
+        toast('没有可下载的报告', 'error');
+        return;
+    }
+    toast('正在准备下载...', 'info');
+    try {
+        const resp = await fetch('/api/inspect/report/download', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+                'Authorization': 'Bearer ' + (localStorage.getItem('ops_token') || '')
+            },
+            body: JSON.stringify({ asset_id: _currentReportAssetId, result_name: _currentReportResultName })
+        });
+        if (!resp.ok) {
+            const err = await resp.json().catch(() => ({ detail: resp.statusText }));
+            throw new Error(err.detail || '下载失败');
+        }
+        const blob = await resp.blob();
+        const url = URL.createObjectURL(blob);
+        const a = document.createElement('a');
+        a.href = url;
+        a.download = `inspect-${_currentReportResultName}.html`;
+        document.body.appendChild(a);
+        a.click();
+        document.body.removeChild(a);
+        URL.revokeObjectURL(url);
+        toast('报告已下载', 'success');
+    } catch(e) {
+        toast('下载失败: ' + e.message, 'error');
+    }
+}
+
+function closeInspectReport() {
+    document.getElementById('inspectReportModal').classList.remove('show');
+    document.getElementById('inspectReportIframe').srcdoc = '';
+    document.getElementById('inspectReportStats').style.display = 'none';
+    document.getElementById('inspectReportFindings').style.display = 'none';
+    _currentReportAssetId = null;
+    _currentReportResultName = null;
+}
+
+async function deleteInspectTask(assetId, resultName, historyId) {
+    if (!resultName) { toast('无关联的巡检结果', 'error'); return; }
+    if (!confirm(`确定要删除此巡检记录吗？\n提示：仅从 Web 页面删除本地历史记录，不会删除 K8s 集群中的 InspectTask/InspectResult 资源。`)) return;
+    try {
+        await api('/inspect/task/delete', {
+            method: 'POST',
+            body: JSON.stringify({ asset_id: assetId, result_name: resultName })
+        });
+        toast('已从页面删除', 'success');
+        loadInspectHistory();
+    } catch(e) {
+        toast('删除失败: ' + e.message, 'error');
+    }
+}
+
+// 加载历史巡检记录
+async function loadInspectHistory() {
+    const filter = document.getElementById('inspectHistoryFilter');
+    const assetId = filter ? parseInt(filter.value) || 0 : 0;
+    const body = document.getElementById('inspectHistoryBody');
+    body.innerHTML = '<tr><td colspan="10" class="loading">加载中...</td></tr>';
+    try {
+        const url = assetId ? `/inspect/history?asset_id=${assetId}` : '/inspect/history';
+        const records = await api(url);
+        if (!records.length) {
+            body.innerHTML = '<tr><td colspan="11" class="empty-row">暂无巡检记录</td></tr>';
+            return;
+        }
+        body.innerHTML = records.map(r => {
+            const dangerBadge = r.danger_count ? `<span style="color:#dc2626;font-weight:600;">${r.danger_count}</span>` : `<span style="color:var(--g400);">0</span>`;
+            const warningBadge = r.warning_count ? `<span style="color:#d97706;font-weight:600;">${r.warning_count}</span>` : `<span style="color:var(--g400);">0</span>`;
+            const ignoreBadge = r.ignore_count ? `<span style="color:#2563eb;">${r.ignore_count}</span>` : `<span style="color:var(--g400);">0</span>`;
+            const taskLabel = r.task_name ? esc(r.task_name) : '<span style="color:var(--g400);">未命名</span>';
+            const timeRange = (r.start_time || r.end_time) ? `${esc(r.start_time || '-')} → ${esc(r.end_time || '-')}` : '<span style="color:var(--g400);">-</span>';
+            const resultShort = r.result_name ? esc(r.result_name.length > 35 ? r.result_name.slice(0, 33) + '...' : r.result_name) : '<span style="color:var(--g400);">-</span>';
+            const reportBtn = r.result_name
+                ? `<button class="btn btn-secondary" style="padding:2px 8px;font-size:12px;" onclick="viewHistoryReport(${r.asset_id}, '${esc(r.result_name)}')">查看报告</button>`
+                : '<span style="color:var(--g400);font-size:12px;">无</span>';
+            const deleteBtn = r.result_name
+                ? `<button class="btn" style="padding:2px 8px;font-size:12px;background:#ef4444;color:#fff;" onclick="deleteInspectTask(${r.asset_id}, '${esc(r.result_name)}', ${r.id})">删除</button>`
+                : '';
+            return `<tr>
+                <td style="font-size:12px;">${esc(r.created_at)}</td>
+                <td>${taskLabel}</td>
+                <td>${esc(r.asset_hostname)}<br><span style="font-size:11px;color:var(--g400);">${esc(r.asset_ip)}</span></td>
+                <td style="font-size:12px;" title="${esc(r.result_name)}">${resultShort}</td>
+                <td style="text-align:center;">${dangerBadge}</td>
+                <td style="text-align:center;">${warningBadge}</td>
+                <td style="text-align:center;">${ignoreBadge}</td>
+                <td style="font-size:12px;">${timeRange}</td>
+                <td style="font-size:12px;">${esc(r.operator)}</td>
+                <td>${reportBtn}</td>
+                <td>${deleteBtn}</td>
+            </tr>`;
+        }).join('');
+    } catch(e) {
+        body.innerHTML = `<tr><td colspan="11" style="color:red;">加载失败: ${esc(e.message)}</td></tr>`;
+    }
+}
+
+// 初始化巡检历史筛选器
+async function initInspectHistoryFilter() {
+    const filter = document.getElementById('inspectHistoryFilter');
+    if (!filter) return;
+    try {
+        const data = await api('/inspect/assets');
+        const all = [...(data.k8s_assets || []), ...(data.other_assets || [])];
+        const current = filter.value;
+        filter.innerHTML = '<option value="0">全部节点</option>';
+        all.forEach(a => {
+            const opt = document.createElement('option');
+            opt.value = a.id;
+            opt.textContent = `${a.hostname} (${a.ip})`;
+            filter.appendChild(opt);
+        });
+        filter.value = current || '0';
+    } catch(e) { /* 忽略 */ }
+}
+
+function renderInspectResult(result) {
+    const content = document.getElementById('inspectContent');
+    const summary = result.summary || { total: 0, error: 0, warning: 0, info: 0 };
+    const crds = result.crds_found || [];
+    const results = result.results || [];
+    const tasks = result.inspect_tasks || [];
+    const plans = result.plans || [];
+    const message = result.message || '';
+
+    // 提示消息
+    if (message) {
+        content.innerHTML = `<div class="hint-card">${esc(message)}</div>`;
+        if (result.raw_output) {
+            content.innerHTML += `<details style="margin-top:12px;"><summary style="cursor:pointer;font-size:13px;color:var(--g500);">查看原始输出</summary><pre style="background:#f8f9fa;padding:12px;border-radius:6px;font-size:12px;overflow-x:auto;margin-top:8px;">${esc(result.raw_output)}</pre></details>`;
+        }
+        return;
+    }
+
+    let h = '';
+
+    // 记录资产ID用于查看报告
+    _inspectAssetId = (result.asset && result.asset.id) ? result.asset.id : _inspectAssetId;
+
+    // 任务名称标识
+    if (result.task_name) {
+        h += `<div class="hint-card">巡检任务: <strong>${esc(result.task_name)}</strong></div>`;
+    }
+
+    // CRD 信息
+    if (crds.length) {
+        h += `<div class="hint-card">发现 ${crds.length} 个 KubeEye CRD: ${crds.map(esc).join('、')}</div>`;
+    }
+
+    // 汇总卡片
+    h += '<div class="inspect-summary">';
+    h += `<div class="inspect-stat"><div class="is-num">${summary.total}</div><div class="is-lbl">问题总数</div></div>`;
+    h += `<div class="inspect-stat"><div class="is-num" style="color:#dc2626;">${summary.error}</div><div class="is-lbl">严重</div></div>`;
+    h += `<div class="inspect-stat"><div class="is-num" style="color:#d97706;">${summary.warning}</div><div class="is-lbl">警告</div></div>`;
+    h += `<div class="inspect-stat"><div class="is-num" style="color:#2563eb;">${summary.info}</div><div class="is-lbl">忽略</div></div>`;
+    h += '</div>';
+
+    // 调试信息（统计为0时显示）
+    if (summary.total === 0 && result.debug) {
+        const d = result.debug;
+        h += `<details style="margin:8px 0;padding:8px;background:#fff3cd;border-radius:6px;font-size:12px;">
+            <summary style="cursor:pointer;color:#856404;">⚠ 调试信息（统计为0，点击查看）</summary>
+            <div style="margin-top:8px;color:#666;">
+                <p>HTML补充尝试: ${d.enrich_attempted ? '✓是' : '✗否'}</p>
+                <p>HTML获取成功: ${d.html_fetched ? '✓是' : '✗否'}</p>
+                <p>HTML长度: ${d.html_length || 0}</p>
+                <p>解析到告警数: ${d.findings_parsed || 0}</p>
+                ${d.html_tags ? `<p>HTML标签: ${esc(d.html_tags.join(', '))}</p>` : ''}
+                ${d.html_snippet ? `<p>HTML片段:</p><pre style="white-space:pre-wrap;word-break:break-all;background:#f8f9fa;padding:8px;border-radius:4px;max-height:300px;overflow:auto;">${esc(d.html_snippet)}</pre>` : ''}
+            </div>
+        </details>`;
+    }
+
+    // 巡检任务列表
+    if (tasks.length) {
+        h += '<div class="inspect-group"><div class="inspect-group-title">🔍 巡检任务</div>';
+        tasks.forEach(t => {
+            const completeBadge = t.complete
+                ? '<span class="inspect-level inspect-level-info">已完成</span>'
+                : '<span class="inspect-level inspect-level-warning">进行中</span>';
+            const levelStats = t.level_stats || {};
+            const ruleTotal = t.rule_total || {};
+            const ruleParts = [];
+            if (ruleTotal.component) ruleParts.push(`内置 ${ruleTotal.component}`);
+            if (ruleTotal.opa) ruleParts.push(`OPA ${ruleTotal.opa}`);
+            const dangerCount = levelStats.danger || 0;
+            const warningCount = levelStats.warning || 0;
+
+            h += `<div class="inspect-finding" style="flex-direction:column;align-items:flex-start;gap:6px;">
+                <div style="display:flex;align-items:center;gap:8px;width:100%;flex-wrap:wrap;">
+                    <strong style="font-size:14px;">${esc(t.name)}</strong>
+                    ${completeBadge}
+                    <span class="inspect-meta">${esc(t.start_time || '')} → ${esc(t.end_time || '')}</span>
+                    <button class="btn btn-primary" style="padding:2px 10px;font-size:12px;margin-left:auto;" onclick="viewInspectReport('${esc(t.name)}')">&#128196; 查看报告</button>
+                </div>
+                <div style="display:flex;gap:12px;font-size:12px;color:var(--g500);flex-wrap:wrap;">
+                    <span>集群: ${esc(t.cluster || 'default')}</span>
+                    <span>策略: ${esc(t.policy || 'single')}</span>
+                    ${ruleParts.length ? `<span>规则: ${ruleParts.join(' + ')}</span>` : ''}
+                    <span style="color:${dangerCount ? '#dc2626' : 'var(--g400)'};">严重 ${dangerCount}</span>
+                    <span style="color:${warningCount ? '#d97706' : 'var(--g400)'};">警告 ${warningCount}</span>
+                    <span>忽略 ${levelStats.ignore || 0}</span>
+                </div>
+            </div>`;
+        });
+        h += '</div>';
+    }
+
+    // 巡检计划状态
+    if (plans.length) {
+        h += '<div class="inspect-group"><div class="inspect-group-title">📋 巡检计划</div>';
+        plans.forEach(p => {
+            const statusBadge = p.suspend ? '<span class="inspect-level inspect-level-info">已暂停</span>' : '<span class="inspect-level inspect-level-warning">启用中</span>';
+            h += `<div class="inspect-finding">
+                <span class="inspect-msg"><strong>${esc(p.name)}</strong> · 规则 ${p.rule_count} 个${p.join_rule_num ? ' (已加入 ' + esc(p.join_rule_num) + ')' : ''} · 最多保留 ${p.max_tasks} 个</span>
+                <span class="inspect-meta">${statusBadge} · ${esc(p.schedule || '单次')} · 超时 ${esc(p.timeout || '10m')}</span>
+            </div>`;
+        });
+        h += '</div>';
+    }
+
+    // 详细发现
+    if (results.length) {
+        const groups = {};
+        results.forEach(r => {
+            const key = r.resource_type || 'unknown';
+            if (!groups[key]) groups[key] = [];
+            groups[key].push(r);
+        });
+
+        const typeIcons = { node: '🖥️', pod: '📦', deployment: '🚀', namespace: '📂', service: '🌐', daemonset: '🔧', statefulset: '🗄️', job: '⚙️', cronjob: '⏰', configmap: '📝', event: '⚡' };
+        const levelOrder = { danger: 0, error: 0, warning: 1, ignore: 2, info: 3 };
+
+        Object.keys(groups).sort().forEach(type => {
+            const items = groups[type].sort((a, b) => (levelOrder[a.level] || 9) - (levelOrder[b.level] || 9));
+            const icon = typeIcons[type.toLowerCase()] || '📋';
+            h += `<div class="inspect-group">`;
+            h += `<div class="inspect-group-title">${icon} ${esc(type)} <span style="color:var(--g400);font-weight:400;font-size:12px;">(${items.length})</span></div>`;
+            items.forEach(item => {
+                const lvl = item.level || 'info';
+                const levelClass = (lvl === 'danger' || lvl === 'error') ? 'inspect-level-error' : (lvl === 'warning' ? 'inspect-level-warning' : 'inspect-level-info');
+                const levelText = lvl.toUpperCase();
+                const meta = [];
+                if (item.namespace) meta.push(`ns: ${esc(item.namespace)}`);
+                if (item.resource_name) meta.push(esc(item.resource_name));
+                h += `<div class="inspect-finding">
+                    <span class="inspect-level ${levelClass}">${levelText}</span>
+                    <span class="inspect-msg">${esc(item.message)}</span>
+                    ${meta.length ? `<span class="inspect-meta">${meta.join(' · ')}</span>` : ''}
+                </div>`;
+            });
+            h += `</div>`;
+        });
+    } else if (tasks.length && summary.total === 0) {
+        h += '<div class="hint-card" style="margin-top:12px;">巡检已完成，未发现严重或警告级别的问题。</div>';
+    }
+
+    if (result.raw_output) {
+        h += `<details style="margin-top:12px;"><summary style="cursor:pointer;font-size:13px;color:var(--g500);">查看原始输出</summary><pre style="background:#f8f9fa;padding:12px;border-radius:6px;font-size:12px;overflow-x:auto;margin-top:8px;">${esc(result.raw_output)}</pre></details>`;
+    }
+
+    content.innerHTML = h;
+}
+
+// ========== Init ==========
+function refreshAll() { toast('刷新中...', 'info'); loadDashboard(); loadAssets(); if (currentUser && currentUser.role === 'admin') loadUsers(); }
+
+document.addEventListener('DOMContentLoaded', function() {
+    checkLogin();
+});
+window.addEventListener('resize', fitTerminal);
+
+// 切回页面可见时：如果巡检在执行但很久没轮询（后台tab被浏览器节流），立即补一次 poll
+document.addEventListener('visibilitychange', function() {
+    if (document.visibilityState !== 'visible') return;
+    if (!_inspectState.running || !_inspectState.pollTimer) return;
+    // 主动触发一次 poll，不等 interval 自然触发
+    const assetId = _inspectState.assetId;
+    const kubeeyeTask = _inspectState.kubeeyeTask;
+    const taskName = _inspectState.taskName || '';
+    const existingResults = _inspectState.existingResults || '';
+    if (!assetId || !kubeeyeTask) return;
+    (async () => {
+        try {
+            _inspectState.pollCount++;
+            const poll = await api('/inspect/poll', {
+                method: 'POST',
+                body: JSON.stringify({
+                    asset_id: assetId,
+                    kubeeye_task: kubeeyeTask,
+                    task_name: taskName,
+                    existing_results: existingResults
+                })
+            });
+            if (poll.status === 'completed') {
+                _stopInspectPolling();
+                _inspectState.lastStatus = 'completed';
+                _inspectState.lastResult = poll;
+                _renderInspectContent();
+                loadInspectHistory();
+                return;
+            }
+            if (poll.status === 'error') {
+                _stopInspectPolling();
+                _inspectState.lastStatus = 'error';
+                _inspectState.lastError = poll.message || '巡检失败';
+                _renderInspectContent();
+                return;
+            }
+            const dbg = poll.debug || {};
+            const dbgInfo = `任务: ${dbg.task_found ? '✓已创建' : '✗未找到'} | 完成: ${poll.task_complete ? '✓' : '✗'} | 结果: ${dbg.total_results || 0}`;
+            _inspectState.lastMessage = poll.message;
+            _inspectState.lastDebug = dbgInfo;
+            _renderInspectContent();
+            if (_inspectState.pollCount >= _inspectState.maxPolls) {
+                _stopInspectPolling();
+                _inspectState.lastStatus = 'timeout';
+                _renderInspectContent();
+                loadInspectHistory();
+            }
+        } catch(e) {
+            _stopInspectPolling();
+            _inspectState.lastStatus = 'error';
+            _inspectState.lastError = e.message || '巡检请求异常';
+            _renderInspectContent();
+        }
+    })();
+});
+</script>
+</body>
+</html>
