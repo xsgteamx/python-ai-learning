@@ -1,0 +1,3502 @@
+[
+  {
+    "text": "想要银行卡状态查询在线等",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 1,
+    "is_multi_intent": false
+  },
+  {
+    "text": "想要查询一下我的活期账户？",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 3,
+    "is_multi_intent": false
+  },
+  {
+    "text": "在吗？活期账户明细查询在线等",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 5,
+    "is_multi_intent": false
+  },
+  {
+    "text": "可以我的账户怎么少了钱在线等",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 10,
+    "is_multi_intent": false
+  },
+  {
+    "text": "能不能查询一下我的账户？",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 12,
+    "is_multi_intent": false
+  },
+  {
+    "text": "想要我想查一下工资卡余额！",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 14,
+    "is_multi_intent": false
+  },
+  {
+    "text": "能不能我想查一下银行卡余额",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 34,
+    "is_multi_intent": false
+  },
+  {
+    "text": "我想查一下活期账户余额在线等",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 40,
+    "is_multi_intent": false
+  },
+  {
+    "text": "需要工资卡状态查询",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 48,
+    "is_multi_intent": false
+  },
+  {
+    "text": "请问我想查一下定期账户余额！",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 55,
+    "is_multi_intent": false
+  },
+  {
+    "text": "请问储蓄卡为什么被冻结了",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 62,
+    "is_multi_intent": false
+  },
+  {
+    "text": "请问我的储蓄卡里有多少钱谢谢",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 96,
+    "is_multi_intent": false
+  },
+  {
+    "text": "麻烦账户状态查询？",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 97,
+    "is_multi_intent": false
+  },
+  {
+    "text": "你好，我的活期账户里有多少钱麻烦了",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 101,
+    "is_multi_intent": false
+  },
+  {
+    "text": "急！我的工资卡怎么少了钱",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 102,
+    "is_multi_intent": false
+  },
+  {
+    "text": "麻烦帮我看看账户还有多少钱急",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 118,
+    "is_multi_intent": false
+  },
+  {
+    "text": "请问定期账户为什么被冻结了！",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 119,
+    "is_multi_intent": false
+  },
+  {
+    "text": "想要活期账户明细查询谢谢",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 136,
+    "is_multi_intent": false
+  },
+  {
+    "text": "你好，我想查一下活期账户余额麻烦了",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 143,
+    "is_multi_intent": false
+  },
+  {
+    "text": "想要储蓄卡最近有什么交易谢谢",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 144,
+    "is_multi_intent": false
+  },
+  {
+    "text": "在吗？我的工资卡怎么少了钱急",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 149,
+    "is_multi_intent": false
+  },
+  {
+    "text": "你好，我的储蓄卡怎么少了钱！",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 155,
+    "is_multi_intent": false
+  },
+  {
+    "text": "你好，我要查账户流水",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 157,
+    "is_multi_intent": false
+  },
+  {
+    "text": "请问查一下定期账户的交易记录！",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 181,
+    "is_multi_intent": false
+  },
+  {
+    "text": "麻烦我的定期账户怎么少了钱！",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 200,
+    "is_multi_intent": false
+  },
+  {
+    "text": "麻烦能帮我查下账户吗",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 204,
+    "is_multi_intent": false
+  },
+  {
+    "text": "急！银行卡状态查询急",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 206,
+    "is_multi_intent": false
+  },
+  {
+    "text": "可以我要查定期账户流水！",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 210,
+    "is_multi_intent": false
+  },
+  {
+    "text": "想要银行卡为什么被冻结了麻烦了",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 213,
+    "is_multi_intent": false
+  },
+  {
+    "text": "我的银行卡怎么少了钱麻烦了",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 226,
+    "is_multi_intent": false
+  },
+  {
+    "text": "请问帮我看看工资卡是否正常",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 228,
+    "is_multi_intent": false
+  },
+  {
+    "text": "想要查一下银行卡的交易记录在线等",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 233,
+    "is_multi_intent": false
+  },
+  {
+    "text": "请问帮我看看定期账户是否正常？",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 239,
+    "is_multi_intent": false
+  },
+  {
+    "text": "储蓄卡最近有什么交易",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 251,
+    "is_multi_intent": false
+  },
+  {
+    "text": "能不能银行卡状态查询",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 259,
+    "is_multi_intent": false
+  },
+  {
+    "text": "帮我看看活期账户还有多少钱谢谢",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 260,
+    "is_multi_intent": false
+  },
+  {
+    "text": "在吗？帮我看看定期账户还有多少钱！",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 273,
+    "is_multi_intent": false
+  },
+  {
+    "text": "可以查一下定期账户的交易记录在线等",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 277,
+    "is_multi_intent": false
+  },
+  {
+    "text": "在吗？帮我看看账户是否正常急",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 280,
+    "is_multi_intent": false
+  },
+  {
+    "text": "可以我想查一下活期账户余额谢谢",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 298,
+    "is_multi_intent": false
+  },
+  {
+    "text": "能不能查一下银行卡的交易记录谢谢",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 300,
+    "is_multi_intent": false
+  },
+  {
+    "text": "你好，银行卡的账户余额是多少在线等",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 303,
+    "is_multi_intent": false
+  },
+  {
+    "text": "请问能帮我查下账户吗？",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 305,
+    "is_multi_intent": false
+  },
+  {
+    "text": "麻烦能帮我查下活期账户吗急",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 306,
+    "is_multi_intent": false
+  },
+  {
+    "text": "想要账户最近有什么交易",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 326,
+    "is_multi_intent": false
+  },
+  {
+    "text": "在吗？活期账户为什么被冻结了谢谢",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 334,
+    "is_multi_intent": false
+  },
+  {
+    "text": "储蓄卡的账户余额是多少",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 349,
+    "is_multi_intent": false
+  },
+  {
+    "text": "急！帮我看看定期账户是否正常",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 354,
+    "is_multi_intent": false
+  },
+  {
+    "text": "请问能帮我查下账户吗！",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 359,
+    "is_multi_intent": false
+  },
+  {
+    "text": "银行卡明细查询？",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 363,
+    "is_multi_intent": false
+  },
+  {
+    "text": "想要账户状态查询",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 364,
+    "is_multi_intent": false
+  },
+  {
+    "text": "你好，银行卡状态查询在线等",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 365,
+    "is_multi_intent": false
+  },
+  {
+    "text": "请问我想查一下银行卡余额！",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 369,
+    "is_multi_intent": false
+  },
+  {
+    "text": "需要储蓄卡为什么被冻结了",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 374,
+    "is_multi_intent": false
+  },
+  {
+    "text": "你好，查一下定期账户的交易记录",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 379,
+    "is_multi_intent": false
+  },
+  {
+    "text": "请问帮我看看银行卡是否正常",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 380,
+    "is_multi_intent": false
+  },
+  {
+    "text": "想要定期账户状态查询！",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 405,
+    "is_multi_intent": false
+  },
+  {
+    "text": "查询一下我的活期账户？",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 420,
+    "is_multi_intent": false
+  },
+  {
+    "text": "银行卡为什么被冻结了急",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 422,
+    "is_multi_intent": false
+  },
+  {
+    "text": "需要银行卡的账户余额是多少",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 424,
+    "is_multi_intent": false
+  },
+  {
+    "text": "可以定期账户为什么被冻结了！",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 425,
+    "is_multi_intent": false
+  },
+  {
+    "text": "麻烦定期账户为什么被冻结了谢谢",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 440,
+    "is_multi_intent": false
+  },
+  {
+    "text": "查询一下我的定期账户麻烦了",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 441,
+    "is_multi_intent": false
+  },
+  {
+    "text": "想要我要查定期账户流水谢谢",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 447,
+    "is_multi_intent": false
+  },
+  {
+    "text": "可以查询银行卡开户信息！",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 453,
+    "is_multi_intent": false
+  },
+  {
+    "text": "可以我的储蓄卡里有多少钱麻烦了",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 459,
+    "is_multi_intent": false
+  },
+  {
+    "text": "请问能帮我查下工资卡吗在线等",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 470,
+    "is_multi_intent": false
+  },
+  {
+    "text": "想要帮我看看账户还有多少钱！",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 471,
+    "is_multi_intent": false
+  },
+  {
+    "text": "在吗？能帮我查下储蓄卡吗？",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 488,
+    "is_multi_intent": false
+  },
+  {
+    "text": "需要查询银行卡开户信息急",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 500,
+    "is_multi_intent": false
+  },
+  {
+    "text": "请问活期账户为什么被冻结了急",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 506,
+    "is_multi_intent": false
+  },
+  {
+    "text": "急！我的活期账户怎么少了钱麻烦了",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 510,
+    "is_multi_intent": false
+  },
+  {
+    "text": "在吗？我想查一下活期账户余额",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 514,
+    "is_multi_intent": false
+  },
+  {
+    "text": "想要查一下活期账户的交易记录",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 517,
+    "is_multi_intent": false
+  },
+  {
+    "text": "你好，我想查一下银行卡余额在线等",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 527,
+    "is_multi_intent": false
+  },
+  {
+    "text": "需要定期账户为什么被冻结了急",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 530,
+    "is_multi_intent": false
+  },
+  {
+    "text": "麻烦储蓄卡明细查询",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 537,
+    "is_multi_intent": false
+  },
+  {
+    "text": "可以我想查一下定期账户余额？",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 544,
+    "is_multi_intent": false
+  },
+  {
+    "text": "在吗？我的账户里有多少钱谢谢",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 547,
+    "is_multi_intent": false
+  },
+  {
+    "text": "想要我的定期账户怎么少了钱急",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 548,
+    "is_multi_intent": false
+  },
+  {
+    "text": "可以能帮我查下工资卡吗谢谢",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 559,
+    "is_multi_intent": false
+  },
+  {
+    "text": "麻烦查询工资卡开户信息急",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 562,
+    "is_multi_intent": false
+  },
+  {
+    "text": "能不能能帮我查下银行卡吗？",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 569,
+    "is_multi_intent": false
+  },
+  {
+    "text": "你好，查一下工资卡的交易记录",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 572,
+    "is_multi_intent": false
+  },
+  {
+    "text": "想要银行卡最近有什么交易急",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 582,
+    "is_multi_intent": false
+  },
+  {
+    "text": "麻烦储蓄卡明细查询急",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 598,
+    "is_multi_intent": false
+  },
+  {
+    "text": "请问我想查一下定期账户余额！",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 604,
+    "is_multi_intent": false
+  },
+  {
+    "text": "需要我的账户怎么少了钱！",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 605,
+    "is_multi_intent": false
+  },
+  {
+    "text": "需要我的工资卡怎么少了钱在线等",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 606,
+    "is_multi_intent": false
+  },
+  {
+    "text": "急！账户状态查询急",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 607,
+    "is_multi_intent": false
+  },
+  {
+    "text": "能不能查询定期账户开户信息麻烦了",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 618,
+    "is_multi_intent": false
+  },
+  {
+    "text": "可以我要查银行卡流水在线等",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 624,
+    "is_multi_intent": false
+  },
+  {
+    "text": "可以能帮我查下银行卡吗？",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 627,
+    "is_multi_intent": false
+  },
+  {
+    "text": "想要我想查一下定期账户余额在线等",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 632,
+    "is_multi_intent": false
+  },
+  {
+    "text": "银行卡状态查询急",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 637,
+    "is_multi_intent": false
+  },
+  {
+    "text": "麻烦工资卡明细查询！",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 639,
+    "is_multi_intent": false
+  },
+  {
+    "text": "请问工资卡最近有什么交易急",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 660,
+    "is_multi_intent": false
+  },
+  {
+    "text": "在吗？工资卡状态查询",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 674,
+    "is_multi_intent": false
+  },
+  {
+    "text": "可以帮我看看银行卡是否正常急",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 689,
+    "is_multi_intent": false
+  },
+  {
+    "text": "在吗？定期账户为什么被冻结了？",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 693,
+    "is_multi_intent": false
+  },
+  {
+    "text": "活期账户状态查询",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 711,
+    "is_multi_intent": false
+  },
+  {
+    "text": "想要我要查活期账户流水在线等",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 720,
+    "is_multi_intent": false
+  },
+  {
+    "text": "麻烦工资卡最近有什么交易麻烦了",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 721,
+    "is_multi_intent": false
+  },
+  {
+    "text": "在吗？查询银行卡开户信息？",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 728,
+    "is_multi_intent": false
+  },
+  {
+    "text": "麻烦帮我看看工资卡是否正常急",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 740,
+    "is_multi_intent": false
+  },
+  {
+    "text": "需要我要查定期账户流水？",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 743,
+    "is_multi_intent": false
+  },
+  {
+    "text": "麻烦我的账户怎么少了钱急",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 751,
+    "is_multi_intent": false
+  },
+  {
+    "text": "需要活期账户的账户余额是多少？",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 753,
+    "is_multi_intent": false
+  },
+  {
+    "text": "你好，查一下账户的交易记录！",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 754,
+    "is_multi_intent": false
+  },
+  {
+    "text": "你好，我的银行卡怎么少了钱",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 758,
+    "is_multi_intent": false
+  },
+  {
+    "text": "可以帮我看看账户是否正常！",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 763,
+    "is_multi_intent": false
+  },
+  {
+    "text": "需要查询一下我的账户急",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 767,
+    "is_multi_intent": false
+  },
+  {
+    "text": "查一下储蓄卡的交易记录",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 770,
+    "is_multi_intent": false
+  },
+  {
+    "text": "麻烦账户最近有什么交易谢谢",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 772,
+    "is_multi_intent": false
+  },
+  {
+    "text": "急！我的定期账户怎么少了钱在线等",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 774,
+    "is_multi_intent": false
+  },
+  {
+    "text": "麻烦帮我看看账户还有多少钱在线等",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 782,
+    "is_multi_intent": false
+  },
+  {
+    "text": "能不能活期账户明细查询",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 800,
+    "is_multi_intent": false
+  },
+  {
+    "text": "能不能查询银行卡开户信息麻烦了",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 812,
+    "is_multi_intent": false
+  },
+  {
+    "text": "可以我想查一下定期账户余额！",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 827,
+    "is_multi_intent": false
+  },
+  {
+    "text": "想要帮我看看定期账户还有多少钱！",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 831,
+    "is_multi_intent": false
+  },
+  {
+    "text": "请问我的工资卡里有多少钱？",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 843,
+    "is_multi_intent": false
+  },
+  {
+    "text": "需要查询一下我的银行卡在线等",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 847,
+    "is_multi_intent": false
+  },
+  {
+    "text": "请问定期账户的账户余额是多少在线等",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 856,
+    "is_multi_intent": false
+  },
+  {
+    "text": "可以查询一下我的活期账户？",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 863,
+    "is_multi_intent": false
+  },
+  {
+    "text": "你好，帮我看看定期账户是否正常麻烦了",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 872,
+    "is_multi_intent": false
+  },
+  {
+    "text": "急！查询一下我的储蓄卡！",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 880,
+    "is_multi_intent": false
+  },
+  {
+    "text": "能不能帮我看看工资卡还有多少钱！",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 884,
+    "is_multi_intent": false
+  },
+  {
+    "text": "急！能帮我查下银行卡吗？",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 889,
+    "is_multi_intent": false
+  },
+  {
+    "text": "能不能账户明细查询麻烦了",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 897,
+    "is_multi_intent": false
+  },
+  {
+    "text": "麻烦定期账户的账户余额是多少",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 899,
+    "is_multi_intent": false
+  },
+  {
+    "text": "请问活期账户的账户余额是多少谢谢",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 900,
+    "is_multi_intent": false
+  },
+  {
+    "text": "可以查询账户开户信息在线等",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 901,
+    "is_multi_intent": false
+  },
+  {
+    "text": "想要查询一下我的定期账户麻烦了",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 904,
+    "is_multi_intent": false
+  },
+  {
+    "text": "需要查询一下我的定期账户谢谢",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 913,
+    "is_multi_intent": false
+  },
+  {
+    "text": "需要我想查一下账户余额",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 915,
+    "is_multi_intent": false
+  },
+  {
+    "text": "想要查询活期账户开户信息？",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 920,
+    "is_multi_intent": false
+  },
+  {
+    "text": "可以我想查一下活期账户余额",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 922,
+    "is_multi_intent": false
+  },
+  {
+    "text": "可以我要查工资卡流水急",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 934,
+    "is_multi_intent": false
+  },
+  {
+    "text": "想要储蓄卡明细查询在线等",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 945,
+    "is_multi_intent": false
+  },
+  {
+    "text": "麻烦帮我看看活期账户还有多少钱在线等",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 975,
+    "is_multi_intent": false
+  },
+  {
+    "text": "请问查询一下我的活期账户？",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 976,
+    "is_multi_intent": false
+  },
+  {
+    "text": "我的活期账户里有多少钱谢谢",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 979,
+    "is_multi_intent": false
+  },
+  {
+    "text": "在吗？能帮我查下账户吗急",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 980,
+    "is_multi_intent": false
+  },
+  {
+    "text": "需要我的定期账户怎么少了钱？",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 983,
+    "is_multi_intent": false
+  },
+  {
+    "text": "你好，我的活期账户怎么少了钱谢谢",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 989,
+    "is_multi_intent": false
+  },
+  {
+    "text": "急！查询一下我的银行卡谢谢",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 990,
+    "is_multi_intent": false
+  },
+  {
+    "text": "你好，银行卡明细查询",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 994,
+    "is_multi_intent": false
+  },
+  {
+    "text": "你好，帮我看看银行卡还有多少钱谢谢",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 995,
+    "is_multi_intent": false
+  },
+  {
+    "text": "能不能帮我看看银行卡是否正常在线等",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 1003,
+    "is_multi_intent": false
+  },
+  {
+    "text": "在吗？能帮我查下活期账户吗",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 1006,
+    "is_multi_intent": false
+  },
+  {
+    "text": "想要我的银行卡怎么少了钱急",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 1017,
+    "is_multi_intent": false
+  },
+  {
+    "text": "可以查询一下我的账户谢谢",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 1019,
+    "is_multi_intent": false
+  },
+  {
+    "text": "想要账户最近有什么交易",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 1024,
+    "is_multi_intent": false
+  },
+  {
+    "text": "能不能活期账户明细查询急",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 1025,
+    "is_multi_intent": false
+  },
+  {
+    "text": "可以帮我看看工资卡还有多少钱谢谢",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 1026,
+    "is_multi_intent": false
+  },
+  {
+    "text": "想要活期账户明细查询急",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 1030,
+    "is_multi_intent": false
+  },
+  {
+    "text": "麻烦我的储蓄卡怎么少了钱谢谢",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 1034,
+    "is_multi_intent": false
+  },
+  {
+    "text": "请问查一下银行卡的交易记录急",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 1040,
+    "is_multi_intent": false
+  },
+  {
+    "text": "急！查一下定期账户的交易记录",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 1044,
+    "is_multi_intent": false
+  },
+  {
+    "text": "请问查询工资卡开户信息麻烦了",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 1048,
+    "is_multi_intent": false
+  },
+  {
+    "text": "能不能我的储蓄卡里有多少钱！",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 1059,
+    "is_multi_intent": false
+  },
+  {
+    "text": "你好，银行卡为什么被冻结了？",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 1065,
+    "is_multi_intent": false
+  },
+  {
+    "text": "能不能我的储蓄卡里有多少钱麻烦了",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 1071,
+    "is_multi_intent": false
+  },
+  {
+    "text": "能不能查询一下我的银行卡？",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 1074,
+    "is_multi_intent": false
+  },
+  {
+    "text": "急！查询账户开户信息",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 1097,
+    "is_multi_intent": false
+  },
+  {
+    "text": "急！我要查储蓄卡流水急",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 1102,
+    "is_multi_intent": false
+  },
+  {
+    "text": "请问我的储蓄卡里有多少钱？",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 1108,
+    "is_multi_intent": false
+  },
+  {
+    "text": "你好，能帮我查下定期账户吗",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 1112,
+    "is_multi_intent": false
+  },
+  {
+    "text": "需要帮我看看定期账户是否正常急",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 1115,
+    "is_multi_intent": false
+  },
+  {
+    "text": "需要能帮我查下活期账户吗麻烦了",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 1117,
+    "is_multi_intent": false
+  },
+  {
+    "text": "麻烦查询一下我的活期账户麻烦了",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 1119,
+    "is_multi_intent": false
+  },
+  {
+    "text": "你好，我的储蓄卡怎么少了钱？",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 1121,
+    "is_multi_intent": false
+  },
+  {
+    "text": "请问我的储蓄卡里有多少钱在线等",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 1122,
+    "is_multi_intent": false
+  },
+  {
+    "text": "查一下账户的交易记录在线等",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 1124,
+    "is_multi_intent": false
+  },
+  {
+    "text": "急！我想查一下账户余额在线等",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 1126,
+    "is_multi_intent": false
+  },
+  {
+    "text": "麻烦工资卡明细查询急",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 1130,
+    "is_multi_intent": false
+  },
+  {
+    "text": "想要储蓄卡为什么被冻结了急",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 1135,
+    "is_multi_intent": false
+  },
+  {
+    "text": "麻烦银行卡明细查询谢谢",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 1139,
+    "is_multi_intent": false
+  },
+  {
+    "text": "可以定期账户状态查询！",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 1143,
+    "is_multi_intent": false
+  },
+  {
+    "text": "在吗？我的活期账户怎么少了钱急",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 1147,
+    "is_multi_intent": false
+  },
+  {
+    "text": "能不能活期账户为什么被冻结了？",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 1149,
+    "is_multi_intent": false
+  },
+  {
+    "text": "可以能帮我查下银行卡吗！",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 1153,
+    "is_multi_intent": false
+  },
+  {
+    "text": "可以银行卡的账户余额是多少",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 1155,
+    "is_multi_intent": false
+  },
+  {
+    "text": "在吗？查询储蓄卡开户信息谢谢",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 1157,
+    "is_multi_intent": false
+  },
+  {
+    "text": "在吗？查一下工资卡的交易记录急",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 1160,
+    "is_multi_intent": false
+  },
+  {
+    "text": "需要我要查活期账户流水麻烦了",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 1165,
+    "is_multi_intent": false
+  },
+  {
+    "text": "想要定期账户明细查询在线等",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 1166,
+    "is_multi_intent": false
+  },
+  {
+    "text": "请问查询一下我的账户？",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 1187,
+    "is_multi_intent": false
+  },
+  {
+    "text": "急！银行卡状态查询？",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 1192,
+    "is_multi_intent": false
+  },
+  {
+    "text": "可以我的定期账户怎么少了钱谢谢",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 1201,
+    "is_multi_intent": false
+  },
+  {
+    "text": "可以工资卡最近有什么交易？",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 1217,
+    "is_multi_intent": false
+  },
+  {
+    "text": "请问储蓄卡为什么被冻结了！",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 1220,
+    "is_multi_intent": false
+  },
+  {
+    "text": "请问帮我看看账户还有多少钱急",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 1223,
+    "is_multi_intent": false
+  },
+  {
+    "text": "可以帮我看看活期账户还有多少钱麻烦了",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 1224,
+    "is_multi_intent": false
+  },
+  {
+    "text": "急！查询一下我的活期账户",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 1226,
+    "is_multi_intent": false
+  },
+  {
+    "text": "能不能我的工资卡里有多少钱谢谢",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 1235,
+    "is_multi_intent": false
+  },
+  {
+    "text": "可以我想查一下银行卡余额急",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 1242,
+    "is_multi_intent": false
+  },
+  {
+    "text": "可以定期账户状态查询急",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 1246,
+    "is_multi_intent": false
+  },
+  {
+    "text": "请问账户状态查询急",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 1254,
+    "is_multi_intent": false
+  },
+  {
+    "text": "能不能帮我看看储蓄卡还有多少钱！",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 1262,
+    "is_multi_intent": false
+  },
+  {
+    "text": "查询一下我的账户",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 1275,
+    "is_multi_intent": false
+  },
+  {
+    "text": "你好，定期账户状态查询在线等",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 1284,
+    "is_multi_intent": false
+  },
+  {
+    "text": "你好，账户为什么被冻结了谢谢",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 1299,
+    "is_multi_intent": false
+  },
+  {
+    "text": "可以我的银行卡里有多少钱在线等",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 1309,
+    "is_multi_intent": false
+  },
+  {
+    "text": "想要帮我看看储蓄卡是否正常急",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 1316,
+    "is_multi_intent": false
+  },
+  {
+    "text": "麻烦定期账户的账户余额是多少在线等",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 1329,
+    "is_multi_intent": false
+  },
+  {
+    "text": "我想查一下账户余额！",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 1330,
+    "is_multi_intent": false
+  },
+  {
+    "text": "能不能帮我看看储蓄卡是否正常急",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 1334,
+    "is_multi_intent": false
+  },
+  {
+    "text": "在吗？查询一下我的工资卡急",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 1337,
+    "is_multi_intent": false
+  },
+  {
+    "text": "需要我的工资卡怎么少了钱",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 1338,
+    "is_multi_intent": false
+  },
+  {
+    "text": "请问能帮我查下工资卡吗麻烦了",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 1339,
+    "is_multi_intent": false
+  },
+  {
+    "text": "麻烦活期账户最近有什么交易麻烦了",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 1352,
+    "is_multi_intent": false
+  },
+  {
+    "text": "在吗？帮我看看工资卡还有多少钱谢谢",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 1371,
+    "is_multi_intent": false
+  },
+  {
+    "text": "需要储蓄卡最近有什么交易在线等",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 1372,
+    "is_multi_intent": false
+  },
+  {
+    "text": "在吗？账户为什么被冻结了急",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 1373,
+    "is_multi_intent": false
+  },
+  {
+    "text": "能帮我查下工资卡吗在线等",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 1385,
+    "is_multi_intent": false
+  },
+  {
+    "text": "需要我的银行卡怎么少了钱？",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 1394,
+    "is_multi_intent": false
+  },
+  {
+    "text": "你好，账户最近有什么交易急",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 1395,
+    "is_multi_intent": false
+  },
+  {
+    "text": "能不能帮我看看储蓄卡是否正常谢谢",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 1398,
+    "is_multi_intent": false
+  },
+  {
+    "text": "在吗？工资卡最近有什么交易麻烦了",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 1405,
+    "is_multi_intent": false
+  },
+  {
+    "text": "能不能工资卡明细查询谢谢",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 1415,
+    "is_multi_intent": false
+  },
+  {
+    "text": "想要能帮我查下银行卡吗",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 1417,
+    "is_multi_intent": false
+  },
+  {
+    "text": "请问我的工资卡里有多少钱？",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 1419,
+    "is_multi_intent": false
+  },
+  {
+    "text": "你好，查询储蓄卡开户信息急",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 1423,
+    "is_multi_intent": false
+  },
+  {
+    "text": "你好，帮我看看定期账户还有多少钱？",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 1424,
+    "is_multi_intent": false
+  },
+  {
+    "text": "可以帮我看看工资卡还有多少钱",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 1428,
+    "is_multi_intent": false
+  },
+  {
+    "text": "需要工资卡最近有什么交易谢谢",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 1434,
+    "is_multi_intent": false
+  },
+  {
+    "text": "急！帮我看看银行卡是否正常谢谢",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 1438,
+    "is_multi_intent": false
+  },
+  {
+    "text": "能不能查询定期账户开户信息！",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 1453,
+    "is_multi_intent": false
+  },
+  {
+    "text": "麻烦查询一下我的账户麻烦了",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 1456,
+    "is_multi_intent": false
+  },
+  {
+    "text": "可以帮我看看工资卡是否正常",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 1457,
+    "is_multi_intent": false
+  },
+  {
+    "text": "需要能帮我查下活期账户吗谢谢",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 1462,
+    "is_multi_intent": false
+  },
+  {
+    "text": "能不能查询银行卡开户信息麻烦了",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 1465,
+    "is_multi_intent": false
+  },
+  {
+    "text": "可以我要查定期账户流水谢谢",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 1474,
+    "is_multi_intent": false
+  },
+  {
+    "text": "请问银行卡的账户余额是多少谢谢",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 1475,
+    "is_multi_intent": false
+  },
+  {
+    "text": "活期账户为什么被冻结了！",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 1489,
+    "is_multi_intent": false
+  },
+  {
+    "text": "你好，活期账户明细查询？",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 1491,
+    "is_multi_intent": false
+  },
+  {
+    "text": "你好，我的活期账户怎么少了钱谢谢",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 1496,
+    "is_multi_intent": false
+  },
+  {
+    "text": "麻烦工资卡状态查询",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 1501,
+    "is_multi_intent": false
+  },
+  {
+    "text": "需要能帮我查下活期账户吗急",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 1506,
+    "is_multi_intent": false
+  },
+  {
+    "text": "需要能帮我查下银行卡吗在线等",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 1514,
+    "is_multi_intent": false
+  },
+  {
+    "text": "请问帮我看看工资卡还有多少钱急",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 1532,
+    "is_multi_intent": false
+  },
+  {
+    "text": "我的银行卡怎么少了钱",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 1538,
+    "is_multi_intent": false
+  },
+  {
+    "text": "我要查银行卡流水？",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 1550,
+    "is_multi_intent": false
+  },
+  {
+    "text": "你好，能帮我查下储蓄卡吗在线等",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 1551,
+    "is_multi_intent": false
+  },
+  {
+    "text": "能不能工资卡为什么被冻结了",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 1560,
+    "is_multi_intent": false
+  },
+  {
+    "text": "你好，帮我看看银行卡还有多少钱麻烦了",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 1567,
+    "is_multi_intent": false
+  },
+  {
+    "text": "急！查询银行卡开户信息",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 1572,
+    "is_multi_intent": false
+  },
+  {
+    "text": "在吗？我想查一下账户余额谢谢",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 1576,
+    "is_multi_intent": false
+  },
+  {
+    "text": "可以活期账户最近有什么交易谢谢",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 1583,
+    "is_multi_intent": false
+  },
+  {
+    "text": "能不能银行卡最近有什么交易麻烦了",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 1599,
+    "is_multi_intent": false
+  },
+  {
+    "text": "能不能我要查定期账户流水！",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 1603,
+    "is_multi_intent": false
+  },
+  {
+    "text": "可以工资卡明细查询急",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 1606,
+    "is_multi_intent": false
+  },
+  {
+    "text": "可以查一下定期账户的交易记录",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 1608,
+    "is_multi_intent": false
+  },
+  {
+    "text": "可以我的账户里有多少钱",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 1624,
+    "is_multi_intent": false
+  },
+  {
+    "text": "账户明细查询在线等",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 1630,
+    "is_multi_intent": false
+  },
+  {
+    "text": "请问查一下银行卡的交易记录",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 1633,
+    "is_multi_intent": false
+  },
+  {
+    "text": "在吗？我要查活期账户流水在线等",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 1634,
+    "is_multi_intent": false
+  },
+  {
+    "text": "想要帮我看看银行卡是否正常",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 1657,
+    "is_multi_intent": false
+  },
+  {
+    "text": "请问账户状态查询谢谢",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 1659,
+    "is_multi_intent": false
+  },
+  {
+    "text": "可以活期账户的账户余额是多少麻烦了",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 1664,
+    "is_multi_intent": false
+  },
+  {
+    "text": "请问查询账户开户信息在线等",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 1667,
+    "is_multi_intent": false
+  },
+  {
+    "text": "可以帮我看看定期账户还有多少钱急",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 1670,
+    "is_multi_intent": false
+  },
+  {
+    "text": "麻烦我的账户里有多少钱？",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 1671,
+    "is_multi_intent": false
+  },
+  {
+    "text": "能不能我要查储蓄卡流水麻烦了",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 1674,
+    "is_multi_intent": false
+  },
+  {
+    "text": "你好，账户的账户余额是多少",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 1678,
+    "is_multi_intent": false
+  },
+  {
+    "text": "需要查询一下我的定期账户？",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 1679,
+    "is_multi_intent": false
+  },
+  {
+    "text": "想要定期账户明细查询？",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 1682,
+    "is_multi_intent": false
+  },
+  {
+    "text": "需要帮我看看储蓄卡还有多少钱麻烦了",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 1701,
+    "is_multi_intent": false
+  },
+  {
+    "text": "想要查询储蓄卡开户信息在线等",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 1710,
+    "is_multi_intent": false
+  },
+  {
+    "text": "需要帮我看看银行卡还有多少钱在线等",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 1728,
+    "is_multi_intent": false
+  },
+  {
+    "text": "可以查一下储蓄卡的交易记录在线等",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 1734,
+    "is_multi_intent": false
+  },
+  {
+    "text": "工资卡状态查询！",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 1741,
+    "is_multi_intent": false
+  },
+  {
+    "text": "你好，银行卡的账户余额是多少麻烦了",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 1743,
+    "is_multi_intent": false
+  },
+  {
+    "text": "银行卡为什么被冻结了谢谢",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 1756,
+    "is_multi_intent": false
+  },
+  {
+    "text": "银行卡明细查询！",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 1761,
+    "is_multi_intent": false
+  },
+  {
+    "text": "急！查一下活期账户的交易记录在线等",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 1764,
+    "is_multi_intent": false
+  },
+  {
+    "text": "想要定期账户明细查询谢谢",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 1772,
+    "is_multi_intent": false
+  },
+  {
+    "text": "请问查询一下我的工资卡麻烦了",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 1779,
+    "is_multi_intent": false
+  },
+  {
+    "text": "请问查询一下我的活期账户",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 1787,
+    "is_multi_intent": false
+  },
+  {
+    "text": "可以定期账户为什么被冻结了麻烦了",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 1794,
+    "is_multi_intent": false
+  },
+  {
+    "text": "麻烦我的活期账户怎么少了钱麻烦了",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 1802,
+    "is_multi_intent": false
+  },
+  {
+    "text": "想要银行卡状态查询",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 1804,
+    "is_multi_intent": false
+  },
+  {
+    "text": "急！能帮我查下账户吗！",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 1805,
+    "is_multi_intent": false
+  },
+  {
+    "text": "在吗？我的定期账户里有多少钱！",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 1817,
+    "is_multi_intent": false
+  },
+  {
+    "text": "可以查询一下我的定期账户！",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 1822,
+    "is_multi_intent": false
+  },
+  {
+    "text": "可以帮我看看工资卡是否正常谢谢",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 1829,
+    "is_multi_intent": false
+  },
+  {
+    "text": "需要我要查活期账户流水！",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 1834,
+    "is_multi_intent": false
+  },
+  {
+    "text": "急！活期账户明细查询？",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 1835,
+    "is_multi_intent": false
+  },
+  {
+    "text": "你好，活期账户明细查询急",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 1839,
+    "is_multi_intent": false
+  },
+  {
+    "text": "我的银行卡怎么少了钱谢谢",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 1844,
+    "is_multi_intent": false
+  },
+  {
+    "text": "在吗？我想查一下账户余额急",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 1846,
+    "is_multi_intent": false
+  },
+  {
+    "text": "在吗？定期账户的账户余额是多少在线等",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 1847,
+    "is_multi_intent": false
+  },
+  {
+    "text": "能不能查询一下我的活期账户！",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 1863,
+    "is_multi_intent": false
+  },
+  {
+    "text": "在吗？查一下定期账户的交易记录谢谢",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 1866,
+    "is_multi_intent": false
+  },
+  {
+    "text": "急！帮我看看储蓄卡是否正常急",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 1879,
+    "is_multi_intent": false
+  },
+  {
+    "text": "活期账户为什么被冻结了在线等",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 1884,
+    "is_multi_intent": false
+  },
+  {
+    "text": "我想查一下工资卡余额",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 1890,
+    "is_multi_intent": false
+  },
+  {
+    "text": "需要我的账户怎么少了钱？",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 1891,
+    "is_multi_intent": false
+  },
+  {
+    "text": "需要我要查储蓄卡流水麻烦了",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 1892,
+    "is_multi_intent": false
+  },
+  {
+    "text": "需要查询工资卡开户信息麻烦了",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 1893,
+    "is_multi_intent": false
+  },
+  {
+    "text": "请问查询一下我的活期账户？",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 1907,
+    "is_multi_intent": false
+  },
+  {
+    "text": "在吗？查询一下我的储蓄卡！",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 1909,
+    "is_multi_intent": false
+  },
+  {
+    "text": "麻烦帮我看看账户是否正常谢谢",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 1913,
+    "is_multi_intent": false
+  },
+  {
+    "text": "你好，定期账户最近有什么交易？",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 1915,
+    "is_multi_intent": false
+  },
+  {
+    "text": "能不能能帮我查下工资卡吗在线等",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 1920,
+    "is_multi_intent": false
+  },
+  {
+    "text": "查一下储蓄卡的交易记录？",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 1925,
+    "is_multi_intent": false
+  },
+  {
+    "text": "可以帮我看看银行卡是否正常在线等",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 1930,
+    "is_multi_intent": false
+  },
+  {
+    "text": "想要查询一下我的工资卡！",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 1935,
+    "is_multi_intent": false
+  },
+  {
+    "text": "麻烦银行卡最近有什么交易麻烦了",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 1938,
+    "is_multi_intent": false
+  },
+  {
+    "text": "想要银行卡明细查询在线等",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 1941,
+    "is_multi_intent": false
+  },
+  {
+    "text": "急！帮我看看账户还有多少钱！",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 1953,
+    "is_multi_intent": false
+  },
+  {
+    "text": "可以我要查工资卡流水谢谢",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 1954,
+    "is_multi_intent": false
+  },
+  {
+    "text": "急！定期账户为什么被冻结了在线等",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 1960,
+    "is_multi_intent": false
+  },
+  {
+    "text": "能不能账户最近有什么交易在线等",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 1974,
+    "is_multi_intent": false
+  },
+  {
+    "text": "急！我想查一下活期账户余额",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 1992,
+    "is_multi_intent": false
+  },
+  {
+    "text": "可以我想查一下工资卡余额",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 1996,
+    "is_multi_intent": false
+  },
+  {
+    "text": "在吗？定期账户状态查询！",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 2003,
+    "is_multi_intent": false
+  },
+  {
+    "text": "麻烦我想查一下银行卡余额谢谢",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 2014,
+    "is_multi_intent": false
+  },
+  {
+    "text": "我的账户里有多少钱急",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 2025,
+    "is_multi_intent": false
+  },
+  {
+    "text": "查询一下我的储蓄卡？",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 2028,
+    "is_multi_intent": false
+  },
+  {
+    "text": "能不能我想查一下工资卡余额！",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 2032,
+    "is_multi_intent": false
+  },
+  {
+    "text": "你好，帮我看看定期账户还有多少钱麻烦了",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 2055,
+    "is_multi_intent": false
+  },
+  {
+    "text": "在吗？我要查工资卡流水谢谢",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 2068,
+    "is_multi_intent": false
+  },
+  {
+    "text": "工资卡为什么被冻结了在线等",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 2081,
+    "is_multi_intent": false
+  },
+  {
+    "text": "能帮我查下工资卡吗麻烦了",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 2082,
+    "is_multi_intent": false
+  },
+  {
+    "text": "我的账户里有多少钱！",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 2086,
+    "is_multi_intent": false
+  },
+  {
+    "text": "急！银行卡的账户余额是多少！",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 2089,
+    "is_multi_intent": false
+  },
+  {
+    "text": "想要我的定期账户里有多少钱急",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 2095,
+    "is_multi_intent": false
+  },
+  {
+    "text": "急！我想查一下活期账户余额",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 2115,
+    "is_multi_intent": false
+  },
+  {
+    "text": "麻烦定期账户的账户余额是多少？",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 2116,
+    "is_multi_intent": false
+  },
+  {
+    "text": "可以账户的账户余额是多少",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 2123,
+    "is_multi_intent": false
+  },
+  {
+    "text": "可以账户状态查询在线等",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 2126,
+    "is_multi_intent": false
+  },
+  {
+    "text": "能不能查询银行卡开户信息在线等",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 2133,
+    "is_multi_intent": false
+  },
+  {
+    "text": "需要帮我看看储蓄卡是否正常急",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 2140,
+    "is_multi_intent": false
+  },
+  {
+    "text": "请问账户的账户余额是多少急",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 2142,
+    "is_multi_intent": false
+  },
+  {
+    "text": "在吗？帮我看看活期账户还有多少钱？",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 2148,
+    "is_multi_intent": false
+  },
+  {
+    "text": "在吗？查一下定期账户的交易记录",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 2151,
+    "is_multi_intent": false
+  },
+  {
+    "text": "能不能帮我看看工资卡还有多少钱麻烦了",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 2157,
+    "is_multi_intent": false
+  },
+  {
+    "text": "想要能帮我查下活期账户吗！",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 2163,
+    "is_multi_intent": false
+  },
+  {
+    "text": "需要帮我看看账户是否正常麻烦了",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 2165,
+    "is_multi_intent": false
+  },
+  {
+    "text": "可以我的储蓄卡怎么少了钱急",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 2166,
+    "is_multi_intent": false
+  },
+  {
+    "text": "可以工资卡最近有什么交易急",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 2175,
+    "is_multi_intent": false
+  },
+  {
+    "text": "在吗？帮我看看活期账户还有多少钱麻烦了",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 2180,
+    "is_multi_intent": false
+  },
+  {
+    "text": "急！工资卡最近有什么交易？",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 2184,
+    "is_multi_intent": false
+  },
+  {
+    "text": "可以工资卡状态查询！",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 2185,
+    "is_multi_intent": false
+  },
+  {
+    "text": "急！工资卡的账户余额是多少？",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 2190,
+    "is_multi_intent": false
+  },
+  {
+    "text": "查询账户开户信息谢谢",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 2201,
+    "is_multi_intent": false
+  },
+  {
+    "text": "你好，银行卡状态查询急",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 2211,
+    "is_multi_intent": false
+  },
+  {
+    "text": "请问帮我看看活期账户是否正常急",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 2212,
+    "is_multi_intent": false
+  },
+  {
+    "text": "请问我要查定期账户流水在线等",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 2216,
+    "is_multi_intent": false
+  },
+  {
+    "text": "急！能帮我查下工资卡吗急",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 2222,
+    "is_multi_intent": false
+  },
+  {
+    "text": "在吗？我想查一下银行卡余额谢谢",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 2227,
+    "is_multi_intent": false
+  },
+  {
+    "text": "需要账户为什么被冻结了急",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 2235,
+    "is_multi_intent": false
+  },
+  {
+    "text": "麻烦查一下账户的交易记录急",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 2250,
+    "is_multi_intent": false
+  },
+  {
+    "text": "在吗？我想查一下工资卡余额在线等",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 2251,
+    "is_multi_intent": false
+  },
+  {
+    "text": "急！能帮我查下定期账户吗急",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 2256,
+    "is_multi_intent": false
+  },
+  {
+    "text": "想要我的账户怎么少了钱谢谢",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 2259,
+    "is_multi_intent": false
+  },
+  {
+    "text": "急！活期账户最近有什么交易在线等",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 2262,
+    "is_multi_intent": false
+  },
+  {
+    "text": "麻烦帮我看看储蓄卡是否正常",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 2266,
+    "is_multi_intent": false
+  },
+  {
+    "text": "需要查询银行卡开户信息麻烦了",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 2276,
+    "is_multi_intent": false
+  },
+  {
+    "text": "在吗？账户为什么被冻结了急",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 2278,
+    "is_multi_intent": false
+  },
+  {
+    "text": "在吗？定期账户明细查询？",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 2281,
+    "is_multi_intent": false
+  },
+  {
+    "text": "需要帮我看看定期账户是否正常！",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 2283,
+    "is_multi_intent": false
+  },
+  {
+    "text": "需要我的工资卡怎么少了钱麻烦了",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 2287,
+    "is_multi_intent": false
+  },
+  {
+    "text": "急！我想查一下定期账户余额？",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 2294,
+    "is_multi_intent": false
+  },
+  {
+    "text": "可以查询账户开户信息",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 2295,
+    "is_multi_intent": false
+  },
+  {
+    "text": "你好，活期账户明细查询",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 2300,
+    "is_multi_intent": false
+  },
+  {
+    "text": "需要查询一下我的银行卡谢谢",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 2303,
+    "is_multi_intent": false
+  },
+  {
+    "text": "你好，我的定期账户怎么少了钱麻烦了",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 2304,
+    "is_multi_intent": false
+  },
+  {
+    "text": "请问查一下银行卡的交易记录",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 2305,
+    "is_multi_intent": false
+  },
+  {
+    "text": "账户明细查询麻烦了",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 2310,
+    "is_multi_intent": false
+  },
+  {
+    "text": "需要银行卡最近有什么交易急",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 2317,
+    "is_multi_intent": false
+  },
+  {
+    "text": "可以查询一下我的活期账户麻烦了",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 2322,
+    "is_multi_intent": false
+  },
+  {
+    "text": "可以帮我看看定期账户是否正常？",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 2328,
+    "is_multi_intent": false
+  },
+  {
+    "text": "可以账户为什么被冻结了在线等",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 2340,
+    "is_multi_intent": false
+  },
+  {
+    "text": "能不能帮我看看工资卡是否正常",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 2344,
+    "is_multi_intent": false
+  },
+  {
+    "text": "在吗？银行卡为什么被冻结了在线等",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 2345,
+    "is_multi_intent": false
+  },
+  {
+    "text": "可以活期账户的账户余额是多少麻烦了",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 2347,
+    "is_multi_intent": false
+  },
+  {
+    "text": "麻烦帮我看看银行卡还有多少钱谢谢",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 2349,
+    "is_multi_intent": false
+  },
+  {
+    "text": "可以查询活期账户开户信息谢谢",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 2362,
+    "is_multi_intent": false
+  },
+  {
+    "text": "想要定期账户最近有什么交易麻烦了",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 2363,
+    "is_multi_intent": false
+  },
+  {
+    "text": "急！能帮我查下储蓄卡吗",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 2365,
+    "is_multi_intent": false
+  },
+  {
+    "text": "在吗？帮我看看活期账户还有多少钱！",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 2369,
+    "is_multi_intent": false
+  },
+  {
+    "text": "在吗？储蓄卡最近有什么交易急",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 2372,
+    "is_multi_intent": false
+  },
+  {
+    "text": "帮我看看银行卡是否正常？",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 2373,
+    "is_multi_intent": false
+  },
+  {
+    "text": "可以账户最近有什么交易在线等",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 2374,
+    "is_multi_intent": false
+  },
+  {
+    "text": "可以我的银行卡怎么少了钱？",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 2377,
+    "is_multi_intent": false
+  },
+  {
+    "text": "急！查询一下我的账户麻烦了",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 2394,
+    "is_multi_intent": false
+  },
+  {
+    "text": "急！定期账户明细查询！",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 2400,
+    "is_multi_intent": false
+  },
+  {
+    "text": "想要储蓄卡明细查询！",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 2402,
+    "is_multi_intent": false
+  },
+  {
+    "text": "急！储蓄卡最近有什么交易麻烦了",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 2436,
+    "is_multi_intent": false
+  },
+  {
+    "text": "活期账户的账户余额是多少？",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 2442,
+    "is_multi_intent": false
+  },
+  {
+    "text": "麻烦储蓄卡状态查询？",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 2450,
+    "is_multi_intent": false
+  },
+  {
+    "text": "想要银行卡最近有什么交易？",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 2456,
+    "is_multi_intent": false
+  },
+  {
+    "text": "能不能活期账户为什么被冻结了麻烦了",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 2469,
+    "is_multi_intent": false
+  },
+  {
+    "text": "急！我的定期账户里有多少钱",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 2472,
+    "is_multi_intent": false
+  },
+  {
+    "text": "你好，活期账户最近有什么交易麻烦了",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 2474,
+    "is_multi_intent": false
+  },
+  {
+    "text": "需要帮我看看工资卡是否正常急",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 2477,
+    "is_multi_intent": false
+  },
+  {
+    "text": "急！我的银行卡怎么少了钱在线等",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 2479,
+    "is_multi_intent": false
+  },
+  {
+    "text": "你好，账户明细查询急",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 2482,
+    "is_multi_intent": false
+  },
+  {
+    "text": "麻烦我的定期账户里有多少钱？",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 2491,
+    "is_multi_intent": false
+  },
+  {
+    "text": "能不能帮我看看工资卡还有多少钱在线等",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 2493,
+    "is_multi_intent": false
+  },
+  {
+    "text": "可以能帮我查下账户吗麻烦了",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 2497,
+    "is_multi_intent": false
+  },
+  {
+    "text": "急！账户的账户余额是多少",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 2500,
+    "is_multi_intent": false
+  },
+  {
+    "text": "你好，我要查定期账户流水谢谢",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 2501,
+    "is_multi_intent": false
+  },
+  {
+    "text": "麻烦帮我看看活期账户是否正常急",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 2507,
+    "is_multi_intent": false
+  },
+  {
+    "text": "请问帮我看看定期账户是否正常谢谢",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 2519,
+    "is_multi_intent": false
+  },
+  {
+    "text": "可以我的定期账户里有多少钱？",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 2528,
+    "is_multi_intent": false
+  },
+  {
+    "text": "在吗？账户为什么被冻结了？",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 2534,
+    "is_multi_intent": false
+  },
+  {
+    "text": "急！帮我看看定期账户还有多少钱",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 2537,
+    "is_multi_intent": false
+  },
+  {
+    "text": "麻烦活期账户的账户余额是多少在线等",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 2539,
+    "is_multi_intent": false
+  },
+  {
+    "text": "麻烦储蓄卡的账户余额是多少麻烦了",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 2542,
+    "is_multi_intent": false
+  },
+  {
+    "text": "能不能储蓄卡明细查询在线等",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 2547,
+    "is_multi_intent": false
+  },
+  {
+    "text": "急！我想查一下工资卡余额在线等",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 2549,
+    "is_multi_intent": false
+  },
+  {
+    "text": "想要帮我看看储蓄卡还有多少钱",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 2591,
+    "is_multi_intent": false
+  },
+  {
+    "text": "请问我的活期账户怎么少了钱麻烦了",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 2597,
+    "is_multi_intent": false
+  },
+  {
+    "text": "急！定期账户为什么被冻结了！",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 2599,
+    "is_multi_intent": false
+  },
+  {
+    "text": "急！我的工资卡怎么少了钱在线等",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 2607,
+    "is_multi_intent": false
+  },
+  {
+    "text": "在吗？查一下储蓄卡的交易记录谢谢",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 2613,
+    "is_multi_intent": false
+  },
+  {
+    "text": "麻烦银行卡的账户余额是多少！",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 2614,
+    "is_multi_intent": false
+  },
+  {
+    "text": "急！我想查一下工资卡余额在线等",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 2624,
+    "is_multi_intent": false
+  },
+  {
+    "text": "急！定期账户最近有什么交易在线等",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 2631,
+    "is_multi_intent": false
+  },
+  {
+    "text": "请问帮我看看定期账户还有多少钱在线等",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 2647,
+    "is_multi_intent": false
+  },
+  {
+    "text": "你好，我的储蓄卡里有多少钱在线等",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 2665,
+    "is_multi_intent": false
+  },
+  {
+    "text": "可以我想查一下活期账户余额！",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 2667,
+    "is_multi_intent": false
+  },
+  {
+    "text": "在吗？我要查银行卡流水谢谢",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 2673,
+    "is_multi_intent": false
+  },
+  {
+    "text": "可以帮我看看定期账户还有多少钱？",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 2678,
+    "is_multi_intent": false
+  },
+  {
+    "text": "想要帮我看看账户是否正常谢谢",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 2680,
+    "is_multi_intent": false
+  },
+  {
+    "text": "能不能工资卡的账户余额是多少急",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 2691,
+    "is_multi_intent": false
+  },
+  {
+    "text": "需要活期账户为什么被冻结了！",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 2700,
+    "is_multi_intent": false
+  },
+  {
+    "text": "在吗？帮我看看定期账户还有多少钱谢谢",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 2701,
+    "is_multi_intent": false
+  },
+  {
+    "text": "请问工资卡最近有什么交易急",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 2707,
+    "is_multi_intent": false
+  },
+  {
+    "text": "请问查询活期账户开户信息在线等",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 2708,
+    "is_multi_intent": false
+  },
+  {
+    "text": "你好，我的银行卡怎么少了钱在线等",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 2712,
+    "is_multi_intent": false
+  },
+  {
+    "text": "你好，帮我看看账户还有多少钱麻烦了",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 2713,
+    "is_multi_intent": false
+  },
+  {
+    "text": "麻烦帮我看看工资卡是否正常在线等",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 2730,
+    "is_multi_intent": false
+  },
+  {
+    "text": "急！帮我看看储蓄卡还有多少钱？",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 2731,
+    "is_multi_intent": false
+  },
+  {
+    "text": "需要活期账户为什么被冻结了在线等",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 2739,
+    "is_multi_intent": false
+  },
+  {
+    "text": "在吗？储蓄卡为什么被冻结了",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 2748,
+    "is_multi_intent": false
+  },
+  {
+    "text": "急！银行卡为什么被冻结了",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 2749,
+    "is_multi_intent": false
+  },
+  {
+    "text": "你好，查一下账户的交易记录",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 2751,
+    "is_multi_intent": false
+  },
+  {
+    "text": "需要我的定期账户怎么少了钱？",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 2761,
+    "is_multi_intent": false
+  },
+  {
+    "text": "请问帮我看看定期账户是否正常！",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 2765,
+    "is_multi_intent": false
+  },
+  {
+    "text": "想要账户明细查询",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 2777,
+    "is_multi_intent": false
+  },
+  {
+    "text": "想要账户明细查询！",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 2780,
+    "is_multi_intent": false
+  },
+  {
+    "text": "想要我的银行卡怎么少了钱",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 2785,
+    "is_multi_intent": false
+  },
+  {
+    "text": "你好，我的工资卡怎么少了钱谢谢",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 2788,
+    "is_multi_intent": false
+  },
+  {
+    "text": "请问帮我看看储蓄卡还有多少钱急",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 2798,
+    "is_multi_intent": false
+  },
+  {
+    "text": "在吗？我的储蓄卡怎么少了钱在线等",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 2805,
+    "is_multi_intent": false
+  },
+  {
+    "text": "麻烦我的工资卡怎么少了钱谢谢",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 2814,
+    "is_multi_intent": false
+  },
+  {
+    "text": "在吗？查询一下我的账户在线等",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 2820,
+    "is_multi_intent": false
+  },
+  {
+    "text": "能不能帮我看看账户是否正常",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 2825,
+    "is_multi_intent": false
+  },
+  {
+    "text": "在吗？我的定期账户怎么少了钱谢谢",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 2828,
+    "is_multi_intent": false
+  },
+  {
+    "text": "你好，我的工资卡里有多少钱在线等",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 2833,
+    "is_multi_intent": false
+  },
+  {
+    "text": "能不能银行卡为什么被冻结了急",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 2834,
+    "is_multi_intent": false
+  },
+  {
+    "text": "请问银行卡状态查询麻烦了",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 2835,
+    "is_multi_intent": false
+  },
+  {
+    "text": "我的储蓄卡怎么少了钱在线等",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 2847,
+    "is_multi_intent": false
+  },
+  {
+    "text": "急！帮我看看储蓄卡是否正常谢谢",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 2854,
+    "is_multi_intent": false
+  },
+  {
+    "text": "麻烦工资卡明细查询？",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 2859,
+    "is_multi_intent": false
+  },
+  {
+    "text": "你好，银行卡明细查询",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 2862,
+    "is_multi_intent": false
+  },
+  {
+    "text": "在吗？我的工资卡怎么少了钱？",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 2865,
+    "is_multi_intent": false
+  },
+  {
+    "text": "工资卡的账户余额是多少",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 2873,
+    "is_multi_intent": false
+  },
+  {
+    "text": "能不能我的储蓄卡里有多少钱在线等",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 2887,
+    "is_multi_intent": false
+  },
+  {
+    "text": "能不能帮我看看活期账户是否正常急",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 2894,
+    "is_multi_intent": false
+  },
+  {
+    "text": "在吗？储蓄卡为什么被冻结了？",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 2898,
+    "is_multi_intent": false
+  },
+  {
+    "text": "请问帮我看看储蓄卡还有多少钱谢谢",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 2899,
+    "is_multi_intent": false
+  },
+  {
+    "text": "可以能帮我查下工资卡吗？",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 2904,
+    "is_multi_intent": false
+  },
+  {
+    "text": "麻烦能帮我查下储蓄卡吗！",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 2905,
+    "is_multi_intent": false
+  },
+  {
+    "text": "急！查询一下我的工资卡急",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 2911,
+    "is_multi_intent": false
+  },
+  {
+    "text": "在吗？查询活期账户开户信息麻烦了",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 2917,
+    "is_multi_intent": false
+  },
+  {
+    "text": "可以活期账户明细查询谢谢",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 2925,
+    "is_multi_intent": false
+  },
+  {
+    "text": "可以我的活期账户怎么少了钱在线等",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 2932,
+    "is_multi_intent": false
+  },
+  {
+    "text": "需要账户明细查询麻烦了",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 2937,
+    "is_multi_intent": false
+  },
+  {
+    "text": "请问账户为什么被冻结了！",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 2943,
+    "is_multi_intent": false
+  },
+  {
+    "text": "能不能我要查定期账户流水急",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 2948,
+    "is_multi_intent": false
+  },
+  {
+    "text": "急！定期账户为什么被冻结了麻烦了",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 2956,
+    "is_multi_intent": false
+  },
+  {
+    "text": "想要查询账户开户信息谢谢",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 2967,
+    "is_multi_intent": false
+  },
+  {
+    "text": "我的银行卡里有多少钱急",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 2970,
+    "is_multi_intent": false
+  },
+  {
+    "text": "急！工资卡明细查询",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 2984,
+    "is_multi_intent": false
+  },
+  {
+    "text": "可以账户明细查询急",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 2988,
+    "is_multi_intent": false
+  },
+  {
+    "text": "可以我想查一下储蓄卡余额谢谢",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 2989,
+    "is_multi_intent": false
+  },
+  {
+    "text": "急！我的储蓄卡怎么少了钱在线等",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 2992,
+    "is_multi_intent": false
+  },
+  {
+    "text": "麻烦我的定期账户怎么少了钱急",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 2995,
+    "is_multi_intent": false
+  },
+  {
+    "text": "麻烦定期账户的账户余额是多少",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 2996,
+    "is_multi_intent": false
+  },
+  {
+    "text": "你好，定期账户状态查询麻烦了",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 2998,
+    "is_multi_intent": false
+  },
+  {
+    "text": "麻烦我的账户里有多少钱？",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 3002,
+    "is_multi_intent": false
+  },
+  {
+    "text": "想要定期账户最近有什么交易",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 3026,
+    "is_multi_intent": false
+  },
+  {
+    "text": "需要帮我看看定期账户还有多少钱在线等",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 3038,
+    "is_multi_intent": false
+  },
+  {
+    "text": "你好，我要查工资卡流水麻烦了",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 3054,
+    "is_multi_intent": false
+  },
+  {
+    "text": "在吗？查一下储蓄卡的交易记录麻烦了",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 3055,
+    "is_multi_intent": false
+  },
+  {
+    "text": "能不能我想查一下活期账户余额谢谢",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 3064,
+    "is_multi_intent": false
+  },
+  {
+    "text": "能不能我的定期账户怎么少了钱！",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 3072,
+    "is_multi_intent": false
+  },
+  {
+    "text": "需要账户的账户余额是多少在线等",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 3076,
+    "is_multi_intent": false
+  },
+  {
+    "text": "请问帮我看看储蓄卡是否正常？",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 3077,
+    "is_multi_intent": false
+  },
+  {
+    "text": "可以查询定期账户开户信息？",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 3084,
+    "is_multi_intent": false
+  },
+  {
+    "text": "请问帮我看看定期账户是否正常？",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 3087,
+    "is_multi_intent": false
+  },
+  {
+    "text": "可以储蓄卡明细查询？",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 3091,
+    "is_multi_intent": false
+  },
+  {
+    "text": "能不能查询活期账户开户信息？",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 3095,
+    "is_multi_intent": false
+  },
+  {
+    "text": "在吗？账户状态查询",
+    "intent": "account_inquiry",
+    "intent_name": "账户查询类",
+    "id": 3098,
+    "is_multi_intent": false
+  }
+]

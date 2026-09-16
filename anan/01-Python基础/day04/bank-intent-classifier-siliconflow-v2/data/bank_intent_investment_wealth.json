@@ -1,0 +1,4902 @@
+[
+  {
+    "text": "咨询如何购买结构性存款？",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 17,
+    "is_multi_intent": false
+  },
+  {
+    "text": "咨询理财能提前赎回吗？",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 19,
+    "is_multi_intent": false
+  },
+  {
+    "text": "请问外汇适合我吗在线等",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 21,
+    "is_multi_intent": false
+  },
+  {
+    "text": "你好，基金起购金额？",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 31,
+    "is_multi_intent": false
+  },
+  {
+    "text": "帮我看看我想买股票基金",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 32,
+    "is_multi_intent": false
+  },
+  {
+    "text": "咨询外汇起购金额！",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 36,
+    "is_multi_intent": false
+  },
+  {
+    "text": "想了解查询我的理财靠谱吗",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 44,
+    "is_multi_intent": false
+  },
+  {
+    "text": "我想买结构性存款在线等",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 46,
+    "is_multi_intent": false
+  },
+  {
+    "text": "想了解债券什么时候到期！",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 56,
+    "is_multi_intent": false
+  },
+  {
+    "text": "你好，结构性存款能提前赎回吗？",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 57,
+    "is_multi_intent": false
+  },
+  {
+    "text": "想问高收益的财富管理有哪些谢谢",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 69,
+    "is_multi_intent": false
+  },
+  {
+    "text": "能给我介绍查询我的保险",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 77,
+    "is_multi_intent": false
+  },
+  {
+    "text": "能给我介绍如何购买外汇靠谱吗",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 78,
+    "is_multi_intent": false
+  },
+  {
+    "text": "请问如何购买定期存款",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 83,
+    "is_multi_intent": false
+  },
+  {
+    "text": "问下大额存单收益率怎么样在线等",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 90,
+    "is_multi_intent": false
+  },
+  {
+    "text": "请问结构性存款净值查询",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 110,
+    "is_multi_intent": false
+  },
+  {
+    "text": "请问外汇净值查询！",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 111,
+    "is_multi_intent": false
+  },
+  {
+    "text": "想了解外汇收益率怎么样",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 112,
+    "is_multi_intent": false
+  },
+  {
+    "text": "想问定期存款净值查询谢谢",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 113,
+    "is_multi_intent": false
+  },
+  {
+    "text": "咨询推荐稳健的信托在线等",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 114,
+    "is_multi_intent": false
+  },
+  {
+    "text": "请问国债和外汇哪个好麻烦了",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 125,
+    "is_multi_intent": false
+  },
+  {
+    "text": "你好，基金什么时候到期？",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 126,
+    "is_multi_intent": false
+  },
+  {
+    "text": "能给我介绍财富管理什么时候到期麻烦了",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 129,
+    "is_multi_intent": false
+  },
+  {
+    "text": "请问如何购买基金？",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 138,
+    "is_multi_intent": false
+  },
+  {
+    "text": "结构性存款手续费多少靠谱吗",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 140,
+    "is_multi_intent": false
+  },
+  {
+    "text": "财富管理收益率怎么样",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 153,
+    "is_multi_intent": false
+  },
+  {
+    "text": "问下如何购买保险靠谱吗",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 156,
+    "is_multi_intent": false
+  },
+  {
+    "text": "咨询财富管理起购金额谢谢",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 158,
+    "is_multi_intent": false
+  },
+  {
+    "text": "能给我介绍保险理财产品推荐",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 173,
+    "is_multi_intent": false
+  },
+  {
+    "text": "想了解查询我的理财谢谢",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 174,
+    "is_multi_intent": false
+  },
+  {
+    "text": "货币基金适合我吗",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 176,
+    "is_multi_intent": false
+  },
+  {
+    "text": "帮我看看保险什么时候到期？",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 183,
+    "is_multi_intent": false
+  },
+  {
+    "text": "能给我介绍如何购买基金在线等",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 187,
+    "is_multi_intent": false
+  },
+  {
+    "text": "帮我看看股票基金起购金额靠谱吗",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 188,
+    "is_multi_intent": false
+  },
+  {
+    "text": "想了解财富管理收益率怎么样靠谱吗",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 191,
+    "is_multi_intent": false
+  },
+  {
+    "text": "咨询智能投顾起购金额！",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 192,
+    "is_multi_intent": false
+  },
+  {
+    "text": "咨询理财起购金额谢谢",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 199,
+    "is_multi_intent": false
+  },
+  {
+    "text": "想问基金什么时候到期靠谱吗",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 201,
+    "is_multi_intent": false
+  },
+  {
+    "text": "债券净值查询！",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 207,
+    "is_multi_intent": false
+  },
+  {
+    "text": "想了解基金手续费多少！",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 209,
+    "is_multi_intent": false
+  },
+  {
+    "text": "咨询理财收益率怎么样！",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 215,
+    "is_multi_intent": false
+  },
+  {
+    "text": "想问基金收益率怎么样",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 216,
+    "is_multi_intent": false
+  },
+  {
+    "text": "想了解推荐稳健的大额存单？",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 217,
+    "is_multi_intent": false
+  },
+  {
+    "text": "想问定期存款起购金额麻烦了",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 220,
+    "is_multi_intent": false
+  },
+  {
+    "text": "想问如何购买信托靠谱吗",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 222,
+    "is_multi_intent": false
+  },
+  {
+    "text": "问下保险风险大吗在线等",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 224,
+    "is_multi_intent": false
+  },
+  {
+    "text": "能给我介绍我想买结构性存款麻烦了",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 229,
+    "is_multi_intent": false
+  },
+  {
+    "text": "咨询财富管理理财产品推荐",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 232,
+    "is_multi_intent": false
+  },
+  {
+    "text": "能给我介绍保险手续费多少？",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 234,
+    "is_multi_intent": false
+  },
+  {
+    "text": "结构性存款收益率怎么样靠谱吗",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 240,
+    "is_multi_intent": false
+  },
+  {
+    "text": "能给我介绍保险能提前赎回吗谢谢",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 242,
+    "is_multi_intent": false
+  },
+  {
+    "text": "想了解我想买股票基金！",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 246,
+    "is_multi_intent": false
+  },
+  {
+    "text": "咨询信托手续费多少？",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 247,
+    "is_multi_intent": false
+  },
+  {
+    "text": "我想买智能投顾靠谱吗",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 252,
+    "is_multi_intent": false
+  },
+  {
+    "text": "帮我看看我想买结构性存款谢谢",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 257,
+    "is_multi_intent": false
+  },
+  {
+    "text": "能给我介绍定期存款和理财哪个好谢谢",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 258,
+    "is_multi_intent": false
+  },
+  {
+    "text": "我想买货币基金靠谱吗",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 262,
+    "is_multi_intent": false
+  },
+  {
+    "text": "想问理财能提前赎回吗",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 265,
+    "is_multi_intent": false
+  },
+  {
+    "text": "帮我看看定期存款能提前赎回吗麻烦了",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 267,
+    "is_multi_intent": false
+  },
+  {
+    "text": "货币基金起购金额",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 271,
+    "is_multi_intent": false
+  },
+  {
+    "text": "能给我介绍货币基金起购金额麻烦了",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 274,
+    "is_multi_intent": false
+  },
+  {
+    "text": "帮我看看智能投顾理财产品推荐谢谢",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 283,
+    "is_multi_intent": false
+  },
+  {
+    "text": "想了解高收益的大额存单有哪些靠谱吗",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 286,
+    "is_multi_intent": false
+  },
+  {
+    "text": "请问货币基金风险大吗谢谢",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 287,
+    "is_multi_intent": false
+  },
+  {
+    "text": "能给我介绍外汇起购金额！",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 288,
+    "is_multi_intent": false
+  },
+  {
+    "text": "想问股票基金收益率怎么样靠谱吗",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 294,
+    "is_multi_intent": false
+  },
+  {
+    "text": "查询我的外汇？",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 296,
+    "is_multi_intent": false
+  },
+  {
+    "text": "咨询信托风险大吗麻烦了",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 302,
+    "is_multi_intent": false
+  },
+  {
+    "text": "帮我看看定期存款理财产品推荐？",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 311,
+    "is_multi_intent": false
+  },
+  {
+    "text": "推荐稳健的财富管理",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 315,
+    "is_multi_intent": false
+  },
+  {
+    "text": "请问查询我的基金靠谱吗",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 316,
+    "is_multi_intent": false
+  },
+  {
+    "text": "推荐稳健的股票基金在线等",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 320,
+    "is_multi_intent": false
+  },
+  {
+    "text": "你好，债券适合我吗麻烦了",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 328,
+    "is_multi_intent": false
+  },
+  {
+    "text": "请问债券什么时候到期麻烦了",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 338,
+    "is_multi_intent": false
+  },
+  {
+    "text": "你好，结构性存款理财产品推荐？",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 361,
+    "is_multi_intent": false
+  },
+  {
+    "text": "帮我看看如何购买大额存单谢谢",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 366,
+    "is_multi_intent": false
+  },
+  {
+    "text": "你好，外汇能提前赎回吗靠谱吗",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 383,
+    "is_multi_intent": false
+  },
+  {
+    "text": "想了解如何购买国债靠谱吗",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 388,
+    "is_multi_intent": false
+  },
+  {
+    "text": "请问股票基金起购金额",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 395,
+    "is_multi_intent": false
+  },
+  {
+    "text": "咨询保险理财产品推荐？",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 396,
+    "is_multi_intent": false
+  },
+  {
+    "text": "想问智能投顾起购金额！",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 397,
+    "is_multi_intent": false
+  },
+  {
+    "text": "请问我想买黄金！",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 401,
+    "is_multi_intent": false
+  },
+  {
+    "text": "想问货币基金适合我吗！",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 402,
+    "is_multi_intent": false
+  },
+  {
+    "text": "推荐稳健的保险靠谱吗",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 403,
+    "is_multi_intent": false
+  },
+  {
+    "text": "咨询如何购买结构性存款？",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 406,
+    "is_multi_intent": false
+  },
+  {
+    "text": "你好，外汇起购金额谢谢",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 409,
+    "is_multi_intent": false
+  },
+  {
+    "text": "想了解我想买债券靠谱吗",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 414,
+    "is_multi_intent": false
+  },
+  {
+    "text": "保险起购金额麻烦了",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 416,
+    "is_multi_intent": false
+  },
+  {
+    "text": "想了解外汇什么时候到期麻烦了",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 421,
+    "is_multi_intent": false
+  },
+  {
+    "text": "信托理财产品推荐谢谢",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 423,
+    "is_multi_intent": false
+  },
+  {
+    "text": "你好，我想买外汇？",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 426,
+    "is_multi_intent": false
+  },
+  {
+    "text": "帮我看看国债起购金额",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 429,
+    "is_multi_intent": false
+  },
+  {
+    "text": "问下结构性存款什么时候到期？",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 430,
+    "is_multi_intent": false
+  },
+  {
+    "text": "咨询保险能提前赎回吗靠谱吗",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 436,
+    "is_multi_intent": false
+  },
+  {
+    "text": "帮我看看智能投顾什么时候到期麻烦了",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 446,
+    "is_multi_intent": false
+  },
+  {
+    "text": "想问推荐稳健的定期存款谢谢",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 452,
+    "is_multi_intent": false
+  },
+  {
+    "text": "股票基金和货币基金哪个好？",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 454,
+    "is_multi_intent": false
+  },
+  {
+    "text": "能给我介绍结构性存款能提前赎回吗谢谢",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 455,
+    "is_multi_intent": false
+  },
+  {
+    "text": "问下我想买智能投顾",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 458,
+    "is_multi_intent": false
+  },
+  {
+    "text": "想问保险和保险哪个好靠谱吗",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 460,
+    "is_multi_intent": false
+  },
+  {
+    "text": "你好，推荐稳健的债券在线等",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 461,
+    "is_multi_intent": false
+  },
+  {
+    "text": "高收益的信托有哪些？",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 462,
+    "is_multi_intent": false
+  },
+  {
+    "text": "想问如何购买外汇！",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 466,
+    "is_multi_intent": false
+  },
+  {
+    "text": "问下推荐稳健的结构性存款谢谢",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 468,
+    "is_multi_intent": false
+  },
+  {
+    "text": "理财适合我吗麻烦了",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 475,
+    "is_multi_intent": false
+  },
+  {
+    "text": "能给我介绍财富管理能提前赎回吗麻烦了",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 478,
+    "is_multi_intent": false
+  },
+  {
+    "text": "咨询高收益的债券有哪些",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 480,
+    "is_multi_intent": false
+  },
+  {
+    "text": "请问理财能提前赎回吗",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 482,
+    "is_multi_intent": false
+  },
+  {
+    "text": "帮我看看债券风险大吗在线等",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 483,
+    "is_multi_intent": false
+  },
+  {
+    "text": "问下国债净值查询在线等",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 484,
+    "is_multi_intent": false
+  },
+  {
+    "text": "能给我介绍股票基金风险大吗谢谢",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 487,
+    "is_multi_intent": false
+  },
+  {
+    "text": "咨询信托能提前赎回吗",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 492,
+    "is_multi_intent": false
+  },
+  {
+    "text": "基金收益率怎么样在线等",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 501,
+    "is_multi_intent": false
+  },
+  {
+    "text": "问下如何购买结构性存款靠谱吗",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 503,
+    "is_multi_intent": false
+  },
+  {
+    "text": "你好，理财手续费多少！",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 504,
+    "is_multi_intent": false
+  },
+  {
+    "text": "想问智能投顾理财产品推荐麻烦了",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 509,
+    "is_multi_intent": false
+  },
+  {
+    "text": "咨询查询我的理财靠谱吗",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 512,
+    "is_multi_intent": false
+  },
+  {
+    "text": "保险风险大吗！",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 518,
+    "is_multi_intent": false
+  },
+  {
+    "text": "请问债券手续费多少？",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 519,
+    "is_multi_intent": false
+  },
+  {
+    "text": "问下股票基金收益率怎么样",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 532,
+    "is_multi_intent": false
+  },
+  {
+    "text": "能给我介绍我想买黄金！",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 534,
+    "is_multi_intent": false
+  },
+  {
+    "text": "股票基金起购金额谢谢",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 538,
+    "is_multi_intent": false
+  },
+  {
+    "text": "问下高收益的股票基金有哪些！",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 540,
+    "is_multi_intent": false
+  },
+  {
+    "text": "想了解黄金起购金额麻烦了",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 554,
+    "is_multi_intent": false
+  },
+  {
+    "text": "问下外汇收益率怎么样",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 558,
+    "is_multi_intent": false
+  },
+  {
+    "text": "想问如何购买债券靠谱吗",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 567,
+    "is_multi_intent": false
+  },
+  {
+    "text": "请问如何购买国债谢谢",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 577,
+    "is_multi_intent": false
+  },
+  {
+    "text": "问下推荐稳健的结构性存款在线等",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 579,
+    "is_multi_intent": false
+  },
+  {
+    "text": "咨询大额存单风险大吗！",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 580,
+    "is_multi_intent": false
+  },
+  {
+    "text": "帮我看看股票基金起购金额？",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 589,
+    "is_multi_intent": false
+  },
+  {
+    "text": "你好，定期存款理财产品推荐麻烦了",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 596,
+    "is_multi_intent": false
+  },
+  {
+    "text": "请问如何购买信托麻烦了",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 600,
+    "is_multi_intent": false
+  },
+  {
+    "text": "想问如何购买货币基金？",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 603,
+    "is_multi_intent": false
+  },
+  {
+    "text": "请问高收益的财富管理有哪些！",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 621,
+    "is_multi_intent": false
+  },
+  {
+    "text": "帮我看看理财净值查询！",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 625,
+    "is_multi_intent": false
+  },
+  {
+    "text": "想问货币基金能提前赎回吗靠谱吗",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 628,
+    "is_multi_intent": false
+  },
+  {
+    "text": "帮我看看我想买债券在线等",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 635,
+    "is_multi_intent": false
+  },
+  {
+    "text": "帮我看看黄金什么时候到期？",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 643,
+    "is_multi_intent": false
+  },
+  {
+    "text": "想问查询我的外汇靠谱吗",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 646,
+    "is_multi_intent": false
+  },
+  {
+    "text": "你好，国债什么时候到期靠谱吗",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 647,
+    "is_multi_intent": false
+  },
+  {
+    "text": "你好，定期存款起购金额在线等",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 656,
+    "is_multi_intent": false
+  },
+  {
+    "text": "想问外汇理财产品推荐在线等",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 658,
+    "is_multi_intent": false
+  },
+  {
+    "text": "咨询推荐稳健的货币基金在线等",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 665,
+    "is_multi_intent": false
+  },
+  {
+    "text": "想了解国债手续费多少麻烦了",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 666,
+    "is_multi_intent": false
+  },
+  {
+    "text": "财富管理能提前赎回吗在线等",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 669,
+    "is_multi_intent": false
+  },
+  {
+    "text": "帮我看看信托净值查询谢谢",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 671,
+    "is_multi_intent": false
+  },
+  {
+    "text": "想了解结构性存款和财富管理哪个好？",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 672,
+    "is_multi_intent": false
+  },
+  {
+    "text": "咨询我想买外汇靠谱吗",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 673,
+    "is_multi_intent": false
+  },
+  {
+    "text": "如何购买股票基金！",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 676,
+    "is_multi_intent": false
+  },
+  {
+    "text": "推荐稳健的定期存款在线等",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 682,
+    "is_multi_intent": false
+  },
+  {
+    "text": "想了解黄金收益率怎么样",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 684,
+    "is_multi_intent": false
+  },
+  {
+    "text": "黄金起购金额麻烦了",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 685,
+    "is_multi_intent": false
+  },
+  {
+    "text": "想了解我想买基金靠谱吗",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 697,
+    "is_multi_intent": false
+  },
+  {
+    "text": "想了解信托和信托哪个好",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 699,
+    "is_multi_intent": false
+  },
+  {
+    "text": "请问智能投顾和定期存款哪个好？",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 703,
+    "is_multi_intent": false
+  },
+  {
+    "text": "保险手续费多少在线等",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 705,
+    "is_multi_intent": false
+  },
+  {
+    "text": "定期存款什么时候到期",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 708,
+    "is_multi_intent": false
+  },
+  {
+    "text": "咨询债券手续费多少！",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 713,
+    "is_multi_intent": false
+  },
+  {
+    "text": "咨询大额存单风险大吗谢谢",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 714,
+    "is_multi_intent": false
+  },
+  {
+    "text": "帮我看看大额存单起购金额麻烦了",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 715,
+    "is_multi_intent": false
+  },
+  {
+    "text": "推荐稳健的债券",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 716,
+    "is_multi_intent": false
+  },
+  {
+    "text": "想了解结构性存款什么时候到期",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 723,
+    "is_multi_intent": false
+  },
+  {
+    "text": "想问大额存单和货币基金哪个好在线等",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 725,
+    "is_multi_intent": false
+  },
+  {
+    "text": "问下智能投顾风险大吗靠谱吗",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 729,
+    "is_multi_intent": false
+  },
+  {
+    "text": "想了解大额存单适合我吗在线等",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 730,
+    "is_multi_intent": false
+  },
+  {
+    "text": "问下国债风险大吗麻烦了",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 731,
+    "is_multi_intent": false
+  },
+  {
+    "text": "请问黄金理财产品推荐麻烦了",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 734,
+    "is_multi_intent": false
+  },
+  {
+    "text": "请问货币基金起购金额麻烦了",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 752,
+    "is_multi_intent": false
+  },
+  {
+    "text": "能给我介绍我想买外汇麻烦了",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 756,
+    "is_multi_intent": false
+  },
+  {
+    "text": "问下查询我的股票基金在线等",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 759,
+    "is_multi_intent": false
+  },
+  {
+    "text": "推荐稳健的货币基金在线等",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 762,
+    "is_multi_intent": false
+  },
+  {
+    "text": "能给我介绍大额存单风险大吗靠谱吗",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 777,
+    "is_multi_intent": false
+  },
+  {
+    "text": "想了解理财手续费多少麻烦了",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 780,
+    "is_multi_intent": false
+  },
+  {
+    "text": "高收益的基金有哪些！",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 790,
+    "is_multi_intent": false
+  },
+  {
+    "text": "你好，外汇风险大吗麻烦了",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 791,
+    "is_multi_intent": false
+  },
+  {
+    "text": "国债净值查询靠谱吗",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 794,
+    "is_multi_intent": false
+  },
+  {
+    "text": "能给我介绍财富管理起购金额！",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 798,
+    "is_multi_intent": false
+  },
+  {
+    "text": "查询我的信托麻烦了",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 799,
+    "is_multi_intent": false
+  },
+  {
+    "text": "能给我介绍债券起购金额麻烦了",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 802,
+    "is_multi_intent": false
+  },
+  {
+    "text": "咨询外汇收益率怎么样",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 805,
+    "is_multi_intent": false
+  },
+  {
+    "text": "帮我看看推荐稳健的股票基金",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 806,
+    "is_multi_intent": false
+  },
+  {
+    "text": "想问财富管理理财产品推荐谢谢",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 813,
+    "is_multi_intent": false
+  },
+  {
+    "text": "想问推荐稳健的大额存单谢谢",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 816,
+    "is_multi_intent": false
+  },
+  {
+    "text": "理财手续费多少",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 818,
+    "is_multi_intent": false
+  },
+  {
+    "text": "咨询我想买债券",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 822,
+    "is_multi_intent": false
+  },
+  {
+    "text": "问下国债收益率怎么样麻烦了",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 825,
+    "is_multi_intent": false
+  },
+  {
+    "text": "帮我看看我想买定期存款？",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 834,
+    "is_multi_intent": false
+  },
+  {
+    "text": "问下债券什么时候到期！",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 835,
+    "is_multi_intent": false
+  },
+  {
+    "text": "你好，查询我的基金！",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 836,
+    "is_multi_intent": false
+  },
+  {
+    "text": "想了解债券和理财哪个好？",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 850,
+    "is_multi_intent": false
+  },
+  {
+    "text": "想了解结构性存款能提前赎回吗",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 851,
+    "is_multi_intent": false
+  },
+  {
+    "text": "能给我介绍推荐稳健的外汇！",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 859,
+    "is_multi_intent": false
+  },
+  {
+    "text": "咨询高收益的理财有哪些在线等",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 862,
+    "is_multi_intent": false
+  },
+  {
+    "text": "你好，智能投顾收益率怎么样谢谢",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 864,
+    "is_multi_intent": false
+  },
+  {
+    "text": "咨询股票基金什么时候到期！",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 870,
+    "is_multi_intent": false
+  },
+  {
+    "text": "咨询黄金收益率怎么样！",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 875,
+    "is_multi_intent": false
+  },
+  {
+    "text": "问下推荐稳健的大额存单在线等",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 879,
+    "is_multi_intent": false
+  },
+  {
+    "text": "问下结构性存款风险大吗？",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 891,
+    "is_multi_intent": false
+  },
+  {
+    "text": "帮我看看理财理财产品推荐",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 892,
+    "is_multi_intent": false
+  },
+  {
+    "text": "你好，外汇和国债哪个好靠谱吗",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 893,
+    "is_multi_intent": false
+  },
+  {
+    "text": "想了解定期存款什么时候到期谢谢",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 894,
+    "is_multi_intent": false
+  },
+  {
+    "text": "想问高收益的结构性存款有哪些谢谢",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 898,
+    "is_multi_intent": false
+  },
+  {
+    "text": "请问查询我的债券",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 903,
+    "is_multi_intent": false
+  },
+  {
+    "text": "能给我介绍债券净值查询",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 907,
+    "is_multi_intent": false
+  },
+  {
+    "text": "我想买外汇！",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 909,
+    "is_multi_intent": false
+  },
+  {
+    "text": "债券手续费多少？",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 917,
+    "is_multi_intent": false
+  },
+  {
+    "text": "你好，如何购买债券！",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 921,
+    "is_multi_intent": false
+  },
+  {
+    "text": "想了解理财和理财哪个好？",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 931,
+    "is_multi_intent": false
+  },
+  {
+    "text": "咨询推荐稳健的股票基金？",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 933,
+    "is_multi_intent": false
+  },
+  {
+    "text": "咨询如何购买黄金在线等",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 937,
+    "is_multi_intent": false
+  },
+  {
+    "text": "你好，国债什么时候到期",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 943,
+    "is_multi_intent": false
+  },
+  {
+    "text": "问下债券什么时候到期",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 948,
+    "is_multi_intent": false
+  },
+  {
+    "text": "想了解保险收益率怎么样麻烦了",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 952,
+    "is_multi_intent": false
+  },
+  {
+    "text": "咨询信托能提前赎回吗",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 953,
+    "is_multi_intent": false
+  },
+  {
+    "text": "能给我介绍高收益的基金有哪些！",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 955,
+    "is_multi_intent": false
+  },
+  {
+    "text": "咨询大额存单适合我吗！",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 958,
+    "is_multi_intent": false
+  },
+  {
+    "text": "能给我介绍如何购买财富管理在线等",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 969,
+    "is_multi_intent": false
+  },
+  {
+    "text": "想了解推荐稳健的大额存单？",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 970,
+    "is_multi_intent": false
+  },
+  {
+    "text": "问下如何购买基金在线等",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 972,
+    "is_multi_intent": false
+  },
+  {
+    "text": "帮我看看信托和定期存款哪个好！",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 973,
+    "is_multi_intent": false
+  },
+  {
+    "text": "如何购买定期存款谢谢",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 977,
+    "is_multi_intent": false
+  },
+  {
+    "text": "你好，外汇理财产品推荐靠谱吗",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 984,
+    "is_multi_intent": false
+  },
+  {
+    "text": "想了解高收益的结构性存款有哪些谢谢",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 993,
+    "is_multi_intent": false
+  },
+  {
+    "text": "请问我想买外汇谢谢",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 997,
+    "is_multi_intent": false
+  },
+  {
+    "text": "智能投顾适合我吗靠谱吗",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 998,
+    "is_multi_intent": false
+  },
+  {
+    "text": "问下结构性存款理财产品推荐谢谢",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 999,
+    "is_multi_intent": false
+  },
+  {
+    "text": "帮我看看外汇适合我吗在线等",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 1008,
+    "is_multi_intent": false
+  },
+  {
+    "text": "想了解基金风险大吗麻烦了",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 1009,
+    "is_multi_intent": false
+  },
+  {
+    "text": "能给我介绍黄金风险大吗！",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 1018,
+    "is_multi_intent": false
+  },
+  {
+    "text": "如何购买债券！",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 1020,
+    "is_multi_intent": false
+  },
+  {
+    "text": "能给我介绍货币基金什么时候到期",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 1021,
+    "is_multi_intent": false
+  },
+  {
+    "text": "查询我的结构性存款？",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 1031,
+    "is_multi_intent": false
+  },
+  {
+    "text": "如何购买信托！",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 1039,
+    "is_multi_intent": false
+  },
+  {
+    "text": "问下理财理财产品推荐靠谱吗",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 1043,
+    "is_multi_intent": false
+  },
+  {
+    "text": "请问外汇风险大吗靠谱吗",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 1046,
+    "is_multi_intent": false
+  },
+  {
+    "text": "能给我介绍如何购买债券靠谱吗",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 1062,
+    "is_multi_intent": false
+  },
+  {
+    "text": "咨询黄金净值查询麻烦了",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 1064,
+    "is_multi_intent": false
+  },
+  {
+    "text": "想问外汇收益率怎么样在线等",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 1070,
+    "is_multi_intent": false
+  },
+  {
+    "text": "咨询查询我的黄金",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 1079,
+    "is_multi_intent": false
+  },
+  {
+    "text": "想问查询我的保险谢谢",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 1080,
+    "is_multi_intent": false
+  },
+  {
+    "text": "想问推荐稳健的保险谢谢",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 1083,
+    "is_multi_intent": false
+  },
+  {
+    "text": "咨询查询我的理财！",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 1087,
+    "is_multi_intent": false
+  },
+  {
+    "text": "查询我的债券麻烦了",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 1088,
+    "is_multi_intent": false
+  },
+  {
+    "text": "你好，货币基金什么时候到期麻烦了",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 1090,
+    "is_multi_intent": false
+  },
+  {
+    "text": "咨询货币基金收益率怎么样",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 1096,
+    "is_multi_intent": false
+  },
+  {
+    "text": "货币基金风险大吗麻烦了",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 1099,
+    "is_multi_intent": false
+  },
+  {
+    "text": "帮我看看推荐稳健的定期存款！",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 1103,
+    "is_multi_intent": false
+  },
+  {
+    "text": "想了解智能投顾能提前赎回吗？",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 1110,
+    "is_multi_intent": false
+  },
+  {
+    "text": "能给我介绍理财收益率怎么样靠谱吗",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 1125,
+    "is_multi_intent": false
+  },
+  {
+    "text": "信托收益率怎么样",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 1129,
+    "is_multi_intent": false
+  },
+  {
+    "text": "问下我想买结构性存款！",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 1132,
+    "is_multi_intent": false
+  },
+  {
+    "text": "想了解查询我的大额存单麻烦了",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 1133,
+    "is_multi_intent": false
+  },
+  {
+    "text": "你好，黄金收益率怎么样！",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 1140,
+    "is_multi_intent": false
+  },
+  {
+    "text": "请问高收益的基金有哪些靠谱吗",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 1141,
+    "is_multi_intent": false
+  },
+  {
+    "text": "智能投顾收益率怎么样在线等",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 1148,
+    "is_multi_intent": false
+  },
+  {
+    "text": "结构性存款净值查询！",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 1150,
+    "is_multi_intent": false
+  },
+  {
+    "text": "想问查询我的国债靠谱吗",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 1152,
+    "is_multi_intent": false
+  },
+  {
+    "text": "想问理财净值查询在线等",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 1154,
+    "is_multi_intent": false
+  },
+  {
+    "text": "理财净值查询靠谱吗",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 1158,
+    "is_multi_intent": false
+  },
+  {
+    "text": "问下我想买定期存款谢谢",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 1159,
+    "is_multi_intent": false
+  },
+  {
+    "text": "帮我看看推荐稳健的理财在线等",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 1162,
+    "is_multi_intent": false
+  },
+  {
+    "text": "问下信托手续费多少！",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 1168,
+    "is_multi_intent": false
+  },
+  {
+    "text": "咨询货币基金什么时候到期在线等",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 1171,
+    "is_multi_intent": false
+  },
+  {
+    "text": "帮我看看外汇手续费多少？",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 1173,
+    "is_multi_intent": false
+  },
+  {
+    "text": "信托收益率怎么样麻烦了",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 1186,
+    "is_multi_intent": false
+  },
+  {
+    "text": "想问货币基金适合我吗！",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 1188,
+    "is_multi_intent": false
+  },
+  {
+    "text": "请问推荐稳健的信托！",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 1190,
+    "is_multi_intent": false
+  },
+  {
+    "text": "问下股票基金适合我吗",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 1198,
+    "is_multi_intent": false
+  },
+  {
+    "text": "请问如何购买债券靠谱吗",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 1199,
+    "is_multi_intent": false
+  },
+  {
+    "text": "你好，高收益的股票基金有哪些在线等",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 1205,
+    "is_multi_intent": false
+  },
+  {
+    "text": "高收益的结构性存款有哪些靠谱吗",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 1206,
+    "is_multi_intent": false
+  },
+  {
+    "text": "定期存款什么时候到期！",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 1208,
+    "is_multi_intent": false
+  },
+  {
+    "text": "想了解信托理财产品推荐靠谱吗",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 1228,
+    "is_multi_intent": false
+  },
+  {
+    "text": "请问我想买理财谢谢",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 1233,
+    "is_multi_intent": false
+  },
+  {
+    "text": "保险风险大吗",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 1234,
+    "is_multi_intent": false
+  },
+  {
+    "text": "帮我看看如何购买定期存款？",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 1248,
+    "is_multi_intent": false
+  },
+  {
+    "text": "想问智能投顾手续费多少谢谢",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 1249,
+    "is_multi_intent": false
+  },
+  {
+    "text": "问下保险理财产品推荐！",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 1258,
+    "is_multi_intent": false
+  },
+  {
+    "text": "咨询基金能提前赎回吗",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 1264,
+    "is_multi_intent": false
+  },
+  {
+    "text": "问下智能投顾起购金额靠谱吗",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 1267,
+    "is_multi_intent": false
+  },
+  {
+    "text": "能给我介绍外汇手续费多少麻烦了",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 1274,
+    "is_multi_intent": false
+  },
+  {
+    "text": "能给我介绍外汇和大额存单哪个好麻烦了",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 1276,
+    "is_multi_intent": false
+  },
+  {
+    "text": "推荐稳健的黄金麻烦了",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 1287,
+    "is_multi_intent": false
+  },
+  {
+    "text": "能给我介绍股票基金适合我吗麻烦了",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 1291,
+    "is_multi_intent": false
+  },
+  {
+    "text": "如何购买货币基金谢谢",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 1292,
+    "is_multi_intent": false
+  },
+  {
+    "text": "你好，财富管理手续费多少？",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 1293,
+    "is_multi_intent": false
+  },
+  {
+    "text": "债券风险大吗在线等",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 1294,
+    "is_multi_intent": false
+  },
+  {
+    "text": "能给我介绍黄金能提前赎回吗？",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 1296,
+    "is_multi_intent": false
+  },
+  {
+    "text": "货币基金和外汇哪个好？",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 1300,
+    "is_multi_intent": false
+  },
+  {
+    "text": "请问基金什么时候到期？",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 1303,
+    "is_multi_intent": false
+  },
+  {
+    "text": "国债风险大吗？",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 1305,
+    "is_multi_intent": false
+  },
+  {
+    "text": "帮我看看债券能提前赎回吗在线等",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 1311,
+    "is_multi_intent": false
+  },
+  {
+    "text": "想问结构性存款起购金额靠谱吗",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 1317,
+    "is_multi_intent": false
+  },
+  {
+    "text": "能给我介绍定期存款什么时候到期谢谢",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 1318,
+    "is_multi_intent": false
+  },
+  {
+    "text": "能给我介绍黄金理财产品推荐",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 1323,
+    "is_multi_intent": false
+  },
+  {
+    "text": "问下保险能提前赎回吗谢谢",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 1324,
+    "is_multi_intent": false
+  },
+  {
+    "text": "问下外汇理财产品推荐谢谢",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 1327,
+    "is_multi_intent": false
+  },
+  {
+    "text": "能给我介绍智能投顾风险大吗谢谢",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 1331,
+    "is_multi_intent": false
+  },
+  {
+    "text": "定期存款能提前赎回吗麻烦了",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 1332,
+    "is_multi_intent": false
+  },
+  {
+    "text": "想问股票基金起购金额？",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 1342,
+    "is_multi_intent": false
+  },
+  {
+    "text": "请问股票基金能提前赎回吗靠谱吗",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 1343,
+    "is_multi_intent": false
+  },
+  {
+    "text": "帮我看看大额存单什么时候到期在线等",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 1347,
+    "is_multi_intent": false
+  },
+  {
+    "text": "想问黄金和债券哪个好谢谢",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 1350,
+    "is_multi_intent": false
+  },
+  {
+    "text": "帮我看看定期存款和债券哪个好麻烦了",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 1351,
+    "is_multi_intent": false
+  },
+  {
+    "text": "你好，国债风险大吗？",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 1353,
+    "is_multi_intent": false
+  },
+  {
+    "text": "大额存单手续费多少靠谱吗",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 1361,
+    "is_multi_intent": false
+  },
+  {
+    "text": "黄金手续费多少靠谱吗",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 1362,
+    "is_multi_intent": false
+  },
+  {
+    "text": "咨询国债净值查询？",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 1363,
+    "is_multi_intent": false
+  },
+  {
+    "text": "请问债券收益率怎么样",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 1374,
+    "is_multi_intent": false
+  },
+  {
+    "text": "能给我介绍如何购买外汇谢谢",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 1379,
+    "is_multi_intent": false
+  },
+  {
+    "text": "你好，理财能提前赎回吗！",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 1380,
+    "is_multi_intent": false
+  },
+  {
+    "text": "请问黄金收益率怎么样？",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 1382,
+    "is_multi_intent": false
+  },
+  {
+    "text": "想问黄金风险大吗！",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 1388,
+    "is_multi_intent": false
+  },
+  {
+    "text": "信托起购金额！",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 1389,
+    "is_multi_intent": false
+  },
+  {
+    "text": "想了解外汇净值查询靠谱吗",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 1391,
+    "is_multi_intent": false
+  },
+  {
+    "text": "能给我介绍黄金和智能投顾哪个好谢谢",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 1401,
+    "is_multi_intent": false
+  },
+  {
+    "text": "想了解结构性存款起购金额",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 1402,
+    "is_multi_intent": false
+  },
+  {
+    "text": "想问国债净值查询谢谢",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 1407,
+    "is_multi_intent": false
+  },
+  {
+    "text": "你好，财富管理风险大吗靠谱吗",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 1412,
+    "is_multi_intent": false
+  },
+  {
+    "text": "股票基金风险大吗麻烦了",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 1414,
+    "is_multi_intent": false
+  },
+  {
+    "text": "推荐稳健的理财",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 1422,
+    "is_multi_intent": false
+  },
+  {
+    "text": "请问货币基金手续费多少？",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 1425,
+    "is_multi_intent": false
+  },
+  {
+    "text": "问下理财手续费多少？",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 1426,
+    "is_multi_intent": false
+  },
+  {
+    "text": "结构性存款理财产品推荐谢谢",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 1427,
+    "is_multi_intent": false
+  },
+  {
+    "text": "想问智能投顾理财产品推荐在线等",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 1429,
+    "is_multi_intent": false
+  },
+  {
+    "text": "想问结构性存款风险大吗在线等",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 1433,
+    "is_multi_intent": false
+  },
+  {
+    "text": "想了解推荐稳健的信托！",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 1443,
+    "is_multi_intent": false
+  },
+  {
+    "text": "问下定期存款理财产品推荐！",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 1444,
+    "is_multi_intent": false
+  },
+  {
+    "text": "能给我介绍如何购买货币基金靠谱吗",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 1446,
+    "is_multi_intent": false
+  },
+  {
+    "text": "股票基金收益率怎么样！",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 1448,
+    "is_multi_intent": false
+  },
+  {
+    "text": "咨询智能投顾能提前赎回吗在线等",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 1449,
+    "is_multi_intent": false
+  },
+  {
+    "text": "想了解债券适合我吗麻烦了",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 1450,
+    "is_multi_intent": false
+  },
+  {
+    "text": "问下查询我的信托靠谱吗",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 1451,
+    "is_multi_intent": false
+  },
+  {
+    "text": "查询我的大额存单靠谱吗",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 1452,
+    "is_multi_intent": false
+  },
+  {
+    "text": "保险风险大吗在线等",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 1460,
+    "is_multi_intent": false
+  },
+  {
+    "text": "请问信托起购金额！",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 1470,
+    "is_multi_intent": false
+  },
+  {
+    "text": "咨询基金净值查询靠谱吗",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 1471,
+    "is_multi_intent": false
+  },
+  {
+    "text": "请问基金适合我吗！",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 1473,
+    "is_multi_intent": false
+  },
+  {
+    "text": "能给我介绍财富管理和国债哪个好！",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 1477,
+    "is_multi_intent": false
+  },
+  {
+    "text": "想了解结构性存款风险大吗麻烦了",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 1478,
+    "is_multi_intent": false
+  },
+  {
+    "text": "我想买大额存单谢谢",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 1487,
+    "is_multi_intent": false
+  },
+  {
+    "text": "请问高收益的外汇有哪些！",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 1490,
+    "is_multi_intent": false
+  },
+  {
+    "text": "货币基金能提前赎回吗！",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 1497,
+    "is_multi_intent": false
+  },
+  {
+    "text": "想了解基金收益率怎么样在线等",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 1498,
+    "is_multi_intent": false
+  },
+  {
+    "text": "想问信托和信托哪个好",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 1499,
+    "is_multi_intent": false
+  },
+  {
+    "text": "请问债券什么时候到期麻烦了",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 1502,
+    "is_multi_intent": false
+  },
+  {
+    "text": "想问推荐稳健的财富管理",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 1510,
+    "is_multi_intent": false
+  },
+  {
+    "text": "能给我介绍保险收益率怎么样",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 1511,
+    "is_multi_intent": false
+  },
+  {
+    "text": "能给我介绍定期存款什么时候到期？",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 1516,
+    "is_multi_intent": false
+  },
+  {
+    "text": "想了解我想买债券在线等",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 1519,
+    "is_multi_intent": false
+  },
+  {
+    "text": "请问货币基金净值查询",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 1523,
+    "is_multi_intent": false
+  },
+  {
+    "text": "请问外汇风险大吗在线等",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 1534,
+    "is_multi_intent": false
+  },
+  {
+    "text": "推荐稳健的黄金谢谢",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 1535,
+    "is_multi_intent": false
+  },
+  {
+    "text": "帮我看看理财收益率怎么样靠谱吗",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 1544,
+    "is_multi_intent": false
+  },
+  {
+    "text": "想问定期存款净值查询麻烦了",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 1547,
+    "is_multi_intent": false
+  },
+  {
+    "text": "想问外汇风险大吗？",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 1549,
+    "is_multi_intent": false
+  },
+  {
+    "text": "请问财富管理起购金额",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 1553,
+    "is_multi_intent": false
+  },
+  {
+    "text": "想问定期存款起购金额在线等",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 1555,
+    "is_multi_intent": false
+  },
+  {
+    "text": "我想买理财",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 1556,
+    "is_multi_intent": false
+  },
+  {
+    "text": "你好，结构性存款理财产品推荐！",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 1562,
+    "is_multi_intent": false
+  },
+  {
+    "text": "想问理财能提前赎回吗靠谱吗",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 1563,
+    "is_multi_intent": false
+  },
+  {
+    "text": "想了解智能投顾起购金额谢谢",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 1568,
+    "is_multi_intent": false
+  },
+  {
+    "text": "你好，我想买外汇！",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 1569,
+    "is_multi_intent": false
+  },
+  {
+    "text": "想问结构性存款理财产品推荐麻烦了",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 1570,
+    "is_multi_intent": false
+  },
+  {
+    "text": "想问基金收益率怎么样谢谢",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 1574,
+    "is_multi_intent": false
+  },
+  {
+    "text": "你好，国债什么时候到期在线等",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 1580,
+    "is_multi_intent": false
+  },
+  {
+    "text": "想问我想买黄金在线等",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 1593,
+    "is_multi_intent": false
+  },
+  {
+    "text": "财富管理理财产品推荐在线等",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 1595,
+    "is_multi_intent": false
+  },
+  {
+    "text": "请问结构性存款理财产品推荐！",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 1597,
+    "is_multi_intent": false
+  },
+  {
+    "text": "问下股票基金起购金额？",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 1600,
+    "is_multi_intent": false
+  },
+  {
+    "text": "问下推荐稳健的股票基金麻烦了",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 1602,
+    "is_multi_intent": false
+  },
+  {
+    "text": "请问国债什么时候到期！",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 1611,
+    "is_multi_intent": false
+  },
+  {
+    "text": "请问基金和股票基金哪个好",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 1615,
+    "is_multi_intent": false
+  },
+  {
+    "text": "请问财富管理能提前赎回吗麻烦了",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 1619,
+    "is_multi_intent": false
+  },
+  {
+    "text": "请问智能投顾适合我吗？",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 1627,
+    "is_multi_intent": false
+  },
+  {
+    "text": "能给我介绍我想买外汇在线等",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 1629,
+    "is_multi_intent": false
+  },
+  {
+    "text": "你好，如何购买定期存款？",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 1631,
+    "is_multi_intent": false
+  },
+  {
+    "text": "保险什么时候到期在线等",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 1632,
+    "is_multi_intent": false
+  },
+  {
+    "text": "请问结构性存款净值查询！",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 1635,
+    "is_multi_intent": false
+  },
+  {
+    "text": "请问如何购买债券麻烦了",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 1636,
+    "is_multi_intent": false
+  },
+  {
+    "text": "想问债券收益率怎么样",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 1637,
+    "is_multi_intent": false
+  },
+  {
+    "text": "想了解黄金风险大吗？",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 1641,
+    "is_multi_intent": false
+  },
+  {
+    "text": "想了解信托和外汇哪个好谢谢",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 1642,
+    "is_multi_intent": false
+  },
+  {
+    "text": "帮我看看我想买定期存款谢谢",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 1643,
+    "is_multi_intent": false
+  },
+  {
+    "text": "想了解查询我的黄金？",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 1645,
+    "is_multi_intent": false
+  },
+  {
+    "text": "基金手续费多少在线等",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 1651,
+    "is_multi_intent": false
+  },
+  {
+    "text": "请问货币基金能提前赎回吗麻烦了",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 1652,
+    "is_multi_intent": false
+  },
+  {
+    "text": "推荐稳健的保险在线等",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 1653,
+    "is_multi_intent": false
+  },
+  {
+    "text": "帮我看看外汇风险大吗靠谱吗",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 1660,
+    "is_multi_intent": false
+  },
+  {
+    "text": "定期存款收益率怎么样靠谱吗",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 1661,
+    "is_multi_intent": false
+  },
+  {
+    "text": "保险净值查询！",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 1668,
+    "is_multi_intent": false
+  },
+  {
+    "text": "问下债券起购金额靠谱吗",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 1675,
+    "is_multi_intent": false
+  },
+  {
+    "text": "推荐稳健的保险？",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 1677,
+    "is_multi_intent": false
+  },
+  {
+    "text": "能给我介绍大额存单什么时候到期靠谱吗",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 1683,
+    "is_multi_intent": false
+  },
+  {
+    "text": "帮我看看信托净值查询麻烦了",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 1688,
+    "is_multi_intent": false
+  },
+  {
+    "text": "问下结构性存款手续费多少在线等",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 1689,
+    "is_multi_intent": false
+  },
+  {
+    "text": "能给我介绍货币基金适合我吗在线等",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 1690,
+    "is_multi_intent": false
+  },
+  {
+    "text": "帮我看看查询我的债券麻烦了",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 1696,
+    "is_multi_intent": false
+  },
+  {
+    "text": "能给我介绍国债能提前赎回吗",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 1707,
+    "is_multi_intent": false
+  },
+  {
+    "text": "请问结构性存款理财产品推荐麻烦了",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 1725,
+    "is_multi_intent": false
+  },
+  {
+    "text": "能给我介绍股票基金起购金额！",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 1726,
+    "is_multi_intent": false
+  },
+  {
+    "text": "想问股票基金起购金额？",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 1729,
+    "is_multi_intent": false
+  },
+  {
+    "text": "帮我看看股票基金和结构性存款哪个好靠谱吗",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 1731,
+    "is_multi_intent": false
+  },
+  {
+    "text": "想了解结构性存款手续费多少",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 1733,
+    "is_multi_intent": false
+  },
+  {
+    "text": "你好，债券净值查询",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 1739,
+    "is_multi_intent": false
+  },
+  {
+    "text": "帮我看看财富管理能提前赎回吗靠谱吗",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 1757,
+    "is_multi_intent": false
+  },
+  {
+    "text": "想了解智能投顾风险大吗！",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 1765,
+    "is_multi_intent": false
+  },
+  {
+    "text": "保险收益率怎么样靠谱吗",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 1769,
+    "is_multi_intent": false
+  },
+  {
+    "text": "帮我看看定期存款和股票基金哪个好谢谢",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 1770,
+    "is_multi_intent": false
+  },
+  {
+    "text": "想问外汇收益率怎么样靠谱吗",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 1771,
+    "is_multi_intent": false
+  },
+  {
+    "text": "想了解查询我的智能投顾在线等",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 1773,
+    "is_multi_intent": false
+  },
+  {
+    "text": "问下信托什么时候到期！",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 1774,
+    "is_multi_intent": false
+  },
+  {
+    "text": "查询我的信托",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 1776,
+    "is_multi_intent": false
+  },
+  {
+    "text": "想问保险理财产品推荐靠谱吗",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 1782,
+    "is_multi_intent": false
+  },
+  {
+    "text": "能给我介绍查询我的黄金？",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 1783,
+    "is_multi_intent": false
+  },
+  {
+    "text": "问下债券适合我吗谢谢",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 1792,
+    "is_multi_intent": false
+  },
+  {
+    "text": "能给我介绍财富管理什么时候到期谢谢",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 1795,
+    "is_multi_intent": false
+  },
+  {
+    "text": "货币基金起购金额谢谢",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 1796,
+    "is_multi_intent": false
+  },
+  {
+    "text": "想了解信托风险大吗！",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 1797,
+    "is_multi_intent": false
+  },
+  {
+    "text": "问下智能投顾理财产品推荐在线等",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 1808,
+    "is_multi_intent": false
+  },
+  {
+    "text": "外汇适合我吗在线等",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 1809,
+    "is_multi_intent": false
+  },
+  {
+    "text": "能给我介绍智能投顾收益率怎么样",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 1818,
+    "is_multi_intent": false
+  },
+  {
+    "text": "大额存单净值查询",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 1824,
+    "is_multi_intent": false
+  },
+  {
+    "text": "国债什么时候到期麻烦了",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 1831,
+    "is_multi_intent": false
+  },
+  {
+    "text": "问下推荐稳健的信托谢谢",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 1833,
+    "is_multi_intent": false
+  },
+  {
+    "text": "能给我介绍股票基金手续费多少在线等",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 1836,
+    "is_multi_intent": false
+  },
+  {
+    "text": "你好，智能投顾风险大吗麻烦了",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 1840,
+    "is_multi_intent": false
+  },
+  {
+    "text": "想问我想买黄金？",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 1842,
+    "is_multi_intent": false
+  },
+  {
+    "text": "请问货币基金净值查询",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 1843,
+    "is_multi_intent": false
+  },
+  {
+    "text": "你好，国债起购金额靠谱吗",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 1851,
+    "is_multi_intent": false
+  },
+  {
+    "text": "结构性存款理财产品推荐在线等",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 1852,
+    "is_multi_intent": false
+  },
+  {
+    "text": "咨询高收益的结构性存款有哪些谢谢",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 1860,
+    "is_multi_intent": false
+  },
+  {
+    "text": "想问我想买结构性存款麻烦了",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 1861,
+    "is_multi_intent": false
+  },
+  {
+    "text": "信托起购金额靠谱吗",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 1862,
+    "is_multi_intent": false
+  },
+  {
+    "text": "问下推荐稳健的股票基金",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 1869,
+    "is_multi_intent": false
+  },
+  {
+    "text": "请问高收益的大额存单有哪些",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 1874,
+    "is_multi_intent": false
+  },
+  {
+    "text": "请问如何购买股票基金在线等",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 1876,
+    "is_multi_intent": false
+  },
+  {
+    "text": "想了解定期存款什么时候到期靠谱吗",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 1878,
+    "is_multi_intent": false
+  },
+  {
+    "text": "问下基金什么时候到期谢谢",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 1880,
+    "is_multi_intent": false
+  },
+  {
+    "text": "你好，我想买理财在线等",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 1881,
+    "is_multi_intent": false
+  },
+  {
+    "text": "想了解查询我的理财麻烦了",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 1883,
+    "is_multi_intent": false
+  },
+  {
+    "text": "想了解理财风险大吗？",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 1885,
+    "is_multi_intent": false
+  },
+  {
+    "text": "你好，国债手续费多少",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 1886,
+    "is_multi_intent": false
+  },
+  {
+    "text": "推荐稳健的黄金在线等",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 1888,
+    "is_multi_intent": false
+  },
+  {
+    "text": "问下货币基金适合我吗？",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 1894,
+    "is_multi_intent": false
+  },
+  {
+    "text": "能给我介绍定期存款风险大吗？",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 1895,
+    "is_multi_intent": false
+  },
+  {
+    "text": "理财理财产品推荐麻烦了",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 1910,
+    "is_multi_intent": false
+  },
+  {
+    "text": "想了解黄金收益率怎么样在线等",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 1912,
+    "is_multi_intent": false
+  },
+  {
+    "text": "帮我看看黄金净值查询麻烦了",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 1929,
+    "is_multi_intent": false
+  },
+  {
+    "text": "想了解智能投顾适合我吗",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 1948,
+    "is_multi_intent": false
+  },
+  {
+    "text": "帮我看看理财净值查询麻烦了",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 1952,
+    "is_multi_intent": false
+  },
+  {
+    "text": "我想买债券",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 1956,
+    "is_multi_intent": false
+  },
+  {
+    "text": "想问推荐稳健的理财靠谱吗",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 1958,
+    "is_multi_intent": false
+  },
+  {
+    "text": "想问查询我的债券！",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 1959,
+    "is_multi_intent": false
+  },
+  {
+    "text": "请问保险理财产品推荐麻烦了",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 1964,
+    "is_multi_intent": false
+  },
+  {
+    "text": "想了解结构性存款起购金额在线等",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 1967,
+    "is_multi_intent": false
+  },
+  {
+    "text": "问下查询我的国债？",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 1968,
+    "is_multi_intent": false
+  },
+  {
+    "text": "请问基金什么时候到期靠谱吗",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 1977,
+    "is_multi_intent": false
+  },
+  {
+    "text": "咨询信托收益率怎么样！",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 1981,
+    "is_multi_intent": false
+  },
+  {
+    "text": "债券净值查询！",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 1997,
+    "is_multi_intent": false
+  },
+  {
+    "text": "帮我看看结构性存款什么时候到期麻烦了",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 1998,
+    "is_multi_intent": false
+  },
+  {
+    "text": "你好，高收益的外汇有哪些谢谢",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 2000,
+    "is_multi_intent": false
+  },
+  {
+    "text": "想了解基金净值查询在线等",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 2002,
+    "is_multi_intent": false
+  },
+  {
+    "text": "问下信托什么时候到期麻烦了",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 2009,
+    "is_multi_intent": false
+  },
+  {
+    "text": "想了解如何购买理财？",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 2021,
+    "is_multi_intent": false
+  },
+  {
+    "text": "想了解理财适合我吗靠谱吗",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 2026,
+    "is_multi_intent": false
+  },
+  {
+    "text": "能给我介绍定期存款收益率怎么样靠谱吗",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 2029,
+    "is_multi_intent": false
+  },
+  {
+    "text": "黄金起购金额谢谢",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 2031,
+    "is_multi_intent": false
+  },
+  {
+    "text": "财富管理理财产品推荐靠谱吗",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 2037,
+    "is_multi_intent": false
+  },
+  {
+    "text": "问下保险和外汇哪个好谢谢",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 2038,
+    "is_multi_intent": false
+  },
+  {
+    "text": "想了解高收益的黄金有哪些谢谢",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 2051,
+    "is_multi_intent": false
+  },
+  {
+    "text": "我想买信托！",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 2052,
+    "is_multi_intent": false
+  },
+  {
+    "text": "查询我的理财！",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 2061,
+    "is_multi_intent": false
+  },
+  {
+    "text": "你好，如何购买外汇",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 2063,
+    "is_multi_intent": false
+  },
+  {
+    "text": "请问股票基金净值查询",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 2065,
+    "is_multi_intent": false
+  },
+  {
+    "text": "帮我看看推荐稳健的股票基金！",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 2071,
+    "is_multi_intent": false
+  },
+  {
+    "text": "你好，债券和股票基金哪个好靠谱吗",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 2076,
+    "is_multi_intent": false
+  },
+  {
+    "text": "问下财富管理净值查询靠谱吗",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 2087,
+    "is_multi_intent": false
+  },
+  {
+    "text": "咨询高收益的货币基金有哪些靠谱吗",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 2090,
+    "is_multi_intent": false
+  },
+  {
+    "text": "想问股票基金净值查询麻烦了",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 2098,
+    "is_multi_intent": false
+  },
+  {
+    "text": "你好，理财风险大吗谢谢",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 2099,
+    "is_multi_intent": false
+  },
+  {
+    "text": "问下保险起购金额靠谱吗",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 2100,
+    "is_multi_intent": false
+  },
+  {
+    "text": "能给我介绍我想买债券？",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 2103,
+    "is_multi_intent": false
+  },
+  {
+    "text": "能给我介绍推荐稳健的大额存单！",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 2108,
+    "is_multi_intent": false
+  },
+  {
+    "text": "我想买财富管理？",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 2109,
+    "is_multi_intent": false
+  },
+  {
+    "text": "查询我的定期存款谢谢",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 2114,
+    "is_multi_intent": false
+  },
+  {
+    "text": "想了解货币基金手续费多少麻烦了",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 2117,
+    "is_multi_intent": false
+  },
+  {
+    "text": "高收益的黄金有哪些靠谱吗",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 2124,
+    "is_multi_intent": false
+  },
+  {
+    "text": "能给我介绍推荐稳健的基金！",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 2125,
+    "is_multi_intent": false
+  },
+  {
+    "text": "问下外汇净值查询在线等",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 2128,
+    "is_multi_intent": false
+  },
+  {
+    "text": "想问高收益的财富管理有哪些麻烦了",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 2129,
+    "is_multi_intent": false
+  },
+  {
+    "text": "能给我介绍推荐稳健的债券麻烦了",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 2131,
+    "is_multi_intent": false
+  },
+  {
+    "text": "智能投顾适合我吗麻烦了",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 2135,
+    "is_multi_intent": false
+  },
+  {
+    "text": "想了解保险净值查询麻烦了",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 2139,
+    "is_multi_intent": false
+  },
+  {
+    "text": "请问推荐稳健的定期存款",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 2141,
+    "is_multi_intent": false
+  },
+  {
+    "text": "能给我介绍如何购买大额存单！",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 2143,
+    "is_multi_intent": false
+  },
+  {
+    "text": "想问大额存单起购金额谢谢",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 2146,
+    "is_multi_intent": false
+  },
+  {
+    "text": "想了解货币基金理财产品推荐麻烦了",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 2147,
+    "is_multi_intent": false
+  },
+  {
+    "text": "问下保险起购金额靠谱吗",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 2150,
+    "is_multi_intent": false
+  },
+  {
+    "text": "能给我介绍债券能提前赎回吗在线等",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 2164,
+    "is_multi_intent": false
+  },
+  {
+    "text": "想问理财适合我吗",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 2168,
+    "is_multi_intent": false
+  },
+  {
+    "text": "问下查询我的智能投顾在线等",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 2171,
+    "is_multi_intent": false
+  },
+  {
+    "text": "请问查询我的定期存款谢谢",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 2182,
+    "is_multi_intent": false
+  },
+  {
+    "text": "你好，定期存款起购金额",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 2196,
+    "is_multi_intent": false
+  },
+  {
+    "text": "想问如何购买黄金",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 2199,
+    "is_multi_intent": false
+  },
+  {
+    "text": "想了解财富管理和股票基金哪个好？",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 2202,
+    "is_multi_intent": false
+  },
+  {
+    "text": "请问如何购买保险！",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 2203,
+    "is_multi_intent": false
+  },
+  {
+    "text": "请问黄金理财产品推荐！",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 2206,
+    "is_multi_intent": false
+  },
+  {
+    "text": "想了解高收益的定期存款有哪些麻烦了",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 2208,
+    "is_multi_intent": false
+  },
+  {
+    "text": "想问债券收益率怎么样？",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 2213,
+    "is_multi_intent": false
+  },
+  {
+    "text": "帮我看看股票基金理财产品推荐！",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 2215,
+    "is_multi_intent": false
+  },
+  {
+    "text": "想了解债券适合我吗！",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 2224,
+    "is_multi_intent": false
+  },
+  {
+    "text": "如何购买股票基金靠谱吗",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 2226,
+    "is_multi_intent": false
+  },
+  {
+    "text": "请问如何购买理财",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 2230,
+    "is_multi_intent": false
+  },
+  {
+    "text": "大额存单手续费多少靠谱吗",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 2231,
+    "is_multi_intent": false
+  },
+  {
+    "text": "想问债券净值查询靠谱吗",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 2236,
+    "is_multi_intent": false
+  },
+  {
+    "text": "你好，如何购买外汇在线等",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 2252,
+    "is_multi_intent": false
+  },
+  {
+    "text": "咨询定期存款适合我吗！",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 2255,
+    "is_multi_intent": false
+  },
+  {
+    "text": "想了解财富管理什么时候到期",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 2257,
+    "is_multi_intent": false
+  },
+  {
+    "text": "咨询保险风险大吗靠谱吗",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 2260,
+    "is_multi_intent": false
+  },
+  {
+    "text": "咨询股票基金理财产品推荐谢谢",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 2264,
+    "is_multi_intent": false
+  },
+  {
+    "text": "想了解基金理财产品推荐谢谢",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 2268,
+    "is_multi_intent": false
+  },
+  {
+    "text": "外汇收益率怎么样？",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 2272,
+    "is_multi_intent": false
+  },
+  {
+    "text": "如何购买智能投顾",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 2284,
+    "is_multi_intent": false
+  },
+  {
+    "text": "请问保险适合我吗谢谢",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 2285,
+    "is_multi_intent": false
+  },
+  {
+    "text": "问下财富管理手续费多少！",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 2292,
+    "is_multi_intent": false
+  },
+  {
+    "text": "请问信托起购金额在线等",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 2293,
+    "is_multi_intent": false
+  },
+  {
+    "text": "想了解黄金风险大吗",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 2298,
+    "is_multi_intent": false
+  },
+  {
+    "text": "你好，推荐稳健的国债！",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 2326,
+    "is_multi_intent": false
+  },
+  {
+    "text": "我想买财富管理麻烦了",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 2331,
+    "is_multi_intent": false
+  },
+  {
+    "text": "大额存单收益率怎么样在线等",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 2334,
+    "is_multi_intent": false
+  },
+  {
+    "text": "大额存单净值查询谢谢",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 2336,
+    "is_multi_intent": false
+  },
+  {
+    "text": "想问财富管理理财产品推荐靠谱吗",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 2341,
+    "is_multi_intent": false
+  },
+  {
+    "text": "问下财富管理风险大吗",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 2348,
+    "is_multi_intent": false
+  },
+  {
+    "text": "能给我介绍高收益的货币基金有哪些麻烦了",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 2361,
+    "is_multi_intent": false
+  },
+  {
+    "text": "想了解如何购买股票基金",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 2375,
+    "is_multi_intent": false
+  },
+  {
+    "text": "想问大额存单和债券哪个好？",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 2380,
+    "is_multi_intent": false
+  },
+  {
+    "text": "请问黄金和智能投顾哪个好！",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 2382,
+    "is_multi_intent": false
+  },
+  {
+    "text": "请问外汇和黄金哪个好在线等",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 2383,
+    "is_multi_intent": false
+  },
+  {
+    "text": "帮我看看债券起购金额",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 2386,
+    "is_multi_intent": false
+  },
+  {
+    "text": "问下股票基金手续费多少谢谢",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 2389,
+    "is_multi_intent": false
+  },
+  {
+    "text": "外汇起购金额！",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 2390,
+    "is_multi_intent": false
+  },
+  {
+    "text": "请问国债风险大吗？",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 2391,
+    "is_multi_intent": false
+  },
+  {
+    "text": "请问货币基金净值查询谢谢",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 2395,
+    "is_multi_intent": false
+  },
+  {
+    "text": "基金净值查询在线等",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 2397,
+    "is_multi_intent": false
+  },
+  {
+    "text": "问下大额存单收益率怎么样靠谱吗",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 2405,
+    "is_multi_intent": false
+  },
+  {
+    "text": "国债起购金额麻烦了",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 2406,
+    "is_multi_intent": false
+  },
+  {
+    "text": "查询我的外汇在线等",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 2407,
+    "is_multi_intent": false
+  },
+  {
+    "text": "推荐稳健的货币基金在线等",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 2410,
+    "is_multi_intent": false
+  },
+  {
+    "text": "问下查询我的定期存款靠谱吗",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 2411,
+    "is_multi_intent": false
+  },
+  {
+    "text": "能给我介绍定期存款风险大吗谢谢",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 2412,
+    "is_multi_intent": false
+  },
+  {
+    "text": "帮我看看信托风险大吗谢谢",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 2428,
+    "is_multi_intent": false
+  },
+  {
+    "text": "帮我看看股票基金手续费多少",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 2433,
+    "is_multi_intent": false
+  },
+  {
+    "text": "帮我看看大额存单手续费多少",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 2440,
+    "is_multi_intent": false
+  },
+  {
+    "text": "想了解黄金风险大吗？",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 2441,
+    "is_multi_intent": false
+  },
+  {
+    "text": "咨询推荐稳健的股票基金谢谢",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 2451,
+    "is_multi_intent": false
+  },
+  {
+    "text": "请问财富管理能提前赎回吗？",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 2453,
+    "is_multi_intent": false
+  },
+  {
+    "text": "你好，大额存单收益率怎么样在线等",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 2462,
+    "is_multi_intent": false
+  },
+  {
+    "text": "帮我看看国债和财富管理哪个好谢谢",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 2463,
+    "is_multi_intent": false
+  },
+  {
+    "text": "你好，我想买理财",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 2470,
+    "is_multi_intent": false
+  },
+  {
+    "text": "你好，财富管理理财产品推荐靠谱吗",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 2471,
+    "is_multi_intent": false
+  },
+  {
+    "text": "问下高收益的保险有哪些！",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 2486,
+    "is_multi_intent": false
+  },
+  {
+    "text": "债券净值查询？",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 2489,
+    "is_multi_intent": false
+  },
+  {
+    "text": "请问信托和保险哪个好！",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 2502,
+    "is_multi_intent": false
+  },
+  {
+    "text": "请问推荐稳健的财富管理谢谢",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 2504,
+    "is_multi_intent": false
+  },
+  {
+    "text": "帮我看看信托理财产品推荐谢谢",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 2515,
+    "is_multi_intent": false
+  },
+  {
+    "text": "想了解查询我的定期存款谢谢",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 2522,
+    "is_multi_intent": false
+  },
+  {
+    "text": "咨询如何购买理财谢谢",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 2524,
+    "is_multi_intent": false
+  },
+  {
+    "text": "帮我看看财富管理净值查询！",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 2525,
+    "is_multi_intent": false
+  },
+  {
+    "text": "智能投顾适合我吗？",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 2530,
+    "is_multi_intent": false
+  },
+  {
+    "text": "帮我看看推荐稳健的信托麻烦了",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 2531,
+    "is_multi_intent": false
+  },
+  {
+    "text": "请问我想买结构性存款在线等",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 2532,
+    "is_multi_intent": false
+  },
+  {
+    "text": "咨询查询我的债券麻烦了",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 2533,
+    "is_multi_intent": false
+  },
+  {
+    "text": "能给我介绍黄金和外汇哪个好？",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 2538,
+    "is_multi_intent": false
+  },
+  {
+    "text": "问下高收益的财富管理有哪些谢谢",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 2546,
+    "is_multi_intent": false
+  },
+  {
+    "text": "你好，信托适合我吗在线等",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 2551,
+    "is_multi_intent": false
+  },
+  {
+    "text": "想了解黄金和信托哪个好",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 2556,
+    "is_multi_intent": false
+  },
+  {
+    "text": "能给我介绍国债什么时候到期谢谢",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 2557,
+    "is_multi_intent": false
+  },
+  {
+    "text": "能给我介绍财富管理适合我吗靠谱吗",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 2560,
+    "is_multi_intent": false
+  },
+  {
+    "text": "保险手续费多少在线等",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 2563,
+    "is_multi_intent": false
+  },
+  {
+    "text": "想问保险适合我吗？",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 2567,
+    "is_multi_intent": false
+  },
+  {
+    "text": "能给我介绍查询我的股票基金麻烦了",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 2568,
+    "is_multi_intent": false
+  },
+  {
+    "text": "国债起购金额？",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 2571,
+    "is_multi_intent": false
+  },
+  {
+    "text": "想问高收益的股票基金有哪些",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 2574,
+    "is_multi_intent": false
+  },
+  {
+    "text": "你好，外汇起购金额！",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 2575,
+    "is_multi_intent": false
+  },
+  {
+    "text": "想了解智能投顾收益率怎么样靠谱吗",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 2576,
+    "is_multi_intent": false
+  },
+  {
+    "text": "咨询结构性存款能提前赎回吗在线等",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 2584,
+    "is_multi_intent": false
+  },
+  {
+    "text": "能给我介绍货币基金适合我吗？",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 2585,
+    "is_multi_intent": false
+  },
+  {
+    "text": "咨询我想买智能投顾谢谢",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 2588,
+    "is_multi_intent": false
+  },
+  {
+    "text": "请问货币基金理财产品推荐谢谢",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 2589,
+    "is_multi_intent": false
+  },
+  {
+    "text": "咨询保险适合我吗麻烦了",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 2598,
+    "is_multi_intent": false
+  },
+  {
+    "text": "基金和股票基金哪个好？",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 2600,
+    "is_multi_intent": false
+  },
+  {
+    "text": "你好，结构性存款起购金额",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 2602,
+    "is_multi_intent": false
+  },
+  {
+    "text": "你好，保险理财产品推荐麻烦了",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 2604,
+    "is_multi_intent": false
+  },
+  {
+    "text": "想问股票基金净值查询！",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 2610,
+    "is_multi_intent": false
+  },
+  {
+    "text": "问下高收益的财富管理有哪些在线等",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 2611,
+    "is_multi_intent": false
+  },
+  {
+    "text": "帮我看看外汇手续费多少麻烦了",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 2616,
+    "is_multi_intent": false
+  },
+  {
+    "text": "能给我介绍大额存单收益率怎么样麻烦了",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 2618,
+    "is_multi_intent": false
+  },
+  {
+    "text": "请问大额存单理财产品推荐在线等",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 2623,
+    "is_multi_intent": false
+  },
+  {
+    "text": "想问推荐稳健的结构性存款谢谢",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 2626,
+    "is_multi_intent": false
+  },
+  {
+    "text": "请问黄金风险大吗靠谱吗",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 2627,
+    "is_multi_intent": false
+  },
+  {
+    "text": "推荐稳健的信托？",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 2628,
+    "is_multi_intent": false
+  },
+  {
+    "text": "想问外汇能提前赎回吗谢谢",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 2638,
+    "is_multi_intent": false
+  },
+  {
+    "text": "能给我介绍推荐稳健的智能投顾",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 2639,
+    "is_multi_intent": false
+  },
+  {
+    "text": "能给我介绍黄金理财产品推荐！",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 2642,
+    "is_multi_intent": false
+  },
+  {
+    "text": "大额存单净值查询在线等",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 2643,
+    "is_multi_intent": false
+  },
+  {
+    "text": "能给我介绍智能投顾收益率怎么样谢谢",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 2645,
+    "is_multi_intent": false
+  },
+  {
+    "text": "问下结构性存款手续费多少麻烦了",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 2651,
+    "is_multi_intent": false
+  },
+  {
+    "text": "问下国债和货币基金哪个好谢谢",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 2654,
+    "is_multi_intent": false
+  },
+  {
+    "text": "结构性存款起购金额！",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 2655,
+    "is_multi_intent": false
+  },
+  {
+    "text": "想了解财富管理收益率怎么样麻烦了",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 2659,
+    "is_multi_intent": false
+  },
+  {
+    "text": "想问货币基金能提前赎回吗！",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 2661,
+    "is_multi_intent": false
+  },
+  {
+    "text": "你好，我想买外汇在线等",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 2666,
+    "is_multi_intent": false
+  },
+  {
+    "text": "帮我看看基金和国债哪个好谢谢",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 2671,
+    "is_multi_intent": false
+  },
+  {
+    "text": "高收益的外汇有哪些靠谱吗",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 2681,
+    "is_multi_intent": false
+  },
+  {
+    "text": "财富管理适合我吗麻烦了",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 2688,
+    "is_multi_intent": false
+  },
+  {
+    "text": "咨询股票基金什么时候到期",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 2692,
+    "is_multi_intent": false
+  },
+  {
+    "text": "想问货币基金净值查询靠谱吗",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 2698,
+    "is_multi_intent": false
+  },
+  {
+    "text": "基金适合我吗",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 2705,
+    "is_multi_intent": false
+  },
+  {
+    "text": "咨询理财适合我吗在线等",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 2706,
+    "is_multi_intent": false
+  },
+  {
+    "text": "问下高收益的定期存款有哪些",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 2709,
+    "is_multi_intent": false
+  },
+  {
+    "text": "咨询外汇理财产品推荐！",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 2710,
+    "is_multi_intent": false
+  },
+  {
+    "text": "想了解财富管理和保险哪个好靠谱吗",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 2715,
+    "is_multi_intent": false
+  },
+  {
+    "text": "咨询大额存单理财产品推荐麻烦了",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 2718,
+    "is_multi_intent": false
+  },
+  {
+    "text": "理财适合我吗",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 2721,
+    "is_multi_intent": false
+  },
+  {
+    "text": "能给我介绍理财起购金额谢谢",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 2723,
+    "is_multi_intent": false
+  },
+  {
+    "text": "想了解外汇和定期存款哪个好麻烦了",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 2726,
+    "is_multi_intent": false
+  },
+  {
+    "text": "咨询股票基金手续费多少麻烦了",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 2729,
+    "is_multi_intent": false
+  },
+  {
+    "text": "想问外汇净值查询",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 2732,
+    "is_multi_intent": false
+  },
+  {
+    "text": "能给我介绍大额存单收益率怎么样在线等",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 2734,
+    "is_multi_intent": false
+  },
+  {
+    "text": "能给我介绍如何购买债券",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 2738,
+    "is_multi_intent": false
+  },
+  {
+    "text": "高收益的基金有哪些麻烦了",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 2740,
+    "is_multi_intent": false
+  },
+  {
+    "text": "高收益的国债有哪些在线等",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 2746,
+    "is_multi_intent": false
+  },
+  {
+    "text": "我想买保险靠谱吗",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 2747,
+    "is_multi_intent": false
+  },
+  {
+    "text": "能给我介绍如何购买货币基金",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 2762,
+    "is_multi_intent": false
+  },
+  {
+    "text": "想了解货币基金适合我吗在线等",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 2771,
+    "is_multi_intent": false
+  },
+  {
+    "text": "你好，推荐稳健的大额存单靠谱吗",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 2779,
+    "is_multi_intent": false
+  },
+  {
+    "text": "想问大额存单收益率怎么样！",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 2791,
+    "is_multi_intent": false
+  },
+  {
+    "text": "大额存单能提前赎回吗谢谢",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 2792,
+    "is_multi_intent": false
+  },
+  {
+    "text": "想了解理财和大额存单哪个好",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 2793,
+    "is_multi_intent": false
+  },
+  {
+    "text": "你好，查询我的国债靠谱吗",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 2796,
+    "is_multi_intent": false
+  },
+  {
+    "text": "财富管理起购金额？",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 2800,
+    "is_multi_intent": false
+  },
+  {
+    "text": "你好，定期存款收益率怎么样！",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 2802,
+    "is_multi_intent": false
+  },
+  {
+    "text": "想问推荐稳健的保险！",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 2811,
+    "is_multi_intent": false
+  },
+  {
+    "text": "能给我介绍货币基金收益率怎么样？",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 2821,
+    "is_multi_intent": false
+  },
+  {
+    "text": "想了解基金起购金额？",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 2824,
+    "is_multi_intent": false
+  },
+  {
+    "text": "推荐稳健的大额存单！",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 2827,
+    "is_multi_intent": false
+  },
+  {
+    "text": "请问信托手续费多少",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 2831,
+    "is_multi_intent": false
+  },
+  {
+    "text": "想问查询我的基金靠谱吗",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 2842,
+    "is_multi_intent": false
+  },
+  {
+    "text": "请问如何购买财富管理",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 2843,
+    "is_multi_intent": false
+  },
+  {
+    "text": "你好，结构性存款净值查询",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 2846,
+    "is_multi_intent": false
+  },
+  {
+    "text": "能给我介绍定期存款能提前赎回吗！",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 2849,
+    "is_multi_intent": false
+  },
+  {
+    "text": "能给我介绍外汇什么时候到期麻烦了",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 2852,
+    "is_multi_intent": false
+  },
+  {
+    "text": "想问推荐稳健的智能投顾？",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 2871,
+    "is_multi_intent": false
+  },
+  {
+    "text": "帮我看看智能投顾净值查询麻烦了",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 2879,
+    "is_multi_intent": false
+  },
+  {
+    "text": "能给我介绍高收益的黄金有哪些！",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 2885,
+    "is_multi_intent": false
+  },
+  {
+    "text": "咨询信托起购金额谢谢",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 2910,
+    "is_multi_intent": false
+  },
+  {
+    "text": "你好，推荐稳健的债券！",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 2913,
+    "is_multi_intent": false
+  },
+  {
+    "text": "能给我介绍财富管理理财产品推荐谢谢",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 2915,
+    "is_multi_intent": false
+  },
+  {
+    "text": "请问定期存款手续费多少",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 2919,
+    "is_multi_intent": false
+  },
+  {
+    "text": "想问黄金什么时候到期麻烦了",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 2923,
+    "is_multi_intent": false
+  },
+  {
+    "text": "帮我看看财富管理起购金额！",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 2924,
+    "is_multi_intent": false
+  },
+  {
+    "text": "想问国债风险大吗",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 2935,
+    "is_multi_intent": false
+  },
+  {
+    "text": "想了解财富管理能提前赎回吗！",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 2952,
+    "is_multi_intent": false
+  },
+  {
+    "text": "高收益的信托有哪些麻烦了",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 2955,
+    "is_multi_intent": false
+  },
+  {
+    "text": "想了解推荐稳健的黄金谢谢",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 2957,
+    "is_multi_intent": false
+  },
+  {
+    "text": "债券净值查询麻烦了",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 2960,
+    "is_multi_intent": false
+  },
+  {
+    "text": "外汇起购金额麻烦了",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 2964,
+    "is_multi_intent": false
+  },
+  {
+    "text": "你好，高收益的结构性存款有哪些！",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 2966,
+    "is_multi_intent": false
+  },
+  {
+    "text": "如何购买基金",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 2969,
+    "is_multi_intent": false
+  },
+  {
+    "text": "帮我看看如何购买信托？",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 2973,
+    "is_multi_intent": false
+  },
+  {
+    "text": "想了解基金起购金额在线等",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 2975,
+    "is_multi_intent": false
+  },
+  {
+    "text": "你好，智能投顾起购金额谢谢",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 2976,
+    "is_multi_intent": false
+  },
+  {
+    "text": "请问财富管理什么时候到期在线等",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 2982,
+    "is_multi_intent": false
+  },
+  {
+    "text": "如何购买国债",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 2990,
+    "is_multi_intent": false
+  },
+  {
+    "text": "想了解股票基金手续费多少麻烦了",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 2994,
+    "is_multi_intent": false
+  },
+  {
+    "text": "想问我想买财富管理",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 2997,
+    "is_multi_intent": false
+  },
+  {
+    "text": "咨询理财什么时候到期麻烦了",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 3003,
+    "is_multi_intent": false
+  },
+  {
+    "text": "请问结构性存款手续费多少谢谢",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 3006,
+    "is_multi_intent": false
+  },
+  {
+    "text": "请问外汇能提前赎回吗麻烦了",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 3017,
+    "is_multi_intent": false
+  },
+  {
+    "text": "请问推荐稳健的财富管理靠谱吗",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 3019,
+    "is_multi_intent": false
+  },
+  {
+    "text": "问下如何购买外汇谢谢",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 3020,
+    "is_multi_intent": false
+  },
+  {
+    "text": "你好，我想买信托在线等",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 3022,
+    "is_multi_intent": false
+  },
+  {
+    "text": "帮我看看黄金手续费多少麻烦了",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 3024,
+    "is_multi_intent": false
+  },
+  {
+    "text": "保险什么时候到期",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 3025,
+    "is_multi_intent": false
+  },
+  {
+    "text": "想问保险能提前赎回吗谢谢",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 3029,
+    "is_multi_intent": false
+  },
+  {
+    "text": "想了解国债起购金额？",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 3033,
+    "is_multi_intent": false
+  },
+  {
+    "text": "想问大额存单起购金额在线等",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 3035,
+    "is_multi_intent": false
+  },
+  {
+    "text": "想了解如何购买定期存款",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 3037,
+    "is_multi_intent": false
+  },
+  {
+    "text": "能给我介绍如何购买结构性存款谢谢",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 3041,
+    "is_multi_intent": false
+  },
+  {
+    "text": "请问债券和理财哪个好靠谱吗",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 3044,
+    "is_multi_intent": false
+  },
+  {
+    "text": "请问查询我的国债谢谢",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 3047,
+    "is_multi_intent": false
+  },
+  {
+    "text": "能给我介绍智能投顾和结构性存款哪个好在线等",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 3056,
+    "is_multi_intent": false
+  },
+  {
+    "text": "你好，查询我的货币基金麻烦了",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 3060,
+    "is_multi_intent": false
+  },
+  {
+    "text": "问下我想买国债在线等",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 3061,
+    "is_multi_intent": false
+  },
+  {
+    "text": "请问基金适合我吗谢谢",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 3066,
+    "is_multi_intent": false
+  },
+  {
+    "text": "问下如何购买大额存单？",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 3068,
+    "is_multi_intent": false
+  },
+  {
+    "text": "咨询智能投顾理财产品推荐？",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 3085,
+    "is_multi_intent": false
+  },
+  {
+    "text": "想了解高收益的股票基金有哪些",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 3090,
+    "is_multi_intent": false
+  },
+  {
+    "text": "请问信托起购金额麻烦了",
+    "intent": "investment_wealth",
+    "intent_name": "投资理财类",
+    "id": 3097,
+    "is_multi_intent": false
+  }
+]

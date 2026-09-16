@@ -1,0 +1,3852 @@
+[
+  {
+    "text": "想问一下同行转账手续费多少谢谢",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 7,
+    "is_multi_intent": false
+  },
+  {
+    "text": "想问一下怎么给ATM转钱！",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 8,
+    "is_multi_intent": false
+  },
+  {
+    "text": "请教转账到网银需要多久谢谢",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 9,
+    "is_multi_intent": false
+  },
+  {
+    "text": "麻烦问下ATM转账失败怎么办谢谢",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 15,
+    "is_multi_intent": false
+  },
+  {
+    "text": "请教网银转账限额是多少谢谢",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 16,
+    "is_multi_intent": false
+  },
+  {
+    "text": "能告诉我同行转账要注意什么？",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 23,
+    "is_multi_intent": false
+  },
+  {
+    "text": "你好，转账到手机银行需要多久",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 30,
+    "is_multi_intent": false
+  },
+  {
+    "text": "想问一下境外可以转多少钱",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 41,
+    "is_multi_intent": false
+  },
+  {
+    "text": "麻烦问下小额转账安全吗谢谢",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 43,
+    "is_multi_intent": false
+  },
+  {
+    "text": "急！我要转账给网银？",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 45,
+    "is_multi_intent": false
+  },
+  {
+    "text": "急！怎么给跨行转钱在线等",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 51,
+    "is_multi_intent": false
+  },
+  {
+    "text": "请问网银转账要注意什么",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 52,
+    "is_multi_intent": false
+  },
+  {
+    "text": "咨询同行可以转多少钱谢谢",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 58,
+    "is_multi_intent": false
+  },
+  {
+    "text": "ATM转账失败怎么办！",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 61,
+    "is_multi_intent": false
+  },
+  {
+    "text": "你好，转账到境外需要多久急用",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 63,
+    "is_multi_intent": false
+  },
+  {
+    "text": "请教转账境外没到账",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 71,
+    "is_multi_intent": false
+  },
+  {
+    "text": "急！怎么给同行转钱！",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 79,
+    "is_multi_intent": false
+  },
+  {
+    "text": "你好，转账到网银需要多久在线等",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 85,
+    "is_multi_intent": false
+  },
+  {
+    "text": "你好，境外转账手续费多少急用",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 92,
+    "is_multi_intent": false
+  },
+  {
+    "text": "能告诉我大额转账失败怎么办谢谢",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 94,
+    "is_multi_intent": false
+  },
+  {
+    "text": "咨询我要取消刚才的转账谢谢",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 103,
+    "is_multi_intent": false
+  },
+  {
+    "text": "怎么给他人转钱谢谢",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 104,
+    "is_multi_intent": false
+  },
+  {
+    "text": "急！如何设置境外转账限额急用",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 121,
+    "is_multi_intent": false
+  },
+  {
+    "text": "你好，我想给实时汇款谢谢",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 132,
+    "is_multi_intent": false
+  },
+  {
+    "text": "咨询如何ATM转账急用",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 133,
+    "is_multi_intent": false
+  },
+  {
+    "text": "你好，转账网银没到账！",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 134,
+    "is_multi_intent": false
+  },
+  {
+    "text": "请教大额转账限额是多少急用",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 141,
+    "is_multi_intent": false
+  },
+  {
+    "text": "急！实时可以转多少钱谢谢",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 147,
+    "is_multi_intent": false
+  },
+  {
+    "text": "麻烦问下我想给跨行汇款谢谢",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 148,
+    "is_multi_intent": false
+  },
+  {
+    "text": "麻烦问下实时转账手续费多少！",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 163,
+    "is_multi_intent": false
+  },
+  {
+    "text": "你好，转账跨行没到账谢谢",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 167,
+    "is_multi_intent": false
+  },
+  {
+    "text": "你好，境外可以转多少钱在线等",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 168,
+    "is_multi_intent": false
+  },
+  {
+    "text": "网银可以转多少钱在线等",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 169,
+    "is_multi_intent": false
+  },
+  {
+    "text": "我想给境外汇款急用",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 170,
+    "is_multi_intent": false
+  },
+  {
+    "text": "请问如何设置大额转账限额在线等",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 172,
+    "is_multi_intent": false
+  },
+  {
+    "text": "如何他人转账？",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 175,
+    "is_multi_intent": false
+  },
+  {
+    "text": "ATM转账记录查询在线等",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 178,
+    "is_multi_intent": false
+  },
+  {
+    "text": "请教手机银行转账限额是多少谢谢",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 179,
+    "is_multi_intent": false
+  },
+  {
+    "text": "请问转账到实时需要多久在线等",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 182,
+    "is_multi_intent": false
+  },
+  {
+    "text": "请问境外转账限额是多少谢谢",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 189,
+    "is_multi_intent": false
+  },
+  {
+    "text": "能告诉我ATM转账记录查询",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 195,
+    "is_multi_intent": false
+  },
+  {
+    "text": "能告诉我同行可以转多少钱",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 198,
+    "is_multi_intent": false
+  },
+  {
+    "text": "麻烦问下大额可以转多少钱谢谢",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 208,
+    "is_multi_intent": false
+  },
+  {
+    "text": "你好，我要取消刚才的转账急用",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 218,
+    "is_multi_intent": false
+  },
+  {
+    "text": "麻烦问下我想给网银汇款在线等",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 221,
+    "is_multi_intent": false
+  },
+  {
+    "text": "请教小额转账手续费多少？",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 225,
+    "is_multi_intent": false
+  },
+  {
+    "text": "咨询怎么给境外转钱谢谢",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 244,
+    "is_multi_intent": false
+  },
+  {
+    "text": "急！如何设置手机银行转账限额",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 249,
+    "is_multi_intent": false
+  },
+  {
+    "text": "麻烦问下如何设置手机银行转账限额急用",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 255,
+    "is_multi_intent": false
+  },
+  {
+    "text": "急！大额转账失败怎么办！",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 261,
+    "is_multi_intent": false
+  },
+  {
+    "text": "想问一下同行转账记录查询在线等",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 266,
+    "is_multi_intent": false
+  },
+  {
+    "text": "急！转账大额没到账？",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 268,
+    "is_multi_intent": false
+  },
+  {
+    "text": "能告诉我我想给大额汇款！",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 284,
+    "is_multi_intent": false
+  },
+  {
+    "text": "境外转账记录查询在线等",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 291,
+    "is_multi_intent": false
+  },
+  {
+    "text": "咨询境外可以转多少钱在线等",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 301,
+    "is_multi_intent": false
+  },
+  {
+    "text": "请问境外转账要注意什么",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 304,
+    "is_multi_intent": false
+  },
+  {
+    "text": "你好，他人转账限额是多少！",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 313,
+    "is_multi_intent": false
+  },
+  {
+    "text": "急！境外转账记录查询！",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 318,
+    "is_multi_intent": false
+  },
+  {
+    "text": "大额转账限额是多少在线等",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 319,
+    "is_multi_intent": false
+  },
+  {
+    "text": "能告诉我大额转账手续费多少！",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 322,
+    "is_multi_intent": false
+  },
+  {
+    "text": "请教转账到他人需要多久谢谢",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 333,
+    "is_multi_intent": false
+  },
+  {
+    "text": "同行转账手续费多少！",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 339,
+    "is_multi_intent": false
+  },
+  {
+    "text": "请问小额可以转多少钱谢谢",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 342,
+    "is_multi_intent": false
+  },
+  {
+    "text": "境外转账限额是多少在线等",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 343,
+    "is_multi_intent": false
+  },
+  {
+    "text": "怎么给手机银行转钱急用",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 346,
+    "is_multi_intent": false
+  },
+  {
+    "text": "能告诉我如何设置同行转账限额急用",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 347,
+    "is_multi_intent": false
+  },
+  {
+    "text": "请问如何境外转账急用",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 348,
+    "is_multi_intent": false
+  },
+  {
+    "text": "急！如何设置同行转账限额！",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 351,
+    "is_multi_intent": false
+  },
+  {
+    "text": "想问一下如何手机银行转账！",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 352,
+    "is_multi_intent": false
+  },
+  {
+    "text": "你好，ATM转账安全吗急用",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 356,
+    "is_multi_intent": false
+  },
+  {
+    "text": "请教ATM转账安全吗！",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 358,
+    "is_multi_intent": false
+  },
+  {
+    "text": "同行可以转多少钱！",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 360,
+    "is_multi_intent": false
+  },
+  {
+    "text": "ATM可以转多少钱谢谢",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 376,
+    "is_multi_intent": false
+  },
+  {
+    "text": "你好，小额转账失败怎么办在线等",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 384,
+    "is_multi_intent": false
+  },
+  {
+    "text": "能告诉我网银转账失败怎么办",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 386,
+    "is_multi_intent": false
+  },
+  {
+    "text": "麻烦问下手机银行转账失败怎么办？",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 387,
+    "is_multi_intent": false
+  },
+  {
+    "text": "请教我要转账给境外在线等",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 390,
+    "is_multi_intent": false
+  },
+  {
+    "text": "麻烦问下我要取消刚才的转账！",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 410,
+    "is_multi_intent": false
+  },
+  {
+    "text": "咨询我想给他人汇款急用",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 413,
+    "is_multi_intent": false
+  },
+  {
+    "text": "如何设置跨行转账限额",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 427,
+    "is_multi_intent": false
+  },
+  {
+    "text": "急！我想给境外汇款？",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 428,
+    "is_multi_intent": false
+  },
+  {
+    "text": "急！实时转账失败怎么办谢谢",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 435,
+    "is_multi_intent": false
+  },
+  {
+    "text": "你好，如何设置手机银行转账限额谢谢",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 438,
+    "is_multi_intent": false
+  },
+  {
+    "text": "咨询我要取消刚才的转账？",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 442,
+    "is_multi_intent": false
+  },
+  {
+    "text": "请教我要取消刚才的转账在线等",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 450,
+    "is_multi_intent": false
+  },
+  {
+    "text": "咨询如何设置ATM转账限额！",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 451,
+    "is_multi_intent": false
+  },
+  {
+    "text": "咨询我想给跨行汇款",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 464,
+    "is_multi_intent": false
+  },
+  {
+    "text": "你好，手机银行转账手续费多少？",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 476,
+    "is_multi_intent": false
+  },
+  {
+    "text": "能告诉我跨行转账手续费多少急用",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 485,
+    "is_multi_intent": false
+  },
+  {
+    "text": "你好，手机银行转账安全吗急用",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 496,
+    "is_multi_intent": false
+  },
+  {
+    "text": "能告诉我境外转账要注意什么急用",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 498,
+    "is_multi_intent": false
+  },
+  {
+    "text": "转账到网银需要多久！",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 499,
+    "is_multi_intent": false
+  },
+  {
+    "text": "请问手机银行转账记录查询！",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 520,
+    "is_multi_intent": false
+  },
+  {
+    "text": "咨询转账到境外需要多久急用",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 523,
+    "is_multi_intent": false
+  },
+  {
+    "text": "急！小额转账手续费多少！",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 528,
+    "is_multi_intent": false
+  },
+  {
+    "text": "你好，转账到同行需要多久急用",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 529,
+    "is_multi_intent": false
+  },
+  {
+    "text": "麻烦问下转账到ATM需要多久？",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 536,
+    "is_multi_intent": false
+  },
+  {
+    "text": "你好，转账到小额需要多久？",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 545,
+    "is_multi_intent": false
+  },
+  {
+    "text": "咨询转账手机银行没到账在线等",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 551,
+    "is_multi_intent": false
+  },
+  {
+    "text": "麻烦问下实时可以转多少钱在线等",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 555,
+    "is_multi_intent": false
+  },
+  {
+    "text": "急！大额转账安全吗谢谢",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 557,
+    "is_multi_intent": false
+  },
+  {
+    "text": "跨行转账安全吗",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 561,
+    "is_multi_intent": false
+  },
+  {
+    "text": "麻烦问下他人转账要注意什么！",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 565,
+    "is_multi_intent": false
+  },
+  {
+    "text": "请问如何设置ATM转账限额？",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 566,
+    "is_multi_intent": false
+  },
+  {
+    "text": "急！我想给手机银行汇款？",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 571,
+    "is_multi_intent": false
+  },
+  {
+    "text": "请问手机银行可以转多少钱急用",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 585,
+    "is_multi_intent": false
+  },
+  {
+    "text": "你好，转账ATM没到账！",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 609,
+    "is_multi_intent": false
+  },
+  {
+    "text": "想问一下我想给他人汇款在线等",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 620,
+    "is_multi_intent": false
+  },
+  {
+    "text": "能告诉我如何小额转账？",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 623,
+    "is_multi_intent": false
+  },
+  {
+    "text": "请教大额转账手续费多少急用",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 629,
+    "is_multi_intent": false
+  },
+  {
+    "text": "你好，怎么给小额转钱在线等",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 636,
+    "is_multi_intent": false
+  },
+  {
+    "text": "请教他人转账失败怎么办急用",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 642,
+    "is_multi_intent": false
+  },
+  {
+    "text": "想问一下手机银行转账要注意什么急用",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 651,
+    "is_multi_intent": false
+  },
+  {
+    "text": "急！大额转账手续费多少",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 675,
+    "is_multi_intent": false
+  },
+  {
+    "text": "麻烦问下转账手机银行没到账",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 680,
+    "is_multi_intent": false
+  },
+  {
+    "text": "咨询怎么给他人转钱！",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 681,
+    "is_multi_intent": false
+  },
+  {
+    "text": "急！跨行转账安全吗急用",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 690,
+    "is_multi_intent": false
+  },
+  {
+    "text": "跨行转账记录查询",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 691,
+    "is_multi_intent": false
+  },
+  {
+    "text": "实时转账限额是多少在线等",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 692,
+    "is_multi_intent": false
+  },
+  {
+    "text": "你好，我想给他人汇款急用",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 698,
+    "is_multi_intent": false
+  },
+  {
+    "text": "麻烦问下我想给网银汇款？",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 701,
+    "is_multi_intent": false
+  },
+  {
+    "text": "手机银行转账安全吗在线等",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 709,
+    "is_multi_intent": false
+  },
+  {
+    "text": "你好，我想给实时汇款？",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 710,
+    "is_multi_intent": false
+  },
+  {
+    "text": "转账到同行需要多久？",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 717,
+    "is_multi_intent": false
+  },
+  {
+    "text": "想问一下怎么给手机银行转钱谢谢",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 722,
+    "is_multi_intent": false
+  },
+  {
+    "text": "大额转账要注意什么？",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 736,
+    "is_multi_intent": false
+  },
+  {
+    "text": "咨询如何手机银行转账",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 737,
+    "is_multi_intent": false
+  },
+  {
+    "text": "转账到境外需要多久谢谢",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 739,
+    "is_multi_intent": false
+  },
+  {
+    "text": "能告诉我ATM转账安全吗急用",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 744,
+    "is_multi_intent": false
+  },
+  {
+    "text": "我想给同行汇款？",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 745,
+    "is_multi_intent": false
+  },
+  {
+    "text": "如何设置同行转账限额？",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 755,
+    "is_multi_intent": false
+  },
+  {
+    "text": "想问一下ATM转账记录查询谢谢",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 757,
+    "is_multi_intent": false
+  },
+  {
+    "text": "转账跨行没到账",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 761,
+    "is_multi_intent": false
+  },
+  {
+    "text": "请问转账到跨行需要多久谢谢",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 779,
+    "is_multi_intent": false
+  },
+  {
+    "text": "急！如何设置ATM转账限额急用",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 781,
+    "is_multi_intent": false
+  },
+  {
+    "text": "急！如何手机银行转账",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 801,
+    "is_multi_intent": false
+  },
+  {
+    "text": "想问一下转账跨行没到账",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 815,
+    "is_multi_intent": false
+  },
+  {
+    "text": "转账到ATM需要多久在线等",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 828,
+    "is_multi_intent": false
+  },
+  {
+    "text": "咨询我要取消刚才的转账在线等",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 830,
+    "is_multi_intent": false
+  },
+  {
+    "text": "你好，手机银行转账限额是多少？",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 832,
+    "is_multi_intent": false
+  },
+  {
+    "text": "请问同行转账要注意什么？",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 839,
+    "is_multi_intent": false
+  },
+  {
+    "text": "请问跨行转账记录查询在线等",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 841,
+    "is_multi_intent": false
+  },
+  {
+    "text": "怎么给小额转钱！",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 845,
+    "is_multi_intent": false
+  },
+  {
+    "text": "想问一下跨行转账安全吗在线等",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 846,
+    "is_multi_intent": false
+  },
+  {
+    "text": "你好，跨行转账限额是多少在线等",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 848,
+    "is_multi_intent": false
+  },
+  {
+    "text": "请教如何ATM转账",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 849,
+    "is_multi_intent": false
+  },
+  {
+    "text": "实时转账记录查询？",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 853,
+    "is_multi_intent": false
+  },
+  {
+    "text": "想问一下大额可以转多少钱急用",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 861,
+    "is_multi_intent": false
+  },
+  {
+    "text": "请问ATM转账记录查询",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 865,
+    "is_multi_intent": false
+  },
+  {
+    "text": "你好，同行转账失败怎么办？",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 888,
+    "is_multi_intent": false
+  },
+  {
+    "text": "你好，怎么给他人转钱谢谢",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 890,
+    "is_multi_intent": false
+  },
+  {
+    "text": "能告诉我如何设置他人转账限额",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 902,
+    "is_multi_intent": false
+  },
+  {
+    "text": "能告诉我我要转账给跨行？",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 910,
+    "is_multi_intent": false
+  },
+  {
+    "text": "请问我要取消刚才的转账？",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 914,
+    "is_multi_intent": false
+  },
+  {
+    "text": "请教实时转账记录查询？",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 916,
+    "is_multi_intent": false
+  },
+  {
+    "text": "请教他人转账手续费多少谢谢",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 928,
+    "is_multi_intent": false
+  },
+  {
+    "text": "咨询小额转账失败怎么办！",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 930,
+    "is_multi_intent": false
+  },
+  {
+    "text": "想问一下他人转账限额是多少",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 938,
+    "is_multi_intent": false
+  },
+  {
+    "text": "麻烦问下我要转账给小额急用",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 939,
+    "is_multi_intent": false
+  },
+  {
+    "text": "请教我要取消刚才的转账谢谢",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 941,
+    "is_multi_intent": false
+  },
+  {
+    "text": "请问ATM转账安全吗！",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 944,
+    "is_multi_intent": false
+  },
+  {
+    "text": "请问ATM转账记录查询急用",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 946,
+    "is_multi_intent": false
+  },
+  {
+    "text": "你好，手机银行转账要注意什么！",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 951,
+    "is_multi_intent": false
+  },
+  {
+    "text": "咨询我想给ATM汇款！",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 956,
+    "is_multi_intent": false
+  },
+  {
+    "text": "咨询小额转账记录查询？",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 959,
+    "is_multi_intent": false
+  },
+  {
+    "text": "如何设置同行转账限额？",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 962,
+    "is_multi_intent": false
+  },
+  {
+    "text": "请问实时转账手续费多少急用",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 978,
+    "is_multi_intent": false
+  },
+  {
+    "text": "小额转账安全吗",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 985,
+    "is_multi_intent": false
+  },
+  {
+    "text": "请问转账到实时需要多久",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 1005,
+    "is_multi_intent": false
+  },
+  {
+    "text": "能告诉我小额转账手续费多少在线等",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 1007,
+    "is_multi_intent": false
+  },
+  {
+    "text": "麻烦问下我要转账给他人",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 1011,
+    "is_multi_intent": false
+  },
+  {
+    "text": "请问如何小额转账？",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 1012,
+    "is_multi_intent": false
+  },
+  {
+    "text": "你好，怎么给手机银行转钱在线等",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 1023,
+    "is_multi_intent": false
+  },
+  {
+    "text": "急！如何实时转账谢谢",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 1032,
+    "is_multi_intent": false
+  },
+  {
+    "text": "转账到大额需要多久！",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 1033,
+    "is_multi_intent": false
+  },
+  {
+    "text": "急！转账同行没到账",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 1037,
+    "is_multi_intent": false
+  },
+  {
+    "text": "请教我想给实时汇款急用",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 1038,
+    "is_multi_intent": false
+  },
+  {
+    "text": "怎么给跨行转钱？",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 1041,
+    "is_multi_intent": false
+  },
+  {
+    "text": "咨询我要取消刚才的转账急用",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 1045,
+    "is_multi_intent": false
+  },
+  {
+    "text": "手机银行可以转多少钱？",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 1056,
+    "is_multi_intent": false
+  },
+  {
+    "text": "咨询如何设置大额转账限额",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 1060,
+    "is_multi_intent": false
+  },
+  {
+    "text": "麻烦问下同行转账安全吗？",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 1061,
+    "is_multi_intent": false
+  },
+  {
+    "text": "你好，我想给大额汇款？",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 1072,
+    "is_multi_intent": false
+  },
+  {
+    "text": "能告诉我我想给他人汇款谢谢",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 1077,
+    "is_multi_intent": false
+  },
+  {
+    "text": "急！怎么给境外转钱在线等",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 1084,
+    "is_multi_intent": false
+  },
+  {
+    "text": "急！实时转账手续费多少",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 1100,
+    "is_multi_intent": false
+  },
+  {
+    "text": "咨询怎么给他人转钱？",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 1104,
+    "is_multi_intent": false
+  },
+  {
+    "text": "转账到小额需要多久？",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 1106,
+    "is_multi_intent": false
+  },
+  {
+    "text": "能告诉我如何设置大额转账限额急用",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 1111,
+    "is_multi_intent": false
+  },
+  {
+    "text": "你好，网银转账手续费多少在线等",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 1137,
+    "is_multi_intent": false
+  },
+  {
+    "text": "急！怎么给ATM转钱急用",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 1144,
+    "is_multi_intent": false
+  },
+  {
+    "text": "跨行转账限额是多少急用",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 1146,
+    "is_multi_intent": false
+  },
+  {
+    "text": "能告诉我我要取消刚才的转账在线等",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 1161,
+    "is_multi_intent": false
+  },
+  {
+    "text": "请问如何小额转账！",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 1164,
+    "is_multi_intent": false
+  },
+  {
+    "text": "请教网银可以转多少钱！",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 1175,
+    "is_multi_intent": false
+  },
+  {
+    "text": "麻烦问下我要取消刚才的转账",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 1177,
+    "is_multi_intent": false
+  },
+  {
+    "text": "咨询网银转账记录查询",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 1179,
+    "is_multi_intent": false
+  },
+  {
+    "text": "请教怎么给同行转钱",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 1181,
+    "is_multi_intent": false
+  },
+  {
+    "text": "想问一下我要转账给小额！",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 1185,
+    "is_multi_intent": false
+  },
+  {
+    "text": "你好，境外转账限额是多少？",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 1197,
+    "is_multi_intent": false
+  },
+  {
+    "text": "急！转账同行没到账！",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 1209,
+    "is_multi_intent": false
+  },
+  {
+    "text": "急！实时转账安全吗在线等",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 1213,
+    "is_multi_intent": false
+  },
+  {
+    "text": "大额转账安全吗？",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 1215,
+    "is_multi_intent": false
+  },
+  {
+    "text": "麻烦问下手机银行转账手续费多少！",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 1216,
+    "is_multi_intent": false
+  },
+  {
+    "text": "实时转账失败怎么办！",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 1222,
+    "is_multi_intent": false
+  },
+  {
+    "text": "麻烦问下ATM转账记录查询",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 1225,
+    "is_multi_intent": false
+  },
+  {
+    "text": "咨询如何大额转账急用",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 1231,
+    "is_multi_intent": false
+  },
+  {
+    "text": "你好，我要转账给境外谢谢",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 1237,
+    "is_multi_intent": false
+  },
+  {
+    "text": "请教ATM转账安全吗！",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 1239,
+    "is_multi_intent": false
+  },
+  {
+    "text": "想问一下转账到跨行需要多久急用",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 1244,
+    "is_multi_intent": false
+  },
+  {
+    "text": "网银转账手续费多少急用",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 1252,
+    "is_multi_intent": false
+  },
+  {
+    "text": "想问一下我想给境外汇款急用",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 1253,
+    "is_multi_intent": false
+  },
+  {
+    "text": "想问一下我要转账给网银急用",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 1259,
+    "is_multi_intent": false
+  },
+  {
+    "text": "同行转账失败怎么办！",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 1271,
+    "is_multi_intent": false
+  },
+  {
+    "text": "能告诉我小额转账安全吗谢谢",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 1278,
+    "is_multi_intent": false
+  },
+  {
+    "text": "咨询大额转账手续费多少谢谢",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 1281,
+    "is_multi_intent": false
+  },
+  {
+    "text": "咨询他人可以转多少钱急用",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 1282,
+    "is_multi_intent": false
+  },
+  {
+    "text": "能告诉我怎么给他人转钱谢谢",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 1295,
+    "is_multi_intent": false
+  },
+  {
+    "text": "咨询如何手机银行转账急用",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 1298,
+    "is_multi_intent": false
+  },
+  {
+    "text": "急！他人转账失败怎么办？",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 1301,
+    "is_multi_intent": false
+  },
+  {
+    "text": "大额转账要注意什么！",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 1304,
+    "is_multi_intent": false
+  },
+  {
+    "text": "急！手机银行转账限额是多少？",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 1319,
+    "is_multi_intent": false
+  },
+  {
+    "text": "麻烦问下大额转账失败怎么办！",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 1321,
+    "is_multi_intent": false
+  },
+  {
+    "text": "想问一下我要转账给大额急用",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 1326,
+    "is_multi_intent": false
+  },
+  {
+    "text": "请教转账同行没到账在线等",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 1335,
+    "is_multi_intent": false
+  },
+  {
+    "text": "你好，网银转账限额是多少急用",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 1340,
+    "is_multi_intent": false
+  },
+  {
+    "text": "你好，转账大额没到账急用",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 1341,
+    "is_multi_intent": false
+  },
+  {
+    "text": "麻烦问下同行转账记录查询",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 1345,
+    "is_multi_intent": false
+  },
+  {
+    "text": "咨询大额转账安全吗在线等",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 1354,
+    "is_multi_intent": false
+  },
+  {
+    "text": "请问小额转账要注意什么在线等",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 1356,
+    "is_multi_intent": false
+  },
+  {
+    "text": "想问一下转账到实时需要多久",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 1359,
+    "is_multi_intent": false
+  },
+  {
+    "text": "境外转账要注意什么谢谢",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 1364,
+    "is_multi_intent": false
+  },
+  {
+    "text": "麻烦问下小额转账手续费多少谢谢",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 1367,
+    "is_multi_intent": false
+  },
+  {
+    "text": "请教网银可以转多少钱！",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 1368,
+    "is_multi_intent": false
+  },
+  {
+    "text": "急！手机银行可以转多少钱？",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 1376,
+    "is_multi_intent": false
+  },
+  {
+    "text": "请问实时转账手续费多少谢谢",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 1378,
+    "is_multi_intent": false
+  },
+  {
+    "text": "大额转账要注意什么",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 1383,
+    "is_multi_intent": false
+  },
+  {
+    "text": "请教我要转账给小额？",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 1396,
+    "is_multi_intent": false
+  },
+  {
+    "text": "请教转账到实时需要多久！",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 1403,
+    "is_multi_intent": false
+  },
+  {
+    "text": "能告诉我转账境外没到账谢谢",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 1413,
+    "is_multi_intent": false
+  },
+  {
+    "text": "能告诉我跨行转账安全吗急用",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 1420,
+    "is_multi_intent": false
+  },
+  {
+    "text": "咨询转账到实时需要多久谢谢",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 1430,
+    "is_multi_intent": false
+  },
+  {
+    "text": "你好，如何跨行转账急用",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 1431,
+    "is_multi_intent": false
+  },
+  {
+    "text": "能告诉我转账到他人需要多久",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 1432,
+    "is_multi_intent": false
+  },
+  {
+    "text": "你好，如何设置小额转账限额",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 1437,
+    "is_multi_intent": false
+  },
+  {
+    "text": "他人转账要注意什么在线等",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 1441,
+    "is_multi_intent": false
+  },
+  {
+    "text": "请教手机银行转账要注意什么！",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 1455,
+    "is_multi_intent": false
+  },
+  {
+    "text": "请问如何设置同行转账限额！",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 1488,
+    "is_multi_intent": false
+  },
+  {
+    "text": "小额转账要注意什么急用",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 1492,
+    "is_multi_intent": false
+  },
+  {
+    "text": "你好，手机银行转账手续费多少谢谢",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 1493,
+    "is_multi_intent": false
+  },
+  {
+    "text": "麻烦问下大额转账手续费多少！",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 1515,
+    "is_multi_intent": false
+  },
+  {
+    "text": "我要转账给ATM！",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 1518,
+    "is_multi_intent": false
+  },
+  {
+    "text": "你好，我要取消刚才的转账？",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 1521,
+    "is_multi_intent": false
+  },
+  {
+    "text": "能告诉我转账到实时需要多久在线等",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 1528,
+    "is_multi_intent": false
+  },
+  {
+    "text": "能告诉我同行转账要注意什么？",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 1530,
+    "is_multi_intent": false
+  },
+  {
+    "text": "转账到小额需要多久？",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 1533,
+    "is_multi_intent": false
+  },
+  {
+    "text": "你好，我要取消刚才的转账！",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 1536,
+    "is_multi_intent": false
+  },
+  {
+    "text": "你好，我要转账给ATM谢谢",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 1541,
+    "is_multi_intent": false
+  },
+  {
+    "text": "咨询ATM转账限额是多少",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 1542,
+    "is_multi_intent": false
+  },
+  {
+    "text": "想问一下实时转账失败怎么办谢谢",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 1545,
+    "is_multi_intent": false
+  },
+  {
+    "text": "想问一下怎么给他人转钱！",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 1546,
+    "is_multi_intent": false
+  },
+  {
+    "text": "麻烦问下转账他人没到账！",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 1548,
+    "is_multi_intent": false
+  },
+  {
+    "text": "请教如何跨行转账？",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 1552,
+    "is_multi_intent": false
+  },
+  {
+    "text": "请问实时转账要注意什么？",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 1557,
+    "is_multi_intent": false
+  },
+  {
+    "text": "急！他人转账手续费多少在线等",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 1578,
+    "is_multi_intent": false
+  },
+  {
+    "text": "请教小额转账记录查询急用",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 1579,
+    "is_multi_intent": false
+  },
+  {
+    "text": "请教如何设置手机银行转账限额！",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 1586,
+    "is_multi_intent": false
+  },
+  {
+    "text": "能告诉我网银转账安全吗在线等",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 1590,
+    "is_multi_intent": false
+  },
+  {
+    "text": "想问一下同行转账记录查询在线等",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 1592,
+    "is_multi_intent": false
+  },
+  {
+    "text": "请教跨行转账失败怎么办谢谢",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 1596,
+    "is_multi_intent": false
+  },
+  {
+    "text": "想问一下怎么给他人转钱！",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 1598,
+    "is_multi_intent": false
+  },
+  {
+    "text": "网银可以转多少钱谢谢",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 1607,
+    "is_multi_intent": false
+  },
+  {
+    "text": "请教ATM转账失败怎么办！",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 1609,
+    "is_multi_intent": false
+  },
+  {
+    "text": "ATM转账失败怎么办",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 1610,
+    "is_multi_intent": false
+  },
+  {
+    "text": "麻烦问下转账他人没到账在线等",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 1622,
+    "is_multi_intent": false
+  },
+  {
+    "text": "咨询实时转账安全吗",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 1625,
+    "is_multi_intent": false
+  },
+  {
+    "text": "麻烦问下大额可以转多少钱急用",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 1628,
+    "is_multi_intent": false
+  },
+  {
+    "text": "急！网银转账要注意什么？",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 1638,
+    "is_multi_intent": false
+  },
+  {
+    "text": "同行可以转多少钱谢谢",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 1648,
+    "is_multi_intent": false
+  },
+  {
+    "text": "麻烦问下如何手机银行转账？",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 1656,
+    "is_multi_intent": false
+  },
+  {
+    "text": "请问怎么给境外转钱",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 1663,
+    "is_multi_intent": false
+  },
+  {
+    "text": "想问一下大额可以转多少钱谢谢",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 1672,
+    "is_multi_intent": false
+  },
+  {
+    "text": "麻烦问下小额转账要注意什么急用",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 1676,
+    "is_multi_intent": false
+  },
+  {
+    "text": "急！网银转账要注意什么在线等",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 1681,
+    "is_multi_intent": false
+  },
+  {
+    "text": "能告诉我怎么给同行转钱！",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 1697,
+    "is_multi_intent": false
+  },
+  {
+    "text": "想问一下我想给境外汇款在线等",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 1699,
+    "is_multi_intent": false
+  },
+  {
+    "text": "急！实时转账手续费多少谢谢",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 1700,
+    "is_multi_intent": false
+  },
+  {
+    "text": "我想给实时汇款谢谢",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 1703,
+    "is_multi_intent": false
+  },
+  {
+    "text": "想问一下实时转账记录查询急用",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 1708,
+    "is_multi_intent": false
+  },
+  {
+    "text": "急！网银转账手续费多少急用",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 1711,
+    "is_multi_intent": false
+  },
+  {
+    "text": "急！跨行转账失败怎么办谢谢",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 1712,
+    "is_multi_intent": false
+  },
+  {
+    "text": "境外转账手续费多少！",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 1716,
+    "is_multi_intent": false
+  },
+  {
+    "text": "急！转账到境外需要多久急用",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 1718,
+    "is_multi_intent": false
+  },
+  {
+    "text": "你好，我想给他人汇款",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 1723,
+    "is_multi_intent": false
+  },
+  {
+    "text": "请问如何实时转账？",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 1724,
+    "is_multi_intent": false
+  },
+  {
+    "text": "手机银行转账要注意什么谢谢",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 1735,
+    "is_multi_intent": false
+  },
+  {
+    "text": "如何设置手机银行转账限额在线等",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 1744,
+    "is_multi_intent": false
+  },
+  {
+    "text": "转账到手机银行需要多久",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 1745,
+    "is_multi_intent": false
+  },
+  {
+    "text": "能告诉我我要取消刚才的转账！",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 1746,
+    "is_multi_intent": false
+  },
+  {
+    "text": "急！他人转账限额是多少谢谢",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 1747,
+    "is_multi_intent": false
+  },
+  {
+    "text": "咨询如何设置同行转账限额？",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 1750,
+    "is_multi_intent": false
+  },
+  {
+    "text": "网银转账记录查询",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 1751,
+    "is_multi_intent": false
+  },
+  {
+    "text": "手机银行转账手续费多少急用",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 1755,
+    "is_multi_intent": false
+  },
+  {
+    "text": "请教如何设置他人转账限额谢谢",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 1758,
+    "is_multi_intent": false
+  },
+  {
+    "text": "手机银行转账手续费多少！",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 1759,
+    "is_multi_intent": false
+  },
+  {
+    "text": "请教大额转账限额是多少急用",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 1767,
+    "is_multi_intent": false
+  },
+  {
+    "text": "能告诉我我要转账给他人在线等",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 1791,
+    "is_multi_intent": false
+  },
+  {
+    "text": "我要取消刚才的转账在线等",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 1793,
+    "is_multi_intent": false
+  },
+  {
+    "text": "咨询大额转账限额是多少？",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 1803,
+    "is_multi_intent": false
+  },
+  {
+    "text": "你好，怎么给小额转钱谢谢",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 1807,
+    "is_multi_intent": false
+  },
+  {
+    "text": "麻烦问下实时转账要注意什么在线等",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 1816,
+    "is_multi_intent": false
+  },
+  {
+    "text": "麻烦问下手机银行转账记录查询谢谢",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 1821,
+    "is_multi_intent": false
+  },
+  {
+    "text": "请教境外转账要注意什么",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 1823,
+    "is_multi_intent": false
+  },
+  {
+    "text": "跨行转账记录查询急用",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 1828,
+    "is_multi_intent": false
+  },
+  {
+    "text": "你好，他人可以转多少钱",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 1832,
+    "is_multi_intent": false
+  },
+  {
+    "text": "麻烦问下如何境外转账在线等",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 1838,
+    "is_multi_intent": false
+  },
+  {
+    "text": "请教他人转账安全吗谢谢",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 1848,
+    "is_multi_intent": false
+  },
+  {
+    "text": "如何小额转账",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 1853,
+    "is_multi_intent": false
+  },
+  {
+    "text": "麻烦问下怎么给小额转钱谢谢",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 1858,
+    "is_multi_intent": false
+  },
+  {
+    "text": "想问一下跨行转账失败怎么办？",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 1872,
+    "is_multi_intent": false
+  },
+  {
+    "text": "我想给ATM汇款！",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 1877,
+    "is_multi_intent": false
+  },
+  {
+    "text": "你好，我要转账给ATM急用",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 1898,
+    "is_multi_intent": false
+  },
+  {
+    "text": "请问他人转账失败怎么办在线等",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 1903,
+    "is_multi_intent": false
+  },
+  {
+    "text": "麻烦问下我要转账给他人急用",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 1917,
+    "is_multi_intent": false
+  },
+  {
+    "text": "你好，如何同行转账在线等",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 1919,
+    "is_multi_intent": false
+  },
+  {
+    "text": "请问转账同行没到账？",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 1922,
+    "is_multi_intent": false
+  },
+  {
+    "text": "想问一下小额可以转多少钱！",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 1926,
+    "is_multi_intent": false
+  },
+  {
+    "text": "能告诉我我要转账给大额？",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 1932,
+    "is_multi_intent": false
+  },
+  {
+    "text": "急！小额可以转多少钱急用",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 1936,
+    "is_multi_intent": false
+  },
+  {
+    "text": "麻烦问下大额可以转多少钱谢谢",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 1939,
+    "is_multi_intent": false
+  },
+  {
+    "text": "想问一下小额可以转多少钱？",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 1942,
+    "is_multi_intent": false
+  },
+  {
+    "text": "网银转账要注意什么",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 1943,
+    "is_multi_intent": false
+  },
+  {
+    "text": "麻烦问下我想给网银汇款在线等",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 1950,
+    "is_multi_intent": false
+  },
+  {
+    "text": "能告诉我如何手机银行转账谢谢",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 1962,
+    "is_multi_intent": false
+  },
+  {
+    "text": "跨行转账手续费多少在线等",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 1971,
+    "is_multi_intent": false
+  },
+  {
+    "text": "能告诉我他人可以转多少钱急用",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 1973,
+    "is_multi_intent": false
+  },
+  {
+    "text": "想问一下实时转账失败怎么办谢谢",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 1976,
+    "is_multi_intent": false
+  },
+  {
+    "text": "想问一下实时可以转多少钱谢谢",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 1979,
+    "is_multi_intent": false
+  },
+  {
+    "text": "想问一下转账大额没到账在线等",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 1986,
+    "is_multi_intent": false
+  },
+  {
+    "text": "请教手机银行转账手续费多少在线等",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 1987,
+    "is_multi_intent": false
+  },
+  {
+    "text": "请教怎么给手机银行转钱在线等",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 1991,
+    "is_multi_intent": false
+  },
+  {
+    "text": "你好，我要取消刚才的转账急用",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 1994,
+    "is_multi_intent": false
+  },
+  {
+    "text": "跨行转账手续费多少？",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 2004,
+    "is_multi_intent": false
+  },
+  {
+    "text": "怎么给大额转钱谢谢",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 2006,
+    "is_multi_intent": false
+  },
+  {
+    "text": "请教他人转账安全吗",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 2011,
+    "is_multi_intent": false
+  },
+  {
+    "text": "麻烦问下如何网银转账！",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 2012,
+    "is_multi_intent": false
+  },
+  {
+    "text": "麻烦问下如何同行转账",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 2020,
+    "is_multi_intent": false
+  },
+  {
+    "text": "跨行转账要注意什么在线等",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 2022,
+    "is_multi_intent": false
+  },
+  {
+    "text": "跨行转账记录查询？",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 2046,
+    "is_multi_intent": false
+  },
+  {
+    "text": "咨询ATM转账要注意什么！",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 2047,
+    "is_multi_intent": false
+  },
+  {
+    "text": "请教大额转账失败怎么办",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 2050,
+    "is_multi_intent": false
+  },
+  {
+    "text": "转账到境外需要多久谢谢",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 2054,
+    "is_multi_intent": false
+  },
+  {
+    "text": "请教大额转账失败怎么办谢谢",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 2072,
+    "is_multi_intent": false
+  },
+  {
+    "text": "转账境外没到账？",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 2073,
+    "is_multi_intent": false
+  },
+  {
+    "text": "你好，境外转账手续费多少！",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 2075,
+    "is_multi_intent": false
+  },
+  {
+    "text": "请教如何设置网银转账限额？",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 2077,
+    "is_multi_intent": false
+  },
+  {
+    "text": "能告诉我网银可以转多少钱",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 2080,
+    "is_multi_intent": false
+  },
+  {
+    "text": "能告诉我转账到小额需要多久？",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 2084,
+    "is_multi_intent": false
+  },
+  {
+    "text": "请教大额转账失败怎么办？",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 2092,
+    "is_multi_intent": false
+  },
+  {
+    "text": "请问小额转账安全吗",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 2094,
+    "is_multi_intent": false
+  },
+  {
+    "text": "请教他人转账安全吗谢谢",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 2105,
+    "is_multi_intent": false
+  },
+  {
+    "text": "如何网银转账！",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 2110,
+    "is_multi_intent": false
+  },
+  {
+    "text": "咨询ATM转账要注意什么在线等",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 2111,
+    "is_multi_intent": false
+  },
+  {
+    "text": "你好，怎么给他人转钱谢谢",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 2119,
+    "is_multi_intent": false
+  },
+  {
+    "text": "想问一下大额转账限额是多少！",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 2130,
+    "is_multi_intent": false
+  },
+  {
+    "text": "咨询同行转账失败怎么办？",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 2134,
+    "is_multi_intent": false
+  },
+  {
+    "text": "我要取消刚才的转账",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 2144,
+    "is_multi_intent": false
+  },
+  {
+    "text": "想问一下跨行转账限额是多少？",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 2145,
+    "is_multi_intent": false
+  },
+  {
+    "text": "如何设置网银转账限额",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 2153,
+    "is_multi_intent": false
+  },
+  {
+    "text": "境外转账手续费多少",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 2174,
+    "is_multi_intent": false
+  },
+  {
+    "text": "ATM转账记录查询谢谢",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 2177,
+    "is_multi_intent": false
+  },
+  {
+    "text": "想问一下转账ATM没到账？",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 2181,
+    "is_multi_intent": false
+  },
+  {
+    "text": "麻烦问下我要取消刚才的转账",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 2183,
+    "is_multi_intent": false
+  },
+  {
+    "text": "你好，我想给他人汇款急用",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 2204,
+    "is_multi_intent": false
+  },
+  {
+    "text": "急！我要转账给大额急用",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 2210,
+    "is_multi_intent": false
+  },
+  {
+    "text": "手机银行转账失败怎么办在线等",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 2217,
+    "is_multi_intent": false
+  },
+  {
+    "text": "我要取消刚才的转账？",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 2219,
+    "is_multi_intent": false
+  },
+  {
+    "text": "能告诉我ATM转账失败怎么办急用",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 2232,
+    "is_multi_intent": false
+  },
+  {
+    "text": "小额转账要注意什么急用",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 2233,
+    "is_multi_intent": false
+  },
+  {
+    "text": "麻烦问下我想给实时汇款在线等",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 2240,
+    "is_multi_intent": false
+  },
+  {
+    "text": "你好，我要取消刚才的转账！",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 2246,
+    "is_multi_intent": false
+  },
+  {
+    "text": "能告诉我我要取消刚才的转账谢谢",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 2247,
+    "is_multi_intent": false
+  },
+  {
+    "text": "咨询转账到ATM需要多久谢谢",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 2248,
+    "is_multi_intent": false
+  },
+  {
+    "text": "能告诉我大额转账记录查询？",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 2249,
+    "is_multi_intent": false
+  },
+  {
+    "text": "咨询如何设置大额转账限额急用",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 2253,
+    "is_multi_intent": false
+  },
+  {
+    "text": "请问手机银行可以转多少钱在线等",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 2254,
+    "is_multi_intent": false
+  },
+  {
+    "text": "请教如何大额转账？",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 2267,
+    "is_multi_intent": false
+  },
+  {
+    "text": "想问一下如何同行转账",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 2271,
+    "is_multi_intent": false
+  },
+  {
+    "text": "你好，网银转账失败怎么办？",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 2286,
+    "is_multi_intent": false
+  },
+  {
+    "text": "请问转账ATM没到账",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 2288,
+    "is_multi_intent": false
+  },
+  {
+    "text": "急！同行转账安全吗",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 2290,
+    "is_multi_intent": false
+  },
+  {
+    "text": "能告诉我ATM转账失败怎么办？",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 2297,
+    "is_multi_intent": false
+  },
+  {
+    "text": "想问一下如何设置手机银行转账限额在线等",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 2299,
+    "is_multi_intent": false
+  },
+  {
+    "text": "请问我要转账给跨行",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 2307,
+    "is_multi_intent": false
+  },
+  {
+    "text": "想问一下手机银行转账要注意什么谢谢",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 2311,
+    "is_multi_intent": false
+  },
+  {
+    "text": "我要转账给境外急用",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 2319,
+    "is_multi_intent": false
+  },
+  {
+    "text": "想问一下转账实时没到账谢谢",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 2321,
+    "is_multi_intent": false
+  },
+  {
+    "text": "能告诉我我想给同行汇款！",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 2324,
+    "is_multi_intent": false
+  },
+  {
+    "text": "大额转账记录查询",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 2325,
+    "is_multi_intent": false
+  },
+  {
+    "text": "能告诉我他人转账手续费多少",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 2330,
+    "is_multi_intent": false
+  },
+  {
+    "text": "麻烦问下网银可以转多少钱在线等",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 2332,
+    "is_multi_intent": false
+  },
+  {
+    "text": "麻烦问下怎么给同行转钱！",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 2343,
+    "is_multi_intent": false
+  },
+  {
+    "text": "咨询我要转账给他人！",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 2346,
+    "is_multi_intent": false
+  },
+  {
+    "text": "请教转账境外没到账！",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 2356,
+    "is_multi_intent": false
+  },
+  {
+    "text": "想问一下网银转账要注意什么？",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 2358,
+    "is_multi_intent": false
+  },
+  {
+    "text": "跨行转账要注意什么急用",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 2359,
+    "is_multi_intent": false
+  },
+  {
+    "text": "请问我要转账给同行？",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 2364,
+    "is_multi_intent": false
+  },
+  {
+    "text": "急！小额转账安全吗",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 2366,
+    "is_multi_intent": false
+  },
+  {
+    "text": "如何境外转账！",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 2368,
+    "is_multi_intent": false
+  },
+  {
+    "text": "能告诉我转账到跨行需要多久谢谢",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 2370,
+    "is_multi_intent": false
+  },
+  {
+    "text": "麻烦问下怎么给他人转钱！",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 2379,
+    "is_multi_intent": false
+  },
+  {
+    "text": "能告诉我怎么给ATM转钱！",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 2381,
+    "is_multi_intent": false
+  },
+  {
+    "text": "请问大额转账记录查询急用",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 2384,
+    "is_multi_intent": false
+  },
+  {
+    "text": "你好，转账网银没到账急用",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 2385,
+    "is_multi_intent": false
+  },
+  {
+    "text": "你好，怎么给同行转钱！",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 2388,
+    "is_multi_intent": false
+  },
+  {
+    "text": "能告诉我转账到小额需要多久",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 2401,
+    "is_multi_intent": false
+  },
+  {
+    "text": "怎么给同行转钱？",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 2404,
+    "is_multi_intent": false
+  },
+  {
+    "text": "急！如何网银转账",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 2413,
+    "is_multi_intent": false
+  },
+  {
+    "text": "咨询网银转账手续费多少在线等",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 2423,
+    "is_multi_intent": false
+  },
+  {
+    "text": "急！转账到境外需要多久谢谢",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 2424,
+    "is_multi_intent": false
+  },
+  {
+    "text": "请教ATM转账安全吗急用",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 2437,
+    "is_multi_intent": false
+  },
+  {
+    "text": "如何设置大额转账限额？",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 2446,
+    "is_multi_intent": false
+  },
+  {
+    "text": "你好，如何设置跨行转账限额谢谢",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 2448,
+    "is_multi_intent": false
+  },
+  {
+    "text": "麻烦问下转账到手机银行需要多久？",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 2449,
+    "is_multi_intent": false
+  },
+  {
+    "text": "转账到小额需要多久谢谢",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 2460,
+    "is_multi_intent": false
+  },
+  {
+    "text": "想问一下我要取消刚才的转账急用",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 2467,
+    "is_multi_intent": false
+  },
+  {
+    "text": "想问一下我要取消刚才的转账在线等",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 2468,
+    "is_multi_intent": false
+  },
+  {
+    "text": "咨询实时转账记录查询",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 2478,
+    "is_multi_intent": false
+  },
+  {
+    "text": "请问我要取消刚才的转账",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 2480,
+    "is_multi_intent": false
+  },
+  {
+    "text": "急！他人转账安全吗在线等",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 2484,
+    "is_multi_intent": false
+  },
+  {
+    "text": "你好，转账到ATM需要多久！",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 2487,
+    "is_multi_intent": false
+  },
+  {
+    "text": "请教手机银行转账失败怎么办",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 2490,
+    "is_multi_intent": false
+  },
+  {
+    "text": "转账到跨行需要多久",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 2492,
+    "is_multi_intent": false
+  },
+  {
+    "text": "能告诉我ATM转账手续费多少在线等",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 2494,
+    "is_multi_intent": false
+  },
+  {
+    "text": "咨询转账跨行没到账在线等",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 2503,
+    "is_multi_intent": false
+  },
+  {
+    "text": "咨询跨行转账记录查询急用",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 2508,
+    "is_multi_intent": false
+  },
+  {
+    "text": "请教同行转账安全吗在线等",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 2509,
+    "is_multi_intent": false
+  },
+  {
+    "text": "急！小额转账记录查询急用",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 2513,
+    "is_multi_intent": false
+  },
+  {
+    "text": "你好，跨行转账手续费多少谢谢",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 2517,
+    "is_multi_intent": false
+  },
+  {
+    "text": "小额可以转多少钱！",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 2518,
+    "is_multi_intent": false
+  },
+  {
+    "text": "想问一下网银转账要注意什么谢谢",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 2529,
+    "is_multi_intent": false
+  },
+  {
+    "text": "咨询我要转账给实时谢谢",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 2540,
+    "is_multi_intent": false
+  },
+  {
+    "text": "ATM转账失败怎么办在线等",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 2545,
+    "is_multi_intent": false
+  },
+  {
+    "text": "网银转账要注意什么",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 2548,
+    "is_multi_intent": false
+  },
+  {
+    "text": "能告诉我网银转账要注意什么在线等",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 2550,
+    "is_multi_intent": false
+  },
+  {
+    "text": "麻烦问下大额可以转多少钱？",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 2553,
+    "is_multi_intent": false
+  },
+  {
+    "text": "能告诉我如何实时转账在线等",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 2554,
+    "is_multi_intent": false
+  },
+  {
+    "text": "急！如何设置跨行转账限额",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 2558,
+    "is_multi_intent": false
+  },
+  {
+    "text": "请问实时转账要注意什么谢谢",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 2561,
+    "is_multi_intent": false
+  },
+  {
+    "text": "急！如何大额转账在线等",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 2562,
+    "is_multi_intent": false
+  },
+  {
+    "text": "请教我要取消刚才的转账",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 2565,
+    "is_multi_intent": false
+  },
+  {
+    "text": "你好，如何设置他人转账限额在线等",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 2569,
+    "is_multi_intent": false
+  },
+  {
+    "text": "急！如何实时转账谢谢",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 2572,
+    "is_multi_intent": false
+  },
+  {
+    "text": "麻烦问下转账到网银需要多久急用",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 2577,
+    "is_multi_intent": false
+  },
+  {
+    "text": "境外转账手续费多少？",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 2580,
+    "is_multi_intent": false
+  },
+  {
+    "text": "能告诉我我想给网银汇款",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 2582,
+    "is_multi_intent": false
+  },
+  {
+    "text": "你好，手机银行转账失败怎么办",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 2592,
+    "is_multi_intent": false
+  },
+  {
+    "text": "你好，小额转账记录查询在线等",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 2593,
+    "is_multi_intent": false
+  },
+  {
+    "text": "麻烦问下大额转账记录查询谢谢",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 2595,
+    "is_multi_intent": false
+  },
+  {
+    "text": "跨行转账安全吗谢谢",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 2617,
+    "is_multi_intent": false
+  },
+  {
+    "text": "咨询同行转账限额是多少！",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 2620,
+    "is_multi_intent": false
+  },
+  {
+    "text": "能告诉我同行转账记录查询在线等",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 2622,
+    "is_multi_intent": false
+  },
+  {
+    "text": "急！网银转账失败怎么办！",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 2629,
+    "is_multi_intent": false
+  },
+  {
+    "text": "我想给小额汇款",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 2630,
+    "is_multi_intent": false
+  },
+  {
+    "text": "你好，如何小额转账谢谢",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 2635,
+    "is_multi_intent": false
+  },
+  {
+    "text": "麻烦问下网银转账记录查询？",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 2644,
+    "is_multi_intent": false
+  },
+  {
+    "text": "咨询如何小额转账在线等",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 2646,
+    "is_multi_intent": false
+  },
+  {
+    "text": "想问一下转账他人没到账急用",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 2648,
+    "is_multi_intent": false
+  },
+  {
+    "text": "咨询转账到手机银行需要多久谢谢",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 2649,
+    "is_multi_intent": false
+  },
+  {
+    "text": "请教转账境外没到账！",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 2658,
+    "is_multi_intent": false
+  },
+  {
+    "text": "想问一下境外转账记录查询急用",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 2664,
+    "is_multi_intent": false
+  },
+  {
+    "text": "急！怎么给实时转钱谢谢",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 2669,
+    "is_multi_intent": false
+  },
+  {
+    "text": "想问一下我想给境外汇款？",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 2672,
+    "is_multi_intent": false
+  },
+  {
+    "text": "请问我想给跨行汇款？",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 2686,
+    "is_multi_intent": false
+  },
+  {
+    "text": "请教如何设置实时转账限额谢谢",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 2689,
+    "is_multi_intent": false
+  },
+  {
+    "text": "麻烦问下小额转账记录查询谢谢",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 2690,
+    "is_multi_intent": false
+  },
+  {
+    "text": "你好，如何实时转账谢谢",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 2694,
+    "is_multi_intent": false
+  },
+  {
+    "text": "能告诉我实时转账手续费多少在线等",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 2703,
+    "is_multi_intent": false
+  },
+  {
+    "text": "能告诉我实时可以转多少钱？",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 2704,
+    "is_multi_intent": false
+  },
+  {
+    "text": "咨询转账到他人需要多久！",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 2711,
+    "is_multi_intent": false
+  },
+  {
+    "text": "咨询网银转账手续费多少！",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 2716,
+    "is_multi_intent": false
+  },
+  {
+    "text": "麻烦问下如何设置跨行转账限额",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 2719,
+    "is_multi_intent": false
+  },
+  {
+    "text": "请教我要取消刚才的转账？",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 2727,
+    "is_multi_intent": false
+  },
+  {
+    "text": "麻烦问下他人转账失败怎么办急用",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 2736,
+    "is_multi_intent": false
+  },
+  {
+    "text": "ATM可以转多少钱在线等",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 2737,
+    "is_multi_intent": false
+  },
+  {
+    "text": "怎么给境外转钱！",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 2744,
+    "is_multi_intent": false
+  },
+  {
+    "text": "能告诉我转账到大额需要多久在线等",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 2750,
+    "is_multi_intent": false
+  },
+  {
+    "text": "麻烦问下转账到ATM需要多久谢谢",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 2753,
+    "is_multi_intent": false
+  },
+  {
+    "text": "麻烦问下如何小额转账在线等",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 2769,
+    "is_multi_intent": false
+  },
+  {
+    "text": "请教我要取消刚才的转账",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 2770,
+    "is_multi_intent": false
+  },
+  {
+    "text": "实时转账限额是多少！",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 2778,
+    "is_multi_intent": false
+  },
+  {
+    "text": "请教小额转账要注意什么！",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 2782,
+    "is_multi_intent": false
+  },
+  {
+    "text": "请问转账同行没到账谢谢",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 2783,
+    "is_multi_intent": false
+  },
+  {
+    "text": "我要取消刚才的转账！",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 2787,
+    "is_multi_intent": false
+  },
+  {
+    "text": "想问一下转账到ATM需要多久急用",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 2789,
+    "is_multi_intent": false
+  },
+  {
+    "text": "请教实时转账手续费多少在线等",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 2790,
+    "is_multi_intent": false
+  },
+  {
+    "text": "请教怎么给境外转钱",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 2794,
+    "is_multi_intent": false
+  },
+  {
+    "text": "我要取消刚才的转账？",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 2795,
+    "is_multi_intent": false
+  },
+  {
+    "text": "请问大额转账限额是多少！",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 2807,
+    "is_multi_intent": false
+  },
+  {
+    "text": "能告诉我网银转账手续费多少？",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 2808,
+    "is_multi_intent": false
+  },
+  {
+    "text": "急！如何境外转账？",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 2810,
+    "is_multi_intent": false
+  },
+  {
+    "text": "请问他人转账要注意什么",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 2812,
+    "is_multi_intent": false
+  },
+  {
+    "text": "你好，跨行转账记录查询谢谢",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 2826,
+    "is_multi_intent": false
+  },
+  {
+    "text": "请问转账境外没到账！",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 2832,
+    "is_multi_intent": false
+  },
+  {
+    "text": "转账小额没到账！",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 2836,
+    "is_multi_intent": false
+  },
+  {
+    "text": "能告诉我手机银行转账记录查询在线等",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 2841,
+    "is_multi_intent": false
+  },
+  {
+    "text": "请教网银转账失败怎么办在线等",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 2851,
+    "is_multi_intent": false
+  },
+  {
+    "text": "大额转账手续费多少在线等",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 2853,
+    "is_multi_intent": false
+  },
+  {
+    "text": "你好，我要取消刚才的转账在线等",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 2858,
+    "is_multi_intent": false
+  },
+  {
+    "text": "想问一下转账大额没到账！",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 2861,
+    "is_multi_intent": false
+  },
+  {
+    "text": "你好，他人转账安全吗！",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 2863,
+    "is_multi_intent": false
+  },
+  {
+    "text": "能告诉我小额转账失败怎么办？",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 2868,
+    "is_multi_intent": false
+  },
+  {
+    "text": "他人转账限额是多少！",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 2869,
+    "is_multi_intent": false
+  },
+  {
+    "text": "我想给境外汇款！",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 2876,
+    "is_multi_intent": false
+  },
+  {
+    "text": "你好，网银转账限额是多少急用",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 2883,
+    "is_multi_intent": false
+  },
+  {
+    "text": "想问一下我要转账给ATM谢谢",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 2884,
+    "is_multi_intent": false
+  },
+  {
+    "text": "实时转账限额是多少谢谢",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 2886,
+    "is_multi_intent": false
+  },
+  {
+    "text": "能告诉我我要取消刚才的转账在线等",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 2889,
+    "is_multi_intent": false
+  },
+  {
+    "text": "急！怎么给手机银行转钱？",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 2891,
+    "is_multi_intent": false
+  },
+  {
+    "text": "能告诉我怎么给ATM转钱！",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 2895,
+    "is_multi_intent": false
+  },
+  {
+    "text": "能告诉我我要取消刚才的转账在线等",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 2902,
+    "is_multi_intent": false
+  },
+  {
+    "text": "麻烦问下转账到大额需要多久谢谢",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 2921,
+    "is_multi_intent": false
+  },
+  {
+    "text": "你好，我要取消刚才的转账",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 2926,
+    "is_multi_intent": false
+  },
+  {
+    "text": "跨行转账手续费多少！",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 2934,
+    "is_multi_intent": false
+  },
+  {
+    "text": "麻烦问下境外转账记录查询急用",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 2939,
+    "is_multi_intent": false
+  },
+  {
+    "text": "麻烦问下网银可以转多少钱急用",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 2946,
+    "is_multi_intent": false
+  },
+  {
+    "text": "咨询怎么给境外转钱？",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 2949,
+    "is_multi_intent": false
+  },
+  {
+    "text": "转账到境外需要多久急用",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 2950,
+    "is_multi_intent": false
+  },
+  {
+    "text": "请问同行转账记录查询在线等",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 2953,
+    "is_multi_intent": false
+  },
+  {
+    "text": "你好，怎么给网银转钱！",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 2961,
+    "is_multi_intent": false
+  },
+  {
+    "text": "你好，实时转账限额是多少急用",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 2968,
+    "is_multi_intent": false
+  },
+  {
+    "text": "请问境外转账记录查询谢谢",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 2980,
+    "is_multi_intent": false
+  },
+  {
+    "text": "想问一下手机银行转账记录查询急用",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 2991,
+    "is_multi_intent": false
+  },
+  {
+    "text": "请问如何手机银行转账？",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 2993,
+    "is_multi_intent": false
+  },
+  {
+    "text": "请问网银转账记录查询谢谢",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 3005,
+    "is_multi_intent": false
+  },
+  {
+    "text": "请问跨行转账限额是多少急用",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 3015,
+    "is_multi_intent": false
+  },
+  {
+    "text": "请问怎么给大额转钱？",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 3021,
+    "is_multi_intent": false
+  },
+  {
+    "text": "能告诉我ATM转账要注意什么谢谢",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 3031,
+    "is_multi_intent": false
+  },
+  {
+    "text": "急！实时转账手续费多少在线等",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 3032,
+    "is_multi_intent": false
+  },
+  {
+    "text": "怎么给网银转钱！",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 3034,
+    "is_multi_intent": false
+  },
+  {
+    "text": "麻烦问下网银转账要注意什么？",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 3040,
+    "is_multi_intent": false
+  },
+  {
+    "text": "请教网银转账记录查询！",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 3050,
+    "is_multi_intent": false
+  },
+  {
+    "text": "请问手机银行转账安全吗",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 3053,
+    "is_multi_intent": false
+  },
+  {
+    "text": "麻烦问下实时转账限额是多少！",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 3070,
+    "is_multi_intent": false
+  },
+  {
+    "text": "麻烦问下如何ATM转账急用",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 3071,
+    "is_multi_intent": false
+  },
+  {
+    "text": "我要取消刚才的转账急用",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 3074,
+    "is_multi_intent": false
+  },
+  {
+    "text": "请教大额转账记录查询在线等",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 3079,
+    "is_multi_intent": false
+  },
+  {
+    "text": "麻烦问下大额转账记录查询在线等",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 3080,
+    "is_multi_intent": false
+  },
+  {
+    "text": "麻烦问下实时转账限额是多少？",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 3093,
+    "is_multi_intent": false
+  },
+  {
+    "text": "想问一下转账跨行没到账急用",
+    "intent": "transfer_remittance",
+    "intent_name": "转账汇款类",
+    "id": 3096,
+    "is_multi_intent": false
+  }
+]

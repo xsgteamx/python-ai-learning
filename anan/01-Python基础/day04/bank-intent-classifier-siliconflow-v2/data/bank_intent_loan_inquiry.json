@@ -1,0 +1,4552 @@
+[
+  {
+    "text": "信用贷款审批要多久麻烦了",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 11,
+    "is_multi_intent": false
+  },
+  {
+    "text": "你好，消费贷款需要什么条件",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 18,
+    "is_multi_intent": false
+  },
+  {
+    "text": "请问长期贷款提前还款！",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 20,
+    "is_multi_intent": false
+  },
+  {
+    "text": "信用贷款要什么资料？",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 24,
+    "is_multi_intent": false
+  },
+  {
+    "text": "想咨询我的个人贷款进度谢谢",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 25,
+    "is_multi_intent": false
+  },
+  {
+    "text": "了解下住房贷款逾期怎么办在线等",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 35,
+    "is_multi_intent": false
+  },
+  {
+    "text": "帮忙看看教育贷款还款方式！",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 37,
+    "is_multi_intent": false
+  },
+  {
+    "text": "问一下我的车贷款进度谢谢",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 38,
+    "is_multi_intent": false
+  },
+  {
+    "text": "想咨询教育贷款划算吗！",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 42,
+    "is_multi_intent": false
+  },
+  {
+    "text": "你好，装修贷款需要什么条件麻烦了",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 53,
+    "is_multi_intent": false
+  },
+  {
+    "text": "你好，教育贷款还款方式？",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 54,
+    "is_multi_intent": false
+  },
+  {
+    "text": "请问我想申请经营贷款麻烦了",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 65,
+    "is_multi_intent": false
+  },
+  {
+    "text": "消费贷款计算器在线等",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 67,
+    "is_multi_intent": false
+  },
+  {
+    "text": "帮忙看看我的公积金贷款进度麻烦了",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 68,
+    "is_multi_intent": false
+  },
+  {
+    "text": "能不能长期贷款对比！",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 73,
+    "is_multi_intent": false
+  },
+  {
+    "text": "长期贷款被拒绝了",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 74,
+    "is_multi_intent": false
+  },
+  {
+    "text": "了解下经营贷款要什么资料谢谢",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 80,
+    "is_multi_intent": false
+  },
+  {
+    "text": "你好，消费贷款利率是多少！",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 81,
+    "is_multi_intent": false
+  },
+  {
+    "text": "能不能信用贷款利率是多少！",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 84,
+    "is_multi_intent": false
+  },
+  {
+    "text": "帮忙看看教育贷款额度有多少！",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 86,
+    "is_multi_intent": false
+  },
+  {
+    "text": "请问消费贷款还款方式？",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 91,
+    "is_multi_intent": false
+  },
+  {
+    "text": "能不能消费贷款还款方式麻烦了",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 93,
+    "is_multi_intent": false
+  },
+  {
+    "text": "能不能信用贷款计算器麻烦了",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 99,
+    "is_multi_intent": false
+  },
+  {
+    "text": "可以长期贷款额度有多少麻烦了",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 100,
+    "is_multi_intent": false
+  },
+  {
+    "text": "想咨询企业贷款对比？",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 105,
+    "is_multi_intent": false
+  },
+  {
+    "text": "你好，教育贷款额度有多少谢谢",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 108,
+    "is_multi_intent": false
+  },
+  {
+    "text": "想咨询我想申请教育贷款谢谢",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 122,
+    "is_multi_intent": false
+  },
+  {
+    "text": "请问经营贷款划算吗？",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 127,
+    "is_multi_intent": false
+  },
+  {
+    "text": "帮忙看看抵押贷款审批要多久？",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 128,
+    "is_multi_intent": false
+  },
+  {
+    "text": "请问个人贷款对比谢谢",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 137,
+    "is_multi_intent": false
+  },
+  {
+    "text": "能不能车贷款还款方式？",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 139,
+    "is_multi_intent": false
+  },
+  {
+    "text": "如何办理消费贷款",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 142,
+    "is_multi_intent": false
+  },
+  {
+    "text": "请问长期贷款对比",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 145,
+    "is_multi_intent": false
+  },
+  {
+    "text": "了解下我的住房贷款进度在线等",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 146,
+    "is_multi_intent": false
+  },
+  {
+    "text": "请问信用贷款被拒绝了？",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 150,
+    "is_multi_intent": false
+  },
+  {
+    "text": "可以装修贷款审批要多久急用",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 159,
+    "is_multi_intent": false
+  },
+  {
+    "text": "公积金贷款划算吗麻烦了",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 161,
+    "is_multi_intent": false
+  },
+  {
+    "text": "问一下装修贷款额度有多少？",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 162,
+    "is_multi_intent": false
+  },
+  {
+    "text": "经营贷款对比！",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 165,
+    "is_multi_intent": false
+  },
+  {
+    "text": "了解下抵押贷款要什么资料",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 166,
+    "is_multi_intent": false
+  },
+  {
+    "text": "大额贷款划算吗？",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 177,
+    "is_multi_intent": false
+  },
+  {
+    "text": "请问企业贷款计算器谢谢",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 184,
+    "is_multi_intent": false
+  },
+  {
+    "text": "你好，消费贷款划算吗！",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 185,
+    "is_multi_intent": false
+  },
+  {
+    "text": "请问公积金贷款需要什么条件",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 186,
+    "is_multi_intent": false
+  },
+  {
+    "text": "车贷款还款方式",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 190,
+    "is_multi_intent": false
+  },
+  {
+    "text": "请问住房贷款还款方式！",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 193,
+    "is_multi_intent": false
+  },
+  {
+    "text": "请问短期贷款逾期怎么办麻烦了",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 197,
+    "is_multi_intent": false
+  },
+  {
+    "text": "你好，我想申请信用贷款谢谢",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 202,
+    "is_multi_intent": false
+  },
+  {
+    "text": "问一下我的大额贷款进度",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 205,
+    "is_multi_intent": false
+  },
+  {
+    "text": "能不能装修贷款要什么资料",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 212,
+    "is_multi_intent": false
+  },
+  {
+    "text": "帮忙看看长期贷款要什么资料麻烦了",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 219,
+    "is_multi_intent": false
+  },
+  {
+    "text": "请问装修贷款被拒绝了？",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 227,
+    "is_multi_intent": false
+  },
+  {
+    "text": "帮忙看看大额贷款额度有多少",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 236,
+    "is_multi_intent": false
+  },
+  {
+    "text": "经营贷款审批要多久",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 237,
+    "is_multi_intent": false
+  },
+  {
+    "text": "想咨询公积金贷款划算吗？",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 238,
+    "is_multi_intent": false
+  },
+  {
+    "text": "可以短期贷款要什么资料急用",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 245,
+    "is_multi_intent": false
+  },
+  {
+    "text": "能不能车贷款划算吗？",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 248,
+    "is_multi_intent": false
+  },
+  {
+    "text": "能不能消费贷款额度有多少在线等",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 253,
+    "is_multi_intent": false
+  },
+  {
+    "text": "想咨询教育贷款审批要多久！",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 254,
+    "is_multi_intent": false
+  },
+  {
+    "text": "能不能经营贷款需要什么条件！",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 256,
+    "is_multi_intent": false
+  },
+  {
+    "text": "问一下大额贷款还款方式急用",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 269,
+    "is_multi_intent": false
+  },
+  {
+    "text": "车贷款逾期怎么办谢谢",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 270,
+    "is_multi_intent": false
+  },
+  {
+    "text": "能不能公积金贷款计算器",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 272,
+    "is_multi_intent": false
+  },
+  {
+    "text": "请问小额贷款要什么资料？",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 275,
+    "is_multi_intent": false
+  },
+  {
+    "text": "帮忙看看我的短期贷款进度",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 278,
+    "is_multi_intent": false
+  },
+  {
+    "text": "长期贷款提前还款！",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 279,
+    "is_multi_intent": false
+  },
+  {
+    "text": "你好，抵押贷款被拒绝了谢谢",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 281,
+    "is_multi_intent": false
+  },
+  {
+    "text": "能不能住房贷款被拒绝了谢谢",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 282,
+    "is_multi_intent": false
+  },
+  {
+    "text": "能不能短期贷款审批要多久！",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 289,
+    "is_multi_intent": false
+  },
+  {
+    "text": "问一下消费贷款额度有多少在线等",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 290,
+    "is_multi_intent": false
+  },
+  {
+    "text": "能不能消费贷款划算吗在线等",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 293,
+    "is_multi_intent": false
+  },
+  {
+    "text": "帮忙看看企业贷款逾期怎么办急用",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 297,
+    "is_multi_intent": false
+  },
+  {
+    "text": "帮忙看看个人贷款提前还款",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 310,
+    "is_multi_intent": false
+  },
+  {
+    "text": "帮忙看看企业贷款需要什么条件麻烦了",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 314,
+    "is_multi_intent": false
+  },
+  {
+    "text": "你好，如何办理住房贷款在线等",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 317,
+    "is_multi_intent": false
+  },
+  {
+    "text": "帮忙看看大额贷款逾期怎么办在线等",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 323,
+    "is_multi_intent": false
+  },
+  {
+    "text": "想咨询长期贷款被拒绝了急用",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 330,
+    "is_multi_intent": false
+  },
+  {
+    "text": "了解下教育贷款利率是多少？",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 337,
+    "is_multi_intent": false
+  },
+  {
+    "text": "帮忙看看我的企业贷款进度麻烦了",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 344,
+    "is_multi_intent": false
+  },
+  {
+    "text": "你好，个人贷款要什么资料谢谢",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 350,
+    "is_multi_intent": false
+  },
+  {
+    "text": "帮忙看看大额贷款审批要多久急用",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 353,
+    "is_multi_intent": false
+  },
+  {
+    "text": "问一下抵押贷款划算吗？",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 355,
+    "is_multi_intent": false
+  },
+  {
+    "text": "了解下企业贷款划算吗急用",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 357,
+    "is_multi_intent": false
+  },
+  {
+    "text": "抵押贷款需要什么条件？",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 367,
+    "is_multi_intent": false
+  },
+  {
+    "text": "短期贷款还款方式！",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 371,
+    "is_multi_intent": false
+  },
+  {
+    "text": "了解下住房贷款要什么资料在线等",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 377,
+    "is_multi_intent": false
+  },
+  {
+    "text": "请问个人贷款需要什么条件麻烦了",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 381,
+    "is_multi_intent": false
+  },
+  {
+    "text": "住房贷款逾期怎么办？",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 389,
+    "is_multi_intent": false
+  },
+  {
+    "text": "可以如何办理信用贷款谢谢",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 391,
+    "is_multi_intent": false
+  },
+  {
+    "text": "能不能公积金贷款被拒绝了急用",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 392,
+    "is_multi_intent": false
+  },
+  {
+    "text": "可以小额贷款要什么资料麻烦了",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 394,
+    "is_multi_intent": false
+  },
+  {
+    "text": "问一下如何办理小额贷款谢谢",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 398,
+    "is_multi_intent": false
+  },
+  {
+    "text": "想咨询公积金贷款逾期怎么办？",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 408,
+    "is_multi_intent": false
+  },
+  {
+    "text": "想咨询抵押贷款利率是多少？",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 411,
+    "is_multi_intent": false
+  },
+  {
+    "text": "能不能经营贷款要什么资料谢谢",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 415,
+    "is_multi_intent": false
+  },
+  {
+    "text": "大额贷款计算器麻烦了",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 418,
+    "is_multi_intent": false
+  },
+  {
+    "text": "你好，大额贷款审批要多久麻烦了",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 419,
+    "is_multi_intent": false
+  },
+  {
+    "text": "你好，我想申请装修贷款",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 432,
+    "is_multi_intent": false
+  },
+  {
+    "text": "想咨询装修贷款对比谢谢",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 437,
+    "is_multi_intent": false
+  },
+  {
+    "text": "了解下我想申请抵押贷款？",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 443,
+    "is_multi_intent": false
+  },
+  {
+    "text": "短期贷款对比麻烦了",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 445,
+    "is_multi_intent": false
+  },
+  {
+    "text": "请问大额贷款对比！",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 456,
+    "is_multi_intent": false
+  },
+  {
+    "text": "可以我的抵押贷款进度在线等",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 463,
+    "is_multi_intent": false
+  },
+  {
+    "text": "了解下小额贷款逾期怎么办！",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 465,
+    "is_multi_intent": false
+  },
+  {
+    "text": "长期贷款审批要多久？",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 469,
+    "is_multi_intent": false
+  },
+  {
+    "text": "信用贷款被拒绝了在线等",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 472,
+    "is_multi_intent": false
+  },
+  {
+    "text": "帮忙看看教育贷款被拒绝了！",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 473,
+    "is_multi_intent": false
+  },
+  {
+    "text": "你好，住房贷款利率是多少？",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 474,
+    "is_multi_intent": false
+  },
+  {
+    "text": "能不能消费贷款利率是多少麻烦了",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 481,
+    "is_multi_intent": false
+  },
+  {
+    "text": "能不能长期贷款计算器谢谢",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 494,
+    "is_multi_intent": false
+  },
+  {
+    "text": "小额贷款计算器麻烦了",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 497,
+    "is_multi_intent": false
+  },
+  {
+    "text": "想咨询我的装修贷款进度？",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 502,
+    "is_multi_intent": false
+  },
+  {
+    "text": "了解下短期贷款需要什么条件在线等",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 508,
+    "is_multi_intent": false
+  },
+  {
+    "text": "了解下个人贷款计算器在线等",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 511,
+    "is_multi_intent": false
+  },
+  {
+    "text": "帮忙看看短期贷款审批要多久？",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 515,
+    "is_multi_intent": false
+  },
+  {
+    "text": "小额贷款要什么资料在线等",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 516,
+    "is_multi_intent": false
+  },
+  {
+    "text": "帮忙看看消费贷款还款方式",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 522,
+    "is_multi_intent": false
+  },
+  {
+    "text": "如何办理消费贷款急用",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 524,
+    "is_multi_intent": false
+  },
+  {
+    "text": "问一下抵押贷款需要什么条件！",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 525,
+    "is_multi_intent": false
+  },
+  {
+    "text": "抵押贷款逾期怎么办？",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 531,
+    "is_multi_intent": false
+  },
+  {
+    "text": "可以消费贷款划算吗？",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 533,
+    "is_multi_intent": false
+  },
+  {
+    "text": "想咨询我的装修贷款进度急用",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 535,
+    "is_multi_intent": false
+  },
+  {
+    "text": "请问抵押贷款要什么资料",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 542,
+    "is_multi_intent": false
+  },
+  {
+    "text": "可以个人贷款计算器！",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 546,
+    "is_multi_intent": false
+  },
+  {
+    "text": "帮忙看看我的装修贷款进度谢谢",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 550,
+    "is_multi_intent": false
+  },
+  {
+    "text": "可以企业贷款利率是多少！",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 552,
+    "is_multi_intent": false
+  },
+  {
+    "text": "想咨询我的短期贷款进度谢谢",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 553,
+    "is_multi_intent": false
+  },
+  {
+    "text": "问一下如何办理抵押贷款在线等",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 563,
+    "is_multi_intent": false
+  },
+  {
+    "text": "你好，抵押贷款需要什么条件谢谢",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 570,
+    "is_multi_intent": false
+  },
+  {
+    "text": "了解下教育贷款被拒绝了！",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 575,
+    "is_multi_intent": false
+  },
+  {
+    "text": "抵押贷款提前还款！",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 578,
+    "is_multi_intent": false
+  },
+  {
+    "text": "可以车贷款额度有多少在线等",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 584,
+    "is_multi_intent": false
+  },
+  {
+    "text": "问一下信用贷款对比在线等",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 586,
+    "is_multi_intent": false
+  },
+  {
+    "text": "问一下大额贷款对比谢谢",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 588,
+    "is_multi_intent": false
+  },
+  {
+    "text": "问一下住房贷款还款方式麻烦了",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 592,
+    "is_multi_intent": false
+  },
+  {
+    "text": "帮忙看看我的长期贷款进度在线等",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 597,
+    "is_multi_intent": false
+  },
+  {
+    "text": "了解下企业贷款还款方式在线等",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 599,
+    "is_multi_intent": false
+  },
+  {
+    "text": "可以我的小额贷款进度急用",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 611,
+    "is_multi_intent": false
+  },
+  {
+    "text": "个人贷款审批要多久？",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 613,
+    "is_multi_intent": false
+  },
+  {
+    "text": "想咨询如何办理信用贷款",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 615,
+    "is_multi_intent": false
+  },
+  {
+    "text": "帮忙看看个人贷款被拒绝了在线等",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 617,
+    "is_multi_intent": false
+  },
+  {
+    "text": "可以大额贷款计算器",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 626,
+    "is_multi_intent": false
+  },
+  {
+    "text": "小额贷款还款方式",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 630,
+    "is_multi_intent": false
+  },
+  {
+    "text": "我的消费贷款进度在线等",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 634,
+    "is_multi_intent": false
+  },
+  {
+    "text": "信用贷款对比？",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 638,
+    "is_multi_intent": false
+  },
+  {
+    "text": "你好，车贷款需要什么条件！",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 649,
+    "is_multi_intent": false
+  },
+  {
+    "text": "大额贷款额度有多少",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 661,
+    "is_multi_intent": false
+  },
+  {
+    "text": "你好，抵押贷款审批要多久？",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 667,
+    "is_multi_intent": false
+  },
+  {
+    "text": "问一下长期贷款审批要多久在线等",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 668,
+    "is_multi_intent": false
+  },
+  {
+    "text": "可以教育贷款要什么资料急用",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 677,
+    "is_multi_intent": false
+  },
+  {
+    "text": "想咨询经营贷款需要什么条件急用",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 679,
+    "is_multi_intent": false
+  },
+  {
+    "text": "了解下公积金贷款还款方式？",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 683,
+    "is_multi_intent": false
+  },
+  {
+    "text": "想咨询我想申请经营贷款",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 686,
+    "is_multi_intent": false
+  },
+  {
+    "text": "了解下我的小额贷款进度？",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 687,
+    "is_multi_intent": false
+  },
+  {
+    "text": "长期贷款逾期怎么办？",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 694,
+    "is_multi_intent": false
+  },
+  {
+    "text": "教育贷款提前还款麻烦了",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 700,
+    "is_multi_intent": false
+  },
+  {
+    "text": "想咨询如何办理个人贷款在线等",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 704,
+    "is_multi_intent": false
+  },
+  {
+    "text": "想咨询我想申请短期贷款？",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 735,
+    "is_multi_intent": false
+  },
+  {
+    "text": "能不能住房贷款被拒绝了在线等",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 741,
+    "is_multi_intent": false
+  },
+  {
+    "text": "能不能住房贷款需要什么条件",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 742,
+    "is_multi_intent": false
+  },
+  {
+    "text": "想咨询我的抵押贷款进度",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 746,
+    "is_multi_intent": false
+  },
+  {
+    "text": "你好，大额贷款审批要多久麻烦了",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 748,
+    "is_multi_intent": false
+  },
+  {
+    "text": "想咨询我想申请个人贷款谢谢",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 750,
+    "is_multi_intent": false
+  },
+  {
+    "text": "问一下长期贷款提前还款麻烦了",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 760,
+    "is_multi_intent": false
+  },
+  {
+    "text": "能不能装修贷款逾期怎么办急用",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 764,
+    "is_multi_intent": false
+  },
+  {
+    "text": "教育贷款利率是多少急用",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 766,
+    "is_multi_intent": false
+  },
+  {
+    "text": "想咨询如何办理经营贷款麻烦了",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 771,
+    "is_multi_intent": false
+  },
+  {
+    "text": "问一下装修贷款对比急用",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 775,
+    "is_multi_intent": false
+  },
+  {
+    "text": "想咨询小额贷款利率是多少！",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 778,
+    "is_multi_intent": false
+  },
+  {
+    "text": "我的短期贷款进度！",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 783,
+    "is_multi_intent": false
+  },
+  {
+    "text": "想咨询个人贷款逾期怎么办谢谢",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 784,
+    "is_multi_intent": false
+  },
+  {
+    "text": "帮忙看看信用贷款逾期怎么办在线等",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 787,
+    "is_multi_intent": false
+  },
+  {
+    "text": "请问我的教育贷款进度？",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 788,
+    "is_multi_intent": false
+  },
+  {
+    "text": "帮忙看看企业贷款要什么资料！",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 793,
+    "is_multi_intent": false
+  },
+  {
+    "text": "你好，我想申请公积金贷款谢谢",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 803,
+    "is_multi_intent": false
+  },
+  {
+    "text": "你好，企业贷款需要什么条件谢谢",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 809,
+    "is_multi_intent": false
+  },
+  {
+    "text": "想咨询如何办理车贷款！",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 814,
+    "is_multi_intent": false
+  },
+  {
+    "text": "问一下消费贷款对比麻烦了",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 855,
+    "is_multi_intent": false
+  },
+  {
+    "text": "可以长期贷款审批要多久！",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 857,
+    "is_multi_intent": false
+  },
+  {
+    "text": "你好，我想申请抵押贷款急用",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 860,
+    "is_multi_intent": false
+  },
+  {
+    "text": "帮忙看看经营贷款利率是多少急用",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 881,
+    "is_multi_intent": false
+  },
+  {
+    "text": "我想申请小额贷款急用",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 882,
+    "is_multi_intent": false
+  },
+  {
+    "text": "小额贷款要什么资料麻烦了",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 886,
+    "is_multi_intent": false
+  },
+  {
+    "text": "帮忙看看公积金贷款审批要多久急用",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 895,
+    "is_multi_intent": false
+  },
+  {
+    "text": "你好，公积金贷款还款方式在线等",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 896,
+    "is_multi_intent": false
+  },
+  {
+    "text": "帮忙看看企业贷款利率是多少在线等",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 908,
+    "is_multi_intent": false
+  },
+  {
+    "text": "帮忙看看长期贷款利率是多少在线等",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 911,
+    "is_multi_intent": false
+  },
+  {
+    "text": "可以装修贷款需要什么条件！",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 912,
+    "is_multi_intent": false
+  },
+  {
+    "text": "可以住房贷款划算吗？",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 918,
+    "is_multi_intent": false
+  },
+  {
+    "text": "车贷款逾期怎么办急用",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 919,
+    "is_multi_intent": false
+  },
+  {
+    "text": "想咨询大额贷款还款方式麻烦了",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 923,
+    "is_multi_intent": false
+  },
+  {
+    "text": "可以经营贷款利率是多少麻烦了",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 924,
+    "is_multi_intent": false
+  },
+  {
+    "text": "问一下大额贷款被拒绝了！",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 925,
+    "is_multi_intent": false
+  },
+  {
+    "text": "你好，小额贷款计算器急用",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 926,
+    "is_multi_intent": false
+  },
+  {
+    "text": "你好，教育贷款划算吗谢谢",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 927,
+    "is_multi_intent": false
+  },
+  {
+    "text": "经营贷款要什么资料！",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 932,
+    "is_multi_intent": false
+  },
+  {
+    "text": "个人贷款被拒绝了在线等",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 940,
+    "is_multi_intent": false
+  },
+  {
+    "text": "你好，如何办理大额贷款在线等",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 942,
+    "is_multi_intent": false
+  },
+  {
+    "text": "问一下公积金贷款计算器",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 947,
+    "is_multi_intent": false
+  },
+  {
+    "text": "问一下车贷款要什么资料",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 960,
+    "is_multi_intent": false
+  },
+  {
+    "text": "经营贷款要什么资料",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 968,
+    "is_multi_intent": false
+  },
+  {
+    "text": "教育贷款被拒绝了麻烦了",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 974,
+    "is_multi_intent": false
+  },
+  {
+    "text": "我的个人贷款进度？",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 981,
+    "is_multi_intent": false
+  },
+  {
+    "text": "能不能住房贷款需要什么条件急用",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 982,
+    "is_multi_intent": false
+  },
+  {
+    "text": "想咨询如何办理短期贷款在线等",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 988,
+    "is_multi_intent": false
+  },
+  {
+    "text": "能不能信用贷款计算器",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 991,
+    "is_multi_intent": false
+  },
+  {
+    "text": "问一下装修贷款额度有多少？",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 992,
+    "is_multi_intent": false
+  },
+  {
+    "text": "可以经营贷款利率是多少谢谢",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 1000,
+    "is_multi_intent": false
+  },
+  {
+    "text": "短期贷款被拒绝了谢谢",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 1001,
+    "is_multi_intent": false
+  },
+  {
+    "text": "可以信用贷款需要什么条件急用",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 1004,
+    "is_multi_intent": false
+  },
+  {
+    "text": "能不能长期贷款对比麻烦了",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 1015,
+    "is_multi_intent": false
+  },
+  {
+    "text": "小额贷款对比！",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 1027,
+    "is_multi_intent": false
+  },
+  {
+    "text": "抵押贷款被拒绝了",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 1028,
+    "is_multi_intent": false
+  },
+  {
+    "text": "能不能企业贷款逾期怎么办",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 1035,
+    "is_multi_intent": false
+  },
+  {
+    "text": "请问小额贷款划算吗",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 1036,
+    "is_multi_intent": false
+  },
+  {
+    "text": "短期贷款要什么资料谢谢",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 1047,
+    "is_multi_intent": false
+  },
+  {
+    "text": "能不能长期贷款计算器？",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 1049,
+    "is_multi_intent": false
+  },
+  {
+    "text": "请问大额贷款需要什么条件谢谢",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 1050,
+    "is_multi_intent": false
+  },
+  {
+    "text": "如何办理住房贷款麻烦了",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 1052,
+    "is_multi_intent": false
+  },
+  {
+    "text": "帮忙看看车贷款审批要多久在线等",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 1053,
+    "is_multi_intent": false
+  },
+  {
+    "text": "了解下个人贷款要什么资料",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 1054,
+    "is_multi_intent": false
+  },
+  {
+    "text": "你好，大额贷款逾期怎么办麻烦了",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 1058,
+    "is_multi_intent": false
+  },
+  {
+    "text": "你好，我想申请教育贷款？",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 1067,
+    "is_multi_intent": false
+  },
+  {
+    "text": "问一下信用贷款需要什么条件？",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 1068,
+    "is_multi_intent": false
+  },
+  {
+    "text": "想咨询装修贷款逾期怎么办急用",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 1076,
+    "is_multi_intent": false
+  },
+  {
+    "text": "请问如何办理长期贷款！",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 1078,
+    "is_multi_intent": false
+  },
+  {
+    "text": "抵押贷款计算器急用",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 1081,
+    "is_multi_intent": false
+  },
+  {
+    "text": "请问教育贷款还款方式谢谢",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 1082,
+    "is_multi_intent": false
+  },
+  {
+    "text": "能不能公积金贷款利率是多少！",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 1085,
+    "is_multi_intent": false
+  },
+  {
+    "text": "请问装修贷款额度有多少？",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 1086,
+    "is_multi_intent": false
+  },
+  {
+    "text": "你好，如何办理信用贷款？",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 1091,
+    "is_multi_intent": false
+  },
+  {
+    "text": "想咨询我想申请企业贷款！",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 1092,
+    "is_multi_intent": false
+  },
+  {
+    "text": "请问长期贷款计算器急用",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 1093,
+    "is_multi_intent": false
+  },
+  {
+    "text": "公积金贷款审批要多久？",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 1095,
+    "is_multi_intent": false
+  },
+  {
+    "text": "想咨询经营贷款审批要多久！",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 1098,
+    "is_multi_intent": false
+  },
+  {
+    "text": "你好，教育贷款提前还款",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 1101,
+    "is_multi_intent": false
+  },
+  {
+    "text": "可以企业贷款划算吗麻烦了",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 1107,
+    "is_multi_intent": false
+  },
+  {
+    "text": "问一下个人贷款逾期怎么办谢谢",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 1114,
+    "is_multi_intent": false
+  },
+  {
+    "text": "了解下消费贷款需要什么条件？",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 1120,
+    "is_multi_intent": false
+  },
+  {
+    "text": "可以经营贷款审批要多久在线等",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 1123,
+    "is_multi_intent": false
+  },
+  {
+    "text": "问一下信用贷款计算器？",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 1131,
+    "is_multi_intent": false
+  },
+  {
+    "text": "可以住房贷款划算吗！",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 1151,
+    "is_multi_intent": false
+  },
+  {
+    "text": "帮忙看看公积金贷款对比！",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 1170,
+    "is_multi_intent": false
+  },
+  {
+    "text": "帮忙看看住房贷款额度有多少！",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 1172,
+    "is_multi_intent": false
+  },
+  {
+    "text": "问一下装修贷款审批要多久？",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 1178,
+    "is_multi_intent": false
+  },
+  {
+    "text": "能不能小额贷款还款方式谢谢",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 1180,
+    "is_multi_intent": false
+  },
+  {
+    "text": "可以我的小额贷款进度麻烦了",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 1183,
+    "is_multi_intent": false
+  },
+  {
+    "text": "问一下教育贷款对比！",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 1184,
+    "is_multi_intent": false
+  },
+  {
+    "text": "请问车贷款要什么资料",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 1189,
+    "is_multi_intent": false
+  },
+  {
+    "text": "了解下车贷款划算吗麻烦了",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 1191,
+    "is_multi_intent": false
+  },
+  {
+    "text": "帮忙看看个人贷款逾期怎么办？",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 1193,
+    "is_multi_intent": false
+  },
+  {
+    "text": "你好，抵押贷款提前还款麻烦了",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 1203,
+    "is_multi_intent": false
+  },
+  {
+    "text": "帮忙看看大额贷款对比",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 1211,
+    "is_multi_intent": false
+  },
+  {
+    "text": "想咨询抵押贷款还款方式急用",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 1214,
+    "is_multi_intent": false
+  },
+  {
+    "text": "了解下信用贷款需要什么条件谢谢",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 1230,
+    "is_multi_intent": false
+  },
+  {
+    "text": "我的企业贷款进度谢谢",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 1236,
+    "is_multi_intent": false
+  },
+  {
+    "text": "问一下装修贷款对比",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 1241,
+    "is_multi_intent": false
+  },
+  {
+    "text": "能不能长期贷款被拒绝了在线等",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 1245,
+    "is_multi_intent": false
+  },
+  {
+    "text": "问一下住房贷款计算器！",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 1250,
+    "is_multi_intent": false
+  },
+  {
+    "text": "装修贷款计算器麻烦了",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 1261,
+    "is_multi_intent": false
+  },
+  {
+    "text": "帮忙看看消费贷款要什么资料谢谢",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 1263,
+    "is_multi_intent": false
+  },
+  {
+    "text": "我的教育贷款进度在线等",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 1265,
+    "is_multi_intent": false
+  },
+  {
+    "text": "装修贷款要什么资料谢谢",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 1268,
+    "is_multi_intent": false
+  },
+  {
+    "text": "如何办理小额贷款？",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 1269,
+    "is_multi_intent": false
+  },
+  {
+    "text": "如何办理大额贷款谢谢",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 1273,
+    "is_multi_intent": false
+  },
+  {
+    "text": "信用贷款还款方式",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 1280,
+    "is_multi_intent": false
+  },
+  {
+    "text": "问一下车贷款审批要多久麻烦了",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 1283,
+    "is_multi_intent": false
+  },
+  {
+    "text": "能不能长期贷款划算吗！",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 1285,
+    "is_multi_intent": false
+  },
+  {
+    "text": "你好，装修贷款要什么资料？",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 1286,
+    "is_multi_intent": false
+  },
+  {
+    "text": "可以短期贷款计算器急用",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 1289,
+    "is_multi_intent": false
+  },
+  {
+    "text": "想咨询个人贷款对比！",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 1290,
+    "is_multi_intent": false
+  },
+  {
+    "text": "请问如何办理大额贷款在线等",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 1302,
+    "is_multi_intent": false
+  },
+  {
+    "text": "问一下小额贷款对比在线等",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 1310,
+    "is_multi_intent": false
+  },
+  {
+    "text": "问一下大额贷款划算吗！",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 1312,
+    "is_multi_intent": false
+  },
+  {
+    "text": "想咨询个人贷款利率是多少在线等",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 1314,
+    "is_multi_intent": false
+  },
+  {
+    "text": "住房贷款要什么资料！",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 1320,
+    "is_multi_intent": false
+  },
+  {
+    "text": "帮忙看看短期贷款计算器在线等",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 1328,
+    "is_multi_intent": false
+  },
+  {
+    "text": "可以大额贷款额度有多少",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 1336,
+    "is_multi_intent": false
+  },
+  {
+    "text": "问一下经营贷款还款方式",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 1346,
+    "is_multi_intent": false
+  },
+  {
+    "text": "想咨询消费贷款计算器在线等",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 1348,
+    "is_multi_intent": false
+  },
+  {
+    "text": "可以长期贷款审批要多久麻烦了",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 1349,
+    "is_multi_intent": false
+  },
+  {
+    "text": "请问住房贷款计算器在线等",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 1355,
+    "is_multi_intent": false
+  },
+  {
+    "text": "请问小额贷款审批要多久谢谢",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 1358,
+    "is_multi_intent": false
+  },
+  {
+    "text": "了解下小额贷款对比急用",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 1360,
+    "is_multi_intent": false
+  },
+  {
+    "text": "你好，长期贷款提前还款",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 1370,
+    "is_multi_intent": false
+  },
+  {
+    "text": "可以信用贷款计算器在线等",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 1375,
+    "is_multi_intent": false
+  },
+  {
+    "text": "了解下装修贷款被拒绝了？",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 1377,
+    "is_multi_intent": false
+  },
+  {
+    "text": "问一下车贷款利率是多少？",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 1381,
+    "is_multi_intent": false
+  },
+  {
+    "text": "能不能消费贷款还款方式？",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 1384,
+    "is_multi_intent": false
+  },
+  {
+    "text": "能不能企业贷款划算吗麻烦了",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 1386,
+    "is_multi_intent": false
+  },
+  {
+    "text": "帮忙看看短期贷款提前还款",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 1387,
+    "is_multi_intent": false
+  },
+  {
+    "text": "问一下如何办理车贷款麻烦了",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 1392,
+    "is_multi_intent": false
+  },
+  {
+    "text": "请问如何办理教育贷款",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 1400,
+    "is_multi_intent": false
+  },
+  {
+    "text": "个人贷款额度有多少麻烦了",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 1404,
+    "is_multi_intent": false
+  },
+  {
+    "text": "请问经营贷款计算器？",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 1408,
+    "is_multi_intent": false
+  },
+  {
+    "text": "你好，经营贷款需要什么条件！",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 1409,
+    "is_multi_intent": false
+  },
+  {
+    "text": "想咨询消费贷款对比麻烦了",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 1410,
+    "is_multi_intent": false
+  },
+  {
+    "text": "请问教育贷款要什么资料？",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 1416,
+    "is_multi_intent": false
+  },
+  {
+    "text": "问一下如何办理抵押贷款",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 1418,
+    "is_multi_intent": false
+  },
+  {
+    "text": "个人贷款额度有多少在线等",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 1421,
+    "is_multi_intent": false
+  },
+  {
+    "text": "问一下信用贷款审批要多久？",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 1435,
+    "is_multi_intent": false
+  },
+  {
+    "text": "你好，教育贷款划算吗！",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 1436,
+    "is_multi_intent": false
+  },
+  {
+    "text": "帮忙看看我想申请消费贷款在线等",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 1440,
+    "is_multi_intent": false
+  },
+  {
+    "text": "能不能长期贷款要什么资料",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 1442,
+    "is_multi_intent": false
+  },
+  {
+    "text": "可以大额贷款计算器麻烦了",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 1447,
+    "is_multi_intent": false
+  },
+  {
+    "text": "你好，装修贷款提前还款谢谢",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 1454,
+    "is_multi_intent": false
+  },
+  {
+    "text": "请问车贷款计算器",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 1463,
+    "is_multi_intent": false
+  },
+  {
+    "text": "了解下长期贷款逾期怎么办急用",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 1466,
+    "is_multi_intent": false
+  },
+  {
+    "text": "想咨询公积金贷款划算吗急用",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 1472,
+    "is_multi_intent": false
+  },
+  {
+    "text": "帮忙看看我的住房贷款进度在线等",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 1480,
+    "is_multi_intent": false
+  },
+  {
+    "text": "想咨询经营贷款利率是多少！",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 1482,
+    "is_multi_intent": false
+  },
+  {
+    "text": "如何办理经营贷款急用",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 1494,
+    "is_multi_intent": false
+  },
+  {
+    "text": "住房贷款被拒绝了！",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 1500,
+    "is_multi_intent": false
+  },
+  {
+    "text": "了解下公积金贷款利率是多少",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 1503,
+    "is_multi_intent": false
+  },
+  {
+    "text": "想咨询短期贷款利率是多少",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 1508,
+    "is_multi_intent": false
+  },
+  {
+    "text": "可以企业贷款逾期怎么办？",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 1509,
+    "is_multi_intent": false
+  },
+  {
+    "text": "想咨询如何办理教育贷款！",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 1513,
+    "is_multi_intent": false
+  },
+  {
+    "text": "你好，个人贷款逾期怎么办！",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 1517,
+    "is_multi_intent": false
+  },
+  {
+    "text": "请问装修贷款还款方式在线等",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 1522,
+    "is_multi_intent": false
+  },
+  {
+    "text": "问一下教育贷款划算吗谢谢",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 1525,
+    "is_multi_intent": false
+  },
+  {
+    "text": "了解下信用贷款审批要多久谢谢",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 1526,
+    "is_multi_intent": false
+  },
+  {
+    "text": "问一下公积金贷款需要什么条件在线等",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 1539,
+    "is_multi_intent": false
+  },
+  {
+    "text": "可以大额贷款还款方式？",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 1540,
+    "is_multi_intent": false
+  },
+  {
+    "text": "可以长期贷款逾期怎么办谢谢",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 1554,
+    "is_multi_intent": false
+  },
+  {
+    "text": "想咨询车贷款利率是多少谢谢",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 1561,
+    "is_multi_intent": false
+  },
+  {
+    "text": "能不能抵押贷款还款方式在线等",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 1566,
+    "is_multi_intent": false
+  },
+  {
+    "text": "能不能小额贷款被拒绝了在线等",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 1571,
+    "is_multi_intent": false
+  },
+  {
+    "text": "你好，小额贷款提前还款谢谢",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 1575,
+    "is_multi_intent": false
+  },
+  {
+    "text": "你好，大额贷款利率是多少麻烦了",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 1581,
+    "is_multi_intent": false
+  },
+  {
+    "text": "你好，短期贷款需要什么条件急用",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 1582,
+    "is_multi_intent": false
+  },
+  {
+    "text": "帮忙看看车贷款需要什么条件！",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 1588,
+    "is_multi_intent": false
+  },
+  {
+    "text": "请问我的消费贷款进度在线等",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 1589,
+    "is_multi_intent": false
+  },
+  {
+    "text": "小额贷款额度有多少谢谢",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 1594,
+    "is_multi_intent": false
+  },
+  {
+    "text": "帮忙看看车贷款还款方式？",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 1601,
+    "is_multi_intent": false
+  },
+  {
+    "text": "可以信用贷款要什么资料谢谢",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 1616,
+    "is_multi_intent": false
+  },
+  {
+    "text": "你好，短期贷款还款方式",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 1620,
+    "is_multi_intent": false
+  },
+  {
+    "text": "帮忙看看长期贷款划算吗",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 1621,
+    "is_multi_intent": false
+  },
+  {
+    "text": "你好，住房贷款计算器急用",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 1626,
+    "is_multi_intent": false
+  },
+  {
+    "text": "短期贷款提前还款急用",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 1644,
+    "is_multi_intent": false
+  },
+  {
+    "text": "能不能经营贷款提前还款在线等",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 1650,
+    "is_multi_intent": false
+  },
+  {
+    "text": "能不能小额贷款被拒绝了",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 1665,
+    "is_multi_intent": false
+  },
+  {
+    "text": "车贷款划算吗急用",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 1669,
+    "is_multi_intent": false
+  },
+  {
+    "text": "问一下我想申请教育贷款？",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 1680,
+    "is_multi_intent": false
+  },
+  {
+    "text": "问一下短期贷款逾期怎么办麻烦了",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 1684,
+    "is_multi_intent": false
+  },
+  {
+    "text": "我想申请小额贷款？",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 1685,
+    "is_multi_intent": false
+  },
+  {
+    "text": "你好，消费贷款要什么资料在线等",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 1686,
+    "is_multi_intent": false
+  },
+  {
+    "text": "可以信用贷款审批要多久！",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 1687,
+    "is_multi_intent": false
+  },
+  {
+    "text": "帮忙看看我的车贷款进度谢谢",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 1691,
+    "is_multi_intent": false
+  },
+  {
+    "text": "问一下企业贷款要什么资料谢谢",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 1694,
+    "is_multi_intent": false
+  },
+  {
+    "text": "想咨询消费贷款计算器",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 1695,
+    "is_multi_intent": false
+  },
+  {
+    "text": "可以住房贷款利率是多少",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 1702,
+    "is_multi_intent": false
+  },
+  {
+    "text": "请问如何办理大额贷款！",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 1705,
+    "is_multi_intent": false
+  },
+  {
+    "text": "帮忙看看消费贷款提前还款麻烦了",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 1709,
+    "is_multi_intent": false
+  },
+  {
+    "text": "消费贷款额度有多少麻烦了",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 1714,
+    "is_multi_intent": false
+  },
+  {
+    "text": "你好，消费贷款对比",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 1717,
+    "is_multi_intent": false
+  },
+  {
+    "text": "企业贷款利率是多少在线等",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 1719,
+    "is_multi_intent": false
+  },
+  {
+    "text": "请问抵押贷款额度有多少谢谢",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 1720,
+    "is_multi_intent": false
+  },
+  {
+    "text": "能不能信用贷款被拒绝了！",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 1721,
+    "is_multi_intent": false
+  },
+  {
+    "text": "问一下我的企业贷款进度！",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 1722,
+    "is_multi_intent": false
+  },
+  {
+    "text": "帮忙看看教育贷款额度有多少！",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 1736,
+    "is_multi_intent": false
+  },
+  {
+    "text": "住房贷款利率是多少急用",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 1738,
+    "is_multi_intent": false
+  },
+  {
+    "text": "可以个人贷款额度有多少谢谢",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 1748,
+    "is_multi_intent": false
+  },
+  {
+    "text": "问一下大额贷款被拒绝了急用",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 1753,
+    "is_multi_intent": false
+  },
+  {
+    "text": "能不能我的长期贷款进度！",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 1760,
+    "is_multi_intent": false
+  },
+  {
+    "text": "帮忙看看长期贷款要什么资料急用",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 1763,
+    "is_multi_intent": false
+  },
+  {
+    "text": "想咨询企业贷款审批要多久谢谢",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 1766,
+    "is_multi_intent": false
+  },
+  {
+    "text": "教育贷款需要什么条件！",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 1768,
+    "is_multi_intent": false
+  },
+  {
+    "text": "想咨询我想申请个人贷款急用",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 1775,
+    "is_multi_intent": false
+  },
+  {
+    "text": "可以公积金贷款被拒绝了",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 1777,
+    "is_multi_intent": false
+  },
+  {
+    "text": "想咨询公积金贷款利率是多少？",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 1781,
+    "is_multi_intent": false
+  },
+  {
+    "text": "我的公积金贷款进度？",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 1784,
+    "is_multi_intent": false
+  },
+  {
+    "text": "可以教育贷款还款方式",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 1786,
+    "is_multi_intent": false
+  },
+  {
+    "text": "问一下车贷款需要什么条件谢谢",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 1789,
+    "is_multi_intent": false
+  },
+  {
+    "text": "问一下消费贷款还款方式麻烦了",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 1790,
+    "is_multi_intent": false
+  },
+  {
+    "text": "问一下企业贷款逾期怎么办谢谢",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 1800,
+    "is_multi_intent": false
+  },
+  {
+    "text": "了解下如何办理装修贷款谢谢",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 1801,
+    "is_multi_intent": false
+  },
+  {
+    "text": "问一下企业贷款审批要多久急用",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 1806,
+    "is_multi_intent": false
+  },
+  {
+    "text": "你好，信用贷款被拒绝了",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 1810,
+    "is_multi_intent": false
+  },
+  {
+    "text": "个人贷款提前还款？",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 1811,
+    "is_multi_intent": false
+  },
+  {
+    "text": "可以教育贷款需要什么条件？",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 1814,
+    "is_multi_intent": false
+  },
+  {
+    "text": "能不能我的企业贷款进度！",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 1819,
+    "is_multi_intent": false
+  },
+  {
+    "text": "帮忙看看短期贷款需要什么条件麻烦了",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 1825,
+    "is_multi_intent": false
+  },
+  {
+    "text": "企业贷款利率是多少谢谢",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 1827,
+    "is_multi_intent": false
+  },
+  {
+    "text": "公积金贷款审批要多久急用",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 1830,
+    "is_multi_intent": false
+  },
+  {
+    "text": "可以装修贷款计算器",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 1841,
+    "is_multi_intent": false
+  },
+  {
+    "text": "问一下短期贷款划算吗！",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 1845,
+    "is_multi_intent": false
+  },
+  {
+    "text": "你好，经营贷款对比？",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 1849,
+    "is_multi_intent": false
+  },
+  {
+    "text": "了解下公积金贷款审批要多久急用",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 1850,
+    "is_multi_intent": false
+  },
+  {
+    "text": "个人贷款计算器！",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 1855,
+    "is_multi_intent": false
+  },
+  {
+    "text": "可以抵押贷款要什么资料在线等",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 1859,
+    "is_multi_intent": false
+  },
+  {
+    "text": "你好，消费贷款要什么资料！",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 1864,
+    "is_multi_intent": false
+  },
+  {
+    "text": "你好，如何办理消费贷款？",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 1867,
+    "is_multi_intent": false
+  },
+  {
+    "text": "如何办理车贷款",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 1868,
+    "is_multi_intent": false
+  },
+  {
+    "text": "能不能公积金贷款还款方式！",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 1870,
+    "is_multi_intent": false
+  },
+  {
+    "text": "可以长期贷款审批要多久在线等",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 1871,
+    "is_multi_intent": false
+  },
+  {
+    "text": "企业贷款被拒绝了麻烦了",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 1873,
+    "is_multi_intent": false
+  },
+  {
+    "text": "教育贷款划算吗？",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 1889,
+    "is_multi_intent": false
+  },
+  {
+    "text": "请问大额贷款要什么资料谢谢",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 1897,
+    "is_multi_intent": false
+  },
+  {
+    "text": "了解下如何办理个人贷款？",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 1899,
+    "is_multi_intent": false
+  },
+  {
+    "text": "了解下信用贷款需要什么条件麻烦了",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 1900,
+    "is_multi_intent": false
+  },
+  {
+    "text": "帮忙看看我想申请个人贷款急用",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 1902,
+    "is_multi_intent": false
+  },
+  {
+    "text": "问一下大额贷款划算吗急用",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 1904,
+    "is_multi_intent": false
+  },
+  {
+    "text": "问一下如何办理小额贷款谢谢",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 1908,
+    "is_multi_intent": false
+  },
+  {
+    "text": "信用贷款提前还款",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 1914,
+    "is_multi_intent": false
+  },
+  {
+    "text": "如何办理长期贷款谢谢",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 1918,
+    "is_multi_intent": false
+  },
+  {
+    "text": "装修贷款对比麻烦了",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 1924,
+    "is_multi_intent": false
+  },
+  {
+    "text": "帮忙看看信用贷款要什么资料",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 1928,
+    "is_multi_intent": false
+  },
+  {
+    "text": "想咨询消费贷款利率是多少谢谢",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 1931,
+    "is_multi_intent": false
+  },
+  {
+    "text": "请问住房贷款提前还款！",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 1934,
+    "is_multi_intent": false
+  },
+  {
+    "text": "可以信用贷款额度有多少谢谢",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 1946,
+    "is_multi_intent": false
+  },
+  {
+    "text": "能不能公积金贷款提前还款在线等",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 1947,
+    "is_multi_intent": false
+  },
+  {
+    "text": "可以我的抵押贷款进度在线等",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 1949,
+    "is_multi_intent": false
+  },
+  {
+    "text": "请问如何办理消费贷款谢谢",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 1955,
+    "is_multi_intent": false
+  },
+  {
+    "text": "请问企业贷款被拒绝了！",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 1957,
+    "is_multi_intent": false
+  },
+  {
+    "text": "请问我的车贷款进度？",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 1963,
+    "is_multi_intent": false
+  },
+  {
+    "text": "短期贷款提前还款在线等",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 1965,
+    "is_multi_intent": false
+  },
+  {
+    "text": "能不能长期贷款额度有多少？",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 1966,
+    "is_multi_intent": false
+  },
+  {
+    "text": "住房贷款额度有多少！",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 1970,
+    "is_multi_intent": false
+  },
+  {
+    "text": "小额贷款逾期怎么办麻烦了",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 1972,
+    "is_multi_intent": false
+  },
+  {
+    "text": "请问企业贷款要什么资料急用",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 1978,
+    "is_multi_intent": false
+  },
+  {
+    "text": "可以我想申请经营贷款急用",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 1984,
+    "is_multi_intent": false
+  },
+  {
+    "text": "可以车贷款需要什么条件在线等",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 1985,
+    "is_multi_intent": false
+  },
+  {
+    "text": "你好，消费贷款逾期怎么办麻烦了",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 1988,
+    "is_multi_intent": false
+  },
+  {
+    "text": "可以抵押贷款计算器",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 1989,
+    "is_multi_intent": false
+  },
+  {
+    "text": "帮忙看看长期贷款逾期怎么办",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 1990,
+    "is_multi_intent": false
+  },
+  {
+    "text": "个人贷款利率是多少",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 1993,
+    "is_multi_intent": false
+  },
+  {
+    "text": "能不能公积金贷款审批要多久",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 1995,
+    "is_multi_intent": false
+  },
+  {
+    "text": "能不能长期贷款对比麻烦了",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 2005,
+    "is_multi_intent": false
+  },
+  {
+    "text": "你好，企业贷款利率是多少？",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 2008,
+    "is_multi_intent": false
+  },
+  {
+    "text": "短期贷款计算器？",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 2010,
+    "is_multi_intent": false
+  },
+  {
+    "text": "可以装修贷款额度有多少谢谢",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 2016,
+    "is_multi_intent": false
+  },
+  {
+    "text": "想咨询长期贷款计算器急用",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 2023,
+    "is_multi_intent": false
+  },
+  {
+    "text": "想咨询公积金贷款利率是多少谢谢",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 2027,
+    "is_multi_intent": false
+  },
+  {
+    "text": "想咨询短期贷款需要什么条件急用",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 2030,
+    "is_multi_intent": false
+  },
+  {
+    "text": "装修贷款额度有多少？",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 2033,
+    "is_multi_intent": false
+  },
+  {
+    "text": "你好，我的抵押贷款进度急用",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 2034,
+    "is_multi_intent": false
+  },
+  {
+    "text": "帮忙看看装修贷款利率是多少麻烦了",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 2035,
+    "is_multi_intent": false
+  },
+  {
+    "text": "请问消费贷款计算器？",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 2036,
+    "is_multi_intent": false
+  },
+  {
+    "text": "你好，我的住房贷款进度麻烦了",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 2039,
+    "is_multi_intent": false
+  },
+  {
+    "text": "能不能装修贷款被拒绝了",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 2041,
+    "is_multi_intent": false
+  },
+  {
+    "text": "你好，大额贷款逾期怎么办",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 2045,
+    "is_multi_intent": false
+  },
+  {
+    "text": "可以装修贷款提前还款",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 2048,
+    "is_multi_intent": false
+  },
+  {
+    "text": "了解下抵押贷款划算吗！",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 2049,
+    "is_multi_intent": false
+  },
+  {
+    "text": "帮忙看看大额贷款要什么资料？",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 2053,
+    "is_multi_intent": false
+  },
+  {
+    "text": "问一下装修贷款需要什么条件麻烦了",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 2057,
+    "is_multi_intent": false
+  },
+  {
+    "text": "你好，抵押贷款需要什么条件",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 2060,
+    "is_multi_intent": false
+  },
+  {
+    "text": "想咨询长期贷款还款方式急用",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 2062,
+    "is_multi_intent": false
+  },
+  {
+    "text": "你好，长期贷款审批要多久麻烦了",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 2078,
+    "is_multi_intent": false
+  },
+  {
+    "text": "问一下住房贷款计算器？",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 2079,
+    "is_multi_intent": false
+  },
+  {
+    "text": "你好，消费贷款额度有多少谢谢",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 2083,
+    "is_multi_intent": false
+  },
+  {
+    "text": "问一下住房贷款利率是多少麻烦了",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 2085,
+    "is_multi_intent": false
+  },
+  {
+    "text": "可以我想申请住房贷款在线等",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 2088,
+    "is_multi_intent": false
+  },
+  {
+    "text": "你好，企业贷款计算器",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 2091,
+    "is_multi_intent": false
+  },
+  {
+    "text": "能不能住房贷款计算器",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 2093,
+    "is_multi_intent": false
+  },
+  {
+    "text": "你好，信用贷款对比麻烦了",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 2104,
+    "is_multi_intent": false
+  },
+  {
+    "text": "小额贷款提前还款麻烦了",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 2106,
+    "is_multi_intent": false
+  },
+  {
+    "text": "我想申请短期贷款谢谢",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 2107,
+    "is_multi_intent": false
+  },
+  {
+    "text": "教育贷款逾期怎么办",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 2120,
+    "is_multi_intent": false
+  },
+  {
+    "text": "了解下消费贷款利率是多少在线等",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 2121,
+    "is_multi_intent": false
+  },
+  {
+    "text": "请问我的大额贷款进度？",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 2132,
+    "is_multi_intent": false
+  },
+  {
+    "text": "了解下公积金贷款要什么资料？",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 2136,
+    "is_multi_intent": false
+  },
+  {
+    "text": "问一下大额贷款利率是多少谢谢",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 2137,
+    "is_multi_intent": false
+  },
+  {
+    "text": "请问如何办理个人贷款",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 2138,
+    "is_multi_intent": false
+  },
+  {
+    "text": "想咨询如何办理个人贷款！",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 2149,
+    "is_multi_intent": false
+  },
+  {
+    "text": "能不能个人贷款被拒绝了？",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 2152,
+    "is_multi_intent": false
+  },
+  {
+    "text": "车贷款对比急用",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 2154,
+    "is_multi_intent": false
+  },
+  {
+    "text": "大额贷款利率是多少谢谢",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 2161,
+    "is_multi_intent": false
+  },
+  {
+    "text": "个人贷款划算吗？",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 2167,
+    "is_multi_intent": false
+  },
+  {
+    "text": "能不能抵押贷款利率是多少急用",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 2169,
+    "is_multi_intent": false
+  },
+  {
+    "text": "你好，长期贷款计算器在线等",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 2172,
+    "is_multi_intent": false
+  },
+  {
+    "text": "问一下企业贷款还款方式急用",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 2187,
+    "is_multi_intent": false
+  },
+  {
+    "text": "帮忙看看消费贷款被拒绝了在线等",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 2188,
+    "is_multi_intent": false
+  },
+  {
+    "text": "大额贷款划算吗麻烦了",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 2189,
+    "is_multi_intent": false
+  },
+  {
+    "text": "你好，消费贷款需要什么条件！",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 2192,
+    "is_multi_intent": false
+  },
+  {
+    "text": "问一下个人贷款需要什么条件谢谢",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 2193,
+    "is_multi_intent": false
+  },
+  {
+    "text": "经营贷款划算吗",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 2195,
+    "is_multi_intent": false
+  },
+  {
+    "text": "企业贷款提前还款！",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 2197,
+    "is_multi_intent": false
+  },
+  {
+    "text": "帮忙看看企业贷款需要什么条件！",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 2200,
+    "is_multi_intent": false
+  },
+  {
+    "text": "可以我想申请企业贷款！",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 2205,
+    "is_multi_intent": false
+  },
+  {
+    "text": "能不能个人贷款要什么资料",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 2207,
+    "is_multi_intent": false
+  },
+  {
+    "text": "帮忙看看个人贷款对比急用",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 2209,
+    "is_multi_intent": false
+  },
+  {
+    "text": "长期贷款额度有多少谢谢",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 2221,
+    "is_multi_intent": false
+  },
+  {
+    "text": "短期贷款计算器麻烦了",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 2223,
+    "is_multi_intent": false
+  },
+  {
+    "text": "你好，信用贷款逾期怎么办在线等",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 2228,
+    "is_multi_intent": false
+  },
+  {
+    "text": "请问企业贷款计算器急用",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 2229,
+    "is_multi_intent": false
+  },
+  {
+    "text": "问一下消费贷款逾期怎么办",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 2241,
+    "is_multi_intent": false
+  },
+  {
+    "text": "问一下住房贷款审批要多久麻烦了",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 2243,
+    "is_multi_intent": false
+  },
+  {
+    "text": "可以企业贷款还款方式！",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 2244,
+    "is_multi_intent": false
+  },
+  {
+    "text": "住房贷款被拒绝了在线等",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 2245,
+    "is_multi_intent": false
+  },
+  {
+    "text": "能不能住房贷款额度有多少在线等",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 2261,
+    "is_multi_intent": false
+  },
+  {
+    "text": "想咨询我的经营贷款进度！",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 2263,
+    "is_multi_intent": false
+  },
+  {
+    "text": "装修贷款利率是多少急用",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 2270,
+    "is_multi_intent": false
+  },
+  {
+    "text": "你好，信用贷款对比谢谢",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 2282,
+    "is_multi_intent": false
+  },
+  {
+    "text": "你好，小额贷款利率是多少在线等",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 2296,
+    "is_multi_intent": false
+  },
+  {
+    "text": "你好，抵押贷款需要什么条件！",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 2308,
+    "is_multi_intent": false
+  },
+  {
+    "text": "你好，消费贷款需要什么条件？",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 2313,
+    "is_multi_intent": false
+  },
+  {
+    "text": "帮忙看看住房贷款利率是多少急用",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 2315,
+    "is_multi_intent": false
+  },
+  {
+    "text": "可以住房贷款要什么资料谢谢",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 2316,
+    "is_multi_intent": false
+  },
+  {
+    "text": "了解下住房贷款利率是多少麻烦了",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 2318,
+    "is_multi_intent": false
+  },
+  {
+    "text": "请问长期贷款需要什么条件急用",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 2327,
+    "is_multi_intent": false
+  },
+  {
+    "text": "了解下个人贷款计算器！",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 2337,
+    "is_multi_intent": false
+  },
+  {
+    "text": "了解下装修贷款逾期怎么办",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 2338,
+    "is_multi_intent": false
+  },
+  {
+    "text": "可以公积金贷款还款方式！",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 2342,
+    "is_multi_intent": false
+  },
+  {
+    "text": "装修贷款需要什么条件？",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 2350,
+    "is_multi_intent": false
+  },
+  {
+    "text": "问一下大额贷款还款方式在线等",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 2352,
+    "is_multi_intent": false
+  },
+  {
+    "text": "帮忙看看如何办理个人贷款！",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 2353,
+    "is_multi_intent": false
+  },
+  {
+    "text": "能不能教育贷款被拒绝了谢谢",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 2355,
+    "is_multi_intent": false
+  },
+  {
+    "text": "帮忙看看我想申请个人贷款？",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 2357,
+    "is_multi_intent": false
+  },
+  {
+    "text": "帮忙看看大额贷款划算吗谢谢",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 2360,
+    "is_multi_intent": false
+  },
+  {
+    "text": "帮忙看看我的小额贷款进度？",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 2376,
+    "is_multi_intent": false
+  },
+  {
+    "text": "能不能短期贷款划算吗急用",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 2387,
+    "is_multi_intent": false
+  },
+  {
+    "text": "想咨询教育贷款计算器！",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 2398,
+    "is_multi_intent": false
+  },
+  {
+    "text": "可以如何办理住房贷款急用",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 2408,
+    "is_multi_intent": false
+  },
+  {
+    "text": "能不能消费贷款被拒绝了麻烦了",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 2409,
+    "is_multi_intent": false
+  },
+  {
+    "text": "如何办理长期贷款",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 2414,
+    "is_multi_intent": false
+  },
+  {
+    "text": "帮忙看看住房贷款计算器在线等",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 2415,
+    "is_multi_intent": false
+  },
+  {
+    "text": "帮忙看看车贷款需要什么条件",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 2416,
+    "is_multi_intent": false
+  },
+  {
+    "text": "请问短期贷款对比",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 2417,
+    "is_multi_intent": false
+  },
+  {
+    "text": "请问个人贷款提前还款急用",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 2418,
+    "is_multi_intent": false
+  },
+  {
+    "text": "了解下教育贷款审批要多久？",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 2419,
+    "is_multi_intent": false
+  },
+  {
+    "text": "请问经营贷款提前还款在线等",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 2420,
+    "is_multi_intent": false
+  },
+  {
+    "text": "帮忙看看我想申请经营贷款急用",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 2421,
+    "is_multi_intent": false
+  },
+  {
+    "text": "了解下公积金贷款额度有多少麻烦了",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 2426,
+    "is_multi_intent": false
+  },
+  {
+    "text": "可以短期贷款划算吗急用",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 2427,
+    "is_multi_intent": false
+  },
+  {
+    "text": "帮忙看看信用贷款利率是多少！",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 2429,
+    "is_multi_intent": false
+  },
+  {
+    "text": "可以我的短期贷款进度？",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 2439,
+    "is_multi_intent": false
+  },
+  {
+    "text": "你好，经营贷款计算器急用",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 2443,
+    "is_multi_intent": false
+  },
+  {
+    "text": "能不能如何办理经营贷款？",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 2444,
+    "is_multi_intent": false
+  },
+  {
+    "text": "能不能公积金贷款对比！",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 2454,
+    "is_multi_intent": false
+  },
+  {
+    "text": "帮忙看看小额贷款审批要多久谢谢",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 2461,
+    "is_multi_intent": false
+  },
+  {
+    "text": "请问公积金贷款提前还款麻烦了",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 2465,
+    "is_multi_intent": false
+  },
+  {
+    "text": "想咨询消费贷款对比麻烦了",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 2466,
+    "is_multi_intent": false
+  },
+  {
+    "text": "能不能抵押贷款审批要多久麻烦了",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 2481,
+    "is_multi_intent": false
+  },
+  {
+    "text": "问一下抵押贷款利率是多少？",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 2495,
+    "is_multi_intent": false
+  },
+  {
+    "text": "你好，个人贷款需要什么条件急用",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 2496,
+    "is_multi_intent": false
+  },
+  {
+    "text": "想咨询信用贷款还款方式！",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 2499,
+    "is_multi_intent": false
+  },
+  {
+    "text": "了解下如何办理公积金贷款",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 2506,
+    "is_multi_intent": false
+  },
+  {
+    "text": "问一下车贷款划算吗谢谢",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 2510,
+    "is_multi_intent": false
+  },
+  {
+    "text": "公积金贷款提前还款？",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 2514,
+    "is_multi_intent": false
+  },
+  {
+    "text": "帮忙看看长期贷款提前还款麻烦了",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 2516,
+    "is_multi_intent": false
+  },
+  {
+    "text": "装修贷款要什么资料在线等",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 2521,
+    "is_multi_intent": false
+  },
+  {
+    "text": "请问公积金贷款还款方式在线等",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 2541,
+    "is_multi_intent": false
+  },
+  {
+    "text": "想咨询教育贷款提前还款？",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 2544,
+    "is_multi_intent": false
+  },
+  {
+    "text": "想咨询住房贷款提前还款",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 2559,
+    "is_multi_intent": false
+  },
+  {
+    "text": "能不能企业贷款要什么资料？",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 2564,
+    "is_multi_intent": false
+  },
+  {
+    "text": "了解下公积金贷款被拒绝了在线等",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 2566,
+    "is_multi_intent": false
+  },
+  {
+    "text": "帮忙看看大额贷款对比在线等",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 2573,
+    "is_multi_intent": false
+  },
+  {
+    "text": "个人贷款划算吗在线等",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 2581,
+    "is_multi_intent": false
+  },
+  {
+    "text": "帮忙看看住房贷款被拒绝了！",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 2583,
+    "is_multi_intent": false
+  },
+  {
+    "text": "帮忙看看小额贷款还款方式急用",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 2590,
+    "is_multi_intent": false
+  },
+  {
+    "text": "装修贷款提前还款谢谢",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 2603,
+    "is_multi_intent": false
+  },
+  {
+    "text": "请问小额贷款划算吗！",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 2606,
+    "is_multi_intent": false
+  },
+  {
+    "text": "可以大额贷款审批要多久谢谢",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 2615,
+    "is_multi_intent": false
+  },
+  {
+    "text": "你好，教育贷款审批要多久谢谢",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 2632,
+    "is_multi_intent": false
+  },
+  {
+    "text": "了解下大额贷款计算器麻烦了",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 2640,
+    "is_multi_intent": false
+  },
+  {
+    "text": "你好，抵押贷款对比急用",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 2641,
+    "is_multi_intent": false
+  },
+  {
+    "text": "教育贷款计算器谢谢",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 2656,
+    "is_multi_intent": false
+  },
+  {
+    "text": "想咨询消费贷款审批要多久谢谢",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 2657,
+    "is_multi_intent": false
+  },
+  {
+    "text": "可以我的车贷款进度麻烦了",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 2662,
+    "is_multi_intent": false
+  },
+  {
+    "text": "经营贷款需要什么条件！",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 2674,
+    "is_multi_intent": false
+  },
+  {
+    "text": "了解下长期贷款提前还款在线等",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 2675,
+    "is_multi_intent": false
+  },
+  {
+    "text": "可以如何办理装修贷款急用",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 2676,
+    "is_multi_intent": false
+  },
+  {
+    "text": "企业贷款还款方式麻烦了",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 2677,
+    "is_multi_intent": false
+  },
+  {
+    "text": "问一下住房贷款要什么资料在线等",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 2679,
+    "is_multi_intent": false
+  },
+  {
+    "text": "如何办理教育贷款麻烦了",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 2682,
+    "is_multi_intent": false
+  },
+  {
+    "text": "问一下消费贷款被拒绝了？",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 2685,
+    "is_multi_intent": false
+  },
+  {
+    "text": "想咨询抵押贷款计算器急用",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 2687,
+    "is_multi_intent": false
+  },
+  {
+    "text": "消费贷款被拒绝了",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 2693,
+    "is_multi_intent": false
+  },
+  {
+    "text": "问一下我的车贷款进度！",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 2695,
+    "is_multi_intent": false
+  },
+  {
+    "text": "了解下教育贷款被拒绝了",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 2699,
+    "is_multi_intent": false
+  },
+  {
+    "text": "你好，个人贷款审批要多久麻烦了",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 2702,
+    "is_multi_intent": false
+  },
+  {
+    "text": "可以车贷款计算器急用",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 2728,
+    "is_multi_intent": false
+  },
+  {
+    "text": "消费贷款还款方式在线等",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 2735,
+    "is_multi_intent": false
+  },
+  {
+    "text": "请问长期贷款审批要多久",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 2742,
+    "is_multi_intent": false
+  },
+  {
+    "text": "了解下小额贷款划算吗！",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 2754,
+    "is_multi_intent": false
+  },
+  {
+    "text": "请问小额贷款审批要多久急用",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 2763,
+    "is_multi_intent": false
+  },
+  {
+    "text": "帮忙看看住房贷款划算吗！",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 2764,
+    "is_multi_intent": false
+  },
+  {
+    "text": "能不能我的教育贷款进度麻烦了",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 2766,
+    "is_multi_intent": false
+  },
+  {
+    "text": "能不能教育贷款额度有多少！",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 2767,
+    "is_multi_intent": false
+  },
+  {
+    "text": "车贷款利率是多少急用",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 2773,
+    "is_multi_intent": false
+  },
+  {
+    "text": "问一下如何办理经营贷款！",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 2774,
+    "is_multi_intent": false
+  },
+  {
+    "text": "我想申请大额贷款！",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 2781,
+    "is_multi_intent": false
+  },
+  {
+    "text": "可以大额贷款利率是多少麻烦了",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 2799,
+    "is_multi_intent": false
+  },
+  {
+    "text": "你好，如何办理车贷款在线等",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 2801,
+    "is_multi_intent": false
+  },
+  {
+    "text": "帮忙看看我想申请企业贷款在线等",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 2809,
+    "is_multi_intent": false
+  },
+  {
+    "text": "请问我想申请经营贷款！",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 2813,
+    "is_multi_intent": false
+  },
+  {
+    "text": "想咨询信用贷款划算吗麻烦了",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 2815,
+    "is_multi_intent": false
+  },
+  {
+    "text": "能不能短期贷款审批要多久急用",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 2818,
+    "is_multi_intent": false
+  },
+  {
+    "text": "能不能信用贷款逾期怎么办在线等",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 2819,
+    "is_multi_intent": false
+  },
+  {
+    "text": "教育贷款提前还款急用",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 2822,
+    "is_multi_intent": false
+  },
+  {
+    "text": "想咨询企业贷款需要什么条件！",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 2829,
+    "is_multi_intent": false
+  },
+  {
+    "text": "想咨询短期贷款还款方式麻烦了",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 2838,
+    "is_multi_intent": false
+  },
+  {
+    "text": "你好，车贷款计算器！",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 2844,
+    "is_multi_intent": false
+  },
+  {
+    "text": "你好，车贷款额度有多少在线等",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 2845,
+    "is_multi_intent": false
+  },
+  {
+    "text": "能不能我想申请车贷款谢谢",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 2850,
+    "is_multi_intent": false
+  },
+  {
+    "text": "问一下大额贷款需要什么条件在线等",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 2856,
+    "is_multi_intent": false
+  },
+  {
+    "text": "能不能教育贷款还款方式急用",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 2866,
+    "is_multi_intent": false
+  },
+  {
+    "text": "小额贷款逾期怎么办麻烦了",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 2870,
+    "is_multi_intent": false
+  },
+  {
+    "text": "公积金贷款被拒绝了？",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 2872,
+    "is_multi_intent": false
+  },
+  {
+    "text": "车贷款需要什么条件！",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 2875,
+    "is_multi_intent": false
+  },
+  {
+    "text": "请问教育贷款利率是多少",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 2877,
+    "is_multi_intent": false
+  },
+  {
+    "text": "了解下住房贷款被拒绝了在线等",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 2882,
+    "is_multi_intent": false
+  },
+  {
+    "text": "你好，长期贷款提前还款",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 2888,
+    "is_multi_intent": false
+  },
+  {
+    "text": "装修贷款额度有多少",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 2890,
+    "is_multi_intent": false
+  },
+  {
+    "text": "消费贷款利率是多少麻烦了",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 2892,
+    "is_multi_intent": false
+  },
+  {
+    "text": "请问公积金贷款要什么资料急用",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 2893,
+    "is_multi_intent": false
+  },
+  {
+    "text": "如何办理小额贷款",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 2896,
+    "is_multi_intent": false
+  },
+  {
+    "text": "你好，企业贷款划算吗谢谢",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 2897,
+    "is_multi_intent": false
+  },
+  {
+    "text": "了解下经营贷款还款方式麻烦了",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 2909,
+    "is_multi_intent": false
+  },
+  {
+    "text": "能不能经营贷款逾期怎么办？",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 2914,
+    "is_multi_intent": false
+  },
+  {
+    "text": "你好，我的公积金贷款进度在线等",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 2916,
+    "is_multi_intent": false
+  },
+  {
+    "text": "请问抵押贷款计算器",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 2918,
+    "is_multi_intent": false
+  },
+  {
+    "text": "个人贷款需要什么条件！",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 2929,
+    "is_multi_intent": false
+  },
+  {
+    "text": "住房贷款还款方式？",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 2933,
+    "is_multi_intent": false
+  },
+  {
+    "text": "请问我的企业贷款进度麻烦了",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 2941,
+    "is_multi_intent": false
+  },
+  {
+    "text": "想咨询企业贷款审批要多久急用",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 2942,
+    "is_multi_intent": false
+  },
+  {
+    "text": "帮忙看看经营贷款要什么资料？",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 2945,
+    "is_multi_intent": false
+  },
+  {
+    "text": "帮忙看看消费贷款额度有多少",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 2951,
+    "is_multi_intent": false
+  },
+  {
+    "text": "帮忙看看教育贷款额度有多少在线等",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 2954,
+    "is_multi_intent": false
+  },
+  {
+    "text": "能不能我的短期贷款进度",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 2959,
+    "is_multi_intent": false
+  },
+  {
+    "text": "了解下大额贷款利率是多少！",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 2963,
+    "is_multi_intent": false
+  },
+  {
+    "text": "消费贷款被拒绝了谢谢",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 2965,
+    "is_multi_intent": false
+  },
+  {
+    "text": "问一下经营贷款要什么资料急用",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 2971,
+    "is_multi_intent": false
+  },
+  {
+    "text": "想咨询我想申请小额贷款！",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 2974,
+    "is_multi_intent": false
+  },
+  {
+    "text": "想咨询装修贷款计算器？",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 2977,
+    "is_multi_intent": false
+  },
+  {
+    "text": "车贷款提前还款在线等",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 2978,
+    "is_multi_intent": false
+  },
+  {
+    "text": "小额贷款还款方式在线等",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 2979,
+    "is_multi_intent": false
+  },
+  {
+    "text": "我的车贷款进度在线等",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 2981,
+    "is_multi_intent": false
+  },
+  {
+    "text": "能不能公积金贷款要什么资料急用",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 2983,
+    "is_multi_intent": false
+  },
+  {
+    "text": "帮忙看看抵押贷款提前还款！",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 2985,
+    "is_multi_intent": false
+  },
+  {
+    "text": "企业贷款需要什么条件急用",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 2986,
+    "is_multi_intent": false
+  },
+  {
+    "text": "请问车贷款划算吗谢谢",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 3000,
+    "is_multi_intent": false
+  },
+  {
+    "text": "了解下短期贷款逾期怎么办在线等",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 3007,
+    "is_multi_intent": false
+  },
+  {
+    "text": "我的消费贷款进度谢谢",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 3008,
+    "is_multi_intent": false
+  },
+  {
+    "text": "我想申请住房贷款麻烦了",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 3011,
+    "is_multi_intent": false
+  },
+  {
+    "text": "帮忙看看小额贷款额度有多少谢谢",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 3012,
+    "is_multi_intent": false
+  },
+  {
+    "text": "能不能车贷款要什么资料麻烦了",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 3014,
+    "is_multi_intent": false
+  },
+  {
+    "text": "住房贷款需要什么条件在线等",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 3016,
+    "is_multi_intent": false
+  },
+  {
+    "text": "了解下装修贷款划算吗急用",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 3018,
+    "is_multi_intent": false
+  },
+  {
+    "text": "问一下消费贷款划算吗麻烦了",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 3036,
+    "is_multi_intent": false
+  },
+  {
+    "text": "消费贷款划算吗？",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 3042,
+    "is_multi_intent": false
+  },
+  {
+    "text": "经营贷款利率是多少！",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 3046,
+    "is_multi_intent": false
+  },
+  {
+    "text": "你好，小额贷款提前还款麻烦了",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 3058,
+    "is_multi_intent": false
+  },
+  {
+    "text": "了解下企业贷款还款方式谢谢",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 3063,
+    "is_multi_intent": false
+  },
+  {
+    "text": "我的信用贷款进度谢谢",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 3065,
+    "is_multi_intent": false
+  },
+  {
+    "text": "帮忙看看我想申请教育贷款！",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 3069,
+    "is_multi_intent": false
+  },
+  {
+    "text": "请问消费贷款被拒绝了急用",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 3088,
+    "is_multi_intent": false
+  },
+  {
+    "text": "帮忙看看我想申请住房贷款急用",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 3089,
+    "is_multi_intent": false
+  },
+  {
+    "text": "你好，小额贷款划算吗！",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 3092,
+    "is_multi_intent": false
+  },
+  {
+    "text": "想咨询大额贷款需要什么条件在线等",
+    "intent": "loan_inquiry",
+    "intent_name": "贷款咨询类",
+    "id": 3100,
+    "is_multi_intent": false
+  }
+]

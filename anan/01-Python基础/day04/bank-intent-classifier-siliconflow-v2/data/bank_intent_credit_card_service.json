@@ -1,0 +1,4202 @@
+[
+  {
+    "text": "你好，信用卡申请怎么用？",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 2,
+    "is_multi_intent": false
+  },
+  {
+    "text": "麻烦还款信用卡权益！",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 4,
+    "is_multi_intent": false
+  },
+  {
+    "text": "请问逾期信用卡手续费谢谢",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 6,
+    "is_multi_intent": false
+  },
+  {
+    "text": "请问我的信用卡申请急",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 13,
+    "is_multi_intent": false
+  },
+  {
+    "text": "急！激活信用卡手续费！",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 22,
+    "is_multi_intent": false
+  },
+  {
+    "text": "问一下信用卡查账单怎么用在线等",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 26,
+    "is_multi_intent": false
+  },
+  {
+    "text": "请问我的信用卡查账单谢谢",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 27,
+    "is_multi_intent": false
+  },
+  {
+    "text": "信用卡年费日期在线等",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 28,
+    "is_multi_intent": false
+  },
+  {
+    "text": "信用卡年费查询！",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 29,
+    "is_multi_intent": false
+  },
+  {
+    "text": "想了解信用卡挂失查询在线等",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 39,
+    "is_multi_intent": false
+  },
+  {
+    "text": "年费信用卡额度",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 47,
+    "is_multi_intent": false
+  },
+  {
+    "text": "想了解信用卡还款怎么办理在线等",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 49,
+    "is_multi_intent": false
+  },
+  {
+    "text": "挂失信用卡积分？",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 50,
+    "is_multi_intent": false
+  },
+  {
+    "text": "急！挂失信用卡优惠谢谢",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 59,
+    "is_multi_intent": false
+  },
+  {
+    "text": "急！信用卡激活怎么办理！",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 60,
+    "is_multi_intent": false
+  },
+  {
+    "text": "你好，信用卡申请怎么办理在线等",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 64,
+    "is_multi_intent": false
+  },
+  {
+    "text": "急！信用卡注销失败谢谢",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 66,
+    "is_multi_intent": false
+  },
+  {
+    "text": "问一下信用卡解冻多少钱麻烦了",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 70,
+    "is_multi_intent": false
+  },
+  {
+    "text": "麻烦信用卡解冻查询急",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 72,
+    "is_multi_intent": false
+  },
+  {
+    "text": "帮忙注销信用卡权益谢谢",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 75,
+    "is_multi_intent": false
+  },
+  {
+    "text": "请问解冻信用卡额度？",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 76,
+    "is_multi_intent": false
+  },
+  {
+    "text": "激活信用卡权益",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 82,
+    "is_multi_intent": false
+  },
+  {
+    "text": "咨询下逾期信用卡手续费急",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 87,
+    "is_multi_intent": false
+  },
+  {
+    "text": "年费信用卡积分急",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 88,
+    "is_multi_intent": false
+  },
+  {
+    "text": "咨询下修改密码信用卡额度",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 89,
+    "is_multi_intent": false
+  },
+  {
+    "text": "我的信用卡最低还款在线等",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 95,
+    "is_multi_intent": false
+  },
+  {
+    "text": "问一下提额信用卡额度在线等",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 98,
+    "is_multi_intent": false
+  },
+  {
+    "text": "急！信用卡查账单怎么办理！",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 106,
+    "is_multi_intent": false
+  },
+  {
+    "text": "你好，我的信用卡账单！",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 107,
+    "is_multi_intent": false
+  },
+  {
+    "text": "如何年费信用卡在线等",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 109,
+    "is_multi_intent": false
+  },
+  {
+    "text": "问一下信用卡查账单日期在线等",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 115,
+    "is_multi_intent": false
+  },
+  {
+    "text": "信用卡提额日期！",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 117,
+    "is_multi_intent": false
+  },
+  {
+    "text": "信用卡激活失败在线等",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 123,
+    "is_multi_intent": false
+  },
+  {
+    "text": "信用卡还款日期急",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 124,
+    "is_multi_intent": false
+  },
+  {
+    "text": "信用卡临时额度多少钱",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 130,
+    "is_multi_intent": false
+  },
+  {
+    "text": "急！信用卡临时额度查询？",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 131,
+    "is_multi_intent": false
+  },
+  {
+    "text": "帮忙账单信用卡优惠麻烦了",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 151,
+    "is_multi_intent": false
+  },
+  {
+    "text": "问一下查账单信用卡优惠？",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 152,
+    "is_multi_intent": false
+  },
+  {
+    "text": "请问年费信用卡额度在线等",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 154,
+    "is_multi_intent": false
+  },
+  {
+    "text": "想了解信用卡解冻失败谢谢",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 160,
+    "is_multi_intent": false
+  },
+  {
+    "text": "麻烦申请信用卡积分",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 164,
+    "is_multi_intent": false
+  },
+  {
+    "text": "解冻信用卡优惠谢谢",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 171,
+    "is_multi_intent": false
+  },
+  {
+    "text": "请问挂失信用卡额度在线等",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 194,
+    "is_multi_intent": false
+  },
+  {
+    "text": "急！信用卡分期怎么用",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 196,
+    "is_multi_intent": false
+  },
+  {
+    "text": "信用卡查账单多少钱麻烦了",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 211,
+    "is_multi_intent": false
+  },
+  {
+    "text": "请问我的信用卡账单麻烦了",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 214,
+    "is_multi_intent": false
+  },
+  {
+    "text": "信用卡查账单怎么用急",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 223,
+    "is_multi_intent": false
+  },
+  {
+    "text": "请问我的信用卡逾期",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 231,
+    "is_multi_intent": false
+  },
+  {
+    "text": "你好，我的信用卡申请？",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 235,
+    "is_multi_intent": false
+  },
+  {
+    "text": "你好，信用卡年费什么时候到",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 241,
+    "is_multi_intent": false
+  },
+  {
+    "text": "信用卡申请怎么用？",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 250,
+    "is_multi_intent": false
+  },
+  {
+    "text": "帮忙逾期信用卡手续费？",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 263,
+    "is_multi_intent": false
+  },
+  {
+    "text": "问一下逾期信用卡优惠在线等",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 264,
+    "is_multi_intent": false
+  },
+  {
+    "text": "提额信用卡权益麻烦了",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 276,
+    "is_multi_intent": false
+  },
+  {
+    "text": "帮忙信用卡激活查询在线等",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 285,
+    "is_multi_intent": false
+  },
+  {
+    "text": "信用卡申请失败急",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 292,
+    "is_multi_intent": false
+  },
+  {
+    "text": "急！申请信用卡积分急",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 295,
+    "is_multi_intent": false
+  },
+  {
+    "text": "信用卡还款失败！",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 307,
+    "is_multi_intent": false
+  },
+  {
+    "text": "你好，信用卡分期日期谢谢",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 308,
+    "is_multi_intent": false
+  },
+  {
+    "text": "你好，如何查账单信用卡",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 309,
+    "is_multi_intent": false
+  },
+  {
+    "text": "想了解申请信用卡积分",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 312,
+    "is_multi_intent": false
+  },
+  {
+    "text": "问一下临时额度信用卡积分在线等",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 321,
+    "is_multi_intent": false
+  },
+  {
+    "text": "帮忙信用卡年费怎么用",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 324,
+    "is_multi_intent": false
+  },
+  {
+    "text": "帮忙逾期信用卡积分在线等",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 325,
+    "is_multi_intent": false
+  },
+  {
+    "text": "急！信用卡注销失败！",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 327,
+    "is_multi_intent": false
+  },
+  {
+    "text": "你好，修改密码信用卡额度谢谢",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 329,
+    "is_multi_intent": false
+  },
+  {
+    "text": "我要挂失信用卡急",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 335,
+    "is_multi_intent": false
+  },
+  {
+    "text": "想了解信用卡提额失败急",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 336,
+    "is_multi_intent": false
+  },
+  {
+    "text": "急！申请信用卡积分谢谢",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 340,
+    "is_multi_intent": false
+  },
+  {
+    "text": "麻烦临时额度信用卡额度！",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 341,
+    "is_multi_intent": false
+  },
+  {
+    "text": "我的信用卡提额急",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 362,
+    "is_multi_intent": false
+  },
+  {
+    "text": "还款信用卡积分在线等",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 370,
+    "is_multi_intent": false
+  },
+  {
+    "text": "我要年费信用卡",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 372,
+    "is_multi_intent": false
+  },
+  {
+    "text": "提额信用卡额度在线等",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 373,
+    "is_multi_intent": false
+  },
+  {
+    "text": "信用卡年费查询！",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 375,
+    "is_multi_intent": false
+  },
+  {
+    "text": "临时额度信用卡手续费麻烦了",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 378,
+    "is_multi_intent": false
+  },
+  {
+    "text": "信用卡最低还款多少钱麻烦了",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 382,
+    "is_multi_intent": false
+  },
+  {
+    "text": "信用卡年费怎么用麻烦了",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 393,
+    "is_multi_intent": false
+  },
+  {
+    "text": "信用卡还款查询！",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 399,
+    "is_multi_intent": false
+  },
+  {
+    "text": "信用卡还款查询在线等",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 400,
+    "is_multi_intent": false
+  },
+  {
+    "text": "请问如何年费信用卡急",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 404,
+    "is_multi_intent": false
+  },
+  {
+    "text": "问一下信用卡激活多少钱急",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 417,
+    "is_multi_intent": false
+  },
+  {
+    "text": "你好，信用卡分期查询？",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 433,
+    "is_multi_intent": false
+  },
+  {
+    "text": "帮忙我要注销信用卡急",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 439,
+    "is_multi_intent": false
+  },
+  {
+    "text": "帮忙账单信用卡积分？",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 444,
+    "is_multi_intent": false
+  },
+  {
+    "text": "请问逾期信用卡积分在线等",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 448,
+    "is_multi_intent": false
+  },
+  {
+    "text": "咨询下信用卡账单查询？",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 449,
+    "is_multi_intent": false
+  },
+  {
+    "text": "麻烦信用卡提额多少钱",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 457,
+    "is_multi_intent": false
+  },
+  {
+    "text": "信用卡解冻多少钱？",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 467,
+    "is_multi_intent": false
+  },
+  {
+    "text": "帮忙信用卡激活怎么办理？",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 477,
+    "is_multi_intent": false
+  },
+  {
+    "text": "麻烦激活信用卡额度在线等",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 479,
+    "is_multi_intent": false
+  },
+  {
+    "text": "请问信用卡修改密码怎么用急",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 486,
+    "is_multi_intent": false
+  },
+  {
+    "text": "急！信用卡最低还款什么时候到在线等",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 491,
+    "is_multi_intent": false
+  },
+  {
+    "text": "急！信用卡最低还款日期",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 493,
+    "is_multi_intent": false
+  },
+  {
+    "text": "信用卡临时额度查询？",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 507,
+    "is_multi_intent": false
+  },
+  {
+    "text": "帮忙信用卡解冻查询谢谢",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 513,
+    "is_multi_intent": false
+  },
+  {
+    "text": "逾期信用卡优惠谢谢",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 521,
+    "is_multi_intent": false
+  },
+  {
+    "text": "急！信用卡分期多少钱？",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 539,
+    "is_multi_intent": false
+  },
+  {
+    "text": "帮忙信用卡年费什么时候到在线等",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 541,
+    "is_multi_intent": false
+  },
+  {
+    "text": "问一下我的信用卡修改密码",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 543,
+    "is_multi_intent": false
+  },
+  {
+    "text": "想了解解冻信用卡权益？",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 549,
+    "is_multi_intent": false
+  },
+  {
+    "text": "想了解信用卡挂失怎么办理谢谢",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 556,
+    "is_multi_intent": false
+  },
+  {
+    "text": "你好，信用卡逾期查询急",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 560,
+    "is_multi_intent": false
+  },
+  {
+    "text": "信用卡临时额度查询在线等",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 568,
+    "is_multi_intent": false
+  },
+  {
+    "text": "请问信用卡临时额度多少钱",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 573,
+    "is_multi_intent": false
+  },
+  {
+    "text": "想了解信用卡注销怎么办理？",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 576,
+    "is_multi_intent": false
+  },
+  {
+    "text": "想了解修改密码信用卡权益？",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 581,
+    "is_multi_intent": false
+  },
+  {
+    "text": "问一下解冻信用卡额度麻烦了",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 583,
+    "is_multi_intent": false
+  },
+  {
+    "text": "帮忙申请信用卡手续费在线等",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 587,
+    "is_multi_intent": false
+  },
+  {
+    "text": "问一下信用卡注销怎么办理在线等",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 590,
+    "is_multi_intent": false
+  },
+  {
+    "text": "急！信用卡挂失多少钱！",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 595,
+    "is_multi_intent": false
+  },
+  {
+    "text": "想了解信用卡分期失败谢谢",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 601,
+    "is_multi_intent": false
+  },
+  {
+    "text": "急！激活信用卡手续费麻烦了",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 602,
+    "is_multi_intent": false
+  },
+  {
+    "text": "账单信用卡权益",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 608,
+    "is_multi_intent": false
+  },
+  {
+    "text": "问一下信用卡还款什么时候到麻烦了",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 610,
+    "is_multi_intent": false
+  },
+  {
+    "text": "我要还款信用卡谢谢",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 616,
+    "is_multi_intent": false
+  },
+  {
+    "text": "注销信用卡手续费！",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 619,
+    "is_multi_intent": false
+  },
+  {
+    "text": "咨询下信用卡提额查询急",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 631,
+    "is_multi_intent": false
+  },
+  {
+    "text": "麻烦挂失信用卡积分麻烦了",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 633,
+    "is_multi_intent": false
+  },
+  {
+    "text": "麻烦我要分期信用卡急",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 640,
+    "is_multi_intent": false
+  },
+  {
+    "text": "想了解信用卡账单多少钱谢谢",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 644,
+    "is_multi_intent": false
+  },
+  {
+    "text": "想了解信用卡逾期失败",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 645,
+    "is_multi_intent": false
+  },
+  {
+    "text": "问一下信用卡还款查询！",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 648,
+    "is_multi_intent": false
+  },
+  {
+    "text": "想了解逾期信用卡额度",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 650,
+    "is_multi_intent": false
+  },
+  {
+    "text": "麻烦我的信用卡申请在线等",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 652,
+    "is_multi_intent": false
+  },
+  {
+    "text": "咨询下申请信用卡优惠！",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 653,
+    "is_multi_intent": false
+  },
+  {
+    "text": "信用卡解冻日期急",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 654,
+    "is_multi_intent": false
+  },
+  {
+    "text": "急！信用卡临时额度怎么用在线等",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 655,
+    "is_multi_intent": false
+  },
+  {
+    "text": "急！分期信用卡权益？",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 657,
+    "is_multi_intent": false
+  },
+  {
+    "text": "麻烦信用卡注销多少钱麻烦了",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 659,
+    "is_multi_intent": false
+  },
+  {
+    "text": "请问信用卡分期失败在线等",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 662,
+    "is_multi_intent": false
+  },
+  {
+    "text": "急！我的信用卡修改密码谢谢",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 664,
+    "is_multi_intent": false
+  },
+  {
+    "text": "问一下信用卡申请查询急",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 670,
+    "is_multi_intent": false
+  },
+  {
+    "text": "你好，挂失信用卡手续费谢谢",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 678,
+    "is_multi_intent": false
+  },
+  {
+    "text": "想了解信用卡激活怎么办理谢谢",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 688,
+    "is_multi_intent": false
+  },
+  {
+    "text": "帮忙信用卡激活多少钱麻烦了",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 695,
+    "is_multi_intent": false
+  },
+  {
+    "text": "咨询下提额信用卡权益急",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 696,
+    "is_multi_intent": false
+  },
+  {
+    "text": "帮忙解冻信用卡优惠",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 702,
+    "is_multi_intent": false
+  },
+  {
+    "text": "麻烦我要查账单信用卡谢谢",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 706,
+    "is_multi_intent": false
+  },
+  {
+    "text": "想了解信用卡分期多少钱谢谢",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 707,
+    "is_multi_intent": false
+  },
+  {
+    "text": "咨询下我的信用卡注销",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 712,
+    "is_multi_intent": false
+  },
+  {
+    "text": "咨询下信用卡注销怎么办理急",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 718,
+    "is_multi_intent": false
+  },
+  {
+    "text": "麻烦信用卡注销什么时候到急",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 719,
+    "is_multi_intent": false
+  },
+  {
+    "text": "帮忙挂失信用卡手续费在线等",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 724,
+    "is_multi_intent": false
+  },
+  {
+    "text": "想了解解冻信用卡权益在线等",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 726,
+    "is_multi_intent": false
+  },
+  {
+    "text": "想了解还款信用卡积分？",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 727,
+    "is_multi_intent": false
+  },
+  {
+    "text": "信用卡临时额度日期急",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 732,
+    "is_multi_intent": false
+  },
+  {
+    "text": "帮忙信用卡提额失败麻烦了",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 733,
+    "is_multi_intent": false
+  },
+  {
+    "text": "想了解我的信用卡逾期急",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 738,
+    "is_multi_intent": false
+  },
+  {
+    "text": "麻烦解冻信用卡权益在线等",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 747,
+    "is_multi_intent": false
+  },
+  {
+    "text": "我的信用卡修改密码",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 749,
+    "is_multi_intent": false
+  },
+  {
+    "text": "咨询下我的信用卡挂失麻烦了",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 765,
+    "is_multi_intent": false
+  },
+  {
+    "text": "账单信用卡额度？",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 768,
+    "is_multi_intent": false
+  },
+  {
+    "text": "修改密码信用卡优惠在线等",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 769,
+    "is_multi_intent": false
+  },
+  {
+    "text": "麻烦信用卡还款多少钱急",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 773,
+    "is_multi_intent": false
+  },
+  {
+    "text": "问一下信用卡修改密码失败！",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 776,
+    "is_multi_intent": false
+  },
+  {
+    "text": "麻烦挂失信用卡权益麻烦了",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 785,
+    "is_multi_intent": false
+  },
+  {
+    "text": "信用卡解冻失败？",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 786,
+    "is_multi_intent": false
+  },
+  {
+    "text": "信用卡逾期多少钱？",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 789,
+    "is_multi_intent": false
+  },
+  {
+    "text": "问一下我要挂失信用卡急",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 792,
+    "is_multi_intent": false
+  },
+  {
+    "text": "咨询下修改密码信用卡优惠麻烦了",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 795,
+    "is_multi_intent": false
+  },
+  {
+    "text": "帮忙信用卡账单查询谢谢",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 796,
+    "is_multi_intent": false
+  },
+  {
+    "text": "急！我要逾期信用卡谢谢",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 797,
+    "is_multi_intent": false
+  },
+  {
+    "text": "你好，信用卡最低还款日期麻烦了",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 807,
+    "is_multi_intent": false
+  },
+  {
+    "text": "你好，信用卡解冻怎么办理急",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 808,
+    "is_multi_intent": false
+  },
+  {
+    "text": "麻烦信用卡激活失败？",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 810,
+    "is_multi_intent": false
+  },
+  {
+    "text": "信用卡提额多少钱？",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 811,
+    "is_multi_intent": false
+  },
+  {
+    "text": "麻烦如何查账单信用卡麻烦了",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 817,
+    "is_multi_intent": false
+  },
+  {
+    "text": "麻烦信用卡提额怎么用谢谢",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 821,
+    "is_multi_intent": false
+  },
+  {
+    "text": "想了解我的信用卡提额麻烦了",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 823,
+    "is_multi_intent": false
+  },
+  {
+    "text": "你好，如何申请信用卡麻烦了",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 824,
+    "is_multi_intent": false
+  },
+  {
+    "text": "咨询下信用卡逾期查询急",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 826,
+    "is_multi_intent": false
+  },
+  {
+    "text": "请问我要分期信用卡？",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 829,
+    "is_multi_intent": false
+  },
+  {
+    "text": "信用卡解冻日期谢谢",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 833,
+    "is_multi_intent": false
+  },
+  {
+    "text": "信用卡临时额度日期麻烦了",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 838,
+    "is_multi_intent": false
+  },
+  {
+    "text": "你好，信用卡逾期日期",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 840,
+    "is_multi_intent": false
+  },
+  {
+    "text": "信用卡激活失败麻烦了",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 844,
+    "is_multi_intent": false
+  },
+  {
+    "text": "麻烦最低还款信用卡优惠急",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 852,
+    "is_multi_intent": false
+  },
+  {
+    "text": "咨询下如何逾期信用卡",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 854,
+    "is_multi_intent": false
+  },
+  {
+    "text": "麻烦如何激活信用卡",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 858,
+    "is_multi_intent": false
+  },
+  {
+    "text": "你好，信用卡修改密码失败？",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 867,
+    "is_multi_intent": false
+  },
+  {
+    "text": "信用卡申请失败谢谢",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 869,
+    "is_multi_intent": false
+  },
+  {
+    "text": "急！信用卡账单查询谢谢",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 871,
+    "is_multi_intent": false
+  },
+  {
+    "text": "我要激活信用卡在线等",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 873,
+    "is_multi_intent": false
+  },
+  {
+    "text": "问一下信用卡修改密码失败！",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 876,
+    "is_multi_intent": false
+  },
+  {
+    "text": "问一下信用卡分期失败谢谢",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 877,
+    "is_multi_intent": false
+  },
+  {
+    "text": "问一下信用卡激活怎么办理？",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 878,
+    "is_multi_intent": false
+  },
+  {
+    "text": "帮忙修改密码信用卡积分？",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 883,
+    "is_multi_intent": false
+  },
+  {
+    "text": "咨询下激活信用卡手续费？",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 885,
+    "is_multi_intent": false
+  },
+  {
+    "text": "麻烦信用卡查账单多少钱麻烦了",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 887,
+    "is_multi_intent": false
+  },
+  {
+    "text": "想了解信用卡注销什么时候到在线等",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 905,
+    "is_multi_intent": false
+  },
+  {
+    "text": "请问信用卡分期怎么办理急",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 906,
+    "is_multi_intent": false
+  },
+  {
+    "text": "想了解如何申请信用卡在线等",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 929,
+    "is_multi_intent": false
+  },
+  {
+    "text": "修改密码信用卡积分在线等",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 935,
+    "is_multi_intent": false
+  },
+  {
+    "text": "咨询下信用卡账单查询！",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 936,
+    "is_multi_intent": false
+  },
+  {
+    "text": "麻烦分期信用卡积分",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 949,
+    "is_multi_intent": false
+  },
+  {
+    "text": "帮忙信用卡最低还款怎么办理？",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 950,
+    "is_multi_intent": false
+  },
+  {
+    "text": "问一下查账单信用卡手续费？",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 957,
+    "is_multi_intent": false
+  },
+  {
+    "text": "逾期信用卡手续费！",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 961,
+    "is_multi_intent": false
+  },
+  {
+    "text": "帮忙还款信用卡手续费！",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 963,
+    "is_multi_intent": false
+  },
+  {
+    "text": "麻烦信用卡注销怎么用",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 964,
+    "is_multi_intent": false
+  },
+  {
+    "text": "请问如何修改密码信用卡！",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 965,
+    "is_multi_intent": false
+  },
+  {
+    "text": "问一下申请信用卡优惠！",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 967,
+    "is_multi_intent": false
+  },
+  {
+    "text": "帮忙我要逾期信用卡",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 971,
+    "is_multi_intent": false
+  },
+  {
+    "text": "麻烦注销信用卡额度麻烦了",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 986,
+    "is_multi_intent": false
+  },
+  {
+    "text": "帮忙我的信用卡逾期麻烦了",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 987,
+    "is_multi_intent": false
+  },
+  {
+    "text": "急！如何分期信用卡？",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 996,
+    "is_multi_intent": false
+  },
+  {
+    "text": "咨询下信用卡挂失多少钱麻烦了",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 1002,
+    "is_multi_intent": false
+  },
+  {
+    "text": "年费信用卡权益",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 1010,
+    "is_multi_intent": false
+  },
+  {
+    "text": "注销信用卡权益",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 1013,
+    "is_multi_intent": false
+  },
+  {
+    "text": "麻烦信用卡查账单什么时候到",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 1016,
+    "is_multi_intent": false
+  },
+  {
+    "text": "请问还款信用卡手续费！",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 1029,
+    "is_multi_intent": false
+  },
+  {
+    "text": "麻烦信用卡挂失什么时候到谢谢",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 1042,
+    "is_multi_intent": false
+  },
+  {
+    "text": "问一下信用卡账单查询？",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 1051,
+    "is_multi_intent": false
+  },
+  {
+    "text": "咨询下信用卡注销查询",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 1055,
+    "is_multi_intent": false
+  },
+  {
+    "text": "查账单信用卡手续费在线等",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 1057,
+    "is_multi_intent": false
+  },
+  {
+    "text": "咨询下信用卡挂失失败谢谢",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 1063,
+    "is_multi_intent": false
+  },
+  {
+    "text": "麻烦注销信用卡手续费急",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 1073,
+    "is_multi_intent": false
+  },
+  {
+    "text": "帮忙逾期信用卡优惠麻烦了",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 1075,
+    "is_multi_intent": false
+  },
+  {
+    "text": "想了解逾期信用卡额度？",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 1089,
+    "is_multi_intent": false
+  },
+  {
+    "text": "你好，信用卡提额怎么用麻烦了",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 1094,
+    "is_multi_intent": false
+  },
+  {
+    "text": "信用卡分期日期麻烦了",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 1105,
+    "is_multi_intent": false
+  },
+  {
+    "text": "你好，信用卡还款怎么用急",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 1109,
+    "is_multi_intent": false
+  },
+  {
+    "text": "我要临时额度信用卡在线等",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 1113,
+    "is_multi_intent": false
+  },
+  {
+    "text": "咨询下信用卡解冻多少钱在线等",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 1116,
+    "is_multi_intent": false
+  },
+  {
+    "text": "帮忙解冻信用卡优惠麻烦了",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 1118,
+    "is_multi_intent": false
+  },
+  {
+    "text": "请问我的信用卡修改密码急",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 1127,
+    "is_multi_intent": false
+  },
+  {
+    "text": "你好，信用卡账单什么时候到在线等",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 1128,
+    "is_multi_intent": false
+  },
+  {
+    "text": "想了解我的信用卡还款？",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 1134,
+    "is_multi_intent": false
+  },
+  {
+    "text": "问一下提额信用卡优惠急",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 1136,
+    "is_multi_intent": false
+  },
+  {
+    "text": "急！如何挂失信用卡谢谢",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 1142,
+    "is_multi_intent": false
+  },
+  {
+    "text": "问一下信用卡最低还款失败？",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 1145,
+    "is_multi_intent": false
+  },
+  {
+    "text": "想了解激活信用卡权益麻烦了",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 1156,
+    "is_multi_intent": false
+  },
+  {
+    "text": "问一下注销信用卡积分！",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 1163,
+    "is_multi_intent": false
+  },
+  {
+    "text": "问一下信用卡临时额度失败谢谢",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 1167,
+    "is_multi_intent": false
+  },
+  {
+    "text": "急！申请信用卡权益！",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 1169,
+    "is_multi_intent": false
+  },
+  {
+    "text": "帮忙信用卡申请多少钱！",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 1174,
+    "is_multi_intent": false
+  },
+  {
+    "text": "问一下申请信用卡积分",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 1176,
+    "is_multi_intent": false
+  },
+  {
+    "text": "麻烦激活信用卡积分",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 1182,
+    "is_multi_intent": false
+  },
+  {
+    "text": "帮忙分期信用卡额度在线等",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 1194,
+    "is_multi_intent": false
+  },
+  {
+    "text": "你好，我的信用卡查账单谢谢",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 1195,
+    "is_multi_intent": false
+  },
+  {
+    "text": "年费信用卡优惠谢谢",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 1196,
+    "is_multi_intent": false
+  },
+  {
+    "text": "咨询下信用卡临时额度怎么用谢谢",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 1202,
+    "is_multi_intent": false
+  },
+  {
+    "text": "信用卡临时额度什么时候到在线等",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 1204,
+    "is_multi_intent": false
+  },
+  {
+    "text": "帮忙信用卡提额多少钱急",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 1210,
+    "is_multi_intent": false
+  },
+  {
+    "text": "请问临时额度信用卡优惠！",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 1212,
+    "is_multi_intent": false
+  },
+  {
+    "text": "咨询下信用卡注销日期！",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 1218,
+    "is_multi_intent": false
+  },
+  {
+    "text": "信用卡查账单日期！",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 1219,
+    "is_multi_intent": false
+  },
+  {
+    "text": "你好，信用卡账单查询？",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 1221,
+    "is_multi_intent": false
+  },
+  {
+    "text": "问一下信用卡年费日期",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 1229,
+    "is_multi_intent": false
+  },
+  {
+    "text": "帮忙信用卡还款怎么用在线等",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 1232,
+    "is_multi_intent": false
+  },
+  {
+    "text": "信用卡申请查询麻烦了",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 1238,
+    "is_multi_intent": false
+  },
+  {
+    "text": "急！我要挂失信用卡谢谢",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 1240,
+    "is_multi_intent": false
+  },
+  {
+    "text": "想了解还款信用卡权益谢谢",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 1243,
+    "is_multi_intent": false
+  },
+  {
+    "text": "你好，我要修改密码信用卡麻烦了",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 1247,
+    "is_multi_intent": false
+  },
+  {
+    "text": "想了解还款信用卡手续费？",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 1251,
+    "is_multi_intent": false
+  },
+  {
+    "text": "查账单信用卡权益",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 1255,
+    "is_multi_intent": false
+  },
+  {
+    "text": "急！逾期信用卡优惠",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 1257,
+    "is_multi_intent": false
+  },
+  {
+    "text": "想了解提额信用卡额度在线等",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 1260,
+    "is_multi_intent": false
+  },
+  {
+    "text": "信用卡修改密码多少钱？",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 1266,
+    "is_multi_intent": false
+  },
+  {
+    "text": "咨询下提额信用卡积分！",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 1270,
+    "is_multi_intent": false
+  },
+  {
+    "text": "急！信用卡申请失败",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 1272,
+    "is_multi_intent": false
+  },
+  {
+    "text": "想了解信用卡挂失什么时候到急",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 1277,
+    "is_multi_intent": false
+  },
+  {
+    "text": "咨询下信用卡提额什么时候到急",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 1279,
+    "is_multi_intent": false
+  },
+  {
+    "text": "你好，修改密码信用卡手续费谢谢",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 1288,
+    "is_multi_intent": false
+  },
+  {
+    "text": "我的信用卡账单！",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 1297,
+    "is_multi_intent": false
+  },
+  {
+    "text": "想了解如何解冻信用卡？",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 1306,
+    "is_multi_intent": false
+  },
+  {
+    "text": "你好，我的信用卡查账单？",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 1307,
+    "is_multi_intent": false
+  },
+  {
+    "text": "帮忙信用卡临时额度日期谢谢",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 1308,
+    "is_multi_intent": false
+  },
+  {
+    "text": "请问申请信用卡手续费？",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 1313,
+    "is_multi_intent": false
+  },
+  {
+    "text": "麻烦我要最低还款信用卡！",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 1315,
+    "is_multi_intent": false
+  },
+  {
+    "text": "想了解我的信用卡激活？",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 1322,
+    "is_multi_intent": false
+  },
+  {
+    "text": "帮忙信用卡修改密码失败谢谢",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 1325,
+    "is_multi_intent": false
+  },
+  {
+    "text": "问一下我的信用卡申请！",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 1333,
+    "is_multi_intent": false
+  },
+  {
+    "text": "提额信用卡手续费在线等",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 1344,
+    "is_multi_intent": false
+  },
+  {
+    "text": "想了解我的信用卡修改密码在线等",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 1357,
+    "is_multi_intent": false
+  },
+  {
+    "text": "你好，注销信用卡积分急",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 1365,
+    "is_multi_intent": false
+  },
+  {
+    "text": "急！信用卡账单多少钱麻烦了",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 1366,
+    "is_multi_intent": false
+  },
+  {
+    "text": "我的信用卡解冻？",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 1369,
+    "is_multi_intent": false
+  },
+  {
+    "text": "帮忙信用卡逾期查询麻烦了",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 1390,
+    "is_multi_intent": false
+  },
+  {
+    "text": "问一下我的信用卡年费在线等",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 1393,
+    "is_multi_intent": false
+  },
+  {
+    "text": "麻烦信用卡还款日期谢谢",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 1397,
+    "is_multi_intent": false
+  },
+  {
+    "text": "想了解临时额度信用卡手续费麻烦了",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 1399,
+    "is_multi_intent": false
+  },
+  {
+    "text": "问一下信用卡最低还款查询麻烦了",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 1406,
+    "is_multi_intent": false
+  },
+  {
+    "text": "信用卡解冻多少钱？",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 1411,
+    "is_multi_intent": false
+  },
+  {
+    "text": "麻烦信用卡注销怎么办理！",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 1439,
+    "is_multi_intent": false
+  },
+  {
+    "text": "帮忙信用卡分期什么时候到",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 1445,
+    "is_multi_intent": false
+  },
+  {
+    "text": "信用卡账单怎么用在线等",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 1458,
+    "is_multi_intent": false
+  },
+  {
+    "text": "急！信用卡还款查询谢谢",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 1459,
+    "is_multi_intent": false
+  },
+  {
+    "text": "我的信用卡临时额度麻烦了",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 1461,
+    "is_multi_intent": false
+  },
+  {
+    "text": "急！逾期信用卡手续费麻烦了",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 1464,
+    "is_multi_intent": false
+  },
+  {
+    "text": "信用卡临时额度怎么办理谢谢",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 1467,
+    "is_multi_intent": false
+  },
+  {
+    "text": "想了解信用卡年费怎么办理谢谢",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 1469,
+    "is_multi_intent": false
+  },
+  {
+    "text": "你好，信用卡账单什么时候到麻烦了",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 1479,
+    "is_multi_intent": false
+  },
+  {
+    "text": "信用卡申请多少钱在线等",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 1481,
+    "is_multi_intent": false
+  },
+  {
+    "text": "咨询下信用卡还款多少钱？",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 1483,
+    "is_multi_intent": false
+  },
+  {
+    "text": "你好，逾期信用卡积分急",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 1484,
+    "is_multi_intent": false
+  },
+  {
+    "text": "麻烦信用卡查账单怎么用？",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 1485,
+    "is_multi_intent": false
+  },
+  {
+    "text": "想了解信用卡解冻怎么用麻烦了",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 1486,
+    "is_multi_intent": false
+  },
+  {
+    "text": "问一下信用卡激活失败急",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 1495,
+    "is_multi_intent": false
+  },
+  {
+    "text": "想了解修改密码信用卡积分！",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 1504,
+    "is_multi_intent": false
+  },
+  {
+    "text": "请问信用卡账单日期谢谢",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 1507,
+    "is_multi_intent": false
+  },
+  {
+    "text": "你好，如何挂失信用卡急",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 1512,
+    "is_multi_intent": false
+  },
+  {
+    "text": "想了解信用卡账单日期急",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 1520,
+    "is_multi_intent": false
+  },
+  {
+    "text": "想了解如何提额信用卡！",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 1524,
+    "is_multi_intent": false
+  },
+  {
+    "text": "麻烦提额信用卡权益！",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 1527,
+    "is_multi_intent": false
+  },
+  {
+    "text": "你好，最低还款信用卡权益",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 1529,
+    "is_multi_intent": false
+  },
+  {
+    "text": "账单信用卡权益在线等",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 1531,
+    "is_multi_intent": false
+  },
+  {
+    "text": "请问提额信用卡权益谢谢",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 1537,
+    "is_multi_intent": false
+  },
+  {
+    "text": "咨询下信用卡注销什么时候到？",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 1543,
+    "is_multi_intent": false
+  },
+  {
+    "text": "如何逾期信用卡！",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 1558,
+    "is_multi_intent": false
+  },
+  {
+    "text": "麻烦临时额度信用卡手续费谢谢",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 1564,
+    "is_multi_intent": false
+  },
+  {
+    "text": "问一下年费信用卡权益在线等",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 1565,
+    "is_multi_intent": false
+  },
+  {
+    "text": "你好，年费信用卡额度麻烦了",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 1577,
+    "is_multi_intent": false
+  },
+  {
+    "text": "你好，注销信用卡额度",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 1584,
+    "is_multi_intent": false
+  },
+  {
+    "text": "想了解如何临时额度信用卡在线等",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 1585,
+    "is_multi_intent": false
+  },
+  {
+    "text": "你好，我的信用卡注销！",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 1587,
+    "is_multi_intent": false
+  },
+  {
+    "text": "请问挂失信用卡权益谢谢",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 1591,
+    "is_multi_intent": false
+  },
+  {
+    "text": "咨询下临时额度信用卡优惠",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 1604,
+    "is_multi_intent": false
+  },
+  {
+    "text": "急！如何提额信用卡",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 1605,
+    "is_multi_intent": false
+  },
+  {
+    "text": "提额信用卡积分在线等",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 1612,
+    "is_multi_intent": false
+  },
+  {
+    "text": "想了解信用卡挂失失败急",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 1613,
+    "is_multi_intent": false
+  },
+  {
+    "text": "请问查账单信用卡优惠！",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 1614,
+    "is_multi_intent": false
+  },
+  {
+    "text": "帮忙年费信用卡手续费",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 1618,
+    "is_multi_intent": false
+  },
+  {
+    "text": "帮忙如何最低还款信用卡！",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 1623,
+    "is_multi_intent": false
+  },
+  {
+    "text": "想了解修改密码信用卡积分急",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 1639,
+    "is_multi_intent": false
+  },
+  {
+    "text": "想了解年费信用卡权益谢谢",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 1640,
+    "is_multi_intent": false
+  },
+  {
+    "text": "咨询下如何解冻信用卡！",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 1646,
+    "is_multi_intent": false
+  },
+  {
+    "text": "激活信用卡手续费？",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 1647,
+    "is_multi_intent": false
+  },
+  {
+    "text": "你好，查账单信用卡额度谢谢",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 1649,
+    "is_multi_intent": false
+  },
+  {
+    "text": "你好，年费信用卡积分在线等",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 1654,
+    "is_multi_intent": false
+  },
+  {
+    "text": "信用卡激活怎么用",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 1658,
+    "is_multi_intent": false
+  },
+  {
+    "text": "想了解挂失信用卡额度？",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 1662,
+    "is_multi_intent": false
+  },
+  {
+    "text": "麻烦信用卡申请什么时候到",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 1666,
+    "is_multi_intent": false
+  },
+  {
+    "text": "问一下信用卡挂失失败！",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 1673,
+    "is_multi_intent": false
+  },
+  {
+    "text": "麻烦账单信用卡优惠？",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 1692,
+    "is_multi_intent": false
+  },
+  {
+    "text": "信用卡修改密码怎么用麻烦了",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 1693,
+    "is_multi_intent": false
+  },
+  {
+    "text": "信用卡查账单怎么用！",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 1698,
+    "is_multi_intent": false
+  },
+  {
+    "text": "请问我的信用卡还款",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 1706,
+    "is_multi_intent": false
+  },
+  {
+    "text": "问一下最低还款信用卡权益谢谢",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 1713,
+    "is_multi_intent": false
+  },
+  {
+    "text": "你好，信用卡注销怎么办理！",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 1715,
+    "is_multi_intent": false
+  },
+  {
+    "text": "想了解信用卡申请日期！",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 1727,
+    "is_multi_intent": false
+  },
+  {
+    "text": "问一下我的信用卡挂失！",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 1730,
+    "is_multi_intent": false
+  },
+  {
+    "text": "咨询下如何挂失信用卡！",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 1732,
+    "is_multi_intent": false
+  },
+  {
+    "text": "想了解信用卡挂失什么时候到急",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 1737,
+    "is_multi_intent": false
+  },
+  {
+    "text": "咨询下逾期信用卡手续费？",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 1749,
+    "is_multi_intent": false
+  },
+  {
+    "text": "急！信用卡账单怎么办理！",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 1752,
+    "is_multi_intent": false
+  },
+  {
+    "text": "你好，信用卡还款怎么办理在线等",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 1754,
+    "is_multi_intent": false
+  },
+  {
+    "text": "急！注销信用卡手续费？",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 1762,
+    "is_multi_intent": false
+  },
+  {
+    "text": "问一下最低还款信用卡额度",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 1778,
+    "is_multi_intent": false
+  },
+  {
+    "text": "问一下信用卡挂失怎么办理？",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 1780,
+    "is_multi_intent": false
+  },
+  {
+    "text": "麻烦如何查账单信用卡",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 1785,
+    "is_multi_intent": false
+  },
+  {
+    "text": "麻烦激活信用卡积分",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 1798,
+    "is_multi_intent": false
+  },
+  {
+    "text": "急！信用卡临时额度怎么办理？",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 1799,
+    "is_multi_intent": false
+  },
+  {
+    "text": "问一下信用卡逾期多少钱",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 1812,
+    "is_multi_intent": false
+  },
+  {
+    "text": "咨询下信用卡逾期怎么办理！",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 1815,
+    "is_multi_intent": false
+  },
+  {
+    "text": "麻烦解冻信用卡额度在线等",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 1820,
+    "is_multi_intent": false
+  },
+  {
+    "text": "你好，信用卡分期多少钱在线等",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 1837,
+    "is_multi_intent": false
+  },
+  {
+    "text": "查账单信用卡手续费",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 1854,
+    "is_multi_intent": false
+  },
+  {
+    "text": "信用卡逾期什么时候到",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 1856,
+    "is_multi_intent": false
+  },
+  {
+    "text": "你好，信用卡逾期什么时候到急",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 1857,
+    "is_multi_intent": false
+  },
+  {
+    "text": "急！信用卡分期什么时候到急",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 1865,
+    "is_multi_intent": false
+  },
+  {
+    "text": "解冻信用卡积分急",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 1875,
+    "is_multi_intent": false
+  },
+  {
+    "text": "帮忙分期信用卡额度在线等",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 1882,
+    "is_multi_intent": false
+  },
+  {
+    "text": "分期信用卡优惠急",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 1887,
+    "is_multi_intent": false
+  },
+  {
+    "text": "麻烦申请信用卡优惠",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 1896,
+    "is_multi_intent": false
+  },
+  {
+    "text": "麻烦信用卡查账单查询",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 1901,
+    "is_multi_intent": false
+  },
+  {
+    "text": "问一下最低还款信用卡积分急",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 1905,
+    "is_multi_intent": false
+  },
+  {
+    "text": "想了解我要查账单信用卡急",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 1906,
+    "is_multi_intent": false
+  },
+  {
+    "text": "最低还款信用卡积分？",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 1911,
+    "is_multi_intent": false
+  },
+  {
+    "text": "请问修改密码信用卡手续费在线等",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 1916,
+    "is_multi_intent": false
+  },
+  {
+    "text": "麻烦信用卡修改密码多少钱急",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 1921,
+    "is_multi_intent": false
+  },
+  {
+    "text": "请问信用卡分期失败麻烦了",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 1923,
+    "is_multi_intent": false
+  },
+  {
+    "text": "你好，注销信用卡优惠谢谢",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 1927,
+    "is_multi_intent": false
+  },
+  {
+    "text": "请问信用卡还款日期谢谢",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 1933,
+    "is_multi_intent": false
+  },
+  {
+    "text": "急！我要账单信用卡？",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 1937,
+    "is_multi_intent": false
+  },
+  {
+    "text": "请问申请信用卡权益！",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 1940,
+    "is_multi_intent": false
+  },
+  {
+    "text": "账单信用卡权益！",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 1944,
+    "is_multi_intent": false
+  },
+  {
+    "text": "麻烦解冻信用卡优惠",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 1945,
+    "is_multi_intent": false
+  },
+  {
+    "text": "麻烦账单信用卡积分！",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 1951,
+    "is_multi_intent": false
+  },
+  {
+    "text": "信用卡申请失败谢谢",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 1961,
+    "is_multi_intent": false
+  },
+  {
+    "text": "咨询下信用卡账单什么时候到在线等",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 1969,
+    "is_multi_intent": false
+  },
+  {
+    "text": "麻烦我要最低还款信用卡！",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 1975,
+    "is_multi_intent": false
+  },
+  {
+    "text": "提额信用卡额度",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 1980,
+    "is_multi_intent": false
+  },
+  {
+    "text": "请问逾期信用卡优惠谢谢",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 1982,
+    "is_multi_intent": false
+  },
+  {
+    "text": "你好，注销信用卡手续费急",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 1983,
+    "is_multi_intent": false
+  },
+  {
+    "text": "想了解信用卡临时额度日期麻烦了",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 2001,
+    "is_multi_intent": false
+  },
+  {
+    "text": "咨询下注销信用卡积分！",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 2007,
+    "is_multi_intent": false
+  },
+  {
+    "text": "信用卡临时额度怎么办理",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 2013,
+    "is_multi_intent": false
+  },
+  {
+    "text": "请问信用卡提额什么时候到麻烦了",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 2015,
+    "is_multi_intent": false
+  },
+  {
+    "text": "你好，我要解冻信用卡在线等",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 2017,
+    "is_multi_intent": false
+  },
+  {
+    "text": "请问分期信用卡权益！",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 2019,
+    "is_multi_intent": false
+  },
+  {
+    "text": "想了解信用卡逾期怎么用",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 2024,
+    "is_multi_intent": false
+  },
+  {
+    "text": "请问信用卡年费失败谢谢",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 2040,
+    "is_multi_intent": false
+  },
+  {
+    "text": "咨询下我的信用卡还款？",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 2042,
+    "is_multi_intent": false
+  },
+  {
+    "text": "麻烦逾期信用卡权益！",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 2043,
+    "is_multi_intent": false
+  },
+  {
+    "text": "急！提额信用卡优惠？",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 2044,
+    "is_multi_intent": false
+  },
+  {
+    "text": "问一下我要年费信用卡急",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 2056,
+    "is_multi_intent": false
+  },
+  {
+    "text": "咨询下修改密码信用卡权益在线等",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 2058,
+    "is_multi_intent": false
+  },
+  {
+    "text": "请问信用卡账单失败谢谢",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 2059,
+    "is_multi_intent": false
+  },
+  {
+    "text": "请问查账单信用卡额度？",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 2066,
+    "is_multi_intent": false
+  },
+  {
+    "text": "咨询下信用卡逾期什么时候到麻烦了",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 2067,
+    "is_multi_intent": false
+  },
+  {
+    "text": "麻烦信用卡提额日期在线等",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 2069,
+    "is_multi_intent": false
+  },
+  {
+    "text": "逾期信用卡权益",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 2074,
+    "is_multi_intent": false
+  },
+  {
+    "text": "急！信用卡解冻怎么用？",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 2096,
+    "is_multi_intent": false
+  },
+  {
+    "text": "帮忙信用卡修改密码什么时候到？",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 2097,
+    "is_multi_intent": false
+  },
+  {
+    "text": "信用卡最低还款日期麻烦了",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 2102,
+    "is_multi_intent": false
+  },
+  {
+    "text": "咨询下信用卡修改密码失败！",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 2112,
+    "is_multi_intent": false
+  },
+  {
+    "text": "帮忙还款信用卡积分谢谢",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 2113,
+    "is_multi_intent": false
+  },
+  {
+    "text": "问一下分期信用卡额度",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 2118,
+    "is_multi_intent": false
+  },
+  {
+    "text": "问一下账单信用卡手续费在线等",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 2122,
+    "is_multi_intent": false
+  },
+  {
+    "text": "咨询下信用卡账单多少钱",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 2155,
+    "is_multi_intent": false
+  },
+  {
+    "text": "急！挂失信用卡手续费谢谢",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 2156,
+    "is_multi_intent": false
+  },
+  {
+    "text": "请问信用卡分期日期麻烦了",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 2158,
+    "is_multi_intent": false
+  },
+  {
+    "text": "信用卡注销怎么办理？",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 2159,
+    "is_multi_intent": false
+  },
+  {
+    "text": "问一下信用卡注销多少钱？",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 2162,
+    "is_multi_intent": false
+  },
+  {
+    "text": "帮忙信用卡查账单失败在线等",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 2173,
+    "is_multi_intent": false
+  },
+  {
+    "text": "信用卡提额日期在线等",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 2176,
+    "is_multi_intent": false
+  },
+  {
+    "text": "想了解我要申请信用卡麻烦了",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 2178,
+    "is_multi_intent": false
+  },
+  {
+    "text": "急！信用卡挂失怎么办理？",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 2179,
+    "is_multi_intent": false
+  },
+  {
+    "text": "急！我要临时额度信用卡谢谢",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 2186,
+    "is_multi_intent": false
+  },
+  {
+    "text": "我的信用卡挂失麻烦了",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 2191,
+    "is_multi_intent": false
+  },
+  {
+    "text": "注销信用卡积分急",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 2194,
+    "is_multi_intent": false
+  },
+  {
+    "text": "信用卡逾期什么时候到麻烦了",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 2198,
+    "is_multi_intent": false
+  },
+  {
+    "text": "信用卡账单查询急",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 2214,
+    "is_multi_intent": false
+  },
+  {
+    "text": "想了解信用卡修改密码查询急",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 2218,
+    "is_multi_intent": false
+  },
+  {
+    "text": "请问修改密码信用卡积分急",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 2220,
+    "is_multi_intent": false
+  },
+  {
+    "text": "咨询下信用卡还款怎么用谢谢",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 2225,
+    "is_multi_intent": false
+  },
+  {
+    "text": "咨询下信用卡逾期怎么办理谢谢",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 2234,
+    "is_multi_intent": false
+  },
+  {
+    "text": "咨询下信用卡分期多少钱麻烦了",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 2237,
+    "is_multi_intent": false
+  },
+  {
+    "text": "帮忙账单信用卡优惠急",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 2238,
+    "is_multi_intent": false
+  },
+  {
+    "text": "年费信用卡手续费麻烦了",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 2239,
+    "is_multi_intent": false
+  },
+  {
+    "text": "请问信用卡提额日期？",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 2242,
+    "is_multi_intent": false
+  },
+  {
+    "text": "麻烦信用卡账单怎么办理！",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 2258,
+    "is_multi_intent": false
+  },
+  {
+    "text": "急！最低还款信用卡权益！",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 2265,
+    "is_multi_intent": false
+  },
+  {
+    "text": "问一下信用卡账单失败",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 2269,
+    "is_multi_intent": false
+  },
+  {
+    "text": "请问挂失信用卡手续费急",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 2273,
+    "is_multi_intent": false
+  },
+  {
+    "text": "急！信用卡最低还款怎么用在线等",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 2274,
+    "is_multi_intent": false
+  },
+  {
+    "text": "咨询下分期信用卡手续费",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 2275,
+    "is_multi_intent": false
+  },
+  {
+    "text": "问一下信用卡最低还款失败谢谢",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 2277,
+    "is_multi_intent": false
+  },
+  {
+    "text": "咨询下信用卡分期多少钱",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 2279,
+    "is_multi_intent": false
+  },
+  {
+    "text": "麻烦信用卡激活多少钱",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 2291,
+    "is_multi_intent": false
+  },
+  {
+    "text": "麻烦年费信用卡额度在线等",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 2301,
+    "is_multi_intent": false
+  },
+  {
+    "text": "麻烦信用卡激活怎么用！",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 2302,
+    "is_multi_intent": false
+  },
+  {
+    "text": "信用卡逾期失败麻烦了",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 2306,
+    "is_multi_intent": false
+  },
+  {
+    "text": "咨询下我的信用卡最低还款",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 2309,
+    "is_multi_intent": false
+  },
+  {
+    "text": "麻烦信用卡申请失败麻烦了",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 2312,
+    "is_multi_intent": false
+  },
+  {
+    "text": "想了解信用卡提额失败急",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 2314,
+    "is_multi_intent": false
+  },
+  {
+    "text": "想了解信用卡挂失查询麻烦了",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 2320,
+    "is_multi_intent": false
+  },
+  {
+    "text": "请问信用卡修改密码怎么用！",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 2323,
+    "is_multi_intent": false
+  },
+  {
+    "text": "麻烦查账单信用卡优惠谢谢",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 2329,
+    "is_multi_intent": false
+  },
+  {
+    "text": "问一下信用卡查账单怎么办理急",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 2333,
+    "is_multi_intent": false
+  },
+  {
+    "text": "麻烦信用卡分期日期",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 2335,
+    "is_multi_intent": false
+  },
+  {
+    "text": "麻烦信用卡激活怎么用在线等",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 2339,
+    "is_multi_intent": false
+  },
+  {
+    "text": "你好，提额信用卡积分急",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 2351,
+    "is_multi_intent": false
+  },
+  {
+    "text": "咨询下年费信用卡手续费？",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 2354,
+    "is_multi_intent": false
+  },
+  {
+    "text": "问一下临时额度信用卡优惠！",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 2367,
+    "is_multi_intent": false
+  },
+  {
+    "text": "你好，信用卡临时额度失败在线等",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 2378,
+    "is_multi_intent": false
+  },
+  {
+    "text": "你好，信用卡最低还款怎么办理麻烦了",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 2392,
+    "is_multi_intent": false
+  },
+  {
+    "text": "麻烦信用卡分期怎么用",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 2393,
+    "is_multi_intent": false
+  },
+  {
+    "text": "挂失信用卡积分急",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 2399,
+    "is_multi_intent": false
+  },
+  {
+    "text": "你好，信用卡挂失多少钱在线等",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 2403,
+    "is_multi_intent": false
+  },
+  {
+    "text": "帮忙最低还款信用卡积分在线等",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 2422,
+    "is_multi_intent": false
+  },
+  {
+    "text": "注销信用卡优惠！",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 2425,
+    "is_multi_intent": false
+  },
+  {
+    "text": "请问如何最低还款信用卡谢谢",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 2430,
+    "is_multi_intent": false
+  },
+  {
+    "text": "你好，账单信用卡积分！",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 2431,
+    "is_multi_intent": false
+  },
+  {
+    "text": "你好，信用卡修改密码查询？",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 2432,
+    "is_multi_intent": false
+  },
+  {
+    "text": "问一下账单信用卡手续费在线等",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 2435,
+    "is_multi_intent": false
+  },
+  {
+    "text": "信用卡激活怎么办理！",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 2438,
+    "is_multi_intent": false
+  },
+  {
+    "text": "帮忙如何分期信用卡急",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 2445,
+    "is_multi_intent": false
+  },
+  {
+    "text": "麻烦修改密码信用卡积分",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 2447,
+    "is_multi_intent": false
+  },
+  {
+    "text": "问一下信用卡解冻查询麻烦了",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 2452,
+    "is_multi_intent": false
+  },
+  {
+    "text": "想了解分期信用卡手续费急",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 2457,
+    "is_multi_intent": false
+  },
+  {
+    "text": "如何账单信用卡谢谢",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 2458,
+    "is_multi_intent": false
+  },
+  {
+    "text": "急！我要修改密码信用卡急",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 2459,
+    "is_multi_intent": false
+  },
+  {
+    "text": "信用卡年费什么时候到急",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 2464,
+    "is_multi_intent": false
+  },
+  {
+    "text": "请问挂失信用卡手续费谢谢",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 2475,
+    "is_multi_intent": false
+  },
+  {
+    "text": "帮忙我的信用卡账单麻烦了",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 2476,
+    "is_multi_intent": false
+  },
+  {
+    "text": "想了解我要年费信用卡在线等",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 2483,
+    "is_multi_intent": false
+  },
+  {
+    "text": "帮忙信用卡激活怎么办理谢谢",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 2488,
+    "is_multi_intent": false
+  },
+  {
+    "text": "咨询下信用卡临时额度多少钱急",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 2498,
+    "is_multi_intent": false
+  },
+  {
+    "text": "解冻信用卡手续费？",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 2511,
+    "is_multi_intent": false
+  },
+  {
+    "text": "帮忙查账单信用卡积分",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 2512,
+    "is_multi_intent": false
+  },
+  {
+    "text": "问一下我要还款信用卡麻烦了",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 2520,
+    "is_multi_intent": false
+  },
+  {
+    "text": "问一下提额信用卡权益急",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 2527,
+    "is_multi_intent": false
+  },
+  {
+    "text": "你好，信用卡查账单日期？",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 2535,
+    "is_multi_intent": false
+  },
+  {
+    "text": "我要分期信用卡",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 2536,
+    "is_multi_intent": false
+  },
+  {
+    "text": "请问信用卡查账单失败！",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 2543,
+    "is_multi_intent": false
+  },
+  {
+    "text": "咨询下逾期信用卡优惠！",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 2552,
+    "is_multi_intent": false
+  },
+  {
+    "text": "急！注销信用卡额度谢谢",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 2555,
+    "is_multi_intent": false
+  },
+  {
+    "text": "想了解激活信用卡手续费？",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 2570,
+    "is_multi_intent": false
+  },
+  {
+    "text": "问一下我要账单信用卡",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 2578,
+    "is_multi_intent": false
+  },
+  {
+    "text": "麻烦我的信用卡还款在线等",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 2579,
+    "is_multi_intent": false
+  },
+  {
+    "text": "急！账单信用卡积分在线等",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 2586,
+    "is_multi_intent": false
+  },
+  {
+    "text": "你好，修改密码信用卡积分麻烦了",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 2587,
+    "is_multi_intent": false
+  },
+  {
+    "text": "咨询下修改密码信用卡优惠",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 2594,
+    "is_multi_intent": false
+  },
+  {
+    "text": "想了解信用卡激活怎么用",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 2596,
+    "is_multi_intent": false
+  },
+  {
+    "text": "请问信用卡年费怎么用谢谢",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 2601,
+    "is_multi_intent": false
+  },
+  {
+    "text": "查账单信用卡权益谢谢",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 2605,
+    "is_multi_intent": false
+  },
+  {
+    "text": "急！信用卡查账单怎么用麻烦了",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 2608,
+    "is_multi_intent": false
+  },
+  {
+    "text": "请问信用卡账单失败急",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 2609,
+    "is_multi_intent": false
+  },
+  {
+    "text": "想了解我的信用卡激活谢谢",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 2612,
+    "is_multi_intent": false
+  },
+  {
+    "text": "咨询下申请信用卡额度急",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 2619,
+    "is_multi_intent": false
+  },
+  {
+    "text": "帮忙信用卡还款怎么办理在线等",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 2621,
+    "is_multi_intent": false
+  },
+  {
+    "text": "帮忙信用卡逾期失败？",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 2625,
+    "is_multi_intent": false
+  },
+  {
+    "text": "请问提额信用卡优惠麻烦了",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 2633,
+    "is_multi_intent": false
+  },
+  {
+    "text": "麻烦提额信用卡优惠在线等",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 2634,
+    "is_multi_intent": false
+  },
+  {
+    "text": "咨询下信用卡账单失败！",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 2636,
+    "is_multi_intent": false
+  },
+  {
+    "text": "请问信用卡激活多少钱",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 2637,
+    "is_multi_intent": false
+  },
+  {
+    "text": "信用卡挂失多少钱",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 2650,
+    "is_multi_intent": false
+  },
+  {
+    "text": "咨询下信用卡注销失败谢谢",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 2652,
+    "is_multi_intent": false
+  },
+  {
+    "text": "咨询下信用卡账单失败？",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 2653,
+    "is_multi_intent": false
+  },
+  {
+    "text": "咨询下信用卡申请怎么用！",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 2663,
+    "is_multi_intent": false
+  },
+  {
+    "text": "请问信用卡修改密码失败麻烦了",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 2668,
+    "is_multi_intent": false
+  },
+  {
+    "text": "帮忙信用卡逾期什么时候到",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 2670,
+    "is_multi_intent": false
+  },
+  {
+    "text": "咨询下信用卡逾期失败麻烦了",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 2683,
+    "is_multi_intent": false
+  },
+  {
+    "text": "急！逾期信用卡权益！",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 2684,
+    "is_multi_intent": false
+  },
+  {
+    "text": "想了解信用卡年费失败急",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 2696,
+    "is_multi_intent": false
+  },
+  {
+    "text": "问一下最低还款信用卡额度在线等",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 2697,
+    "is_multi_intent": false
+  },
+  {
+    "text": "信用卡修改密码怎么用谢谢",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 2714,
+    "is_multi_intent": false
+  },
+  {
+    "text": "急！信用卡最低还款多少钱急",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 2717,
+    "is_multi_intent": false
+  },
+  {
+    "text": "信用卡查账单查询！",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 2720,
+    "is_multi_intent": false
+  },
+  {
+    "text": "帮忙信用卡解冻多少钱麻烦了",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 2724,
+    "is_multi_intent": false
+  },
+  {
+    "text": "信用卡提额怎么用？",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 2725,
+    "is_multi_intent": false
+  },
+  {
+    "text": "信用卡年费多少钱谢谢",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 2733,
+    "is_multi_intent": false
+  },
+  {
+    "text": "帮忙信用卡最低还款什么时候到谢谢",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 2741,
+    "is_multi_intent": false
+  },
+  {
+    "text": "咨询下信用卡账单什么时候到在线等",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 2743,
+    "is_multi_intent": false
+  },
+  {
+    "text": "麻烦信用卡修改密码怎么用！",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 2745,
+    "is_multi_intent": false
+  },
+  {
+    "text": "急！信用卡申请怎么用麻烦了",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 2752,
+    "is_multi_intent": false
+  },
+  {
+    "text": "请问修改密码信用卡积分在线等",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 2755,
+    "is_multi_intent": false
+  },
+  {
+    "text": "咨询下信用卡查账单日期？",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 2756,
+    "is_multi_intent": false
+  },
+  {
+    "text": "临时额度信用卡额度？",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 2757,
+    "is_multi_intent": false
+  },
+  {
+    "text": "咨询下信用卡注销怎么办理谢谢",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 2758,
+    "is_multi_intent": false
+  },
+  {
+    "text": "信用卡修改密码怎么用在线等",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 2760,
+    "is_multi_intent": false
+  },
+  {
+    "text": "问一下信用卡临时额度怎么办理在线等",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 2768,
+    "is_multi_intent": false
+  },
+  {
+    "text": "问一下如何解冻信用卡麻烦了",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 2775,
+    "is_multi_intent": false
+  },
+  {
+    "text": "急！申请信用卡优惠！",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 2784,
+    "is_multi_intent": false
+  },
+  {
+    "text": "你好，如何注销信用卡！",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 2786,
+    "is_multi_intent": false
+  },
+  {
+    "text": "想了解信用卡解冻什么时候到",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 2804,
+    "is_multi_intent": false
+  },
+  {
+    "text": "请问临时额度信用卡额度",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 2806,
+    "is_multi_intent": false
+  },
+  {
+    "text": "急！如何账单信用卡麻烦了",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 2817,
+    "is_multi_intent": false
+  },
+  {
+    "text": "麻烦我要激活信用卡？",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 2823,
+    "is_multi_intent": false
+  },
+  {
+    "text": "信用卡提额查询",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 2830,
+    "is_multi_intent": false
+  },
+  {
+    "text": "急！信用卡临时额度什么时候到急",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 2837,
+    "is_multi_intent": false
+  },
+  {
+    "text": "如何逾期信用卡",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 2839,
+    "is_multi_intent": false
+  },
+  {
+    "text": "急！分期信用卡额度谢谢",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 2840,
+    "is_multi_intent": false
+  },
+  {
+    "text": "问一下信用卡年费失败在线等",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 2848,
+    "is_multi_intent": false
+  },
+  {
+    "text": "修改密码信用卡优惠",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 2855,
+    "is_multi_intent": false
+  },
+  {
+    "text": "帮忙我的信用卡逾期！",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 2857,
+    "is_multi_intent": false
+  },
+  {
+    "text": "请问临时额度信用卡优惠",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 2860,
+    "is_multi_intent": false
+  },
+  {
+    "text": "麻烦信用卡注销怎么用急",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 2864,
+    "is_multi_intent": false
+  },
+  {
+    "text": "问一下最低还款信用卡优惠",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 2867,
+    "is_multi_intent": false
+  },
+  {
+    "text": "帮忙提额信用卡额度麻烦了",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 2874,
+    "is_multi_intent": false
+  },
+  {
+    "text": "问一下信用卡查账单失败",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 2878,
+    "is_multi_intent": false
+  },
+  {
+    "text": "信用卡最低还款日期在线等",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 2880,
+    "is_multi_intent": false
+  },
+  {
+    "text": "信用卡年费怎么办理！",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 2881,
+    "is_multi_intent": false
+  },
+  {
+    "text": "想了解信用卡激活怎么办理急",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 2900,
+    "is_multi_intent": false
+  },
+  {
+    "text": "问一下激活信用卡权益谢谢",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 2901,
+    "is_multi_intent": false
+  },
+  {
+    "text": "你好，信用卡分期怎么办理？",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 2903,
+    "is_multi_intent": false
+  },
+  {
+    "text": "解冻信用卡手续费谢谢",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 2907,
+    "is_multi_intent": false
+  },
+  {
+    "text": "问一下信用卡年费日期急",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 2908,
+    "is_multi_intent": false
+  },
+  {
+    "text": "修改密码信用卡额度麻烦了",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 2912,
+    "is_multi_intent": false
+  },
+  {
+    "text": "帮忙我要分期信用卡在线等",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 2920,
+    "is_multi_intent": false
+  },
+  {
+    "text": "信用卡查账单什么时候到麻烦了",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 2922,
+    "is_multi_intent": false
+  },
+  {
+    "text": "你好，我要账单信用卡麻烦了",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 2927,
+    "is_multi_intent": false
+  },
+  {
+    "text": "请问最低还款信用卡手续费急",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 2928,
+    "is_multi_intent": false
+  },
+  {
+    "text": "咨询下信用卡账单什么时候到谢谢",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 2930,
+    "is_multi_intent": false
+  },
+  {
+    "text": "问一下信用卡临时额度日期谢谢",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 2931,
+    "is_multi_intent": false
+  },
+  {
+    "text": "你好，如何提额信用卡急",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 2936,
+    "is_multi_intent": false
+  },
+  {
+    "text": "请问信用卡解冻多少钱？",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 2938,
+    "is_multi_intent": false
+  },
+  {
+    "text": "咨询下提额信用卡手续费急",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 2944,
+    "is_multi_intent": false
+  },
+  {
+    "text": "请问账单信用卡优惠在线等",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 2947,
+    "is_multi_intent": false
+  },
+  {
+    "text": "信用卡解冻失败在线等",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 2987,
+    "is_multi_intent": false
+  },
+  {
+    "text": "急！信用卡申请怎么办理！",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 2999,
+    "is_multi_intent": false
+  },
+  {
+    "text": "信用卡申请什么时候到！",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 3001,
+    "is_multi_intent": false
+  },
+  {
+    "text": "麻烦信用卡提额怎么用？",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 3004,
+    "is_multi_intent": false
+  },
+  {
+    "text": "问一下分期信用卡优惠在线等",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 3009,
+    "is_multi_intent": false
+  },
+  {
+    "text": "请问信用卡临时额度多少钱麻烦了",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 3010,
+    "is_multi_intent": false
+  },
+  {
+    "text": "我要账单信用卡？",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 3013,
+    "is_multi_intent": false
+  },
+  {
+    "text": "我的信用卡提额在线等",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 3023,
+    "is_multi_intent": false
+  },
+  {
+    "text": "我的信用卡注销？",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 3027,
+    "is_multi_intent": false
+  },
+  {
+    "text": "咨询下信用卡激活多少钱麻烦了",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 3030,
+    "is_multi_intent": false
+  },
+  {
+    "text": "急！信用卡挂失怎么办理麻烦了",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 3039,
+    "is_multi_intent": false
+  },
+  {
+    "text": "急！信用卡激活多少钱急",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 3043,
+    "is_multi_intent": false
+  },
+  {
+    "text": "问一下信用卡注销什么时候到谢谢",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 3049,
+    "is_multi_intent": false
+  },
+  {
+    "text": "想了解信用卡申请怎么办理急",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 3051,
+    "is_multi_intent": false
+  },
+  {
+    "text": "问一下如何注销信用卡！",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 3052,
+    "is_multi_intent": false
+  },
+  {
+    "text": "信用卡临时额度怎么用",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 3057,
+    "is_multi_intent": false
+  },
+  {
+    "text": "我要申请信用卡急",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 3059,
+    "is_multi_intent": false
+  },
+  {
+    "text": "帮忙我要账单信用卡急",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 3062,
+    "is_multi_intent": false
+  },
+  {
+    "text": "想了解信用卡激活日期麻烦了",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 3067,
+    "is_multi_intent": false
+  },
+  {
+    "text": "帮忙信用卡提额怎么办理急",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 3073,
+    "is_multi_intent": false
+  },
+  {
+    "text": "信用卡最低还款多少钱！",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 3075,
+    "is_multi_intent": false
+  },
+  {
+    "text": "帮忙查账单信用卡积分？",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 3078,
+    "is_multi_intent": false
+  },
+  {
+    "text": "你好，分期信用卡权益",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 3081,
+    "is_multi_intent": false
+  },
+  {
+    "text": "想了解解冻信用卡积分谢谢",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 3082,
+    "is_multi_intent": false
+  },
+  {
+    "text": "请问我要逾期信用卡！",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 3083,
+    "is_multi_intent": false
+  },
+  {
+    "text": "请问我要注销信用卡",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 3086,
+    "is_multi_intent": false
+  },
+  {
+    "text": "信用卡挂失什么时候到麻烦了",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 3094,
+    "is_multi_intent": false
+  },
+  {
+    "text": "我要申请信用卡谢谢",
+    "intent": "credit_card_service",
+    "intent_name": "信用卡服务类",
+    "id": 3099,
+    "is_multi_intent": false
+  }
+]
