@@ -1,0 +1,17 @@
+# 运行产物
+__pycache__/
+*.pyc
+
+# 环境变量（含密钥，切勿提交）
+.env
+
+# 测试与自检脚本（不上传，服务器部署不需要）
+selftest.py
+check_server.py
+test_*.py
+
+# 超长日志落盘目录
+logs/
+
+# 虚拟环境
+.venv/
