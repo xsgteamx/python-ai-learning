@@ -1,0 +1,1351 @@
+[
+  {
+    "id": "T01",
+    "scene": "普通低风险客户",
+    "expected": "PASS",
+    "actual": "PASS",
+    "decision_correct": true,
+    "schema_ok": true,
+    "validation_errors": [],
+    "elapsed_seconds": 7.67,
+    "input": {
+      "applicant_id": "T01",
+      "monthly_income": 15000,
+      "employment_months": 36,
+      "existing_monthly_debt_payment": 2000,
+      "proposed_monthly_payment": 2500,
+      "overdue_count_24m": 0,
+      "max_overdue_days_24m": 0,
+      "credit_inquiries_6m": 2,
+      "existing_loan_count": 1,
+      "fraud_or_blacklist_hit": false
+    },
+    "output": {
+      "applicant_id": "T01",
+      "decision": "PASS",
+      "risk_level": "LOW",
+      "dti": 0.3,
+      "analysis_steps": [
+        {
+          "step": 1,
+          "name": "信息完整性与合法性检查",
+          "result": "PASS",
+          "evidence": "所有必填字段完整，数据合法。"
+        },
+        {
+          "step": 2,
+          "name": "偿债能力分析",
+          "result": "PASS",
+          "evidence": "DTI=(2000+2500)/15000=0.3000，不高于0.40。"
+        },
+        {
+          "step": 3,
+          "name": "严重信用与欺诈风险检查",
+          "result": "PASS",
+          "evidence": "未命中黑名单，最近24个月无逾期。"
+        },
+        {
+          "step": 4,
+          "name": "其他风险因素检查",
+          "result": "PASS",
+          "evidence": "就业36个月，征信查询2次，未结清贷款1笔，未命中人工复核规则。"
+        },
+        {
+          "step": 5,
+          "name": "综合决策",
+          "result": "PASS",
+          "evidence": "未命中拒绝条件及人工复核条件，初审结果为PASS。"
+        }
+      ],
+      "risk_factors": [],
+      "missing_information": [],
+      "manual_review_required": false,
+      "summary": "申请资料完整，偿债压力正常，未发现严重征信或其他主要风险因素，初审通过。"
+    },
+    "raw_output": "{\n  \"applicant_id\": \"T01\",\n  \"decision\": \"PASS\",\n  \"risk_level\": \"LOW\",\n  \"dti\": 0.3,\n  \"analysis_steps\": [\n    {\n      \"step\": 1,\n      \"name\": \"信息完整性与合法性检查\",\n      \"result\": \"PASS\",\n      \"evidence\": \"所有必填字段完整，数据合法。\"\n    },\n    {\n      \"step\": 2,\n      \"name\": \"偿债能力分析\",\n      \"result\": \"PASS\",\n      \"evidence\": \"DTI=(2000+2500)/15000=0.3000，不高于0.40。\"\n    },\n    {\n      \"step\": 3,\n      \"name\": \"严重信用与欺诈风险检查\",\n      \"result\": \"PASS\",\n      \"evidence\": \"未命中黑名单，最近24个月无逾期。\"\n    },\n    {\n      \"step\": 4,\n      \"name\": \"其他风险因素检查\",\n      \"result\": \"PASS\",\n      \"evidence\": \"就业36个月，征信查询2次，未结清贷款1笔，未命中人工复核规则。\"\n    },\n    {\n      \"step\": 5,\n      \"name\": \"综合决策\",\n      \"result\": \"PASS\",\n      \"evidence\": \"未命中拒绝条件及人工复核条件，初审结果为PASS。\"\n    }\n  ],\n  \"risk_factors\": [],\n  \"missing_information\": [],\n  \"manual_review_required\": false,\n  \"summary\": \"申请资料完整，偿债压力正常，未发现严重征信或其他主要风险因素，初审通过。\"\n}",
+    "error": null
+  },
+  {
+    "id": "T02",
+    "scene": "高收入低负债客户",
+    "expected": "PASS",
+    "actual": "PASS",
+    "decision_correct": true,
+    "schema_ok": true,
+    "validation_errors": [],
+    "elapsed_seconds": 12.03,
+    "input": {
+      "applicant_id": "T02",
+      "monthly_income": 30000,
+      "employment_months": 72,
+      "existing_monthly_debt_payment": 3000,
+      "proposed_monthly_payment": 3000,
+      "overdue_count_24m": 0,
+      "max_overdue_days_24m": 0,
+      "credit_inquiries_6m": 1,
+      "existing_loan_count": 1,
+      "fraud_or_blacklist_hit": false
+    },
+    "output": {
+      "applicant_id": "T02",
+      "decision": "PASS",
+      "risk_level": "LOW",
+      "dti": 0.2,
+      "analysis_steps": [
+        {
+          "step": 1,
+          "name": "信息完整性与合法性检查",
+          "result": "PASS",
+          "evidence": "所有必填字段完整且合法，月收入大于0。"
+        },
+        {
+          "step": 2,
+          "name": "偿债能力分析",
+          "result": "PASS",
+          "evidence": "DTI=(3000+3000)/30000=0.2000，不高于0.40。"
+        },
+        {
+          "step": 3,
+          "name": "严重信用与欺诈风险检查",
+          "result": "PASS",
+          "evidence": "未命中黑名单，最近24个月无逾期。"
+        },
+        {
+          "step": 4,
+          "name": "其他风险因素检查",
+          "result": "PASS",
+          "evidence": "就业72个月，征信查询1次，未结清贷款1笔，未命中人工复核规则。"
+        },
+        {
+          "step": 5,
+          "name": "综合决策",
+          "result": "PASS",
+          "evidence": "未命中拒绝条件及人工复核条件，初审结果为PASS。"
+        }
+      ],
+      "risk_factors": [],
+      "missing_information": [],
+      "manual_review_required": false,
+      "summary": "申请资料完整，偿债压力正常，未发现严重征信或其他主要风险因素，初审通过。"
+    },
+    "raw_output": "{\n  \"applicant_id\": \"T02\",\n  \"decision\": \"PASS\",\n  \"risk_level\": \"LOW\",\n  \"dti\": 0.2,\n  \"analysis_steps\": [\n    {\n      \"step\": 1,\n      \"name\": \"信息完整性与合法性检查\",\n      \"result\": \"PASS\",\n      \"evidence\": \"所有必填字段完整且合法，月收入大于0。\"\n    },\n    {\n      \"step\": 2,\n      \"name\": \"偿债能力分析\",\n      \"result\": \"PASS\",\n      \"evidence\": \"DTI=(3000+3000)/30000=0.2000，不高于0.40。\"\n    },\n    {\n      \"step\": 3,\n      \"name\": \"严重信用与欺诈风险检查\",\n      \"result\": \"PASS\",\n      \"evidence\": \"未命中黑名单，最近24个月无逾期。\"\n    },\n    {\n      \"step\": 4,\n      \"name\": \"其他风险因素检查\",\n      \"result\": \"PASS\",\n      \"evidence\": \"就业72个月，征信查询1次，未结清贷款1笔，未命中人工复核规则。\"\n    },\n    {\n      \"step\": 5,\n      \"name\": \"综合决策\",\n      \"result\": \"PASS\",\n      \"evidence\": \"未命中拒绝条件及人工复核条件，初审结果为PASS。\"\n    }\n  ],\n  \"risk_factors\": [],\n  \"missing_information\": [],\n  \"manual_review_required\": false,\n  \"summary\": \"申请资料完整，偿债压力正常，未发现严重征信或其他主要风险因素，初审通过。\"\n}",
+    "error": null
+  },
+  {
+    "id": "T03",
+    "scene": "DTI恰好40%",
+    "expected": "PASS",
+    "actual": "PASS",
+    "decision_correct": true,
+    "schema_ok": true,
+    "validation_errors": [],
+    "elapsed_seconds": 17.73,
+    "input": {
+      "applicant_id": "T03",
+      "monthly_income": 10000,
+      "employment_months": 24,
+      "existing_monthly_debt_payment": 2000,
+      "proposed_monthly_payment": 2000,
+      "overdue_count_24m": 0,
+      "max_overdue_days_24m": 0,
+      "credit_inquiries_6m": 2,
+      "existing_loan_count": 1,
+      "fraud_or_blacklist_hit": false
+    },
+    "output": {
+      "applicant_id": "T03",
+      "decision": "PASS",
+      "risk_level": "LOW",
+      "dti": 0.4,
+      "analysis_steps": [
+        {
+          "step": 1,
+          "name": "信息完整性与合法性检查",
+          "result": "PASS",
+          "evidence": "所有必填字段完整，数据合法。"
+        },
+        {
+          "step": 2,
+          "name": "偿债能力分析",
+          "result": "PASS",
+          "evidence": "DTI=(2000+2000)/10000=0.4000，不高于0.40。"
+        },
+        {
+          "step": 3,
+          "name": "严重信用与欺诈风险检查",
+          "result": "PASS",
+          "evidence": "未命中黑名单，最近24个月无逾期。"
+        },
+        {
+          "step": 4,
+          "name": "其他风险因素检查",
+          "result": "PASS",
+          "evidence": "就业24个月，征信查询2次，未结清贷款1笔，未命中人工复核规则。"
+        },
+        {
+          "step": 5,
+          "name": "综合决策",
+          "result": "PASS",
+          "evidence": "未命中拒绝条件及人工复核条件，初审结果为PASS。"
+        }
+      ],
+      "risk_factors": [],
+      "missing_information": [],
+      "manual_review_required": false,
+      "summary": "申请资料完整，偿债压力正常，未发现严重征信或其他主要风险因素，初审通过。"
+    },
+    "raw_output": "{\n  \"applicant_id\": \"T03\",\n  \"decision\": \"PASS\",\n  \"risk_level\": \"LOW\",\n  \"dti\": 0.4,\n  \"analysis_steps\": [\n    {\n      \"step\": 1,\n      \"name\": \"信息完整性与合法性检查\",\n      \"result\": \"PASS\",\n      \"evidence\": \"所有必填字段完整，数据合法。\"\n    },\n    {\n      \"step\": 2,\n      \"name\": \"偿债能力分析\",\n      \"result\": \"PASS\",\n      \"evidence\": \"DTI=(2000+2000)/10000=0.4000，不高于0.40。\"\n    },\n    {\n      \"step\": 3,\n      \"name\": \"严重信用与欺诈风险检查\",\n      \"result\": \"PASS\",\n      \"evidence\": \"未命中黑名单，最近24个月无逾期。\"\n    },\n    {\n      \"step\": 4,\n      \"name\": \"其他风险因素检查\",\n      \"result\": \"PASS\",\n      \"evidence\": \"就业24个月，征信查询2次，未结清贷款1笔，未命中人工复核规则。\"\n    },\n    {\n      \"step\": 5,\n      \"name\": \"综合决策\",\n      \"result\": \"PASS\",\n      \"evidence\": \"未命中拒绝条件及人工复核条件，初审结果为PASS。\"\n    }\n  ],\n  \"risk_factors\": [],\n  \"missing_information\": [],\n  \"manual_review_required\": false,\n  \"summary\": \"申请资料完整，偿债压力正常，未发现严重征信或其他主要风险因素，初审通过。\"\n}",
+    "error": null
+  },
+  {
+    "id": "T04",
+    "scene": "DTI略高于40%",
+    "expected": "MANUAL_REVIEW",
+    "actual": "MANUAL_REVIEW",
+    "decision_correct": true,
+    "schema_ok": true,
+    "validation_errors": [],
+    "elapsed_seconds": 12.34,
+    "input": {
+      "applicant_id": "T04",
+      "monthly_income": 10000,
+      "employment_months": 24,
+      "existing_monthly_debt_payment": 2000,
+      "proposed_monthly_payment": 2100,
+      "overdue_count_24m": 0,
+      "max_overdue_days_24m": 0,
+      "credit_inquiries_6m": 2,
+      "existing_loan_count": 1,
+      "fraud_or_blacklist_hit": false
+    },
+    "output": {
+      "applicant_id": "T04",
+      "decision": "MANUAL_REVIEW",
+      "risk_level": "MEDIUM",
+      "dti": 0.41,
+      "analysis_steps": [
+        {
+          "step": 1,
+          "name": "信息完整性与合法性检查",
+          "result": "PASS",
+          "evidence": "所有必填字段完整，数值合法，monthly_income大于0。"
+        },
+        {
+          "step": 2,
+          "name": "偿债能力分析",
+          "result": "RISK",
+          "evidence": "DTI=(2000+2100)/10000=0.4100，位于0.40-0.60区间，触发人工复核规则C1。"
+        },
+        {
+          "step": 3,
+          "name": "严重信用与欺诈风险检查",
+          "result": "PASS",
+          "evidence": "未命中欺诈黑名单，最近24个月无逾期，未触发直接拒绝规则。"
+        },
+        {
+          "step": 4,
+          "name": "其他风险因素检查",
+          "result": "PASS",
+          "evidence": "就业24个月，征信查询2次，未结清贷款1笔，均未触发人工复核规则。"
+        },
+        {
+          "step": 5,
+          "name": "综合决策",
+          "result": "RISK",
+          "evidence": "命中人工复核条件C1，未命中直接拒绝条件，依据决策优先级，初审结果为MANUAL_REVIEW。"
+        }
+      ],
+      "risk_factors": [
+        "DTI=0.41，偿债压力中等，触发人工复核"
+      ],
+      "missing_information": [],
+      "manual_review_required": true,
+      "summary": "申请资料完整，但综合月偿债率为0.41，处于中度偿债压力区间，需人工复核。"
+    },
+    "raw_output": "{\n  \"applicant_id\": \"T04\",\n  \"decision\": \"MANUAL_REVIEW\",\n  \"risk_level\": \"MEDIUM\",\n  \"dti\": 0.4100,\n  \"analysis_steps\": [\n    {\n      \"step\": 1,\n      \"name\": \"信息完整性与合法性检查\",\n      \"result\": \"PASS\",\n      \"evidence\": \"所有必填字段完整，数值合法，monthly_income大于0。\"\n    },\n    {\n      \"step\": 2,\n      \"name\": \"偿债能力分析\",\n      \"result\": \"RISK\",\n      \"evidence\": \"DTI=(2000+2100)/10000=0.4100，位于0.40-0.60区间，触发人工复核规则C1。\"\n    },\n    {\n      \"step\": 3,\n      \"name\": \"严重信用与欺诈风险检查\",\n      \"result\": \"PASS\",\n      \"evidence\": \"未命中欺诈黑名单，最近24个月无逾期，未触发直接拒绝规则。\"\n    },\n    {\n      \"step\": 4,\n      \"name\": \"其他风险因素检查\",\n      \"result\": \"PASS\",\n      \"evidence\": \"就业24个月，征信查询2次，未结清贷款1笔，均未触发人工复核规则。\"\n    },\n    {\n      \"step\": 5,\n      \"name\": \"综合决策\",\n      \"result\": \"RISK\",\n      \"evidence\": \"命中人工复核条件C1，未命中直接拒绝条件，依据决策优先级，初审结果为MANUAL_REVIEW。\"\n    }\n  ],\n  \"risk_factors\": [\n    \"DTI=0.41，偿债压力中等，触发人工复核\"\n  ],\n  \"missing_information\": [],\n  \"manual_review_required\": true,\n  \"summary\": \"申请资料完整，但综合月偿债率为0.41，处于中度偿债压力区间，需人工复核。\"\n}",
+    "error": null
+  },
+  {
+    "id": "T05",
+    "scene": "DTI恰好60%",
+    "expected": "MANUAL_REVIEW",
+    "actual": "MANUAL_REVIEW",
+    "decision_correct": true,
+    "schema_ok": true,
+    "validation_errors": [],
+    "elapsed_seconds": 29.84,
+    "input": {
+      "applicant_id": "T05",
+      "monthly_income": 10000,
+      "employment_months": 24,
+      "existing_monthly_debt_payment": 3000,
+      "proposed_monthly_payment": 3000,
+      "overdue_count_24m": 0,
+      "max_overdue_days_24m": 0,
+      "credit_inquiries_6m": 2,
+      "existing_loan_count": 1,
+      "fraud_or_blacklist_hit": false
+    },
+    "output": {
+      "applicant_id": "T05",
+      "decision": "MANUAL_REVIEW",
+      "risk_level": "MEDIUM",
+      "dti": 0.6,
+      "analysis_steps": [
+        {
+          "step": 1,
+          "name": "信息完整性与合法性检查",
+          "result": "PASS",
+          "evidence": "所有必填字段完整，数据合法。"
+        },
+        {
+          "step": 2,
+          "name": "偿债能力分析",
+          "result": "RISK",
+          "evidence": "DTI=(3000+3000)/10000=0.6000，恰好等于0.60，位于0.40-0.60区间内，存在中度偿债压力。"
+        },
+        {
+          "step": 3,
+          "name": "严重信用与欺诈风险检查",
+          "result": "PASS",
+          "evidence": "未命中黑名单，最近24个月无逾期，未触发直接拒绝条件。"
+        },
+        {
+          "step": 4,
+          "name": "其他风险因素检查",
+          "result": "PASS",
+          "evidence": "就业24个月，征信查询2次，未结清贷款1笔，均未触发人工复核条件。"
+        },
+        {
+          "step": 5,
+          "name": "综合决策",
+          "result": "RISK",
+          "evidence": "DTI=0.60命中人工复核规则C1，未命中拒绝条件，根据决策优先级，初审结果为MANUAL_REVIEW。"
+        }
+      ],
+      "risk_factors": [
+        "综合月偿债率DTI达到0.60，存在中度偿债压力"
+      ],
+      "missing_information": [],
+      "manual_review_required": true,
+      "summary": "申请资料完整，但综合月偿债率DTI为0.60，恰好达到人工复核阈值，需人工进一步审核偿债能力。"
+    },
+    "raw_output": "{\n  \"applicant_id\": \"T05\",\n  \"decision\": \"MANUAL_REVIEW\",\n  \"risk_level\": \"MEDIUM\",\n  \"dti\": 0.6000,\n  \"analysis_steps\": [\n    {\n      \"step\": 1,\n      \"name\": \"信息完整性与合法性检查\",\n      \"result\": \"PASS\",\n      \"evidence\": \"所有必填字段完整，数据合法。\"\n    },\n    {\n      \"step\": 2,\n      \"name\": \"偿债能力分析\",\n      \"result\": \"RISK\",\n      \"evidence\": \"DTI=(3000+3000)/10000=0.6000，恰好等于0.60，位于0.40-0.60区间内，存在中度偿债压力。\"\n    },\n    {\n      \"step\": 3,\n      \"name\": \"严重信用与欺诈风险检查\",\n      \"result\": \"PASS\",\n      \"evidence\": \"未命中黑名单，最近24个月无逾期，未触发直接拒绝条件。\"\n    },\n    {\n      \"step\": 4,\n      \"name\": \"其他风险因素检查\",\n      \"result\": \"PASS\",\n      \"evidence\": \"就业24个月，征信查询2次，未结清贷款1笔，均未触发人工复核条件。\"\n    },\n    {\n      \"step\": 5,\n      \"name\": \"综合决策\",\n      \"result\": \"RISK\",\n      \"evidence\": \"DTI=0.60命中人工复核规则C1，未命中拒绝条件，根据决策优先级，初审结果为MANUAL_REVIEW。\"\n    }\n  ],\n  \"risk_factors\": [\n    \"综合月偿债率DTI达到0.60，存在中度偿债压力\"\n  ],\n  \"missing_information\": [],\n  \"manual_review_required\": true,\n  \"summary\": \"申请资料完整，但综合月偿债率DTI为0.60，恰好达到人工复核阈值，需人工进一步审核偿债能力。\"\n}",
+    "error": null
+  },
+  {
+    "id": "T06",
+    "scene": "DTI高于60%",
+    "expected": "REJECT",
+    "actual": "REJECT",
+    "decision_correct": true,
+    "schema_ok": true,
+    "validation_errors": [],
+    "elapsed_seconds": 4.42,
+    "input": {
+      "applicant_id": "T06",
+      "monthly_income": 10000,
+      "employment_months": 24,
+      "existing_monthly_debt_payment": 3200,
+      "proposed_monthly_payment": 3000,
+      "overdue_count_24m": 0,
+      "max_overdue_days_24m": 0,
+      "credit_inquiries_6m": 2,
+      "existing_loan_count": 1,
+      "fraud_or_blacklist_hit": false
+    },
+    "output": {
+      "applicant_id": "T06",
+      "decision": "REJECT",
+      "risk_level": "HIGH",
+      "dti": 0.62,
+      "analysis_steps": [
+        {
+          "step": 1,
+          "name": "信息完整性与合法性检查",
+          "result": "PASS",
+          "evidence": "所有必填字段完整，数据合法。"
+        },
+        {
+          "step": 2,
+          "name": "偿债能力分析",
+          "result": "FAIL",
+          "evidence": "DTI=(3200+3000)/10000=0.6200，大于0.60，命中直接拒绝规则B4。"
+        },
+        {
+          "step": 3,
+          "name": "严重信用与欺诈风险检查",
+          "result": "PASS",
+          "evidence": "未命中黑名单，最近24个月无逾期。"
+        },
+        {
+          "step": 4,
+          "name": "其他风险因素检查",
+          "result": "NOT_APPLICABLE",
+          "evidence": "已命中更高优先级直接拒绝规则，其他因素不改变最终结论。"
+        },
+        {
+          "step": 5,
+          "name": "综合决策",
+          "result": "FAIL",
+          "evidence": "DTI大于0.60，命中直接拒绝条件，根据决策优先级，初审结果为REJECT。"
+        }
+      ],
+      "risk_factors": [
+        "综合月偿债率超过0.60"
+      ],
+      "missing_information": [],
+      "manual_review_required": false,
+      "summary": "综合月偿债率为0.62，超过0.60上限，直接拒绝申请。"
+    },
+    "raw_output": "{\n  \"applicant_id\": \"T06\",\n  \"decision\": \"REJECT\",\n  \"risk_level\": \"HIGH\",\n  \"dti\": 0.62,\n  \"analysis_steps\": [\n    {\n      \"step\": 1,\n      \"name\": \"信息完整性与合法性检查\",\n      \"result\": \"PASS\",\n      \"evidence\": \"所有必填字段完整，数据合法。\"\n    },\n    {\n      \"step\": 2,\n      \"name\": \"偿债能力分析\",\n      \"result\": \"FAIL\",\n      \"evidence\": \"DTI=(3200+3000)/10000=0.6200，大于0.60，命中直接拒绝规则B4。\"\n    },\n    {\n      \"step\": 3,\n      \"name\": \"严重信用与欺诈风险检查\",\n      \"result\": \"PASS\",\n      \"evidence\": \"未命中黑名单，最近24个月无逾期。\"\n    },\n    {\n      \"step\": 4,\n      \"name\": \"其他风险因素检查\",\n      \"result\": \"NOT_APPLICABLE\",\n      \"evidence\": \"已命中更高优先级直接拒绝规则，其他因素不改变最终结论。\"\n    },\n    {\n      \"step\": 5,\n      \"name\": \"综合决策\",\n      \"result\": \"FAIL\",\n      \"evidence\": \"DTI大于0.60，命中直接拒绝条件，根据决策优先级，初审结果为REJECT。\"\n    }\n  ],\n  \"risk_factors\": [\n    \"综合月偿债率超过0.60\"\n  ],\n  \"missing_information\": [],\n  \"manual_review_required\": false,\n  \"summary\": \"综合月偿债率为0.62，超过0.60上限，直接拒绝申请。\"\n}",
+    "error": null
+  },
+  {
+    "id": "T07",
+    "scene": "最近24个月逾期1次",
+    "expected": "PASS",
+    "actual": "PASS",
+    "decision_correct": true,
+    "schema_ok": true,
+    "validation_errors": [],
+    "elapsed_seconds": 10.37,
+    "input": {
+      "applicant_id": "T07",
+      "monthly_income": 15000,
+      "employment_months": 36,
+      "existing_monthly_debt_payment": 1500,
+      "proposed_monthly_payment": 2500,
+      "overdue_count_24m": 1,
+      "max_overdue_days_24m": 10,
+      "credit_inquiries_6m": 2,
+      "existing_loan_count": 1,
+      "fraud_or_blacklist_hit": false
+    },
+    "output": {
+      "applicant_id": "T07",
+      "decision": "PASS",
+      "risk_level": "LOW",
+      "dti": 0.2667,
+      "analysis_steps": [
+        {
+          "step": 1,
+          "name": "信息完整性与合法性检查",
+          "result": "PASS",
+          "evidence": "所有必填字段完整，数据合法。"
+        },
+        {
+          "step": 2,
+          "name": "偿债能力分析",
+          "result": "PASS",
+          "evidence": "DTI=(1500+2500)/15000=0.2667，不高于0.40。"
+        },
+        {
+          "step": 3,
+          "name": "严重信用与欺诈风险检查",
+          "result": "PASS",
+          "evidence": "未命中黑名单，最长逾期天数10天，逾期次数1，未触发严重风险规则。"
+        },
+        {
+          "step": 4,
+          "name": "其他风险因素检查",
+          "result": "PASS",
+          "evidence": "就业36个月，征信查询2次，未结清贷款1笔，未命中人工复核规则。"
+        },
+        {
+          "step": 5,
+          "name": "综合决策",
+          "result": "PASS",
+          "evidence": "未命中拒绝条件及人工复核条件，初审结果为PASS。"
+        }
+      ],
+      "risk_factors": [],
+      "missing_information": [],
+      "manual_review_required": false,
+      "summary": "申请资料完整，偿债压力正常，未发现严重征信或其他主要风险因素，初审通过。"
+    },
+    "raw_output": "{\n  \"applicant_id\": \"T07\",\n  \"decision\": \"PASS\",\n  \"risk_level\": \"LOW\",\n  \"dti\": 0.2667,\n  \"analysis_steps\": [\n    {\n      \"step\": 1,\n      \"name\": \"信息完整性与合法性检查\",\n      \"result\": \"PASS\",\n      \"evidence\": \"所有必填字段完整，数据合法。\"\n    },\n    {\n      \"step\": 2,\n      \"name\": \"偿债能力分析\",\n      \"result\": \"PASS\",\n      \"evidence\": \"DTI=(1500+2500)/15000=0.2667，不高于0.40。\"\n    },\n    {\n      \"step\": 3,\n      \"name\": \"严重信用与欺诈风险检查\",\n      \"result\": \"PASS\",\n      \"evidence\": \"未命中黑名单，最长逾期天数10天，逾期次数1，未触发严重风险规则。\"\n    },\n    {\n      \"step\": 4,\n      \"name\": \"其他风险因素检查\",\n      \"result\": \"PASS\",\n      \"evidence\": \"就业36个月，征信查询2次，未结清贷款1笔，未命中人工复核规则。\"\n    },\n    {\n      \"step\": 5,\n      \"name\": \"综合决策\",\n      \"result\": \"PASS\",\n      \"evidence\": \"未命中拒绝条件及人工复核条件，初审结果为PASS。\"\n    }\n  ],\n  \"risk_factors\": [],\n  \"missing_information\": [],\n  \"manual_review_required\": false,\n  \"summary\": \"申请资料完整，偿债压力正常，未发现严重征信或其他主要风险因素，初审通过。\"\n}",
+    "error": null
+  },
+  {
+    "id": "T08",
+    "scene": "最近24个月逾期2次",
+    "expected": "MANUAL_REVIEW",
+    "actual": "MANUAL_REVIEW",
+    "decision_correct": true,
+    "schema_ok": true,
+    "validation_errors": [],
+    "elapsed_seconds": 16.15,
+    "input": {
+      "applicant_id": "T08",
+      "monthly_income": 15000,
+      "employment_months": 36,
+      "existing_monthly_debt_payment": 1500,
+      "proposed_monthly_payment": 2500,
+      "overdue_count_24m": 2,
+      "max_overdue_days_24m": 15,
+      "credit_inquiries_6m": 2,
+      "existing_loan_count": 1,
+      "fraud_or_blacklist_hit": false
+    },
+    "output": {
+      "applicant_id": "T08",
+      "decision": "MANUAL_REVIEW",
+      "risk_level": "MEDIUM",
+      "dti": 0.2667,
+      "analysis_steps": [
+        {
+          "step": 1,
+          "name": "信息完整性与合法性检查",
+          "result": "PASS",
+          "evidence": "所有必填字段完整，数据合法。"
+        },
+        {
+          "step": 2,
+          "name": "偿债能力分析",
+          "result": "PASS",
+          "evidence": "DTI=(1500+2500)/15000=0.2667，不高于0.40。"
+        },
+        {
+          "step": 3,
+          "name": "严重信用与欺诈风险检查",
+          "result": "PASS",
+          "evidence": "未命中黑名单，最近24个月无严重逾期（最长逾期15天，次数2次）。"
+        },
+        {
+          "step": 4,
+          "name": "其他风险因素检查",
+          "result": "RISK",
+          "evidence": "最近24个月逾期次数为2，命中人工复核规则C3。"
+        },
+        {
+          "step": 5,
+          "name": "综合决策",
+          "result": "RISK",
+          "evidence": "命中人工复核条件C3，根据决策优先级，初审结果为MANUAL_REVIEW。"
+        }
+      ],
+      "risk_factors": [
+        "最近24个月出现2次逾期"
+      ],
+      "missing_information": [],
+      "manual_review_required": true,
+      "summary": "申请资料完整，偿债压力正常，但最近24个月有2次逾期记录，需人工复核进一步评估。"
+    },
+    "raw_output": "{\n  \"applicant_id\": \"T08\",\n  \"decision\": \"MANUAL_REVIEW\",\n  \"risk_level\": \"MEDIUM\",\n  \"dti\": 0.2667,\n  \"analysis_steps\": [\n    {\n      \"step\": 1,\n      \"name\": \"信息完整性与合法性检查\",\n      \"result\": \"PASS\",\n      \"evidence\": \"所有必填字段完整，数据合法。\"\n    },\n    {\n      \"step\": 2,\n      \"name\": \"偿债能力分析\",\n      \"result\": \"PASS\",\n      \"evidence\": \"DTI=(1500+2500)/15000=0.2667，不高于0.40。\"\n    },\n    {\n      \"step\": 3,\n      \"name\": \"严重信用与欺诈风险检查\",\n      \"result\": \"PASS\",\n      \"evidence\": \"未命中黑名单，最近24个月无严重逾期（最长逾期15天，次数2次）。\"\n    },\n    {\n      \"step\": 4,\n      \"name\": \"其他风险因素检查\",\n      \"result\": \"RISK\",\n      \"evidence\": \"最近24个月逾期次数为2，命中人工复核规则C3。\"\n    },\n    {\n      \"step\": 5,\n      \"name\": \"综合决策\",\n      \"result\": \"RISK\",\n      \"evidence\": \"命中人工复核条件C3，根据决策优先级，初审结果为MANUAL_REVIEW。\"\n    }\n  ],\n  \"risk_factors\": [\n    \"最近24个月出现2次逾期\"\n  ],\n  \"missing_information\": [],\n  \"manual_review_required\": true,\n  \"summary\": \"申请资料完整，偿债压力正常，但最近24个月有2次逾期记录，需人工复核进一步评估。\"\n}",
+    "error": null
+  },
+  {
+    "id": "T09",
+    "scene": "最近24个月逾期4次",
+    "expected": "REJECT",
+    "actual": "REJECT",
+    "decision_correct": true,
+    "schema_ok": true,
+    "validation_errors": [],
+    "elapsed_seconds": 10.97,
+    "input": {
+      "applicant_id": "T09",
+      "monthly_income": 15000,
+      "employment_months": 36,
+      "existing_monthly_debt_payment": 1500,
+      "proposed_monthly_payment": 2500,
+      "overdue_count_24m": 4,
+      "max_overdue_days_24m": 20,
+      "credit_inquiries_6m": 2,
+      "existing_loan_count": 1,
+      "fraud_or_blacklist_hit": false
+    },
+    "output": {
+      "applicant_id": "T09",
+      "decision": "REJECT",
+      "risk_level": "HIGH",
+      "dti": 0.2667,
+      "analysis_steps": [
+        {
+          "step": 1,
+          "name": "信息完整性与合法性检查",
+          "result": "PASS",
+          "evidence": "所有必填字段完整，数据合法。"
+        },
+        {
+          "step": 2,
+          "name": "偿债能力分析",
+          "result": "PASS",
+          "evidence": "DTI=(1500+2500)/15000=0.2667，不高于0.40。"
+        },
+        {
+          "step": 3,
+          "name": "严重信用与欺诈风险检查",
+          "result": "FAIL",
+          "evidence": "overdue_count_24m=4，命中直接拒绝规则B3。"
+        },
+        {
+          "step": 4,
+          "name": "其他风险因素检查",
+          "result": "NOT_APPLICABLE",
+          "evidence": "已命中更高优先级直接拒绝规则，其他因素不改变最终结论。"
+        },
+        {
+          "step": 5,
+          "name": "综合决策",
+          "result": "FAIL",
+          "evidence": "命中直接拒绝条件，根据决策优先级，初审结果为REJECT。"
+        }
+      ],
+      "risk_factors": [
+        "最近24个月逾期次数>=4"
+      ],
+      "missing_information": [],
+      "manual_review_required": false,
+      "summary": "申请最近24个月逾期次数为4次，命中直接拒绝规则，初审拒绝。"
+    },
+    "raw_output": "{\n  \"applicant_id\": \"T09\",\n  \"decision\": \"REJECT\",\n  \"risk_level\": \"HIGH\",\n  \"dti\": 0.2667,\n  \"analysis_steps\": [\n    {\n      \"step\": 1,\n      \"name\": \"信息完整性与合法性检查\",\n      \"result\": \"PASS\",\n      \"evidence\": \"所有必填字段完整，数据合法。\"\n    },\n    {\n      \"step\": 2,\n      \"name\": \"偿债能力分析\",\n      \"result\": \"PASS\",\n      \"evidence\": \"DTI=(1500+2500)/15000=0.2667，不高于0.40。\"\n    },\n    {\n      \"step\": 3,\n      \"name\": \"严重信用与欺诈风险检查\",\n      \"result\": \"FAIL\",\n      \"evidence\": \"overdue_count_24m=4，命中直接拒绝规则B3。\"\n    },\n    {\n      \"step\": 4,\n      \"name\": \"其他风险因素检查\",\n      \"result\": \"NOT_APPLICABLE\",\n      \"evidence\": \"已命中更高优先级直接拒绝规则，其他因素不改变最终结论。\"\n    },\n    {\n      \"step\": 5,\n      \"name\": \"综合决策\",\n      \"result\": \"FAIL\",\n      \"evidence\": \"命中直接拒绝条件，根据决策优先级，初审结果为REJECT。\"\n    }\n  ],\n  \"risk_factors\": [\n    \"最近24个月逾期次数>=4\"\n  ],\n  \"missing_information\": [],\n  \"manual_review_required\": false,\n  \"summary\": \"申请最近24个月逾期次数为4次，命中直接拒绝规则，初审拒绝。\"\n}",
+    "error": null
+  },
+  {
+    "id": "T10",
+    "scene": "最大逾期29天",
+    "expected": "PASS",
+    "actual": "PASS",
+    "decision_correct": true,
+    "schema_ok": true,
+    "validation_errors": [],
+    "elapsed_seconds": 29.31,
+    "input": {
+      "applicant_id": "T10",
+      "monthly_income": 16000,
+      "employment_months": 36,
+      "existing_monthly_debt_payment": 1500,
+      "proposed_monthly_payment": 2500,
+      "overdue_count_24m": 1,
+      "max_overdue_days_24m": 29,
+      "credit_inquiries_6m": 2,
+      "existing_loan_count": 1,
+      "fraud_or_blacklist_hit": false
+    },
+    "output": {
+      "applicant_id": "T10",
+      "decision": "PASS",
+      "risk_level": "LOW",
+      "dti": 0.25,
+      "analysis_steps": [
+        {
+          "step": 1,
+          "name": "信息完整性与合法性检查",
+          "result": "PASS",
+          "evidence": "所有必填字段完整，数据合法，月收入大于0。"
+        },
+        {
+          "step": 2,
+          "name": "偿债能力分析",
+          "result": "PASS",
+          "evidence": "DTI=(1500+2500)/16000=0.2500，不高于0.40。"
+        },
+        {
+          "step": 3,
+          "name": "严重信用与欺诈风险检查",
+          "result": "PASS",
+          "evidence": "未命中黑名单，最大逾期天数29天小于90，逾期次数1次小于4。"
+        },
+        {
+          "step": 4,
+          "name": "其他风险因素检查",
+          "result": "PASS",
+          "evidence": "就业36个月，征信查询2次，未结清贷款1笔，未命中人工复核规则。"
+        },
+        {
+          "step": 5,
+          "name": "综合决策",
+          "result": "PASS",
+          "evidence": "未命中拒绝条件及人工复核条件，初审结果为PASS。"
+        }
+      ],
+      "risk_factors": [],
+      "missing_information": [],
+      "manual_review_required": false,
+      "summary": "申请资料完整，偿债压力正常，未发现严重征信或其他主要风险因素，初审通过。"
+    },
+    "raw_output": "{\n  \"applicant_id\": \"T10\",\n  \"decision\": \"PASS\",\n  \"risk_level\": \"LOW\",\n  \"dti\": 0.2500,\n  \"analysis_steps\": [\n    {\n      \"step\": 1,\n      \"name\": \"信息完整性与合法性检查\",\n      \"result\": \"PASS\",\n      \"evidence\": \"所有必填字段完整，数据合法，月收入大于0。\"\n    },\n    {\n      \"step\": 2,\n      \"name\": \"偿债能力分析\",\n      \"result\": \"PASS\",\n      \"evidence\": \"DTI=(1500+2500)/16000=0.2500，不高于0.40。\"\n    },\n    {\n      \"step\": 3,\n      \"name\": \"严重信用与欺诈风险检查\",\n      \"result\": \"PASS\",\n      \"evidence\": \"未命中黑名单，最大逾期天数29天小于90，逾期次数1次小于4。\"\n    },\n    {\n      \"step\": 4,\n      \"name\": \"其他风险因素检查\",\n      \"result\": \"PASS\",\n      \"evidence\": \"就业36个月，征信查询2次，未结清贷款1笔，未命中人工复核规则。\"\n    },\n    {\n      \"step\": 5,\n      \"name\": \"综合决策\",\n      \"result\": \"PASS\",\n      \"evidence\": \"未命中拒绝条件及人工复核条件，初审结果为PASS。\"\n    }\n  ],\n  \"risk_factors\": [],\n  \"missing_information\": [],\n  \"manual_review_required\": false,\n  \"summary\": \"申请资料完整，偿债压力正常，未发现严重征信或其他主要风险因素，初审通过。\"\n}",
+    "error": null
+  },
+  {
+    "id": "T11",
+    "scene": "最大逾期30天",
+    "expected": "MANUAL_REVIEW",
+    "actual": "MANUAL_REVIEW",
+    "decision_correct": true,
+    "schema_ok": true,
+    "validation_errors": [],
+    "elapsed_seconds": 5.8,
+    "input": {
+      "applicant_id": "T11",
+      "monthly_income": 16000,
+      "employment_months": 36,
+      "existing_monthly_debt_payment": 1500,
+      "proposed_monthly_payment": 2500,
+      "overdue_count_24m": 1,
+      "max_overdue_days_24m": 30,
+      "credit_inquiries_6m": 2,
+      "existing_loan_count": 1,
+      "fraud_or_blacklist_hit": false
+    },
+    "output": {
+      "applicant_id": "T11",
+      "decision": "MANUAL_REVIEW",
+      "risk_level": "MEDIUM",
+      "dti": 0.25,
+      "analysis_steps": [
+        {
+          "step": 1,
+          "name": "信息完整性与合法性检查",
+          "result": "PASS",
+          "evidence": "所有必填字段完整，数据合法。"
+        },
+        {
+          "step": 2,
+          "name": "偿债能力分析",
+          "result": "PASS",
+          "evidence": "DTI=(1500+2500)/16000=0.25，不高于0.40。"
+        },
+        {
+          "step": 3,
+          "name": "严重信用与欺诈风险检查",
+          "result": "PASS",
+          "evidence": "未命中黑名单，最近24个月逾期次数1次，最大逾期30天，均未达到直接拒绝标准。"
+        },
+        {
+          "step": 4,
+          "name": "其他风险因素检查",
+          "result": "RISK",
+          "evidence": "max_overdue_days_24m=30，命中人工复核规则C4（30<=最大逾期天数<90）。"
+        },
+        {
+          "step": 5,
+          "name": "综合决策",
+          "result": "RISK",
+          "evidence": "未命中拒绝条件，但命中人工复核条件C4，根据决策优先级，初审结果为MANUAL_REVIEW。"
+        }
+      ],
+      "risk_factors": [
+        "最近24个月最大逾期天数达到30天"
+      ],
+      "missing_information": [],
+      "manual_review_required": true,
+      "summary": "申请资料完整，偿债压力正常，但最近24个月存在30天逾期记录，符合人工复核条件，需转人工进一步审核。"
+    },
+    "raw_output": "{\n  \"applicant_id\": \"T11\",\n  \"decision\": \"MANUAL_REVIEW\",\n  \"risk_level\": \"MEDIUM\",\n  \"dti\": 0.25,\n  \"analysis_steps\": [\n    {\n      \"step\": 1,\n      \"name\": \"信息完整性与合法性检查\",\n      \"result\": \"PASS\",\n      \"evidence\": \"所有必填字段完整，数据合法。\"\n    },\n    {\n      \"step\": 2,\n      \"name\": \"偿债能力分析\",\n      \"result\": \"PASS\",\n      \"evidence\": \"DTI=(1500+2500)/16000=0.25，不高于0.40。\"\n    },\n    {\n      \"step\": 3,\n      \"name\": \"严重信用与欺诈风险检查\",\n      \"result\": \"PASS\",\n      \"evidence\": \"未命中黑名单，最近24个月逾期次数1次，最大逾期30天，均未达到直接拒绝标准。\"\n    },\n    {\n      \"step\": 4,\n      \"name\": \"其他风险因素检查\",\n      \"result\": \"RISK\",\n      \"evidence\": \"max_overdue_days_24m=30，命中人工复核规则C4（30<=最大逾期天数<90）。\"\n    },\n    {\n      \"step\": 5,\n      \"name\": \"综合决策\",\n      \"result\": \"RISK\",\n      \"evidence\": \"未命中拒绝条件，但命中人工复核条件C4，根据决策优先级，初审结果为MANUAL_REVIEW。\"\n    }\n  ],\n  \"risk_factors\": [\n    \"最近24个月最大逾期天数达到30天\"\n  ],\n  \"missing_information\": [],\n  \"manual_review_required\": true,\n  \"summary\": \"申请资料完整，偿债压力正常，但最近24个月存在30天逾期记录，符合人工复核条件，需转人工进一步审核。\"\n}",
+    "error": null
+  },
+  {
+    "id": "T12",
+    "scene": "最大逾期90天",
+    "expected": "REJECT",
+    "actual": "REJECT",
+    "decision_correct": true,
+    "schema_ok": true,
+    "validation_errors": [],
+    "elapsed_seconds": 25.81,
+    "input": {
+      "applicant_id": "T12",
+      "monthly_income": 16000,
+      "employment_months": 36,
+      "existing_monthly_debt_payment": 1500,
+      "proposed_monthly_payment": 2500,
+      "overdue_count_24m": 1,
+      "max_overdue_days_24m": 90,
+      "credit_inquiries_6m": 2,
+      "existing_loan_count": 1,
+      "fraud_or_blacklist_hit": false
+    },
+    "output": {
+      "applicant_id": "T12",
+      "decision": "REJECT",
+      "risk_level": "HIGH",
+      "dti": 0.25,
+      "analysis_steps": [
+        {
+          "step": 1,
+          "name": "信息完整性与合法性检查",
+          "result": "PASS",
+          "evidence": "所有必填字段完整，数据合法。"
+        },
+        {
+          "step": 2,
+          "name": "偿债能力分析",
+          "result": "PASS",
+          "evidence": "DTI=(1500+2500)/16000=0.2500，不高于0.40。"
+        },
+        {
+          "step": 3,
+          "name": "严重信用与欺诈风险检查",
+          "result": "FAIL",
+          "evidence": "max_overdue_days_24m=90，命中直接拒绝规则B2。"
+        },
+        {
+          "step": 4,
+          "name": "其他风险因素检查",
+          "result": "NOT_APPLICABLE",
+          "evidence": "已命中更高优先级直接拒绝规则，其他因素不改变最终结论。"
+        },
+        {
+          "step": 5,
+          "name": "综合决策",
+          "result": "FAIL",
+          "evidence": "命中直接拒绝条件，根据决策优先级，初审结果为REJECT。"
+        }
+      ],
+      "risk_factors": [
+        "最近24个月最严重逾期天数达到90天，命中直接拒绝规则"
+      ],
+      "missing_information": [],
+      "manual_review_required": false,
+      "summary": "申请命中严重逾期直接拒绝条件，依据直接拒绝规则，初审拒绝。"
+    },
+    "raw_output": "{\n  \"applicant_id\": \"T12\",\n  \"decision\": \"REJECT\",\n  \"risk_level\": \"HIGH\",\n  \"dti\": 0.25,\n  \"analysis_steps\": [\n    {\n      \"step\": 1,\n      \"name\": \"信息完整性与合法性检查\",\n      \"result\": \"PASS\",\n      \"evidence\": \"所有必填字段完整，数据合法。\"\n    },\n    {\n      \"step\": 2,\n      \"name\": \"偿债能力分析\",\n      \"result\": \"PASS\",\n      \"evidence\": \"DTI=(1500+2500)/16000=0.2500，不高于0.40。\"\n    },\n    {\n      \"step\": 3,\n      \"name\": \"严重信用与欺诈风险检查\",\n      \"result\": \"FAIL\",\n      \"evidence\": \"max_overdue_days_24m=90，命中直接拒绝规则B2。\"\n    },\n    {\n      \"step\": 4,\n      \"name\": \"其他风险因素检查\",\n      \"result\": \"NOT_APPLICABLE\",\n      \"evidence\": \"已命中更高优先级直接拒绝规则，其他因素不改变最终结论。\"\n    },\n    {\n      \"step\": 5,\n      \"name\": \"综合决策\",\n      \"result\": \"FAIL\",\n      \"evidence\": \"命中直接拒绝条件，根据决策优先级，初审结果为REJECT。\"\n    }\n  ],\n  \"risk_factors\": [\n    \"最近24个月最严重逾期天数达到90天，命中直接拒绝规则\"\n  ],\n  \"missing_information\": [],\n  \"manual_review_required\": false,\n  \"summary\": \"申请命中严重逾期直接拒绝条件，依据直接拒绝规则，初审拒绝。\"\n}",
+    "error": null
+  },
+  {
+    "id": "T13",
+    "scene": "近6个月征信查询5次",
+    "expected": "PASS",
+    "actual": "PASS",
+    "decision_correct": true,
+    "schema_ok": true,
+    "validation_errors": [],
+    "elapsed_seconds": 19.89,
+    "input": {
+      "applicant_id": "T13",
+      "monthly_income": 16000,
+      "employment_months": 36,
+      "existing_monthly_debt_payment": 1500,
+      "proposed_monthly_payment": 2500,
+      "overdue_count_24m": 0,
+      "max_overdue_days_24m": 0,
+      "credit_inquiries_6m": 5,
+      "existing_loan_count": 1,
+      "fraud_or_blacklist_hit": false
+    },
+    "output": {
+      "applicant_id": "T13",
+      "decision": "PASS",
+      "risk_level": "LOW",
+      "dti": 0.25,
+      "analysis_steps": [
+        {
+          "step": 1,
+          "name": "信息完整性与合法性检查",
+          "result": "PASS",
+          "evidence": "所有必填字段完整，数据合法，月收入大于0。"
+        },
+        {
+          "step": 2,
+          "name": "偿债能力分析",
+          "result": "PASS",
+          "evidence": "DTI=(1500+2500)/16000=0.25，不高于0.40。"
+        },
+        {
+          "step": 3,
+          "name": "严重信用与欺诈风险检查",
+          "result": "PASS",
+          "evidence": "未命中黑名单，最近24个月无逾期。"
+        },
+        {
+          "step": 4,
+          "name": "其他风险因素检查",
+          "result": "PASS",
+          "evidence": "就业36个月，征信查询5次，未结清贷款1笔，未命中人工复核规则。"
+        },
+        {
+          "step": 5,
+          "name": "综合决策",
+          "result": "PASS",
+          "evidence": "未命中拒绝条件及人工复核条件，初审结果为PASS。"
+        }
+      ],
+      "risk_factors": [],
+      "missing_information": [],
+      "manual_review_required": false,
+      "summary": "申请资料完整，偿债压力正常，未发现严重征信或其他主要风险因素，初审通过。"
+    },
+    "raw_output": "{\n  \"applicant_id\": \"T13\",\n  \"decision\": \"PASS\",\n  \"risk_level\": \"LOW\",\n  \"dti\": 0.25,\n  \"analysis_steps\": [\n    {\n      \"step\": 1,\n      \"name\": \"信息完整性与合法性检查\",\n      \"result\": \"PASS\",\n      \"evidence\": \"所有必填字段完整，数据合法，月收入大于0。\"\n    },\n    {\n      \"step\": 2,\n      \"name\": \"偿债能力分析\",\n      \"result\": \"PASS\",\n      \"evidence\": \"DTI=(1500+2500)/16000=0.25，不高于0.40。\"\n    },\n    {\n      \"step\": 3,\n      \"name\": \"严重信用与欺诈风险检查\",\n      \"result\": \"PASS\",\n      \"evidence\": \"未命中黑名单，最近24个月无逾期。\"\n    },\n    {\n      \"step\": 4,\n      \"name\": \"其他风险因素检查\",\n      \"result\": \"PASS\",\n      \"evidence\": \"就业36个月，征信查询5次，未结清贷款1笔，未命中人工复核规则。\"\n    },\n    {\n      \"step\": 5,\n      \"name\": \"综合决策\",\n      \"result\": \"PASS\",\n      \"evidence\": \"未命中拒绝条件及人工复核条件，初审结果为PASS。\"\n    }\n  ],\n  \"risk_factors\": [],\n  \"missing_information\": [],\n  \"manual_review_required\": false,\n  \"summary\": \"申请资料完整，偿债压力正常，未发现严重征信或其他主要风险因素，初审通过。\"\n}",
+    "error": null
+  },
+  {
+    "id": "T14",
+    "scene": "近6个月征信查询6次",
+    "expected": "MANUAL_REVIEW",
+    "actual": "MANUAL_REVIEW",
+    "decision_correct": true,
+    "schema_ok": true,
+    "validation_errors": [],
+    "elapsed_seconds": 29.44,
+    "input": {
+      "applicant_id": "T14",
+      "monthly_income": 16000,
+      "employment_months": 36,
+      "existing_monthly_debt_payment": 1500,
+      "proposed_monthly_payment": 2500,
+      "overdue_count_24m": 0,
+      "max_overdue_days_24m": 0,
+      "credit_inquiries_6m": 6,
+      "existing_loan_count": 1,
+      "fraud_or_blacklist_hit": false
+    },
+    "output": {
+      "applicant_id": "T14",
+      "decision": "MANUAL_REVIEW",
+      "risk_level": "MEDIUM",
+      "dti": 0.25,
+      "analysis_steps": [
+        {
+          "step": 1,
+          "name": "信息完整性与合法性检查",
+          "result": "PASS",
+          "evidence": "所有必填字段完整，数据合法，月收入大于0。"
+        },
+        {
+          "step": 2,
+          "name": "偿债能力分析",
+          "result": "PASS",
+          "evidence": "DTI=(1500+2500)/16000=0.2500，不高于0.40。"
+        },
+        {
+          "step": 3,
+          "name": "严重信用与欺诈风险检查",
+          "result": "PASS",
+          "evidence": "未命中黑名单，最近24个月无逾期。"
+        },
+        {
+          "step": 4,
+          "name": "其他风险因素检查",
+          "result": "RISK",
+          "evidence": "credit_inquiries_6m=6，达到人工复核阈值C5（>=6）。"
+        },
+        {
+          "step": 5,
+          "name": "综合决策",
+          "result": "RISK",
+          "evidence": "未命中拒绝条件，但命中人工复核条件，决策为MANUAL_REVIEW。"
+        }
+      ],
+      "risk_factors": [
+        "最近6个月征信查询次数达到6次"
+      ],
+      "missing_information": [],
+      "manual_review_required": true,
+      "summary": "申请资料完整，偿债压力正常，无严重信用或欺诈风险，但最近6个月征信查询次数达6次，触发人工复核条件，转入人工复核。"
+    },
+    "raw_output": "{\n  \"applicant_id\": \"T14\",\n  \"decision\": \"MANUAL_REVIEW\",\n  \"risk_level\": \"MEDIUM\",\n  \"dti\": 0.25,\n  \"analysis_steps\": [\n    {\n      \"step\": 1,\n      \"name\": \"信息完整性与合法性检查\",\n      \"result\": \"PASS\",\n      \"evidence\": \"所有必填字段完整，数据合法，月收入大于0。\"\n    },\n    {\n      \"step\": 2,\n      \"name\": \"偿债能力分析\",\n      \"result\": \"PASS\",\n      \"evidence\": \"DTI=(1500+2500)/16000=0.2500，不高于0.40。\"\n    },\n    {\n      \"step\": 3,\n      \"name\": \"严重信用与欺诈风险检查\",\n      \"result\": \"PASS\",\n      \"evidence\": \"未命中黑名单，最近24个月无逾期。\"\n    },\n    {\n      \"step\": 4,\n      \"name\": \"其他风险因素检查\",\n      \"result\": \"RISK\",\n      \"evidence\": \"credit_inquiries_6m=6，达到人工复核阈值C5（>=6）。\"\n    },\n    {\n      \"step\": 5,\n      \"name\": \"综合决策\",\n      \"result\": \"RISK\",\n      \"evidence\": \"未命中拒绝条件，但命中人工复核条件，决策为MANUAL_REVIEW。\"\n    }\n  ],\n  \"risk_factors\": [\n    \"最近6个月征信查询次数达到6次\"\n  ],\n  \"missing_information\": [],\n  \"manual_review_required\": true,\n  \"summary\": \"申请资料完整，偿债压力正常，无严重信用或欺诈风险，但最近6个月征信查询次数达6次，触发人工复核条件，转入人工复核。\"\n}",
+    "error": null
+  },
+  {
+    "id": "T15",
+    "scene": "当前未结清贷款3笔",
+    "expected": "PASS",
+    "actual": "PASS",
+    "decision_correct": true,
+    "schema_ok": true,
+    "validation_errors": [],
+    "elapsed_seconds": 11.56,
+    "input": {
+      "applicant_id": "T15",
+      "monthly_income": 18000,
+      "employment_months": 48,
+      "existing_monthly_debt_payment": 2500,
+      "proposed_monthly_payment": 2500,
+      "overdue_count_24m": 0,
+      "max_overdue_days_24m": 0,
+      "credit_inquiries_6m": 2,
+      "existing_loan_count": 3,
+      "fraud_or_blacklist_hit": false
+    },
+    "output": {
+      "applicant_id": "T15",
+      "decision": "PASS",
+      "risk_level": "LOW",
+      "dti": 0.2778,
+      "analysis_steps": [
+        {
+          "step": 1,
+          "name": "信息完整性与合法性检查",
+          "result": "PASS",
+          "evidence": "所有必填字段完整且合法，收入大于0。"
+        },
+        {
+          "step": 2,
+          "name": "偿债能力分析",
+          "result": "PASS",
+          "evidence": "DTI=(2500+2500)/18000=0.2778，不高于0.40。"
+        },
+        {
+          "step": 3,
+          "name": "严重信用与欺诈风险检查",
+          "result": "PASS",
+          "evidence": "未命中黑名单，最近24个月无逾期。"
+        },
+        {
+          "step": 4,
+          "name": "其他风险因素检查",
+          "result": "PASS",
+          "evidence": "就业48个月，征信查询2次，未结清贷款3笔，未命中人工复核规则。"
+        },
+        {
+          "step": 5,
+          "name": "综合决策",
+          "result": "PASS",
+          "evidence": "未命中拒绝条件及人工复核条件，初审结果为PASS。"
+        }
+      ],
+      "risk_factors": [],
+      "missing_information": [],
+      "manual_review_required": false,
+      "summary": "申请资料完整，偿债压力正常，未发现严重征信或其他主要风险因素，初审通过。"
+    },
+    "raw_output": "{\n  \"applicant_id\": \"T15\",\n  \"decision\": \"PASS\",\n  \"risk_level\": \"LOW\",\n  \"dti\": 0.2778,\n  \"analysis_steps\": [\n    {\n      \"step\": 1,\n      \"name\": \"信息完整性与合法性检查\",\n      \"result\": \"PASS\",\n      \"evidence\": \"所有必填字段完整且合法，收入大于0。\"\n    },\n    {\n      \"step\": 2,\n      \"name\": \"偿债能力分析\",\n      \"result\": \"PASS\",\n      \"evidence\": \"DTI=(2500+2500)/18000=0.2778，不高于0.40。\"\n    },\n    {\n      \"step\": 3,\n      \"name\": \"严重信用与欺诈风险检查\",\n      \"result\": \"PASS\",\n      \"evidence\": \"未命中黑名单，最近24个月无逾期。\"\n    },\n    {\n      \"step\": 4,\n      \"name\": \"其他风险因素检查\",\n      \"result\": \"PASS\",\n      \"evidence\": \"就业48个月，征信查询2次，未结清贷款3笔，未命中人工复核规则。\"\n    },\n    {\n      \"step\": 5,\n      \"name\": \"综合决策\",\n      \"result\": \"PASS\",\n      \"evidence\": \"未命中拒绝条件及人工复核条件，初审结果为PASS。\"\n    }\n  ],\n  \"risk_factors\": [],\n  \"missing_information\": [],\n  \"manual_review_required\": false,\n  \"summary\": \"申请资料完整，偿债压力正常，未发现严重征信或其他主要风险因素，初审通过。\"\n}",
+    "error": null
+  },
+  {
+    "id": "T16",
+    "scene": "当前未结清贷款4笔",
+    "expected": "MANUAL_REVIEW",
+    "actual": "MANUAL_REVIEW",
+    "decision_correct": true,
+    "schema_ok": true,
+    "validation_errors": [],
+    "elapsed_seconds": 28.87,
+    "input": {
+      "applicant_id": "T16",
+      "monthly_income": 18000,
+      "employment_months": 48,
+      "existing_monthly_debt_payment": 2500,
+      "proposed_monthly_payment": 2500,
+      "overdue_count_24m": 0,
+      "max_overdue_days_24m": 0,
+      "credit_inquiries_6m": 2,
+      "existing_loan_count": 4,
+      "fraud_or_blacklist_hit": false
+    },
+    "output": {
+      "applicant_id": "T16",
+      "decision": "MANUAL_REVIEW",
+      "risk_level": "MEDIUM",
+      "dti": 0.2778,
+      "analysis_steps": [
+        {
+          "step": 1,
+          "name": "信息完整性与合法性检查",
+          "result": "PASS",
+          "evidence": "所有必填字段完整，数据合法。"
+        },
+        {
+          "step": 2,
+          "name": "偿债能力分析",
+          "result": "PASS",
+          "evidence": "DTI=(2500+2500)/18000=0.2778，不高于0.40。"
+        },
+        {
+          "step": 3,
+          "name": "严重信用与欺诈风险检查",
+          "result": "PASS",
+          "evidence": "未命中黑名单，最近24个月无逾期。"
+        },
+        {
+          "step": 4,
+          "name": "其他风险因素检查",
+          "result": "RISK",
+          "evidence": "现有未结清贷款笔数为4，命中人工复核规则C6。"
+        },
+        {
+          "step": 5,
+          "name": "综合决策",
+          "result": "RISK",
+          "evidence": "未命中直接拒绝规则，但命中人工复核条件，决策为MANUAL_REVIEW。"
+        }
+      ],
+      "risk_factors": [
+        "现有未结清贷款笔数达到4笔，存在多头借贷风险"
+      ],
+      "missing_information": [],
+      "manual_review_required": true,
+      "summary": "申请资料完整，偿债能力正常，但现有未结清贷款笔数较多，需人工复核，初审结果为人工复核。"
+    },
+    "raw_output": "{\n  \"applicant_id\": \"T16\",\n  \"decision\": \"MANUAL_REVIEW\",\n  \"risk_level\": \"MEDIUM\",\n  \"dti\": 0.2778,\n  \"analysis_steps\": [\n    {\n      \"step\": 1,\n      \"name\": \"信息完整性与合法性检查\",\n      \"result\": \"PASS\",\n      \"evidence\": \"所有必填字段完整，数据合法。\"\n    },\n    {\n      \"step\": 2,\n      \"name\": \"偿债能力分析\",\n      \"result\": \"PASS\",\n      \"evidence\": \"DTI=(2500+2500)/18000=0.2778，不高于0.40。\"\n    },\n    {\n      \"step\": 3,\n      \"name\": \"严重信用与欺诈风险检查\",\n      \"result\": \"PASS\",\n      \"evidence\": \"未命中黑名单，最近24个月无逾期。\"\n    },\n    {\n      \"step\": 4,\n      \"name\": \"其他风险因素检查\",\n      \"result\": \"RISK\",\n      \"evidence\": \"现有未结清贷款笔数为4，命中人工复核规则C6。\"\n    },\n    {\n      \"step\": 5,\n      \"name\": \"综合决策\",\n      \"result\": \"RISK\",\n      \"evidence\": \"未命中直接拒绝规则，但命中人工复核条件，决策为MANUAL_REVIEW。\"\n    }\n  ],\n  \"risk_factors\": [\n    \"现有未结清贷款笔数达到4笔，存在多头借贷风险\"\n  ],\n  \"missing_information\": [],\n  \"manual_review_required\": true,\n  \"summary\": \"申请资料完整，偿债能力正常，但现有未结清贷款笔数较多，需人工复核，初审结果为人工复核。\"\n}",
+    "error": null
+  },
+  {
+    "id": "T17",
+    "scene": "就业稳定期11个月",
+    "expected": "MANUAL_REVIEW",
+    "actual": "MANUAL_REVIEW",
+    "decision_correct": true,
+    "schema_ok": true,
+    "validation_errors": [],
+    "elapsed_seconds": 31.11,
+    "input": {
+      "applicant_id": "T17",
+      "monthly_income": 15000,
+      "employment_months": 11,
+      "existing_monthly_debt_payment": 1500,
+      "proposed_monthly_payment": 2500,
+      "overdue_count_24m": 0,
+      "max_overdue_days_24m": 0,
+      "credit_inquiries_6m": 2,
+      "existing_loan_count": 1,
+      "fraud_or_blacklist_hit": false
+    },
+    "output": {
+      "applicant_id": "T17",
+      "decision": "MANUAL_REVIEW",
+      "risk_level": "MEDIUM",
+      "dti": 0.2667,
+      "analysis_steps": [
+        {
+          "step": 1,
+          "name": "信息完整性与合法性检查",
+          "result": "PASS",
+          "evidence": "所有必填字段完整，数据合法且无负值。"
+        },
+        {
+          "step": 2,
+          "name": "偿债能力分析",
+          "result": "PASS",
+          "evidence": "DTI=(1500+2500)/15000=0.2667，不高于0.40。"
+        },
+        {
+          "step": 3,
+          "name": "严重信用与欺诈风险检查",
+          "result": "PASS",
+          "evidence": "fraud_or_blacklist_hit=false，overdue_count_24m=0，max_overdue_days_24m=0，未命中拒绝规则。"
+        },
+        {
+          "step": 4,
+          "name": "其他风险因素检查",
+          "result": "RISK",
+          "evidence": "employment_months=11，小于12，命中人工复核规则C2。"
+        },
+        {
+          "step": 5,
+          "name": "综合决策",
+          "result": "RISK",
+          "evidence": "未命中拒绝条件，但命中人工复核条件，根据决策优先级，初审结果为MANUAL_REVIEW。"
+        }
+      ],
+      "risk_factors": [
+        "当前连续就业月份不足12个月"
+      ],
+      "missing_information": [],
+      "manual_review_required": true,
+      "summary": "申请资料完整，偿债能力正常，但当前就业时长不足12个月，命中人工复核规则，转入人工复核。"
+    },
+    "raw_output": "{\n  \"applicant_id\": \"T17\",\n  \"decision\": \"MANUAL_REVIEW\",\n  \"risk_level\": \"MEDIUM\",\n  \"dti\": 0.2667,\n  \"analysis_steps\": [\n    {\n      \"step\": 1,\n      \"name\": \"信息完整性与合法性检查\",\n      \"result\": \"PASS\",\n      \"evidence\": \"所有必填字段完整，数据合法且无负值。\"\n    },\n    {\n      \"step\": 2,\n      \"name\": \"偿债能力分析\",\n      \"result\": \"PASS\",\n      \"evidence\": \"DTI=(1500+2500)/15000=0.2667，不高于0.40。\"\n    },\n    {\n      \"step\": 3,\n      \"name\": \"严重信用与欺诈风险检查\",\n      \"result\": \"PASS\",\n      \"evidence\": \"fraud_or_blacklist_hit=false，overdue_count_24m=0，max_overdue_days_24m=0，未命中拒绝规则。\"\n    },\n    {\n      \"step\": 4,\n      \"name\": \"其他风险因素检查\",\n      \"result\": \"RISK\",\n      \"evidence\": \"employment_months=11，小于12，命中人工复核规则C2。\"\n    },\n    {\n      \"step\": 5,\n      \"name\": \"综合决策\",\n      \"result\": \"RISK\",\n      \"evidence\": \"未命中拒绝条件，但命中人工复核条件，根据决策优先级，初审结果为MANUAL_REVIEW。\"\n    }\n  ],\n  \"risk_factors\": [\n    \"当前连续就业月份不足12个月\"\n  ],\n  \"missing_information\": [],\n  \"manual_review_required\": true,\n  \"summary\": \"申请资料完整，偿债能力正常，但当前就业时长不足12个月，命中人工复核规则，转入人工复核。\"\n}",
+    "error": null
+  },
+  {
+    "id": "T18",
+    "scene": "命中欺诈或黑名单",
+    "expected": "REJECT",
+    "actual": "REJECT",
+    "decision_correct": true,
+    "schema_ok": true,
+    "validation_errors": [],
+    "elapsed_seconds": 25.69,
+    "input": {
+      "applicant_id": "T18",
+      "monthly_income": 30000,
+      "employment_months": 72,
+      "existing_monthly_debt_payment": 1000,
+      "proposed_monthly_payment": 1000,
+      "overdue_count_24m": 0,
+      "max_overdue_days_24m": 0,
+      "credit_inquiries_6m": 1,
+      "existing_loan_count": 0,
+      "fraud_or_blacklist_hit": true
+    },
+    "output": {
+      "applicant_id": "T18",
+      "decision": "REJECT",
+      "risk_level": "HIGH",
+      "dti": 0.0667,
+      "analysis_steps": [
+        {
+          "step": 1,
+          "name": "信息完整性与合法性检查",
+          "result": "PASS",
+          "evidence": "所有必填字段完整，数据合法。"
+        },
+        {
+          "step": 2,
+          "name": "偿债能力分析",
+          "result": "PASS",
+          "evidence": "DTI=(1000+1000)/30000=0.0667，不高于0.40。"
+        },
+        {
+          "step": 3,
+          "name": "严重信用与欺诈风险检查",
+          "result": "FAIL",
+          "evidence": "fraud_or_blacklist_hit=true，命中直接拒绝规则B1。"
+        },
+        {
+          "step": 4,
+          "name": "其他风险因素检查",
+          "result": "NOT_APPLICABLE",
+          "evidence": "已命中更高优先级直接拒绝规则，其他因素不改变最终结论。"
+        },
+        {
+          "step": 5,
+          "name": "综合决策",
+          "result": "FAIL",
+          "evidence": "命中直接拒绝条件，根据决策优先级，初审结果为REJECT。"
+        }
+      ],
+      "risk_factors": [
+        "命中欺诈或黑名单高风险名单"
+      ],
+      "missing_information": [],
+      "manual_review_required": false,
+      "summary": "申请命中欺诈或黑名单高风险条件，依据直接拒绝规则，初审拒绝。"
+    },
+    "raw_output": "{\n  \"applicant_id\": \"T18\",\n  \"decision\": \"REJECT\",\n  \"risk_level\": \"HIGH\",\n  \"dti\": 0.0667,\n  \"analysis_steps\": [\n    {\n      \"step\": 1,\n      \"name\": \"信息完整性与合法性检查\",\n      \"result\": \"PASS\",\n      \"evidence\": \"所有必填字段完整，数据合法。\"\n    },\n    {\n      \"step\": 2,\n      \"name\": \"偿债能力分析\",\n      \"result\": \"PASS\",\n      \"evidence\": \"DTI=(1000+1000)/30000=0.0667，不高于0.40。\"\n    },\n    {\n      \"step\": 3,\n      \"name\": \"严重信用与欺诈风险检查\",\n      \"result\": \"FAIL\",\n      \"evidence\": \"fraud_or_blacklist_hit=true，命中直接拒绝规则B1。\"\n    },\n    {\n      \"step\": 4,\n      \"name\": \"其他风险因素检查\",\n      \"result\": \"NOT_APPLICABLE\",\n      \"evidence\": \"已命中更高优先级直接拒绝规则，其他因素不改变最终结论。\"\n    },\n    {\n      \"step\": 5,\n      \"name\": \"综合决策\",\n      \"result\": \"FAIL\",\n      \"evidence\": \"命中直接拒绝条件，根据决策优先级，初审结果为REJECT。\"\n    }\n  ],\n  \"risk_factors\": [\n    \"命中欺诈或黑名单高风险名单\"\n  ],\n  \"missing_information\": [],\n  \"manual_review_required\": false,\n  \"summary\": \"申请命中欺诈或黑名单高风险条件，依据直接拒绝规则，初审拒绝。\"\n}",
+    "error": null
+  },
+  {
+    "id": "T19",
+    "scene": "缺少月收入字段",
+    "expected": "MANUAL_REVIEW",
+    "actual": "MANUAL_REVIEW",
+    "decision_correct": true,
+    "schema_ok": true,
+    "validation_errors": [],
+    "elapsed_seconds": 24.23,
+    "input": {
+      "applicant_id": "T19",
+      "employment_months": 24,
+      "existing_monthly_debt_payment": 1500,
+      "proposed_monthly_payment": 2000,
+      "overdue_count_24m": 0,
+      "max_overdue_days_24m": 0,
+      "credit_inquiries_6m": 2,
+      "existing_loan_count": 1,
+      "fraud_or_blacklist_hit": false
+    },
+    "output": {
+      "applicant_id": "T19",
+      "decision": "MANUAL_REVIEW",
+      "risk_level": "MEDIUM",
+      "dti": null,
+      "analysis_steps": [
+        {
+          "step": 1,
+          "name": "信息完整性与合法性检查",
+          "result": "FAIL",
+          "evidence": "缺少必填字段monthly_income。"
+        },
+        {
+          "step": 2,
+          "name": "偿债能力分析",
+          "result": "NOT_APPLICABLE",
+          "evidence": "缺少月收入，无法计算DTI。"
+        },
+        {
+          "step": 3,
+          "name": "严重信用与欺诈风险检查",
+          "result": "PASS",
+          "evidence": "当前已提供信息中未发现黑名单或严重逾期风险。"
+        },
+        {
+          "step": 4,
+          "name": "其他风险因素检查",
+          "result": "NOT_APPLICABLE",
+          "evidence": "关键偿债能力字段缺失，无法完成完整自动初审。"
+        },
+        {
+          "step": 5,
+          "name": "综合决策",
+          "result": "RISK",
+          "evidence": "关键字段缺失，根据完整性规则转入人工复核。"
+        }
+      ],
+      "risk_factors": [
+        "关键偿债能力数据缺失"
+      ],
+      "missing_information": [
+        "monthly_income"
+      ],
+      "manual_review_required": true,
+      "summary": "月收入缺失，无法计算偿债能力，转入人工复核。"
+    },
+    "raw_output": "{\n  \"applicant_id\": \"T19\",\n  \"decision\": \"MANUAL_REVIEW\",\n  \"risk_level\": \"MEDIUM\",\n  \"dti\": null,\n  \"analysis_steps\": [\n    {\n      \"step\": 1,\n      \"name\": \"信息完整性与合法性检查\",\n      \"result\": \"FAIL\",\n      \"evidence\": \"缺少必填字段monthly_income。\"\n    },\n    {\n      \"step\": 2,\n      \"name\": \"偿债能力分析\",\n      \"result\": \"NOT_APPLICABLE\",\n      \"evidence\": \"缺少月收入，无法计算DTI。\"\n    },\n    {\n      \"step\": 3,\n      \"name\": \"严重信用与欺诈风险检查\",\n      \"result\": \"PASS\",\n      \"evidence\": \"当前已提供信息中未发现黑名单或严重逾期风险。\"\n    },\n    {\n      \"step\": 4,\n      \"name\": \"其他风险因素检查\",\n      \"result\": \"NOT_APPLICABLE\",\n      \"evidence\": \"关键偿债能力字段缺失，无法完成完整自动初审。\"\n    },\n    {\n      \"step\": 5,\n      \"name\": \"综合决策\",\n      \"result\": \"RISK\",\n      \"evidence\": \"关键字段缺失，根据完整性规则转入人工复核。\"\n    }\n  ],\n  \"risk_factors\": [\n    \"关键偿债能力数据缺失\"\n  ],\n  \"missing_information\": [\n    \"monthly_income\"\n  ],\n  \"manual_review_required\": true,\n  \"summary\": \"月收入缺失，无法计算偿债能力，转入人工复核。\"\n}",
+    "error": null
+  },
+  {
+    "id": "T20",
+    "scene": "月收入为非法负数",
+    "expected": "MANUAL_REVIEW",
+    "actual": "MANUAL_REVIEW",
+    "decision_correct": true,
+    "schema_ok": true,
+    "validation_errors": [],
+    "elapsed_seconds": 37.86,
+    "input": {
+      "applicant_id": "T20",
+      "monthly_income": -1000,
+      "employment_months": 24,
+      "existing_monthly_debt_payment": 1500,
+      "proposed_monthly_payment": 2000,
+      "overdue_count_24m": 0,
+      "max_overdue_days_24m": 0,
+      "credit_inquiries_6m": 2,
+      "existing_loan_count": 1,
+      "fraud_or_blacklist_hit": false
+    },
+    "output": {
+      "applicant_id": "T20",
+      "decision": "MANUAL_REVIEW",
+      "risk_level": "MEDIUM",
+      "dti": null,
+      "analysis_steps": [
+        {
+          "step": 1,
+          "name": "信息完整性与合法性检查",
+          "result": "FAIL",
+          "evidence": "必填字段monthly_income为-1000，非法（不得小于0）。"
+        },
+        {
+          "step": 2,
+          "name": "偿债能力分析",
+          "result": "NOT_APPLICABLE",
+          "evidence": "月收入非法，无法计算DTI。"
+        },
+        {
+          "step": 3,
+          "name": "严重信用与欺诈风险检查",
+          "result": "PASS",
+          "evidence": "未命中黑名单，无严重逾期记录。"
+        },
+        {
+          "step": 4,
+          "name": "其他风险因素检查",
+          "result": "NOT_APPLICABLE",
+          "evidence": "关键偿债能力数据非法，无法完整评估其他风险。"
+        },
+        {
+          "step": 5,
+          "name": "综合决策",
+          "result": "RISK",
+          "evidence": "输入数据非法，根据决策优先级，转为人工复核。"
+        }
+      ],
+      "risk_factors": [
+        "月收入数据非法"
+      ],
+      "missing_information": [
+        "monthly_income（非法值）"
+      ],
+      "manual_review_required": true,
+      "summary": "月收入输入为负值，不符合合法性要求，无法完成自动初审，转入人工复核。"
+    },
+    "raw_output": "{\n  \"applicant_id\": \"T20\",\n  \"decision\": \"MANUAL_REVIEW\",\n  \"risk_level\": \"MEDIUM\",\n  \"dti\": null,\n  \"analysis_steps\": [\n    {\n      \"step\": 1,\n      \"name\": \"信息完整性与合法性检查\",\n      \"result\": \"FAIL\",\n      \"evidence\": \"必填字段monthly_income为-1000，非法（不得小于0）。\"\n    },\n    {\n      \"step\": 2,\n      \"name\": \"偿债能力分析\",\n      \"result\": \"NOT_APPLICABLE\",\n      \"evidence\": \"月收入非法，无法计算DTI。\"\n    },\n    {\n      \"step\": 3,\n      \"name\": \"严重信用与欺诈风险检查\",\n      \"result\": \"PASS\",\n      \"evidence\": \"未命中黑名单，无严重逾期记录。\"\n    },\n    {\n      \"step\": 4,\n      \"name\": \"其他风险因素检查\",\n      \"result\": \"NOT_APPLICABLE\",\n      \"evidence\": \"关键偿债能力数据非法，无法完整评估其他风险。\"\n    },\n    {\n      \"step\": 5,\n      \"name\": \"综合决策\",\n      \"result\": \"RISK\",\n      \"evidence\": \"输入数据非法，根据决策优先级，转为人工复核。\"\n    }\n  ],\n  \"risk_factors\": [\n    \"月收入数据非法\"\n  ],\n  \"missing_information\": [\n    \"monthly_income（非法值）\"\n  ],\n  \"manual_review_required\": true,\n  \"summary\": \"月收入输入为负值，不符合合法性要求，无法完成自动初审，转入人工复核。\"\n}",
+    "error": null
+  }
+]
