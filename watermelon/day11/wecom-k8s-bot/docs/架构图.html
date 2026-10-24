@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="zh-CN" style="margin:0;padding:0;">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>企业微信 K8s 查询机器人 - 架构图</title>
+<style>
+  * { box-sizing: border-box; }
+  body { margin: 0; padding: 24px; font-family: "Microsoft YaHei", "PingFang SC", "Segoe UI", sans-serif; background: #f5f7fb; color: #1f2937; }
+  .wrap { max-width: 980px; margin: 0 auto; }
+  h1 { font-size: 20px; margin: 0 0 4px; }
+  .sub { color: #6b7280; font-size: 14px; margin-bottom: 20px; }
+  .flow { display: flex; flex-direction: column; gap: 14px; }
+  .row { display: flex; align-items: stretch; gap: 8px; flex-wrap: wrap; }
+  .box { border-radius: 10px; padding: 12px 14px; font-size: 14px; line-height: 1.55; min-width: 170px; }
+  .box .t { font-weight: 700; font-size: 15px; margin-bottom: 4px; }
+  .box .d { color: #374151; font-size: 13px; }
+  .box .d code { background: rgba(0,0,0,.06); padding: 1px 5px; border-radius: 4px; font-size: 12px; }
+  .client { background: #eef2ff; border: 1.5px solid #6366f1; }
+  .wecom { background: #ecfdf5; border: 1.5px solid #10b981; }
+  .bot { background: #fff7ed; border: 1.5px solid #f59e0b; }
+  .api { background: #fdf2f8; border: 1.5px solid #ec4899; }
+  .k8s { background: #eff6ff; border: 1.5px solid #3b82f6; }
+  .arrow { align-self: center; color: #9ca3af; font-size: 20px; line-height: 1; white-space: nowrap; }
+  .steps { list-style: none; margin: 8px 0 0; padding: 0; font-size: 13px; color: #374151; }
+  .steps li { padding: 2px 0 2px 16px; position: relative; }
+  .steps li::before { content: ""; position: absolute; left: 2px; top: 10px; width: 7px; height: 7px; border-radius: 50%; background: #f59e0b; }
+  .legend { margin-top: 22px; display: flex; flex-wrap: wrap; gap: 10px; font-size: 13px; }
+  .chip { background: #fff; border: 1px solid #e5e7eb; border-radius: 999px; padding: 6px 12px; color: #374151; }
+  .chip b { color: #111827; }
+  .note { margin-top: 16px; font-size: 12.5px; color: #6b7280; background: #fff; border: 1px dashed #d1d5db; border-radius: 8px; padding: 10px 12px; line-height: 1.6; }
+  .foot { margin-top: 18px; font-size: 12px; color: #9ca3af; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>企业微信 K8s 查询机器人 · 架构与消息流</h1>
+  <div class="sub">自建应用双向通信：成员 @ 机器人 → 回调解密 → 查询 Kubernetes → API 主动回复</div>
+
+  <div class="flow">
+    <!-- 主流程 -->
+    <div class="row">
+      <div class="box client">
+        <div class="t">企业微信客户端</div>
+        <div class="d">成员在群聊 <b>@应用</b> 或单聊中发送：<br>
+          「帮我查看k8s集群资源占用情况」<br>「查看 nginx-abc-123 的日志」</div>
+      </div>
+      <div class="arrow">➜</div>
+      <div class="box wecom">
+        <div class="t">企业微信服务器</div>
+        <div class="d">校验来源并加密，推送到你配置的接收消息 URL</div>
+      </div>
+      <div class="arrow">➜</div>
+      <div class="box bot">
+        <div class="t">机器人服务（Flask / Python）</div>
+        <div class="d">监听 <code>/wecom</code>，收到加密 XML 后：</div>
+        <ul class="steps">
+          <li>校验 <code>msg_signature</code> 签名</li>
+          <li>AES-256-CBC 解密出明文 XML</li>
+          <li>意图解析（资源 / 日志 / Pod列表 / 帮助）</li>
+          <li>查询 Kubernetes（kubeconfig / in-cluster）</li>
+          <li>组装文本并截断到企微消息上限</li>
+        </ul>
+      </div>
+      <div class="arrow">➜</div>
+      <div class="box k8s">
+        <div class="t">Kubernetes 集群</div>
+        <div class="d">节点资源 / Pod 请求量<br>metrics-server 实际用量<br>Pod 日志（只读）</div>
+      </div>
+    </div>
+
+    <!-- 回复流程 -->
+    <div class="row">
+      <div class="box bot" style="background:#fef3c7;">
+        <div class="t">组装回复文本</div>
+        <div class="d">节点/集群资源占用报表<br>Pod 日志（最近 N 行）<br>Pod 列表</div>
+      </div>
+      <div class="arrow">➜</div>
+      <div class="box api">
+        <div class="t">企业微信 API（主动回复）</div>
+        <div class="d">群聊：<code>appchat/send</code>（失败自动私发兜底）<br>单聊：<code>message/send</code></div>
+      </div>
+      <div class="arrow">➜</div>
+      <div class="box client">
+        <div class="t">回复到群聊 / 单聊</div>
+        <div class="d">结果实时送达发起查询的成员</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="legend">
+    <span class="chip">🔹 <b>资源占用</b>：帮我查看k8s集群资源占用情况</span>
+    <span class="chip">🔹 <b>Pod 日志</b>：查看 nginx-abc-123 的日志 / 日志 ns/name 后300行</span>
+    <span class="chip">🔹 <b>Pod 列表</b>：看看有哪些pod / pod列表</span>
+    <span class="chip">🔹 <b>帮助</b>：帮助 / help</span>
+  </div>
+
+  <div class="note">
+    说明：① 回调 URL 需公网 HTTPS 可达（保存配置时企业微信会发送一次 GET 验证请求）；② 发送消息需将服务器公网 IP 加入「企业可信 IP」；
+    ③ 群聊回复依赖应用可见范围为根部门，受限时程序自动改为私发；④ 图中「实际用量」依赖集群已安装 metrics-server，未安装时仅展示已分配（requests）资源。
+  </div>
+  <div class="foot">wecom-k8s-bot · 架构示意（与本项目代码一致）</div>
+</div>
+</body>
+</html>
