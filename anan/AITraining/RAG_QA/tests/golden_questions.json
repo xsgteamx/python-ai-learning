@@ -1,0 +1,26 @@
+[
+  {
+    "question": "DTI为45%的申请人能直接审批通过吗？",
+    "expected_source": "01_个人消费贷款业务管理办法.md"
+  },
+  {
+    "question": "个人消费贷款申请人最低年龄是多少？",
+    "expected_source": "01_个人消费贷款业务管理办法.md"
+  },
+  {
+    "question": "L4高敏感数据访问需要哪些岗位批准？",
+    "expected_source": "02_信息与数据安全管理规范.md"
+  },
+  {
+    "question": "员工发现客户数据泄露后多久需要首报？",
+    "expected_source": "02_信息与数据安全管理规范.md"
+  },
+  {
+    "question": "关键业务连续中断5小时属于哪一级事件？",
+    "expected_source": "03_运营操作风险事件报告及处置管理办法.md"
+  },
+  {
+    "question": "发生操作风险事件后应当先止损还是先追究责任？",
+    "expected_source": "03_运营操作风险事件报告及处置管理办法.md"
+  }
+]

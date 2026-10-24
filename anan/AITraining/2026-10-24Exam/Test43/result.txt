@@ -1,0 +1,17 @@
+D:\workspace\python-ai-learning\.venv\Scripts\python.exe -X pycache_prefix=C:\Users\XOS\AppData\Local\JetBrains\PyCharm2024.3\cpython-cache "D:/Program Files/PyCharm 2024.3.1.1/plugins/python-ce/helpers/pydev/pydevd.py" --multiprocess --qt-support=auto --port 29781 --file D:\workspace\python-ai-learning\anan\AITraining\2026-10-24Exam\Test43\Test43.py
+用户问题： 银行个人贷款申请有什么要求？
+检索结果数量： 2
+----------------------------------------
+第1条：
+来源：信贷政策.md
+内容：个人贷款申请需要满足年龄和信用条件。
+相似度：0.994
+
+第2条：
+来源：贷款审批.md
+内容：银行贷款审批需要审核客户收入及负债。
+相似度：0.936
+
+高阈值检索结果： []
+
+Process finished with exit code 0

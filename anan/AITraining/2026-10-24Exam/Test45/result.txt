@@ -1,0 +1,23 @@
+D:\workspace\python-ai-learning\.venv\Scripts\python.exe -X pycache_prefix=C:\Users\XOS\AppData\Local\JetBrains\PyCharm2024.3\cpython-cache "D:/Program Files/PyCharm 2024.3.1.1/plugins/python-ce/helpers/pydev/pydevd.py" --multiprocess --qt-support=auto --port 29781 --file D:\workspace\python-ai-learning\anan\AITraining\2026-10-24Exam\Test45\Test45.py
+========== 测试1：命中 ==========
+{
+  "answer": "【模拟LLM回答】\n你是银行内部制度咨询专家。\n请仅根据提供的文档回答问题，并引用对应的文档来源。\n\n## 相关文档\n[文档1] 来源: 信贷政策.md\n内容: 个人贷款申请人须年满18周岁。\n\n[文档2] 来源: 贷款审批制度.md\n内容: 银行应审核借款人的收入及信用记录。\n\n## 用户问题\n个人贷款申请需要什么条件？",
+  "sources": [
+    {
+      "source": "信贷政策.md",
+      "score": 0.957
+    },
+    {
+      "source": "贷款审批制度.md",
+      "score": 0.852
+    }
+  ]
+}
+
+========== 测试2：未命中 ==========
+{
+  "answer": "根据提供的文档，未找到与您问题相关的信息。",
+  "sources": []
+}
+
+Process finished with exit code 0

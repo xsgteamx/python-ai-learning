@@ -1,0 +1,31 @@
+D:\workspace\python-ai-learning\.venv\Scripts\python.exe -X pycache_prefix=C:\Users\XOS\AppData\Local\JetBrains\PyCharm2024.3\cpython-cache "D:/Program Files/PyCharm 2024.3.1.1/plugins/python-ce/helpers/pydev/pydevd.py" --multiprocess --qt-support=auto --port 29781 --file D:\workspace\python-ai-learning\anan\AITraining\2026-10-24Exam\Test46\Test46.py
+========== RAG检索质量评估 ==========
+
+第1题：个人贷款申请条件是什么？
+预期来源：信贷政策.md
+命中情况：✅
+top_score：0.950
+
+第2题：存款账户如何开户？
+预期来源：存款管理.md
+命中情况：✅
+top_score：0.930
+
+第3题：银行卡挂失怎么办？
+预期来源：银行卡业务.md
+命中情况：❌
+top_score：0.820
+
+========== 评估汇总 ==========
+测试问题数：3
+命中数量：2
+Hit Rate@3：66.67%
+
+Process finished with exit code 0
+
+
+\[
+\text{Hit Rate@3}=\frac{\text{Top-3 中命中的问题数}}{\text{总测试问题数}}\times100\%
+\]
+
+本题结果：66.67%，表示 3 个测试问题中，有 2 个问题的预期文档出现在 Top-3 检索结果中。

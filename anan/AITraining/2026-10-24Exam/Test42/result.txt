@@ -1,0 +1,14 @@
+D:\workspace\python-ai-learning\.venv\Scripts\python.exe -X pycache_prefix=C:\Users\XOS\AppData\Local\JetBrains\PyCharm2024.3\cpython-cache "D:/Program Files/PyCharm 2024.3.1.1/plugins/python-ce/helpers/pydev/pydevd.py" --multiprocess --qt-support=auto --port 29781 --file D:\workspace\python-ai-learning\anan\AITraining\2026-10-24Exam\Test42\Test42.py
+余弦相似度测试
+----------------------------------------
+语义相近文本相似度：0.9997
+语义无关文本相似度：0.1851
+----------------------------------------
+测试通过：语义相近文本的相似度更高
+
+Process finished with exit code 0
+
+核心公式：
+\[
+\operatorname{cosine}(a,b)=\frac{\sum_{i=1}^{n}a_i b_i}{\sqrt{\sum_{i=1}^{n}a_i^2}\sqrt{\sum_{i=1}^{n}b_i^2}}
+\]

@@ -1,0 +1,16 @@
+D:\workspace\python-ai-learning\.venv\Scripts\python.exe -X pycache_prefix=C:\Users\XOS\AppData\Local\JetBrains\PyCharm2024.3\cpython-cache "D:/Program Files/PyCharm 2024.3.1.1/plugins/python-ce/helpers/pydev/pydevd.py" --multiprocess --qt-support=auto --port 29781 --file D:\workspace\python-ai-learning\anan\AITraining\2026-10-24Exam\Test41\Test41.py
+集合名称： bank_policies
+文本块总数： 3
+
+查询来源：信贷政策.md
+匹配数量： 2
+
+ID：chunk_001
+内容：个人贷款申请人应年满18周岁，具有完全民事行为能力。
+元数据：{'source': '信贷政策.md'}
+
+ID：chunk_002
+内容：银行应审核借款人的收入、负债及信用记录。
+元数据：{'source': '信贷政策.md'}
+
+Process finished with exit code 0
